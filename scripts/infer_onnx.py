@@ -10,11 +10,31 @@ import numpy as np
 import onnxruntime as ort
 
 
-def preprocess(image):
+def candidate_count(input_size):
+    if not isinstance(input_size, int) or input_size < 32 or input_size % 32:
+        raise ValueError("Expected a static square input size divisible by 32")
+    return sum((input_size // stride) ** 2 for stride in (8, 16, 32))
+
+
+def model_input_size(session):
+    inputs, outputs = session.get_inputs(), session.get_outputs()
+    if len(inputs) != 1 or len(outputs) != 1:
+        raise ValueError("Expected one image input and one detection output")
+    shape = inputs[0].shape
+    if len(shape) != 4 or shape[:2] != [1, 3] or shape[2] != shape[3] or inputs[0].type != "tensor(float)":
+        raise ValueError("Expected static FP32 RGB [1,3,S,S] input")
+    size = shape[2]
+    if outputs[0].shape != [1, 58, candidate_count(size)] or outputs[0].type != "tensor(float)":
+        raise ValueError("Expected a standard 54-class YOLOv8 output for this input size")
+    return size
+
+
+def preprocess(image, input_size=640):
+    candidate_count(input_size)
     h, w = image.shape[:2]
-    ratio = min(640 / h, 640 / w)
+    ratio = min(input_size / h, input_size / w)
     resized = (round(w * ratio), round(h * ratio))
-    dx, dy = (640 - resized[0]) / 2, (640 - resized[1]) / 2
+    dx, dy = (input_size - resized[0]) / 2, (input_size - resized[1]) / 2
     left, top = round(dx - 0.1), round(dy - 0.1)
     canvas = cv2.copyMakeBorder(cv2.resize(image, resized), top, round(dy + .1),
                                 left, round(dx + .1), cv2.BORDER_CONSTANT, value=(114,114,114))
@@ -22,8 +42,8 @@ def preprocess(image):
     return tensor, ratio, (left, top)
 
 
-def decode(output, shape, ratio, padding, confidence=.25, iou=.45):
-    if output.shape != (1,58,8400) or not np.isfinite(output).all():
+def decode(output, shape, ratio, padding, confidence=.25, iou=.45, input_size=640):
+    if output.shape != (1,58,candidate_count(input_size)) or not np.isfinite(output).all():
         raise ValueError(f"Invalid model output: {output.shape}")
     predictions = output[0].T
     classes = predictions[:,4:].argmax(axis=1)
@@ -63,15 +83,16 @@ def main():
     original = cv2.imread(str(a.image))
     if original is None: p.error("Cannot decode input image")
     session = ort.InferenceSession(str(a.model),providers=["CPUExecutionProvider"])
-    if session.get_inputs()[0].shape != [1,3,640,640]: p.error("Expected static 640x640 model")
+    try: input_size = model_input_size(session)
+    except ValueError as error: p.error(str(error))
     names = ast.literal_eval(session.get_modelmeta().custom_metadata_map["names"])
-    tensor,ratio,padding = preprocess(original)
+    tensor,ratio,padding = preprocess(original,input_size)
     output = session.run(None,{session.get_inputs()[0].name:tensor})[0]
-    detections = decode(output,original.shape,ratio,padding,a.confidence,a.iou)
+    detections = decode(output,original.shape,ratio,padding,a.confidence,a.iou,input_size)
     for d in detections: d["label"] = names[d["class_id"]]
     a.output.mkdir(parents=True,exist_ok=True)
     record = dict(image=str(a.image.resolve()),model=str(a.model.resolve()),confidence=a.confidence,
-                  iou=a.iou,detections=detections)
+                  iou=a.iou,input_size=input_size,detections=detections)
     (a.output/(a.image.stem+".json")).write_text(json.dumps(record,ensure_ascii=False,indent=2)+"\n")
     from PIL import Image,ImageDraw,ImageFont
     preview = Image.fromarray(cv2.cvtColor(original,cv2.COLOR_BGR2RGB))

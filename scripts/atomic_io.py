@@ -3,6 +3,7 @@ import json
 import os
 from pathlib import Path
 import tempfile
+import shutil
 
 
 def atomic_json(path: Path, value: dict) -> None:
@@ -22,5 +23,23 @@ def atomic_json(path: Path, value: dict) -> None:
                 os.fsync(directory)
             finally:
                 os.close(directory)
+    finally:
+        temporary.unlink(missing_ok=True)
+
+
+def publish_new_file(source: Path, target: Path) -> None:
+    """Publish a complete file without ever replacing an existing target."""
+    target.parent.mkdir(parents=True, exist_ok=True)
+    fd, name = tempfile.mkstemp(prefix="." + target.name, dir=target.parent)
+    temporary = Path(name)
+    try:
+        with os.fdopen(fd, "wb") as out, source.open("rb") as original:
+            shutil.copyfileobj(original, out)
+            out.flush(); os.fsync(out.fileno())
+        os.link(temporary, target)
+        if os.name == "posix":
+            directory = os.open(target.parent, os.O_RDONLY)
+            try: os.fsync(directory)
+            finally: os.close(directory)
     finally:
         temporary.unlink(missing_ok=True)
