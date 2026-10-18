@@ -93,19 +93,20 @@ def tick(directory: Path, app: Path = APP) -> dict:
 
 
 def supervise(directory: Path, app: Path = APP) -> None:
-    """Prevent idle system sleep on AC only, while goal recovery is enabled."""
+    """Hold the user's scoped sleep assertions while goal recovery is enabled."""
     state = read_state(directory)
     if not state["enabled"] or state.get("stage") in TERMINAL_STAGES:
         return
-    # -s applies only on AC power. Display sleep, battery sleep and the login
-    # boundary are unchanged. This assertion ends when the supervisor exits.
-    awake = subprocess.Popen(["/usr/bin/caffeinate", "-s"])
+    # Display/battery idle-sleep prevention is opt-in. Watching this parent PID
+    # releases assertions even if launchd terminates the supervisor abruptly.
+    flags = ["-d", "-i", "-s"] if state.get("recovery", {}).get("keep_display_and_system_awake") is True else ["-s"]
+    awake = subprocess.Popen(["/usr/bin/caffeinate", *flags, "-w", str(os.getpid())])
     try:
         while True:
             if tick(directory, app)["action"] == "disabled":
                 return
             if awake.poll() is not None:
-                raise RuntimeError("The scoped AC-power sleep assertion exited")
+                raise RuntimeError("The scoped sleep assertion exited")
             time.sleep(300)
     finally:
         awake.terminate()

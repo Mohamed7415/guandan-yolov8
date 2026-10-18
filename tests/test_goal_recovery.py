@@ -75,9 +75,18 @@ class GoalRecoveryTests(unittest.TestCase):
                 child.poll.return_value = None
                 with self.assertRaises(KeyboardInterrupt):
                     recovery.supervise(directory)
-                popen.assert_called_once_with(["/usr/bin/caffeinate", "-s"])
+                popen.assert_called_once_with(["/usr/bin/caffeinate", "-s", "-w", str(recovery.os.getpid())])
                 child.terminate.assert_called_once()
                 child.wait.assert_called_once_with(timeout=5)
+
+    def test_display_and_system_idle_sleep_prevention_requires_explicit_opt_in(self):
+        with tempfile.TemporaryDirectory() as folder:
+            directory = Path(folder)
+            recovery.atomic_json(directory / "state.json", {"enabled": True, "recovery": {"keep_display_and_system_awake": True}})
+            with patch.object(recovery.subprocess, "Popen") as popen, patch.object(recovery, "tick", return_value={"action": "disabled"}):
+                recovery.supervise(directory)
+                popen.assert_called_once_with(["/usr/bin/caffeinate", "-d", "-i", "-s", "-w", str(recovery.os.getpid())])
+                popen.return_value.terminate.assert_called_once()
 
     def test_disabled_supervisor_does_not_change_sleep(self):
         with tempfile.TemporaryDirectory() as folder:
