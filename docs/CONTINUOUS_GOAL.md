@@ -64,3 +64,6 @@ launchctl bootout gui/$(id -u) ~/Library/LaunchAgents/com.guandan.yolov8.goal-re
 `batch002` 的 28 张/655 框现已目视审核并封存标签，完整像素与当前2098图对照无精确重复/组号重叠。位置为 `data/blind_reviewed/goal_20261019_batch002_v1/label_seal.json`，尚未运行目标检测器、未加入训练；一局中途片段，完整采集对局0，正式新盲测评测仍0。后续按 [盲测候选池](BLIND_POOL.md)继续扩大，禁止将这28图当开发样本。
 
 续局新增可选 `--activate-before-click`，保留识别、身份、位置、前台及无遮挡验证；六项新增检查通过，真实新局转场待训练结束后验证。现有训练真实首轮优化器检查点已载入验证，后续轮次按 `training_progress.json` 接续，不重跑。新一轮目标调度已由平台合法恢复为 active，不应继续引用先前 usageLimited 状态为当前状态。
+
+
+候选选择已实现为 [固定验证门槛](CANDIDATE_SELECTION.md)，不改变训练前规则。`configs/validation_gates/native2098_960_v1.json` 固定400张验证图片/标签字节、原实验及基线报告哈希；`scripts/evaluate_onnx_point.py` 新增模型和实际输入溯源，`scripts/validation_gate.py` 在提名旧回归之前核对逐图/逐类漏检和全部计数。真实400图/7803框基线报告审计通过，相同模型报告自比不算改进；未运行新盲测推理。78项本地检查通过。

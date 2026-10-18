@@ -1,0 +1,12 @@
+{
+  "purpose": "preregistered_validation_gate_before_candidate_scores",
+  "created_at": "2026-10-18T22:52:34.163490+00:00",
+  "protocol": "configs/experiments/native2098_960_v1.json",
+  "protocol_sha256": "0e915b0aad8a074811e96f5c4123cce8ec17861880aeb645e015eb9c4924e4ed",
+  "baseline_report": "reports/published/resolution960_v1_retrospective_v3_val.json",
+  "baseline_report_sha256": "4c33f2dba3cd39f658062e6e2f1c4b669a144a46cfa2f4055aee08b06fa9ae78",
+  "baseline_onnx_sha256": "2fa7355e8ab52975a49d2cdd1488d95185fd1bf54895c4774dd8864dd1e8adbc",
+  "validation_inputs_sha256": "cc3beaf1c1fc157d3ec507c3bbef78f2b7fa871ef84d87bf15b56b8bcf2d34b1",
+  "images": 400,
+  "note": "Pins existing selection rule without changing experiment, thresholds or old reports. Candidate validation provenance must match the actual exported model and these400 image/label bytes; no new blind images are read."
+}

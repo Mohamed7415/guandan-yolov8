@@ -1,0 +1,32 @@
+{
+  "purpose": "historical_report_consistency_replay_not_new_model_inference",
+  "validation_images": 400,
+  "validation_inputs_sha256": "cc3beaf1c1fc157d3ec507c3bbef78f2b7fa871ef84d87bf15b56b8bcf2d34b1",
+  "baseline_report_sha256": "4c33f2dba3cd39f658062e6e2f1c4b669a144a46cfa2f4055aee08b06fa9ae78",
+  "baseline_truth_boxes": 7803,
+  "same_model_self_comparison": {
+    "accepted_for_old_regression": false,
+    "checks": {
+      "no_image_or_class_miss_increase": true,
+      "fewer_false_positives": false,
+      "more_exact_images": false
+    },
+    "baseline": {
+      "true_positive": 7802,
+      "false_positive": 3,
+      "false_negative": 1,
+      "exact_images": 396
+    },
+    "candidate": {
+      "true_positive": 7802,
+      "false_positive": 3,
+      "false_negative": 1,
+      "exact_images": 396
+    },
+    "worsened_misses": [],
+    "new_blind_test_images": 0,
+    "goal_completed": false
+  },
+  "model_inference_performed": false,
+  "blind_pool_read": false
+}
