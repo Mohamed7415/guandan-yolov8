@@ -1,0 +1,87 @@
+{
+  "image": "goal_20261019_batch001_00096.png",
+  "actual": "SJ",
+  "extra": "BJ",
+  "type": "wrong_class_under_translucent_finish_banner",
+  "ground_truth_bbox": [
+    757,
+    231,
+    860,
+    368
+  ],
+  "reason": "Black joker lettering and black face visible in this native frame; template draft missed the instance; full-frame visual review added it before model evaluation.",
+  "candidate_predictions": [
+    {
+      "class_id": 49,
+      "confidence": 0.998406,
+      "xyxy": [
+        488.4,
+        745.44,
+        614.24,
+        919.23
+      ]
+    },
+    {
+      "class_id": 33,
+      "confidence": 0.994889,
+      "xyxy": [
+        614.47,
+        744.4,
+        742.89,
+        918.8
+      ]
+    },
+    {
+      "class_id": 18,
+      "confidence": 0.988721,
+      "xyxy": [
+        996.24,
+        744.89,
+        1128.56,
+        917.38
+      ]
+    },
+    {
+      "class_id": 23,
+      "confidence": 0.986634,
+      "xyxy": [
+        869.22,
+        744.42,
+        996.59,
+        918.99
+      ]
+    },
+    {
+      "class_id": 28,
+      "confidence": 0.984972,
+      "xyxy": [
+        743.46,
+        744.2,
+        868.8,
+        918.86
+      ]
+    },
+    {
+      "class_id": 33,
+      "confidence": 0.95611,
+      "xyxy": [
+        613.92,
+        687.19,
+        746.48,
+        744.88
+      ]
+    },
+    {
+      "class_id": 53,
+      "confidence": 0.426523,
+      "xyxy": [
+        757.71,
+        235.74,
+        860.97,
+        367.6
+      ]
+    }
+  ],
+  "used_for_development": true,
+  "new_blind_test_images": 0
+}

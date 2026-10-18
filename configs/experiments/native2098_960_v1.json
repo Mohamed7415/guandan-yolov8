@@ -1,0 +1,58 @@
+{
+  "experiment_id": "native2098_960_v1",
+  "status": "planned_before_training",
+  "created_at": "2026-10-18T22:21:57.272972+00:00",
+  "purpose": "single_model_native_development_extension",
+  "initial_checkpoint": "runs/cards/resolution960_v1/weights/best.pt",
+  "initial_checkpoint_sha256": "53228c43b56e1142d3c51eef15e72c6785bd80b32e1eb4308548e6182aba56af",
+  "data": "data/prepared_full2098_native_v1/data.yaml",
+  "dataset_fingerprint": "feb7cf5316380933cae9ce5587ae640024cea9106a8f82ef71f0117a768d3c9e",
+  "split_manifest_sha256": "6a7874bc0d6891d0ac141259dcdec5d55eca1934631e2574d098e2d9a0728775",
+  "dataset_extension_plan": "configs/dataset_extensions/20261019_native98_train_only.json",
+  "images": {
+    "train": 1490,
+    "val": 400,
+    "test": 208
+  },
+  "new_development_images": 98,
+  "new_development_boxes": 1966,
+  "new_development_split": "train_only",
+  "all_old_split_assignments_preserved": true,
+  "all_old_image_and_label_bytes_preserved": true,
+  "training": {
+    "architecture": "YOLOv8n",
+    "input_size": 960,
+    "epochs": 40,
+    "batch": 2,
+    "optimizer": "AdamW",
+    "lr0": 0.001,
+    "seed": 42,
+    "patience": 25,
+    "new_optimizer": true,
+    "device": "mps"
+  },
+  "fixed_inference": {
+    "confidence": 0.25,
+    "nms_iou": 0.45,
+    "nms_mode": "class_aware",
+    "match_iou": 0.5,
+    "max_detections": 300
+  },
+  "selection": {
+    "split": "val",
+    "images": 400,
+    "baseline_report": "reports/published/resolution960_v1_retrospective_v3_val.json",
+    "baseline": {
+      "tp": 7802,
+      "fp": 3,
+      "fn": 1,
+      "exact": 396
+    },
+    "rule": "Require no image or class increase in missed cards, fewer total FP, and more exact images than current960 on same v3 val; otherwise retain current candidate. Compare before inspecting old208 regression.",
+    "development_train98_note": "After this run, performance on the 98 appended images is training/regression performance, not held-out evidence."
+  },
+  "new_blind_test_images": 0,
+  "formal_v1_unchanged": true,
+  "candidate_resolution960_v1_unchanged": true,
+  "resume_only_this_new_run_if_interrupted": true
+}

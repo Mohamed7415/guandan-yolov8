@@ -1,0 +1,604 @@
+{
+  "reviewed": true,
+  "purpose": "development_train_only",
+  "evidence": {
+    "audit": "data/reviewed/goal_20261019_batch001_all98_v3/review_audit.json",
+    "complete_native_crop_groups_reviewed": 494,
+    "full_native_images_reviewed": 98,
+    "independent_human_second_review": false,
+    "new_blind_test_images": 0
+  },
+  "base_dataset_fingerprint": "7c6dfcaadd30e5145702037e183983d54a72702bf32361e6f5f5a9f90c342a6a",
+  "base_manifest_sha256": "3ef4364f82ce27b2e55c977b369240ed3f0ff43b33c5c66dae1c104a6264d9f5",
+  "new_manifest_sha256": "a7ce5d812c9c18cc9823556799ba4bff75c240154d8988936fc52070b8cab4f2",
+  "images": [
+    {
+      "name": "goal_20261019_batch001_00001.png",
+      "image_sha256": "494fe4c13324b313cad1129a2088b2ad69ab8ce99e0ef70e8ed261c8fcc55e23",
+      "label_sha256": "676f75106963183a63f6dc2ec43c88166ea4929f7dcdea83970aade2c1a7099c",
+      "annotation_semantic_sha256": "8234deb99921f4eee857abc3a3a479a1cff0ec4fadb74a39c40556d939fc7ca3"
+    },
+    {
+      "name": "goal_20261019_batch001_00002.png",
+      "image_sha256": "5775b8554e40a60426f424c5e46ccdae50d20a9885249adc42288b7b05b4709c",
+      "label_sha256": "676f75106963183a63f6dc2ec43c88166ea4929f7dcdea83970aade2c1a7099c",
+      "annotation_semantic_sha256": "8234deb99921f4eee857abc3a3a479a1cff0ec4fadb74a39c40556d939fc7ca3"
+    },
+    {
+      "name": "goal_20261019_batch001_00003.png",
+      "image_sha256": "5575209536495452f03729322741771b72e6ffad1bbb11ca71a3689208785c6d",
+      "label_sha256": "676f75106963183a63f6dc2ec43c88166ea4929f7dcdea83970aade2c1a7099c",
+      "annotation_semantic_sha256": "8234deb99921f4eee857abc3a3a479a1cff0ec4fadb74a39c40556d939fc7ca3"
+    },
+    {
+      "name": "goal_20261019_batch001_00004.png",
+      "image_sha256": "99eda57442c5011dff46f83545a191163e2e779bba4437d3bc504242d29e28fc",
+      "label_sha256": "676f75106963183a63f6dc2ec43c88166ea4929f7dcdea83970aade2c1a7099c",
+      "annotation_semantic_sha256": "8234deb99921f4eee857abc3a3a479a1cff0ec4fadb74a39c40556d939fc7ca3"
+    },
+    {
+      "name": "goal_20261019_batch001_00005.png",
+      "image_sha256": "5af9a24bfb4fc430a4fdc76b07f6f074942d8ca90063129f3bb822d348ec3aec",
+      "label_sha256": "494cc4da713bf20017560bc749cbaf3cb744f42347985c68f071e288ccce5edc",
+      "annotation_semantic_sha256": "6ea4a009bb1eb00c0402cd6922695e34be98ed81bbe583c0b92a42831193466c"
+    },
+    {
+      "name": "goal_20261019_batch001_00006.png",
+      "image_sha256": "efeec3beba80ffac8b8d4b85af175b587ec24120725d40b4ffd4c41d940245c0",
+      "label_sha256": "3ddf2952c94e0e247340a1bbb4f9ec18ad315454b01c86d675d9be54a927a3ae",
+      "annotation_semantic_sha256": "6369da2a7807b38f685845628fc115f7778eaa6e26a497ead9b4372d7999a8b4"
+    },
+    {
+      "name": "goal_20261019_batch001_00007.png",
+      "image_sha256": "19edfd06cad9b26d466efc38bc76d6c723f916a6a0cf0fafc367612ee4018255",
+      "label_sha256": "a769fa72c80d0be8843b7c3fad3913c1a61c491eb7202ab4682039370e5f9060",
+      "annotation_semantic_sha256": "e569ac81ae5cda83a91ac898a2ef204f71a09269223a3876a4514f3dda0436ca"
+    },
+    {
+      "name": "goal_20261019_batch001_00008.png",
+      "image_sha256": "95391d0e61534b380814f61eacb486e390edf5ee7a1e53559d9d1c5a72e866a3",
+      "label_sha256": "11ba1aec658ee80707969f48e48e1441009abc282f904b55f9e553a6d7f52a2e",
+      "annotation_semantic_sha256": "d288e86ad0296fd0fb1a7dca391940293a30e9780fd38a5f80ba34a04f5ea5b4"
+    },
+    {
+      "name": "goal_20261019_batch001_00009.png",
+      "image_sha256": "847e4049609bc231aa7b92407fe6273f27947b007eb3c5d77ce2e0f625a8b8aa",
+      "label_sha256": "52022688ce01bd46d990ce2838fbba2de3fb1fd93e3ed441df423237a33ae4df",
+      "annotation_semantic_sha256": "c2d47fd9e28db177d125390519a8445322566b65e0e86857167e210a8bbdb55e"
+    },
+    {
+      "name": "goal_20261019_batch001_00010.png",
+      "image_sha256": "7625f5e93cd976b413d3f2d58668035ba628e149eb47497d7d9f49dedee52b18",
+      "label_sha256": "56a1b671383caf0489e755a82474654208aa7a7eaeb22e03651955acc84f3148",
+      "annotation_semantic_sha256": "65039cc61ead93ad4ef06c5c134c939ceee826d0716290764974026ba6db78ea"
+    },
+    {
+      "name": "goal_20261019_batch001_00011.png",
+      "image_sha256": "9e4afd07332d4fa6c77c3e7ccee9d6826c992d9096d609ea33d71949aad21fe4",
+      "label_sha256": "1e0c6f748ccd31ae5560a7a097562050796db3c7943d2a721f684cd0fb14594f",
+      "annotation_semantic_sha256": "ed354c131271f2cf53eecb15ca350d9bb77faa5ef192806c828c54be9513f3b2"
+    },
+    {
+      "name": "goal_20261019_batch001_00012.png",
+      "image_sha256": "7ee9f5931791ce8597920a3ba186869a61d0a61fd0c05932c0d03de13e3c241c",
+      "label_sha256": "3fddf30f99e2c955248917d4a6b854bdf40d720976340bc22d8345ca27e1bd96",
+      "annotation_semantic_sha256": "11c29b23597157a30b71c0a5a7ba1a2b24067de2cae91eb2dd91aef4dd749cbd"
+    },
+    {
+      "name": "goal_20261019_batch001_00013.png",
+      "image_sha256": "81375a6356a54dc6c186cd7b06393be366d84aa183ef026fd624b4fa86911a2a",
+      "label_sha256": "3fddf30f99e2c955248917d4a6b854bdf40d720976340bc22d8345ca27e1bd96",
+      "annotation_semantic_sha256": "11c29b23597157a30b71c0a5a7ba1a2b24067de2cae91eb2dd91aef4dd749cbd"
+    },
+    {
+      "name": "goal_20261019_batch001_00014.png",
+      "image_sha256": "eabaef6b41b48b980e517d7aa6445cdb246eac62ae6241aab366602422929a7d",
+      "label_sha256": "cdf14d788312c0bc464665dc1397b8b63ea728aa69ce29b123d1b2fb9494a132",
+      "annotation_semantic_sha256": "e237a00e1303dbbfddb6f5ed73afee937dac35bca7a0979dbf2b023a347b33f9"
+    },
+    {
+      "name": "goal_20261019_batch001_00015.png",
+      "image_sha256": "1293ec917dd98cbaf03021ca4aaddede62fa705de468a53e5d45a80c89412409",
+      "label_sha256": "e1096ed436489c140387b3d9465ab39c33251dda49664670f9aa7434309633a7",
+      "annotation_semantic_sha256": "8bc409de1831eb707b187742ab9989d4563c3e0251f518b0ba1299c2db98698a"
+    },
+    {
+      "name": "goal_20261019_batch001_00016.png",
+      "image_sha256": "35f9768a0fb5fb164c7dd5759b357ca283c6fd7e244ac844b04fca2e0061eb3b",
+      "label_sha256": "e2c39548499ff5eb5e5a6480b028384b7b38241317b7af02b74740e4dc57e898",
+      "annotation_semantic_sha256": "72d7d01f3103444b7714a9cc84ea03b434d6a578558b20a6e7ac7db8e5f2e8bc"
+    },
+    {
+      "name": "goal_20261019_batch001_00017.png",
+      "image_sha256": "117113b1ac8918e34f494f65a18d0778e4ecc3a8fb41c4c605383427088818c4",
+      "label_sha256": "e3dc0d56b9ab6ed5f7190f6b08a76f3d84c53cb3d7bd50ef319f6ffade3e1270",
+      "annotation_semantic_sha256": "f8b89ec284b56064f4038c84f9d5d71ad5fc776606567db22f8a78ca4cedfd51"
+    },
+    {
+      "name": "goal_20261019_batch001_00018.png",
+      "image_sha256": "52b5e753f51dfe3da07684009329adbe2e4d34ef53194ac13562ce04fe6a30ef",
+      "label_sha256": "f53a12b925dfbfe571cadf26b4bd7c88cc222a87aaed8dc3f1c59226a712d86e",
+      "annotation_semantic_sha256": "84213aa7e44dcd230e9575aca7d30c8075a5723ed48bfcb02c1b0c9b88298d2d"
+    },
+    {
+      "name": "goal_20261019_batch001_00019.png",
+      "image_sha256": "a086f746898840324df6f5a88d43b828e9d3e373a71bbc6f4c450e3b20186976",
+      "label_sha256": "a549264734c123939afbe2ca54f10eccf0ba32c7487fee8fc03886900d890a2b",
+      "annotation_semantic_sha256": "bca03f399417284e5bb314e5c34be5b057364037f0ae696b297dcbaea4a0cc09"
+    },
+    {
+      "name": "goal_20261019_batch001_00020.png",
+      "image_sha256": "c13f831ae6f4e7d3e0c88200c5b007323b807c493245d4f080801cf31cec5237",
+      "label_sha256": "eba3e6ca9f36eeb8e07b9dd2e9d1eb235030e0bc06363e58bf387227f7e61fc0",
+      "annotation_semantic_sha256": "48b50841e1361f09eaa901459e6c17f13bafaa543c9590ddb4cdbde4668e74e5"
+    },
+    {
+      "name": "goal_20261019_batch001_00021.png",
+      "image_sha256": "785d669220c40dac76561b62711e333aae2fab4b9ae67c1acf300130a525aa36",
+      "label_sha256": "eba3e6ca9f36eeb8e07b9dd2e9d1eb235030e0bc06363e58bf387227f7e61fc0",
+      "annotation_semantic_sha256": "48b50841e1361f09eaa901459e6c17f13bafaa543c9590ddb4cdbde4668e74e5"
+    },
+    {
+      "name": "goal_20261019_batch001_00022.png",
+      "image_sha256": "949fd6e05a4e197c25830db1cdaadbaa0fe79b9867b86371d6ff134829f22d37",
+      "label_sha256": "41af223e7fa27ce835a835210e14715cab4cba2f5ee1e17bb398f1b558abe02b",
+      "annotation_semantic_sha256": "aa029c05a77835226a155b8623ef192736e35fcc5ce9cbcde3f08a485bfef588"
+    },
+    {
+      "name": "goal_20261019_batch001_00023.png",
+      "image_sha256": "40e9ea9bd98c5c502837cedb808394c339a0441baf7577150eb12a49f1e151d4",
+      "label_sha256": "ce1a01f4466fa8dfb69efffd488adc68faa727fce5d43eb51e0340c2e51ac511",
+      "annotation_semantic_sha256": "0af5f53946d904688fb8dd6749e06fbbf5a1df497a9d4a267fcdbe34822254be"
+    },
+    {
+      "name": "goal_20261019_batch001_00024.png",
+      "image_sha256": "40793b8262d6b2f8049c87fa82ab1c24e6ae54547cc09eb3b54274bcc176132d",
+      "label_sha256": "85be50a1c5b3ec244c6066491c55b64dee12bec0d11d1fdf21d7e219ae4d8903",
+      "annotation_semantic_sha256": "6a73c086e1dadd294558efc1d988cb299c75932eee299738287316f08de683c4"
+    },
+    {
+      "name": "goal_20261019_batch001_00025.png",
+      "image_sha256": "bf4c5400fb33cb71e5b4307e196f72470683e07918b3909d126a2edb67749915",
+      "label_sha256": "3d9dfecd77ee086d58d5ff09dacb0798c60a22d7f62a33c33c3f000a28070156",
+      "annotation_semantic_sha256": "ef3c7ae20233e9d2488ecaa83e7b96f9bf49dd2db08dc29a6eb7eafdda6c3b1f"
+    },
+    {
+      "name": "goal_20261019_batch001_00026.png",
+      "image_sha256": "6eb91b70889c786b846e8a0f80bb005b550c424b904f7e2599d034825faf35b9",
+      "label_sha256": "bad2a890d0e88e73fb22ac926a6e2f42ccc2c14c4a52792a8e555ac432bce6d5",
+      "annotation_semantic_sha256": "a91521e0bebb59c609b639012b0049cb0ecfddb0e62676cb8e7f1620b6b7119a"
+    },
+    {
+      "name": "goal_20261019_batch001_00027.png",
+      "image_sha256": "c038d7ffd06d5071f2f31cf61dee87d5c1c9651ac4248d10d5e21a9501d442a8",
+      "label_sha256": "78816b0bc2244bd871029161e9831dee7512964f09a0bc4206b71a564c74a2df",
+      "annotation_semantic_sha256": "b643c829afcc34dec31e72a4e36b3e9f9501cdbba2e437f3b2de0dd70d6d4821"
+    },
+    {
+      "name": "goal_20261019_batch001_00028.png",
+      "image_sha256": "c6d50ea09c0cbdf0f446fa182e2cfbbc45aa3a24d1547a61a956a1a8cd9ceae3",
+      "label_sha256": "8145be607e818a0e7a250ef215f9166a933dfbcaeead9d8cf119318481fcb5a9",
+      "annotation_semantic_sha256": "4aeede79e72988b9f58c10022d9872dd26e5b898d2a019e322f46d80a26595fd"
+    },
+    {
+      "name": "goal_20261019_batch001_00029.png",
+      "image_sha256": "ea141d7ef540819198c04289553de2b2a3fd7248a8f2f9f14f8444fa7382ac71",
+      "label_sha256": "e879d8d1d6b452b2f559adc8267c70d70dd24c37c0cc7d0e4ff465ed73bf08b4",
+      "annotation_semantic_sha256": "e0e28da059a8fd03e90a840ff17d30efcd9cd8c8c5407e9773335b8565100f60"
+    },
+    {
+      "name": "goal_20261019_batch001_00030.png",
+      "image_sha256": "3d1ada8ad9c82a857c64e1b30d801e6edc17f69d6b0be51611ed4f46f43ed41f",
+      "label_sha256": "0e0771597d94e5b7b6c06ae019d12433c534ec5aac5b9b8234f1f0bbbc7947fc",
+      "annotation_semantic_sha256": "b24165a3a7471056bf3850fa9ae36dbfa0176da3725213ce2243b79a92dbbf63"
+    },
+    {
+      "name": "goal_20261019_batch001_00031.png",
+      "image_sha256": "c39184ee65750b6bfbac9fe90dd6c4d90aa0f372ce717f8fffad3ac9b42a55e5",
+      "label_sha256": "036431ca3f8c58c17c70a90904d805a3aeefd47bb5a8249ff1b40115cf1ea18e",
+      "annotation_semantic_sha256": "cc7f51a95f9278eff0eec894a2602094bc7477e23fd54c94e139f8523395d74e"
+    },
+    {
+      "name": "goal_20261019_batch001_00032.png",
+      "image_sha256": "2647a6d22713c8f65533cd36a0cf7a00ae88aa42274a3c4573436182f8ded8f2",
+      "label_sha256": "43441eb766ab29c0dee7161213705fc68679e340765e1036147117c7484fed3a",
+      "annotation_semantic_sha256": "dcf7a448c7e40c90215be4097962879c13e632e4e54a7d39d96b42bcb9cf405d"
+    },
+    {
+      "name": "goal_20261019_batch001_00033.png",
+      "image_sha256": "5b0b02569920944dfec1158f297b9c0703320f931de112ee31c21ad3f3eb747a",
+      "label_sha256": "0b7e0d2ba1f6020699c1d5d58570cd49fd9240c9255df56d2ef69644877d2132",
+      "annotation_semantic_sha256": "efbacbc20f1be126c3ce5b6ffe0bcbbf7692dd0e2dadd6ac6ce95598405c2752"
+    },
+    {
+      "name": "goal_20261019_batch001_00034.png",
+      "image_sha256": "7f02784b39358a8e0149135c087c814c7dbea4db2af2cc6ab671bca99eb23e59",
+      "label_sha256": "0719d9616e65e1bec9353db5108f732989f2f68d922fec3079678000258c2717",
+      "annotation_semantic_sha256": "9c0d3265a585bb5e8b4baffcbef6ffb79c22fea810739fa2cffc0f0c97e856d2"
+    },
+    {
+      "name": "goal_20261019_batch001_00035.png",
+      "image_sha256": "68e2d0c6e32f7b500d52cd74e149a2149989aaa20e896776bff02ae65a8dfdca",
+      "label_sha256": "ecf6d1dfb87ce3c3d68b49f2bde3b16df7fdf90c5ea6827fe41ae20cb56e446e",
+      "annotation_semantic_sha256": "db901511c658b5745998e1c6c4f26fd913977375816368cb2fc7aaf1239946d8"
+    },
+    {
+      "name": "goal_20261019_batch001_00036.png",
+      "image_sha256": "3dfb97729d8d9fed4143cc78bed041172f815dac9b7afeabfcc79984ad60b30c",
+      "label_sha256": "4f9353cd9e9911423f6fece49a76b6d3e1ec253d7a12da7bcfcf85ac6580c7a0",
+      "annotation_semantic_sha256": "201463b8f471ff9290d27f971b964a5869109fb383fa0ce2dc653ffd1693e51d"
+    },
+    {
+      "name": "goal_20261019_batch001_00037.png",
+      "image_sha256": "ecefe720b45dd49079ac00232b386f1fc3a17a7fe116ecb0278649605f196c73",
+      "label_sha256": "0f918a010bc4c991b59214ea5d624de522ae27353cd40912f003f19bc2aba202",
+      "annotation_semantic_sha256": "90d87d9166979c15fc4740a63a1bdb292dcdf6466f38832ea6b840565d21dbce"
+    },
+    {
+      "name": "goal_20261019_batch001_00038.png",
+      "image_sha256": "032159888e48855062369160a88b500f9afc7c3aaaa93ea8c134e80ef80ed610",
+      "label_sha256": "0f918a010bc4c991b59214ea5d624de522ae27353cd40912f003f19bc2aba202",
+      "annotation_semantic_sha256": "90d87d9166979c15fc4740a63a1bdb292dcdf6466f38832ea6b840565d21dbce"
+    },
+    {
+      "name": "goal_20261019_batch001_00039.png",
+      "image_sha256": "e4101c83bb8c727e2b9f10a5c7f09f31b1bc9e4be4dfe438d0fc74af444a4afe",
+      "label_sha256": "c643d8415d4ce12c2e676ecfcc7b8aaf3f78dfa0c902dc9d1d951aec4e3c75dc",
+      "annotation_semantic_sha256": "7fbad7261dbecfda9fbd41e198615eb3fbc064b8b317ffc4e846aed02a5ebefd"
+    },
+    {
+      "name": "goal_20261019_batch001_00040.png",
+      "image_sha256": "1ad7ac95e338cb931ae465cc811fb3e82200bc329ca5defe759b55dffd5cde09",
+      "label_sha256": "2d2bd768754c2590598a6a215f3e7cdde3f68b968a1976a4459f96171b8cc427",
+      "annotation_semantic_sha256": "9fb3c18c031538ebe9da10c3b4b7b4c5b7a109c7a91220cb482b2acba2174869"
+    },
+    {
+      "name": "goal_20261019_batch001_00041.png",
+      "image_sha256": "5528cefe20b80f9ee3c3e1d6bae6510981cec0c527e1cef026ae89a75061efea",
+      "label_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "annotation_semantic_sha256": "126c871095e8404fdf8390dd2515111fd3abccda7fa9291e28e4421478590c9b"
+    },
+    {
+      "name": "goal_20261019_batch001_00042.png",
+      "image_sha256": "bb1eaad1b230d6eafc7416d82d2deb880eff3de9ce29aea88f2f24df14a7d144",
+      "label_sha256": "aebcb37e0ffafc5e1199f5f29da005b9f1956e1c3a2a5d9067ab6b00afb4e3cd",
+      "annotation_semantic_sha256": "6701197448d9c927377219bc50c84ad151f01335816d944b7fdb7ac89ab07b0c"
+    },
+    {
+      "name": "goal_20261019_batch001_00043.png",
+      "image_sha256": "4bc51ebacf36b332da4656e6d6985fa11f2d1381600b9712c26b7b3e78603102",
+      "label_sha256": "aebcb37e0ffafc5e1199f5f29da005b9f1956e1c3a2a5d9067ab6b00afb4e3cd",
+      "annotation_semantic_sha256": "1ec672a1c658e711c6f23b0743ff4f704796dc1f02837f9732169c51d08bb12a"
+    },
+    {
+      "name": "goal_20261019_batch001_00044.png",
+      "image_sha256": "c87c54efbed2dffbad3748824d53156f265f0a14610c2d22f645a3695afefe5c",
+      "label_sha256": "9394bc0b2cd9a0410c2a26bb712f99cd583b5bd42246943e29e81b50143775a2",
+      "annotation_semantic_sha256": "f6eba406e44a2aebcb2158e73b8bbb14a9869286cf9a197babf16ef2da1d9e85"
+    },
+    {
+      "name": "goal_20261019_batch001_00045.png",
+      "image_sha256": "0d77cb32aae1d6175a707c5a05f0a354f2513268880c6bfb9ab270b546fc880f",
+      "label_sha256": "9942c85997feceb024c8d4a8ffd3a112074fb51988a7f7a3cac6d81253287dbf",
+      "annotation_semantic_sha256": "68bfdda318b1eb9978cf9eb16dd8dd4bf77878d8ae46f13dfd16a1e97b98e793"
+    },
+    {
+      "name": "goal_20261019_batch001_00046.png",
+      "image_sha256": "5a9e0c6c0c12828d4317987ad7b7f887d85753c58fd34797fd80bc7341b9eb46",
+      "label_sha256": "bffa5e10fa08c926a24e965292fb4c4aea868d4356b9cbb499b7f50597007abd",
+      "annotation_semantic_sha256": "769b109b5e602b01b2932e5ca1d9b03cd65a54e74d5f01e3ea642a863de52864"
+    },
+    {
+      "name": "goal_20261019_batch001_00047.png",
+      "image_sha256": "2a5d889c27b0b5360e8f6af9d351b18d06ab26ee47d0e58d6c690e2c505193b3",
+      "label_sha256": "3db1d04f1b8fad9a2f99e8d2a7c298071cc28e1b994b0573df6d81e05081515d",
+      "annotation_semantic_sha256": "d4cceba18cce57effe45d2469d1c490a99990cf75590f059fc6b14ce7aa720aa"
+    },
+    {
+      "name": "goal_20261019_batch001_00048.png",
+      "image_sha256": "11e9be9a3c79b8064a8e62dbc336e8c5d821a47a883c3b008d8687223bd8aea1",
+      "label_sha256": "4d31d9c320d9c8afdd2bd7c996865b7f2c44610c8edfe7640a72d1a315ec03be",
+      "annotation_semantic_sha256": "e0a93dec290a4c47a9544b71e92f4a6946cee202bd99254d982afea65565b8cd"
+    },
+    {
+      "name": "goal_20261019_batch001_00049.png",
+      "image_sha256": "949df1fb81b980ea2cdc7c670ad4b21df5ecb714c8d87e61dcc5d750fb2cd3be",
+      "label_sha256": "16a41961933b0e68ecda7a009e9ad91040e1d45f1bcfeda8a4e44be981ecf82a",
+      "annotation_semantic_sha256": "b932814581bf22895b730399049f354a799ee21535a927ae270d3ae06f0d1db0"
+    },
+    {
+      "name": "goal_20261019_batch001_00050.png",
+      "image_sha256": "41101106f4c2272f6926738c17a4e801062e5a5aeb9f34ac9e39a722399a48f5",
+      "label_sha256": "ce8e65ae89d83da3ce4098f73d23788009a710b4c201a01e63c0e7b76d87c79c",
+      "annotation_semantic_sha256": "3e3df617e358765aeac05805830b76b73d7532115e1d26cac6cf538d3d288d6a"
+    },
+    {
+      "name": "goal_20261019_batch001_00051.png",
+      "image_sha256": "8a77810b7da9b6b0ce4ab18b681b665a935a680a2f53c63dcfb088873c7d9c51",
+      "label_sha256": "a4eaec0684494e7b33f8b9dc0ae7f2e9b59751ea836f4c0938792500c8c6569c",
+      "annotation_semantic_sha256": "341d5c0b3ab6f711d56472a9257ad02c1fd7c54582c8c503bef0161da0e40934"
+    },
+    {
+      "name": "goal_20261019_batch001_00052.png",
+      "image_sha256": "bef7799204b6e37fc21e60aa17f7206158e1a21765b1789f5bd0723365d1de89",
+      "label_sha256": "2ed9553f1f15d4a2684bc8fe9a06aba066ef4df79cc168d19a97709ee831c147",
+      "annotation_semantic_sha256": "ef9b976b0d681f6ad14218b5a762aedbbc4b5fb2b418de3c679cf2bc4a16f2a3"
+    },
+    {
+      "name": "goal_20261019_batch001_00053.png",
+      "image_sha256": "0e142d0f68bde03ae182e4d7a64eff4b157414c98cfd2f15271445e03fefc928",
+      "label_sha256": "727484aa09917ac35b0a9c5084233d25a2c8e43f950b8b9b3c97fc296a01cacb",
+      "annotation_semantic_sha256": "c6d08435ab88974541b72e58dd0d7ae50af7bb963eeba5812cdec27cb9fae6ea"
+    },
+    {
+      "name": "goal_20261019_batch001_00054.png",
+      "image_sha256": "f4466ae2c11d26564b10b90133e0db6aaf4aa21fc17e148ddec4c308d0c1ac9c",
+      "label_sha256": "7f0876e128d7d38fc79b743067833c9fbaa1b9ee394b2c8886b0338115a5bdbd",
+      "annotation_semantic_sha256": "9a4e0fca36750cf21c12bdfa9ea92b22b359cdc7026f93af74526886662aa8c4"
+    },
+    {
+      "name": "goal_20261019_batch001_00055.png",
+      "image_sha256": "6540b458db033bd3ba16ab11b5543c72d9d1e788d80addc7120dc4d8d762ed93",
+      "label_sha256": "7f0876e128d7d38fc79b743067833c9fbaa1b9ee394b2c8886b0338115a5bdbd",
+      "annotation_semantic_sha256": "9a4e0fca36750cf21c12bdfa9ea92b22b359cdc7026f93af74526886662aa8c4"
+    },
+    {
+      "name": "goal_20261019_batch001_00056.png",
+      "image_sha256": "bfdf790c85100f1b98cd2eb69e084b0c2540c09708f79f2d20f1821b85e4546f",
+      "label_sha256": "9a41b5f542e5be89f44d7296e93221f28224f15c36474f26bc6e4e44e341cd6e",
+      "annotation_semantic_sha256": "ab842a9fea5a38fd356c243cc4a8667f87d8deb711a91c450a4acdef352b8a7d"
+    },
+    {
+      "name": "goal_20261019_batch001_00057.png",
+      "image_sha256": "9e94658d45fd2b3b6fac86cd3d92fdb1f607ab544feaab055e2b1f9a3bf9710e",
+      "label_sha256": "450742d387ccdd75491854b2c5268504be1bcce1094d21e3ef50171174a0594f",
+      "annotation_semantic_sha256": "c02892e69d50c2506e99da65473d6aa1e9c13bce94306cfbab58386016a9703c"
+    },
+    {
+      "name": "goal_20261019_batch001_00058.png",
+      "image_sha256": "fcb47746c0b212e3425643db79417a12811f1f414e7d122dd93380e309f79085",
+      "label_sha256": "aa61bcbd007ca733107343369b7a55144145abfbf7795985556e0f27258c8e75",
+      "annotation_semantic_sha256": "a802bfa14ab87209a2a13f4328d60f1596cc014365f835db6ef0abb938631f0f"
+    },
+    {
+      "name": "goal_20261019_batch001_00059.png",
+      "image_sha256": "036c9e6491eae5820f9a6aa5586fdac53bd55239c8ce3c000413eba504dcac9b",
+      "label_sha256": "aa61bcbd007ca733107343369b7a55144145abfbf7795985556e0f27258c8e75",
+      "annotation_semantic_sha256": "a802bfa14ab87209a2a13f4328d60f1596cc014365f835db6ef0abb938631f0f"
+    },
+    {
+      "name": "goal_20261019_batch001_00060.png",
+      "image_sha256": "5e109c58ec6b05078e5a27aeca3d48080f604baa409d5d64efca024e90f65a8c",
+      "label_sha256": "00c994e0b7866fe43def7b8ecf18357263aebbe26538a3f4f62c113c1be03c3d",
+      "annotation_semantic_sha256": "7bb2a19adbc986f5a8cab32b3058748d978ea957d5a7a8fdf1e0cca11c972422"
+    },
+    {
+      "name": "goal_20261019_batch001_00061.png",
+      "image_sha256": "688c4af02da355912e7ba4c8fd50e3fba76e69357db7b14e3c485039cfad9b8c",
+      "label_sha256": "538b885bad168ae5149e2587d650784fcbe3f4333b65b28ea930fa80536811e0",
+      "annotation_semantic_sha256": "bee6dcb842feba5127ca156725b11c29f9be9791ab5ac89f44d9e80995b565fc"
+    },
+    {
+      "name": "goal_20261019_batch001_00062.png",
+      "image_sha256": "57a2d376a3f3419324758ed666848bb915545b5cb5d2d66c716ec84831bd9e3c",
+      "label_sha256": "bdcdab54885c358963cc36d821af706b55c1ac4fe1aa92f00b21ac79c55ff8f8",
+      "annotation_semantic_sha256": "54971bffba4825cabd317a10758f4e2d78fec1d3de580316512b3e99f3020b48"
+    },
+    {
+      "name": "goal_20261019_batch001_00063.png",
+      "image_sha256": "9e77c0ff12fcb836f8d50576327a9adfe0485b71dba3d67d331872b549fb890b",
+      "label_sha256": "582949636346ad5dcc0ddb33984981c110f3ca5ff63c8a66c4889f8c3b4965a2",
+      "annotation_semantic_sha256": "2add468ec5ef47fc68407e786151fa0a1342931012dbf28bee57453bf36c1d1a"
+    },
+    {
+      "name": "goal_20261019_batch001_00064.png",
+      "image_sha256": "f603434c9c16c9cbe226f394e0d6037ceba359382418b1530d2f5bdf881b66eb",
+      "label_sha256": "a507acac48e9573b015ff3abe544385bc82706e348c83faa12c08e6d726bbaf7",
+      "annotation_semantic_sha256": "88f6059e1bd9c93f9ba56be238302b3ff3ab97851c9a8896203159b6528f37c2"
+    },
+    {
+      "name": "goal_20261019_batch001_00065.png",
+      "image_sha256": "adcee5f7df89603eb3454dd4048d371fab502988c0e967c954932bb7d3659df5",
+      "label_sha256": "93ff0ce3da937ccbb8d26876d04f6dc438efa56445e1b898b3b7c2683db443cc",
+      "annotation_semantic_sha256": "d03c0977c4141461b4dd116019990f670470c6d13b035cc2dc6a9f9161815091"
+    },
+    {
+      "name": "goal_20261019_batch001_00066.png",
+      "image_sha256": "678ddbbd37f770597542f2fc209d50928d9c3c6e7c97f2c2e2ff310dda9e3bf3",
+      "label_sha256": "5f48c53d65cdc458c383a6ff179918fdf0b054d8a906501504f2984209b3eda5",
+      "annotation_semantic_sha256": "40202f1bda967e975f1ef64021c0deee011862efaecd30e3a1c6b590a6f72ae6"
+    },
+    {
+      "name": "goal_20261019_batch001_00067.png",
+      "image_sha256": "a5c1d22039c278f9e944dc175bae0c103ec89fce9136a79707b95a32983783d9",
+      "label_sha256": "2e9706c0acf906eb559f659b3625898dc3c3949068f65ba4f2fc063c78da6241",
+      "annotation_semantic_sha256": "b2d3b8a8a003748ed6d49b46f09011982520614edc999e9c27aa3520b0536543"
+    },
+    {
+      "name": "goal_20261019_batch001_00068.png",
+      "image_sha256": "68f5925080fe7bef8224e376116c45aa6fec51be4f1a739b2f8c21d0cc3d0adf",
+      "label_sha256": "2e9706c0acf906eb559f659b3625898dc3c3949068f65ba4f2fc063c78da6241",
+      "annotation_semantic_sha256": "b2d3b8a8a003748ed6d49b46f09011982520614edc999e9c27aa3520b0536543"
+    },
+    {
+      "name": "goal_20261019_batch001_00069.png",
+      "image_sha256": "b9a8528174c088a7000fe88743595528ac19fa9f002f695e421e2d6b4ac19929",
+      "label_sha256": "2917012517265efb2c799a22477ebfbb0da5d4add460bf4f0c9b72003ff57489",
+      "annotation_semantic_sha256": "4e95b79e627b27569aa693e874addf86572547515114c10c5f542f4e3cca5b26"
+    },
+    {
+      "name": "goal_20261019_batch001_00070.png",
+      "image_sha256": "89e40f360c4ddeeb4fc0b1b496193ee241a855f76a3514e655a8fc37847e9e2c",
+      "label_sha256": "53a53cd2d01021a3991de0c4e57c9939b575c7090782b73fd6711027c8ce5471",
+      "annotation_semantic_sha256": "bc22c4f706a9abe05e57b138ebed9fddee7694ea549d0cf6ea2ee9a9cfd1a357"
+    },
+    {
+      "name": "goal_20261019_batch001_00071.png",
+      "image_sha256": "bd45631bc52d187eefcad0daefd37120589a84907c39ef86e5314158c5e36d95",
+      "label_sha256": "ca082d70a07d733c162be88f3df2cfc095c5c9d203bc8ac9f93d144a704651b5",
+      "annotation_semantic_sha256": "4845dbcca431a3f6fcd1ccbee7091d77bae362812a330283deb133b4ac42f0c9"
+    },
+    {
+      "name": "goal_20261019_batch001_00072.png",
+      "image_sha256": "a1898b6350e2aa51f6b9c7d53fefb7be4baafa2309fb26608483b5293e167b43",
+      "label_sha256": "8f104880fa02bfdda988f0760cfe582e0a7a56e301680c04241d5bae35eff991",
+      "annotation_semantic_sha256": "8551bca8b0c6771a56072ff98ff49dc5082500934cbd68720279e4818a5e289a"
+    },
+    {
+      "name": "goal_20261019_batch001_00073.png",
+      "image_sha256": "fb7fdcd355105c0d6e0931d8efb5c670a9aec642e6c7217cf466a4bbc78cc05b",
+      "label_sha256": "3d55b0ce9d45cd2d33bdef3a573ce5623c4e2339ce02fb8cc34990c7ece68fa9",
+      "annotation_semantic_sha256": "82ee3c0d7ba828f4555aa90e709b209702d8ff3ec532d6cd5b31de83f9aff446"
+    },
+    {
+      "name": "goal_20261019_batch001_00074.png",
+      "image_sha256": "3b15ff1f41b54e7f819b29d5c946a863b415fdc9faf78773a1f9fa8872a8797d",
+      "label_sha256": "6644f382624e7336d20842ae60609b5cbe11a71717d680a2f2992e2110adc94a",
+      "annotation_semantic_sha256": "cfce39bb05d6a5eae6432c677837f4a6d1f735635e121dcf9ff2cb9e0f9f34be"
+    },
+    {
+      "name": "goal_20261019_batch001_00075.png",
+      "image_sha256": "654bf02cc5cd1e6506e109b0f5243ea59471427606f145016148557a118f784e",
+      "label_sha256": "8b77eea57839612e9b9cadf8b7563fda0e9527bc461d94e0fc95cfd327173689",
+      "annotation_semantic_sha256": "fa7a5a7c2b0d96030b6ef5f8ead4bc32422eaff05135358ad28b334c2b4aa2c5"
+    },
+    {
+      "name": "goal_20261019_batch001_00076.png",
+      "image_sha256": "c35e336baba97ff245ed9899fbc933c509ad497c96a0ad896f830cacb6f36a37",
+      "label_sha256": "3439df1c8678eefc911df8a0be45c9161ab6ee561a60649602a76162c6689fff",
+      "annotation_semantic_sha256": "456a5789ea031055a89c90592351c855da4f8928e63f2c2429f365b149fe0952"
+    },
+    {
+      "name": "goal_20261019_batch001_00077.png",
+      "image_sha256": "de53a40a58e059f838532bdf7a431107fac8f9eabcf999f6a8d212d899f2416c",
+      "label_sha256": "3439df1c8678eefc911df8a0be45c9161ab6ee561a60649602a76162c6689fff",
+      "annotation_semantic_sha256": "456a5789ea031055a89c90592351c855da4f8928e63f2c2429f365b149fe0952"
+    },
+    {
+      "name": "goal_20261019_batch001_00078.png",
+      "image_sha256": "e62d03540669bbc53e47d530b0fb976146308ce5054370211a828d365f43358e",
+      "label_sha256": "ec4391de914f3e7fb232c5a40f40848e075ee3377e29440f7d0da3f356daed40",
+      "annotation_semantic_sha256": "a21dbdfb546bcb64f6be11df8ac0d5a5c383473799191b35d6e1896d7fee5003"
+    },
+    {
+      "name": "goal_20261019_batch001_00079.png",
+      "image_sha256": "9ea4d695af7fdc506042dfebe7af594d0a83fa6e0b8d81db2a279a6d717bdcbe",
+      "label_sha256": "ec4391de914f3e7fb232c5a40f40848e075ee3377e29440f7d0da3f356daed40",
+      "annotation_semantic_sha256": "a21dbdfb546bcb64f6be11df8ac0d5a5c383473799191b35d6e1896d7fee5003"
+    },
+    {
+      "name": "goal_20261019_batch001_00080.png",
+      "image_sha256": "668fd87a931400f0c206ee4fd739dddfd38393201c8ea3541be7528f3919458a",
+      "label_sha256": "8e6ac97692a4c6f1f33b8a3a7eda1f72aeb8c841b423b718a172fa586f2a8cb5",
+      "annotation_semantic_sha256": "28217f8961e801dc9dc1e2deb64ea0f5f6c2ab8568d6555fee24b3d1867b8d7d"
+    },
+    {
+      "name": "goal_20261019_batch001_00081.png",
+      "image_sha256": "3ad2c8558a36e247a6e2d4a0d8c1b975b83548ba16e8d276ded524ac6ca4e01a",
+      "label_sha256": "2bfd4dd9a5474804f5b8cc404b1e6ab5f045ce916e2e1cad099b020d32faa9cd",
+      "annotation_semantic_sha256": "c82cab4a3f7277f203196936e074d9f4b68e5bea6c8a8a49330f12f70d86aa1e"
+    },
+    {
+      "name": "goal_20261019_batch001_00082.png",
+      "image_sha256": "9548b05712da769cbbad7e630b5806db5b205013d654c867198a6b42f5f1131f",
+      "label_sha256": "2bfd4dd9a5474804f5b8cc404b1e6ab5f045ce916e2e1cad099b020d32faa9cd",
+      "annotation_semantic_sha256": "c82cab4a3f7277f203196936e074d9f4b68e5bea6c8a8a49330f12f70d86aa1e"
+    },
+    {
+      "name": "goal_20261019_batch001_00083.png",
+      "image_sha256": "faf70e83af1782783ce483615ab6319d6268827ce96c693e74a6704e9cc393d4",
+      "label_sha256": "2c159a7147e5980dfbf33efd7f2ab19bb6383a97525f2e7055d565fc328621b6",
+      "annotation_semantic_sha256": "18798cac15f5d0bec46fe7fa3aafe5c47df88a5841080a88ed02a612655ba362"
+    },
+    {
+      "name": "goal_20261019_batch001_00084.png",
+      "image_sha256": "a1d4116c0aa6f5df645de38806d57833f2f95f1782e2ec5c15f5b691397b49d0",
+      "label_sha256": "2c159a7147e5980dfbf33efd7f2ab19bb6383a97525f2e7055d565fc328621b6",
+      "annotation_semantic_sha256": "18798cac15f5d0bec46fe7fa3aafe5c47df88a5841080a88ed02a612655ba362"
+    },
+    {
+      "name": "goal_20261019_batch001_00085.png",
+      "image_sha256": "aab88cde743fdd8b758171021d3887e01e8f2b912566640cb44d315458628eb3",
+      "label_sha256": "2c159a7147e5980dfbf33efd7f2ab19bb6383a97525f2e7055d565fc328621b6",
+      "annotation_semantic_sha256": "18798cac15f5d0bec46fe7fa3aafe5c47df88a5841080a88ed02a612655ba362"
+    },
+    {
+      "name": "goal_20261019_batch001_00086.png",
+      "image_sha256": "d0cfd8ef6b369c34f43dfb797695e0ca2d83c0f2f8ad3be3832cee4be44cdcc7",
+      "label_sha256": "6c178c98485665d3bd3ea8fac3049dfb024b6fcccc91e0ea0140f1d799097a75",
+      "annotation_semantic_sha256": "09b42bc0974b0de8a633d1b3d8d4f3294e9ddb151b5b1812862f6ab183511955"
+    },
+    {
+      "name": "goal_20261019_batch001_00087.png",
+      "image_sha256": "4fbbea1587a911ef363254caa2721b5727aee1bd29c860d702959a6e19ed09ab",
+      "label_sha256": "9242e1562cecbbfcd8a3bea97e3bc67e00be030e76e4934fd0c61c15f70a7157",
+      "annotation_semantic_sha256": "6a3adf69712230dd140a17ff619ab2c9c5ac50c223c7cd021d7688bcee208863"
+    },
+    {
+      "name": "goal_20261019_batch001_00088.png",
+      "image_sha256": "f30bb37f662d26e7dfe242df70cf9296421edd462385236c535bd0ffbecf927b",
+      "label_sha256": "9242e1562cecbbfcd8a3bea97e3bc67e00be030e76e4934fd0c61c15f70a7157",
+      "annotation_semantic_sha256": "6a3adf69712230dd140a17ff619ab2c9c5ac50c223c7cd021d7688bcee208863"
+    },
+    {
+      "name": "goal_20261019_batch001_00089.png",
+      "image_sha256": "e668293dc7a98a5a4679497c556e48c3afe53c04a58dc7921a8210e5807075e5",
+      "label_sha256": "aa7e0ee9be58ef69517e0a888f59ebfef5893391f8844a7926e7a607e0d69bce",
+      "annotation_semantic_sha256": "6587535978a492fc117a681fad7c07c6f5c25b824c509f64154029a09749239c"
+    },
+    {
+      "name": "goal_20261019_batch001_00090.png",
+      "image_sha256": "baa3cd165bd738e4fc08b07e0403f86244ffb8b59e1873a839168a08a281cbdd",
+      "label_sha256": "6aa06b9c949b1869e2bedfe3a1c21bcb5f5881a5963d183cdfdbd131368ab220",
+      "annotation_semantic_sha256": "ff037dc417cbaf40f777867b74ca4a65e9ef381443c95c5497a9c5c9085ea198"
+    },
+    {
+      "name": "goal_20261019_batch001_00091.png",
+      "image_sha256": "36c33ff86f0e8a432a63492ada84053988a4eff6c805cb8f6aa49fa1624e0443",
+      "label_sha256": "aaa1e8ea8ff84e7b147b534b5dca670f85a53e697c9451f9d6d2669189df1329",
+      "annotation_semantic_sha256": "a889da5aae477172e201de3d3220ac100aaac81ae7187af290c8bc1c19df0da2"
+    },
+    {
+      "name": "goal_20261019_batch001_00092.png",
+      "image_sha256": "55c8287753d09f80bac200c47795d901827d6ba4981cbfea6d68606065f17e15",
+      "label_sha256": "aaa1e8ea8ff84e7b147b534b5dca670f85a53e697c9451f9d6d2669189df1329",
+      "annotation_semantic_sha256": "a889da5aae477172e201de3d3220ac100aaac81ae7187af290c8bc1c19df0da2"
+    },
+    {
+      "name": "goal_20261019_batch001_00093.png",
+      "image_sha256": "cea5f5b52042d4be55d270ca7de2970a36f2d0e235185694fecba720ced650aa",
+      "label_sha256": "fff9f8974419f45de95504e44e8a0aeabfc74d8f71732685a4b3333ea659e296",
+      "annotation_semantic_sha256": "99d9e4a599f44656ac7d1331eff216e1091c128be8577dae8d42f862c11a3cdf"
+    },
+    {
+      "name": "goal_20261019_batch001_00094.png",
+      "image_sha256": "ba374a2ed617af4e63d0b2a6775f49875da65b9b3743e9e6e9e24a9306762101",
+      "label_sha256": "2401d0c70d4cfd1e286b6bef9b19714b888d19f496ca614afdd2bb85e32bb174",
+      "annotation_semantic_sha256": "22cf44a19d7903018d7cf67e264561d94a12a20945bc4fe134883583cc884f18"
+    },
+    {
+      "name": "goal_20261019_batch001_00095.png",
+      "image_sha256": "2d3f0813f30c865b8a576f86f42b62192adc1086f01ace883ef8afa39774c02e",
+      "label_sha256": "2401d0c70d4cfd1e286b6bef9b19714b888d19f496ca614afdd2bb85e32bb174",
+      "annotation_semantic_sha256": "22cf44a19d7903018d7cf67e264561d94a12a20945bc4fe134883583cc884f18"
+    },
+    {
+      "name": "goal_20261019_batch001_00096.png",
+      "image_sha256": "2f1c6de463e1c8751661217ac4849242c9a33398e508672f0e32bf7d90920600",
+      "label_sha256": "889da19a86bcf18a78e193be4f1cbdd965415e39a29af29e801f03a00ceeb771",
+      "annotation_semantic_sha256": "042205c99023794f6d6a88c29678687b5f62029eb2449cdef5892eef3ad9e28f"
+    },
+    {
+      "name": "goal_20261019_batch001_00097.png",
+      "image_sha256": "d27b16bbe9655a5c0babcb8098a52027c5cb30a43e4d8d70c7c9c8fe62b517a0",
+      "label_sha256": "652af721bd38bb10bd69d7e9bc1f10c768cd0f6e864014a6f5609a647e5d0345",
+      "annotation_semantic_sha256": "270e6ec5884dad81393a6261b1089365072570b56b177004cf8804a565cc6440"
+    },
+    {
+      "name": "goal_20261019_batch001_00098.png",
+      "image_sha256": "4fe57336be45443de71dc91a38124896be3ea2988450a7473c53fdba2d10d00c",
+      "label_sha256": "b506aba652d4b1627f994fde67a27544a4bcd80648f5299e1ff73b442d1f1869",
+      "annotation_semantic_sha256": "ac3a70e86244fac27f2aad5d76a98c010d26356e2b3f71c9819943380bcc381c"
+    }
+  ]
+}

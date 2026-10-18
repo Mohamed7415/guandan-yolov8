@@ -1,0 +1,11 @@
+{
+  "purpose": "development_train_only",
+  "source_dataset": "data/prepared_full2000_review_v3",
+  "source_fingerprint": "7c6dfcaadd30e5145702037e183983d54a72702bf32361e6f5f5a9f90c342a6a",
+  "plan_sha256": "5859262c850af93b2e217e0ac17f841c3a7244160786bf60e52d96cb2cbb3b9b",
+  "added_images": 98,
+  "base_images": 2000,
+  "all_base_image_and_label_bytes_preserved": true,
+  "all_base_split_assignments_preserved": true,
+  "new_blind_test_images": 0
+}

@@ -1,0 +1,2244 @@
+{
+  "reviewer": "assistant_visual",
+  "independent_human_second_review": false,
+  "purpose": "development_only_not_new_blind_test",
+  "source_candidate_images": 98,
+  "images": 98,
+  "unreviewed_images": 0,
+  "boxes": 1966,
+  "negatives": 1,
+  "coordinate_corrections": 23,
+  "merged_shapes_split": 2,
+  "added_physical_card_instances": 2,
+  "added_missing_instances": 1,
+  "previous_review": "data/reviewed/goal_20261019_batch001_first40_plus_selected_v2",
+  "previous48_annotation_bytes_unchanged": true,
+  "visual_evidence": {
+    "full_frame_pages": [
+      "reports/continuous_goal/candidate_review/first40_frames",
+      "reports/continuous_goal/candidate_review/second_game_frames"
+    ],
+    "complete_native_crop_index": "reports/continuous_goal/candidate_review/exhaustive_groups/groups.json",
+    "unique_complete_pixel_groups_reviewed": 494,
+    "pixel_group_scope": "Identical dimensions and SHA256 of entire RGB crop only; every full frame independently inspected for missing/merged instances.",
+    "extra_native_regions": "reports/continuous_goal/candidate_review/remaining_boundary_and_missing_sj.png"
+  },
+  "grouping": "Entire native batch stays one conservative train-only split unit; two actual games observed. No blind-test count.",
+  "items": [
+    {
+      "image": "goal_20261019_batch001_00001.png",
+      "image_sha256": "494fe4c13324b313cad1129a2088b2ad69ab8ce99e0ef70e8ed261c8fcc55e23",
+      "proposal_sha256": "cc75328dc041a08baeaf356924999816dafbafd8631d49f0ef283ae6b5f2b213",
+      "reviewed_annotation_sha256": "cb29c1995a1be603fa5642c9f765aea4c43c0185cd560ec2652b768209fd1bd2",
+      "shape_count": 27,
+      "scene": "sorted",
+      "coordinate_corrections": [],
+      "split_merged_shapes": [],
+      "previous_review_preserved": true
+    },
+    {
+      "image": "goal_20261019_batch001_00002.png",
+      "image_sha256": "5775b8554e40a60426f424c5e46ccdae50d20a9885249adc42288b7b05b4709c",
+      "proposal_sha256": "ac09a48a5381aabd500724de2b56fe0d25e96466a53fa18f770caa3618b97764",
+      "reviewed_annotation_sha256": "956922165473ce914224aeac8cc9fa030f0d9687920008db5ff9b7abb1a24236",
+      "shape_count": 27,
+      "scene": "sorted",
+      "coordinate_corrections": [],
+      "split_merged_shapes": [],
+      "previous_review_preserved": true
+    },
+    {
+      "image": "goal_20261019_batch001_00003.png",
+      "image_sha256": "5575209536495452f03729322741771b72e6ffad1bbb11ca71a3689208785c6d",
+      "proposal_sha256": "de880880ac0441c60a533384f76252f214791a6d7501142c02a4dc092294967e",
+      "reviewed_annotation_sha256": "b0dac92b4c345414e2d5738f7f5300850b9f55d2cf161b6ba5155c0abcde0978",
+      "shape_count": 27,
+      "scene": "sorted",
+      "coordinate_corrections": [],
+      "split_merged_shapes": [],
+      "previous_review_preserved": true
+    },
+    {
+      "image": "goal_20261019_batch001_00004.png",
+      "image_sha256": "99eda57442c5011dff46f83545a191163e2e779bba4437d3bc504242d29e28fc",
+      "proposal_sha256": "a9344a513612d5cb45e5c63482484cb32ce8017c9c6f67d8f819568e4b3f1572",
+      "reviewed_annotation_sha256": "571730f504d0ed2ebffbd4c15a2649bc7c5f57418d32ad85634311095d3bcee4",
+      "shape_count": 27,
+      "scene": "sorted",
+      "coordinate_corrections": [],
+      "split_merged_shapes": [],
+      "previous_review_preserved": true
+    },
+    {
+      "image": "goal_20261019_batch001_00005.png",
+      "image_sha256": "5af9a24bfb4fc430a4fdc76b07f6f074942d8ca90063129f3bb822d348ec3aec",
+      "proposal_sha256": "ce06a9d0a1fd75b2942520daf124594e63748e276fbd7b5cb1a94c4d5a0cc7aa",
+      "reviewed_annotation_sha256": "1237f9048ad623ea0ec6fc32240798bac4ce2338a65f164e894fc70d5525fb78",
+      "shape_count": 28,
+      "scene": "sorted|self_play|others_play",
+      "coordinate_corrections": [],
+      "split_merged_shapes": [],
+      "previous_review_preserved": true
+    },
+    {
+      "image": "goal_20261019_batch001_00006.png",
+      "image_sha256": "efeec3beba80ffac8b8d4b85af175b587ec24120725d40b4ffd4c41d940245c0",
+      "proposal_sha256": "e805680ce121fced5122d500905cac522dda764238ffc85750019221f67c272d",
+      "reviewed_annotation_sha256": "5c785432e16ca2cef60ea13b1316eba725306e9d1a47aa66a128b06341eeae66",
+      "shape_count": 29,
+      "scene": "sorted|others_play",
+      "coordinate_corrections": [],
+      "split_merged_shapes": [],
+      "previous_review_preserved": true
+    },
+    {
+      "image": "goal_20261019_batch001_00007.png",
+      "image_sha256": "19edfd06cad9b26d466efc38bc76d6c723f916a6a0cf0fafc367612ee4018255",
+      "proposal_sha256": "2eb5ad72f2332fee545e5cdb1a949fd83705039454b5c4d4d13f4f62830cf7ba",
+      "reviewed_annotation_sha256": "d3e9998b66e79a2ad2a57f518593d165babf8c01aa89df597ecbb1ed2ebcc746",
+      "shape_count": 26,
+      "scene": "sorted|pass",
+      "coordinate_corrections": [],
+      "split_merged_shapes": [],
+      "previous_review_preserved": true
+    },
+    {
+      "image": "goal_20261019_batch001_00008.png",
+      "image_sha256": "95391d0e61534b380814f61eacb486e390edf5ee7a1e53559d9d1c5a72e866a3",
+      "proposal_sha256": "1b78bd89d0ea822e8188ed77beed8e28c0be13c8c3dfaf33a16d2399e58cb096",
+      "reviewed_annotation_sha256": "a6d5f550f464f26e3d05f3f091604b1917ce1fc9bcdd1de6a68faa0af1e11bcd",
+      "shape_count": 31,
+      "scene": "sorted|others_play|pass",
+      "coordinate_corrections": [
+        {
+          "shape_index": 2,
+          "label": "4♠",
+          "old_points": [
+            [
+              339,
+              308
+            ],
+            [
+              388,
+              308
+            ],
+            [
+              388,
+              445
+            ],
+            [
+              339,
+              445
+            ]
+          ],
+          "new_points": [
+            [
+              339,
+              308
+            ],
+            [
+              388,
+              308
+            ],
+            [
+              388,
+              406
+            ],
+            [
+              339,
+              406
+            ]
+          ],
+          "reason": "Opaque button covers all card pixels below y=406; keep the observed visible strip only."
+        },
+        {
+          "shape_index": 3,
+          "label": "3♥",
+          "old_points": [
+            [
+              388,
+              308
+            ],
+            [
+              436,
+              308
+            ],
+            [
+              436,
+              445
+            ],
+            [
+              388,
+              445
+            ]
+          ],
+          "new_points": [
+            [
+              388,
+              308
+            ],
+            [
+              436,
+              308
+            ],
+            [
+              436,
+              406
+            ],
+            [
+              388,
+              406
+            ]
+          ],
+          "reason": "Opaque button covers all card pixels below y=406; keep the observed visible strip only."
+        },
+        {
+          "shape_index": 4,
+          "label": "3♣",
+          "old_points": [
+            [
+              436,
+              308
+            ],
+            [
+              539,
+              308
+            ],
+            [
+              539,
+              445
+            ],
+            [
+              436,
+              445
+            ]
+          ],
+          "new_points": [
+            [
+              436,
+              308
+            ],
+            [
+              539,
+              308
+            ],
+            [
+              539,
+              406
+            ],
+            [
+              436,
+              406
+            ]
+          ],
+          "reason": "Opaque button covers all card pixels below y=406; keep the observed visible strip only."
+        }
+      ],
+      "split_merged_shapes": [],
+      "previous_review_preserved": true
+    },
+    {
+      "image": "goal_20261019_batch001_00009.png",
+      "image_sha256": "847e4049609bc231aa7b92407fe6273f27947b007eb3c5d77ce2e0f625a8b8aa",
+      "proposal_sha256": "03ffa4c3e158980062f0aa3427c821eaff7f70e323e99694b9475c69cd062de4",
+      "reviewed_annotation_sha256": "166b4c4f27fcef3d53846ee7d713c34970124cf2faa081f5deb997ef90d67412",
+      "shape_count": 31,
+      "scene": "sorted|self_play|others_play|pass",
+      "coordinate_corrections": [],
+      "split_merged_shapes": [],
+      "previous_review_preserved": true
+    },
+    {
+      "image": "goal_20261019_batch001_00010.png",
+      "image_sha256": "7625f5e93cd976b413d3f2d58668035ba628e149eb47497d7d9f49dedee52b18",
+      "proposal_sha256": "9f2bfeb5f37e08961ebffde78a8b23be479691ca1b5348733b18c2ba967a68e1",
+      "reviewed_annotation_sha256": "fa150207f96785c6d9c35c6153908ee594b2ccaf1559895ff0d78d5078b9e440",
+      "shape_count": 26,
+      "scene": "sorted|self_play|pass",
+      "coordinate_corrections": [],
+      "split_merged_shapes": [],
+      "previous_review_preserved": true
+    },
+    {
+      "image": "goal_20261019_batch001_00011.png",
+      "image_sha256": "9e4afd07332d4fa6c77c3e7ccee9d6826c992d9096d609ea33d71949aad21fe4",
+      "proposal_sha256": "87752ee5907501a459202bc2669f94662821eef35ea2f32df7e3674b189c9c39",
+      "reviewed_annotation_sha256": "690c888bc246c84adf5f66a2546b9feb7335f64e10df589d60b747d517903544",
+      "shape_count": 21,
+      "scene": "sorted|pass",
+      "coordinate_corrections": [],
+      "split_merged_shapes": [],
+      "previous_review_preserved": true
+    },
+    {
+      "image": "goal_20261019_batch001_00012.png",
+      "image_sha256": "7ee9f5931791ce8597920a3ba186869a61d0a61fd0c05932c0d03de13e3c241c",
+      "proposal_sha256": "60f52981fd8adb8143ff3191ee24374b5ebde1df56e543f2257e04be26d2f815",
+      "reviewed_annotation_sha256": "e552eb12118458e167919ff5c831593495e64f8fb339b15d8800f7e07a684439",
+      "shape_count": 21,
+      "scene": "sorted|self_play|pass",
+      "coordinate_corrections": [],
+      "split_merged_shapes": [],
+      "previous_review_preserved": true
+    },
+    {
+      "image": "goal_20261019_batch001_00013.png",
+      "image_sha256": "81375a6356a54dc6c186cd7b06393be366d84aa183ef026fd624b4fa86911a2a",
+      "proposal_sha256": "661bbbc4c2fd97e8f79d5a11e39d2694adf16a64adfa0c206b98f13e72e6bea1",
+      "reviewed_annotation_sha256": "beb6cffaa9d7979927771835fe34591cb88bf9df73cd656d416b4e6f9f1c5710",
+      "shape_count": 21,
+      "scene": "sorted|self_play|pass",
+      "coordinate_corrections": [],
+      "split_merged_shapes": [],
+      "previous_review_preserved": true
+    },
+    {
+      "image": "goal_20261019_batch001_00014.png",
+      "image_sha256": "eabaef6b41b48b980e517d7aa6445cdb246eac62ae6241aab366602422929a7d",
+      "proposal_sha256": "d0254a62f945b8ac7892b2e844b8740c1cafb8aabf9b7bbd7090bae8f4da2234",
+      "reviewed_annotation_sha256": "2aa9f1357d4bd3180668195328d676e1c5260b55a525d13d1f098827ef616d6b",
+      "shape_count": 20,
+      "scene": "sorted|pass",
+      "coordinate_corrections": [],
+      "split_merged_shapes": [],
+      "previous_review_preserved": true
+    },
+    {
+      "image": "goal_20261019_batch001_00015.png",
+      "image_sha256": "1293ec917dd98cbaf03021ca4aaddede62fa705de468a53e5d45a80c89412409",
+      "proposal_sha256": "24a73555c6803d0b14e23546a7ed923da3e982b23e00dd6f67d3fe38115c3304",
+      "reviewed_annotation_sha256": "0159bc89b4dafc6609aa85db3fdae160f253152f49f04b0879947abd9b10d2ca",
+      "shape_count": 20,
+      "scene": "self_play|pass|sorted",
+      "coordinate_corrections": [],
+      "split_merged_shapes": [],
+      "previous_review_preserved": true
+    },
+    {
+      "image": "goal_20261019_batch001_00016.png",
+      "image_sha256": "35f9768a0fb5fb164c7dd5759b357ca283c6fd7e244ac844b04fca2e0061eb3b",
+      "proposal_sha256": "f1a02b1466bd94f9bb91c2336f8c8c9c59515bb2bf43939dc8f9a0ee3d4006b2",
+      "reviewed_annotation_sha256": "cfaa0ba296ccad90a517d337323fe1b39157f4ddb7cba9bc8971839c399e78e9",
+      "shape_count": 22,
+      "scene": "sorted|self_play|others_play|pass",
+      "coordinate_corrections": [],
+      "split_merged_shapes": [],
+      "previous_review_preserved": true
+    },
+    {
+      "image": "goal_20261019_batch001_00017.png",
+      "image_sha256": "117113b1ac8918e34f494f65a18d0778e4ecc3a8fb41c4c605383427088818c4",
+      "proposal_sha256": "85730f623d619347ac95d80ceed12045ea1c88cf409753ba7c705413cc66f730",
+      "reviewed_annotation_sha256": "1088e9daf36e19c87b7d929578c027291854b4228efa1a849770544be27f6c71",
+      "shape_count": 20,
+      "scene": "sorted|others_play|pass",
+      "coordinate_corrections": [
+        {
+          "shape_index": 0,
+          "label": "K♦",
+          "old_points": [
+            [
+              1229,
+              308
+            ],
+            [
+              1278,
+              308
+            ],
+            [
+              1278,
+              445
+            ],
+            [
+              1229,
+              445
+            ]
+          ],
+          "new_points": [
+            [
+              1229,
+              308
+            ],
+            [
+              1278,
+              308
+            ],
+            [
+              1278,
+              406
+            ],
+            [
+              1229,
+              406
+            ]
+          ],
+          "reason": "Opaque button covers all card pixels below y=406; keep the observed visible strip only."
+        }
+      ],
+      "split_merged_shapes": [],
+      "previous_review_preserved": true
+    },
+    {
+      "image": "goal_20261019_batch001_00018.png",
+      "image_sha256": "52b5e753f51dfe3da07684009329adbe2e4d34ef53194ac13562ce04fe6a30ef",
+      "proposal_sha256": "a3225685a4acddf9719d9ca65f48c4719df12080acce9e79451ae39dad69ef1a",
+      "reviewed_annotation_sha256": "5b5288feea14933c5c6d9346747dc685344e510a495196208b5e68cd10e0d6d1",
+      "shape_count": 20,
+      "scene": "sorted|self_play|others_play|pass",
+      "coordinate_corrections": [],
+      "split_merged_shapes": [],
+      "previous_review_preserved": true
+    },
+    {
+      "image": "goal_20261019_batch001_00019.png",
+      "image_sha256": "a086f746898840324df6f5a88d43b828e9d3e373a71bbc6f4c450e3b20186976",
+      "proposal_sha256": "84ff0451d6a70f85af72610ad5d946c2d1f30962059d59e050e3eee596a410c1",
+      "reviewed_annotation_sha256": "8d505308edb391cb1466b0678ad8ba6a13be88c1a8dac0b00dcebb245cc641ba",
+      "shape_count": 22,
+      "scene": "sorted|others_play|pass",
+      "coordinate_corrections": [
+        {
+          "shape_index": 4,
+          "label": "2♠",
+          "old_points": [
+            [
+              1230,
+              308
+            ],
+            [
+              1278,
+              308
+            ],
+            [
+              1278,
+              445
+            ],
+            [
+              1230,
+              445
+            ]
+          ],
+          "new_points": [
+            [
+              1230,
+              308
+            ],
+            [
+              1278,
+              308
+            ],
+            [
+              1278,
+              406
+            ],
+            [
+              1230,
+              406
+            ]
+          ],
+          "reason": "Opaque button covers all card pixels below y=406; keep the observed visible strip only."
+        }
+      ],
+      "split_merged_shapes": [],
+      "previous_review_preserved": true
+    },
+    {
+      "image": "goal_20261019_batch001_00020.png",
+      "image_sha256": "c13f831ae6f4e7d3e0c88200c5b007323b807c493245d4f080801cf31cec5237",
+      "proposal_sha256": "c19f37229dedb5b3df718bbda05968096112a5cb7e63445484109fc6b556d4b1",
+      "reviewed_annotation_sha256": "b7d804c9d7fca85ab085f55628ac3202b0ecaeb7c3583f81daca834cbcb95b5f",
+      "shape_count": 19,
+      "scene": "sorted|self_play|pass",
+      "coordinate_corrections": [],
+      "split_merged_shapes": [],
+      "previous_review_preserved": true
+    },
+    {
+      "image": "goal_20261019_batch001_00021.png",
+      "image_sha256": "785d669220c40dac76561b62711e333aae2fab4b9ae67c1acf300130a525aa36",
+      "proposal_sha256": "d4232f7b03fe43002aea0ad5615c6c32a65dc5b89277950a9d547396564b5e52",
+      "reviewed_annotation_sha256": "129fe2309df7ed81bcbcf31564a3b0ea2a88359ce22ef0c737cdc84b82c0b909",
+      "shape_count": 19,
+      "scene": "sorted|self_play|pass",
+      "coordinate_corrections": [],
+      "split_merged_shapes": [],
+      "previous_review_preserved": true
+    },
+    {
+      "image": "goal_20261019_batch001_00022.png",
+      "image_sha256": "949fd6e05a4e197c25830db1cdaadbaa0fe79b9867b86371d6ff134829f22d37",
+      "proposal_sha256": "71eda405c5d1361d34a0158c66af7dfac5a5abc9cd3313f668d7eb354631a7b9",
+      "reviewed_annotation_sha256": "d3dfd7855b799463835a4eb23d9e1bb34f020388cef6cf874892042509e26776",
+      "shape_count": 20,
+      "scene": "sorted|others_play|pass",
+      "coordinate_corrections": [],
+      "split_merged_shapes": [],
+      "previous_review_preserved": true
+    },
+    {
+      "image": "goal_20261019_batch001_00023.png",
+      "image_sha256": "40e9ea9bd98c5c502837cedb808394c339a0441baf7577150eb12a49f1e151d4",
+      "proposal_sha256": "061f42ffa1712eddd3fb0a9a7f705ab6e2a89592c3758e64e348b269ae9bef8d",
+      "reviewed_annotation_sha256": "3fd56cabc9941fc93dbb683a103163a18d1bfc421b510828c1600507b1a979ba",
+      "shape_count": 20,
+      "scene": "sorted|others_play|pass",
+      "coordinate_corrections": [
+        {
+          "shape_index": 0,
+          "label": "9♥",
+          "old_points": [
+            [
+              1132,
+              307
+            ],
+            [
+              1181,
+              307
+            ],
+            [
+              1181,
+              444
+            ],
+            [
+              1132,
+              444
+            ]
+          ],
+          "new_points": [
+            [
+              1132,
+              307
+            ],
+            [
+              1181,
+              307
+            ],
+            [
+              1181,
+              406
+            ],
+            [
+              1132,
+              406
+            ]
+          ],
+          "reason": "Opaque button covers all card pixels below y=406; keep the observed visible strip only."
+        },
+        {
+          "shape_index": 1,
+          "label": "9♣",
+          "old_points": [
+            [
+              1181,
+              308
+            ],
+            [
+              1230,
+              308
+            ],
+            [
+              1230,
+              445
+            ],
+            [
+              1181,
+              445
+            ]
+          ],
+          "new_points": [
+            [
+              1181,
+              308
+            ],
+            [
+              1230,
+              308
+            ],
+            [
+              1230,
+              406
+            ],
+            [
+              1181,
+              406
+            ]
+          ],
+          "reason": "Opaque button covers all card pixels below y=406; keep the observed visible strip only."
+        },
+        {
+          "shape_index": 2,
+          "label": "9♠",
+          "old_points": [
+            [
+              1230,
+              308
+            ],
+            [
+              1278,
+              308
+            ],
+            [
+              1278,
+              445
+            ],
+            [
+              1230,
+              445
+            ]
+          ],
+          "new_points": [
+            [
+              1230,
+              308
+            ],
+            [
+              1278,
+              308
+            ],
+            [
+              1278,
+              406
+            ],
+            [
+              1230,
+              406
+            ]
+          ],
+          "reason": "Opaque button covers all card pixels below y=406; keep the observed visible strip only."
+        }
+      ],
+      "split_merged_shapes": [],
+      "previous_review_preserved": true
+    },
+    {
+      "image": "goal_20261019_batch001_00024.png",
+      "image_sha256": "40793b8262d6b2f8049c87fa82ab1c24e6ae54547cc09eb3b54274bcc176132d",
+      "proposal_sha256": "5a5be1d1745872898132535c5671dced59987b25f682615f921f1315917bfee3",
+      "reviewed_annotation_sha256": "aa5825aadce31135a630f2a21b0b105d48954c88f8940bc4e3d3dd9bc03a0d91",
+      "shape_count": 21,
+      "scene": "sorted|others_play|pass",
+      "coordinate_corrections": [],
+      "split_merged_shapes": [],
+      "previous_review_preserved": true
+    },
+    {
+      "image": "goal_20261019_batch001_00025.png",
+      "image_sha256": "bf4c5400fb33cb71e5b4307e196f72470683e07918b3909d126a2edb67749915",
+      "proposal_sha256": "74e18c57b552aff2f15a8b46492f1f29edd8669c41eed7e5e4e535753a4bbaa5",
+      "reviewed_annotation_sha256": "173f1081df70c7211eac341c5d287498d0eb90b6f5971131301bef95a013b0d8",
+      "shape_count": 26,
+      "scene": "sorted|others_play|pass",
+      "coordinate_corrections": [
+        {
+          "shape_index": 5,
+          "label": "5♦",
+          "old_points": [
+            [
+              1084,
+              308
+            ],
+            [
+              1133,
+              308
+            ],
+            [
+              1133,
+              445
+            ],
+            [
+              1084,
+              445
+            ]
+          ],
+          "new_points": [
+            [
+              1084,
+              308
+            ],
+            [
+              1133,
+              308
+            ],
+            [
+              1133,
+              406
+            ],
+            [
+              1084,
+              406
+            ]
+          ],
+          "reason": "Opaque button covers all card pixels below y=406; keep the observed visible strip only."
+        },
+        {
+          "shape_index": 6,
+          "label": "5♦",
+          "old_points": [
+            [
+              1133,
+              308
+            ],
+            [
+              1181,
+              308
+            ],
+            [
+              1181,
+              445
+            ],
+            [
+              1133,
+              445
+            ]
+          ],
+          "new_points": [
+            [
+              1133,
+              308
+            ],
+            [
+              1181,
+              308
+            ],
+            [
+              1181,
+              406
+            ],
+            [
+              1133,
+              406
+            ]
+          ],
+          "reason": "Opaque button covers all card pixels below y=406; keep the observed visible strip only."
+        },
+        {
+          "shape_index": 7,
+          "label": "5♠",
+          "old_points": [
+            [
+              1181,
+              308
+            ],
+            [
+              1229,
+              308
+            ],
+            [
+              1229,
+              445
+            ],
+            [
+              1181,
+              445
+            ]
+          ],
+          "new_points": [
+            [
+              1181,
+              308
+            ],
+            [
+              1229,
+              308
+            ],
+            [
+              1229,
+              406
+            ],
+            [
+              1181,
+              406
+            ]
+          ],
+          "reason": "Opaque button covers all card pixels below y=406; keep the observed visible strip only."
+        },
+        {
+          "shape_index": 8,
+          "label": "4♦",
+          "old_points": [
+            [
+              1229,
+              308
+            ],
+            [
+              1278,
+              308
+            ],
+            [
+              1278,
+              445
+            ],
+            [
+              1229,
+              445
+            ]
+          ],
+          "new_points": [
+            [
+              1229,
+              308
+            ],
+            [
+              1278,
+              308
+            ],
+            [
+              1278,
+              406
+            ],
+            [
+              1229,
+              406
+            ]
+          ],
+          "reason": "Opaque button covers all card pixels below y=406; keep the observed visible strip only."
+        }
+      ],
+      "split_merged_shapes": [],
+      "previous_review_preserved": true
+    },
+    {
+      "image": "goal_20261019_batch001_00026.png",
+      "image_sha256": "6eb91b70889c786b846e8a0f80bb005b550c424b904f7e2599d034825faf35b9",
+      "proposal_sha256": "df821e44957122aaa2cec7821818d569cb91a265f61ed383795d1917ae839722",
+      "reviewed_annotation_sha256": "cb941c2a9160a7aa19df9fd3aeea472fd647d828904e61dff3a75fab77a1d2b5",
+      "shape_count": 20,
+      "scene": "sorted|self_play|others_play|pass",
+      "coordinate_corrections": [],
+      "split_merged_shapes": [],
+      "previous_review_preserved": true
+    },
+    {
+      "image": "goal_20261019_batch001_00027.png",
+      "image_sha256": "c038d7ffd06d5071f2f31cf61dee87d5c1c9651ac4248d10d5e21a9501d442a8",
+      "proposal_sha256": "55e660d9d230f51cc54238010045143b2de025aec5e655d547e73edfd69568dd",
+      "reviewed_annotation_sha256": "fc785d93f513b88bea0a955ca8ba8de7598a2944f98bd828f9a460791bdd8e7a",
+      "shape_count": 12,
+      "scene": "sorted|pass",
+      "coordinate_corrections": [],
+      "split_merged_shapes": [],
+      "previous_review_preserved": true
+    },
+    {
+      "image": "goal_20261019_batch001_00028.png",
+      "image_sha256": "c6d50ea09c0cbdf0f446fa182e2cfbbc45aa3a24d1547a61a956a1a8cd9ceae3",
+      "proposal_sha256": "5a0d83216e5fdcd21105062ad0a5bf8e9027fc665465bb72db0b40d0f7f66006",
+      "reviewed_annotation_sha256": "baf2052682b358f9bd5cf616fd38ea6ee8bee56b3e5ca93032c2c242bab71249",
+      "shape_count": 12,
+      "scene": "sorted|self_play|pass",
+      "coordinate_corrections": [],
+      "split_merged_shapes": [],
+      "previous_review_preserved": true
+    },
+    {
+      "image": "goal_20261019_batch001_00029.png",
+      "image_sha256": "ea141d7ef540819198c04289553de2b2a3fd7248a8f2f9f14f8444fa7382ac71",
+      "proposal_sha256": "9d0e61cbd40dac706ad108ca785a6bd62a5b169512e5d66c64167b8b1a84ffe2",
+      "reviewed_annotation_sha256": "987ef9937697d975bf5c890cb2fecd4c791cc741766d3a69ef7baf50ee7b5423",
+      "shape_count": 11,
+      "scene": "sorted|pass",
+      "coordinate_corrections": [],
+      "split_merged_shapes": [],
+      "previous_review_preserved": true
+    },
+    {
+      "image": "goal_20261019_batch001_00030.png",
+      "image_sha256": "3d1ada8ad9c82a857c64e1b30d801e6edc17f69d6b0be51611ed4f46f43ed41f",
+      "proposal_sha256": "f8f35f9218c5b7b19df4e832e10c2edfe2d59f2e680f1ad7c14dfde0449d5783",
+      "reviewed_annotation_sha256": "2b8d4b382baad1bc513e984fdfb45b1dc72ca1756e54ae8c03e53560efecbcd4",
+      "shape_count": 11,
+      "scene": "self_play|pass|sorted",
+      "coordinate_corrections": [],
+      "split_merged_shapes": [],
+      "previous_review_preserved": true
+    },
+    {
+      "image": "goal_20261019_batch001_00031.png",
+      "image_sha256": "c39184ee65750b6bfbac9fe90dd6c4d90aa0f372ce717f8fffad3ac9b42a55e5",
+      "proposal_sha256": "7184b70910f708b525596e53207f4dc9780ffc15a6581f4211ca86ff085b0bd7",
+      "reviewed_annotation_sha256": "bc49f2fa0f8165b670a4e0072eb619582bb2514067c418a4ef3a7fb69c917599",
+      "shape_count": 10,
+      "scene": "sorted|pass",
+      "coordinate_corrections": [],
+      "split_merged_shapes": [],
+      "previous_review_preserved": true
+    },
+    {
+      "image": "goal_20261019_batch001_00032.png",
+      "image_sha256": "2647a6d22713c8f65533cd36a0cf7a00ae88aa42274a3c4573436182f8ded8f2",
+      "proposal_sha256": "1029fa16f875638053cb390a381df84cd9f3295250d507328563836f80c9b9e7",
+      "reviewed_annotation_sha256": "235bf03032eda702ac93d229512b043a6858f851a6410f6e9343b126818613b1",
+      "shape_count": 10,
+      "scene": "sorted|self_play|pass",
+      "coordinate_corrections": [],
+      "split_merged_shapes": [],
+      "previous_review_preserved": true
+    },
+    {
+      "image": "goal_20261019_batch001_00033.png",
+      "image_sha256": "5b0b02569920944dfec1158f297b9c0703320f931de112ee31c21ad3f3eb747a",
+      "proposal_sha256": "61104e71d08f0c13411784b720e08e2e2bc81d76ec6b44b9fb8821df21672555",
+      "reviewed_annotation_sha256": "dc91e24848b85de17b859d574e7dd5698d4f8b11851653ca973a8c6473943666",
+      "shape_count": 5,
+      "scene": "sorted|pass",
+      "coordinate_corrections": [],
+      "split_merged_shapes": [],
+      "previous_review_preserved": true
+    },
+    {
+      "image": "goal_20261019_batch001_00034.png",
+      "image_sha256": "7f02784b39358a8e0149135c087c814c7dbea4db2af2cc6ab671bca99eb23e59",
+      "proposal_sha256": "e0c1bbd9744779f6156cb51034e494d172ead0e6f85bc7303943dd54f325aba5",
+      "reviewed_annotation_sha256": "7e8dfaca831734f9349853ba20648cc3c0ecf4316948d2537e81358b9b280bbf",
+      "shape_count": 13,
+      "scene": "sorted|self_play|pass",
+      "coordinate_corrections": [],
+      "split_merged_shapes": [
+        {
+          "source_shape_index": 1,
+          "label": "K♣",
+          "old_points": [
+            [
+              709,
+              383
+            ],
+            [
+              807,
+              383
+            ],
+            [
+              807,
+              520
+            ],
+            [
+              709,
+              520
+            ]
+          ],
+          "new_points": [
+            [
+              [
+                709,
+                383
+              ],
+              [
+                758,
+                383
+              ],
+              [
+                758,
+                520
+              ],
+              [
+                709,
+                520
+              ]
+            ],
+            [
+              [
+                758,
+                383
+              ],
+              [
+                807,
+                383
+              ],
+              [
+                807,
+                520
+              ],
+              [
+                758,
+                520
+              ]
+            ]
+          ],
+          "reason": "This native frame independently shows two same-class physical cards; split the merged draft. Last 2-heart card extends to x=955."
+        },
+        {
+          "source_shape_index": 2,
+          "label": "2♥",
+          "old_points": [
+            [
+              807,
+              383
+            ],
+            [
+              910,
+              383
+            ],
+            [
+              910,
+              520
+            ],
+            [
+              807,
+              520
+            ]
+          ],
+          "new_points": [
+            [
+              [
+                807,
+                383
+              ],
+              [
+                856,
+                383
+              ],
+              [
+                856,
+                520
+              ],
+              [
+                807,
+                520
+              ]
+            ],
+            [
+              [
+                856,
+                383
+              ],
+              [
+                955,
+                383
+              ],
+              [
+                955,
+                520
+              ],
+              [
+                856,
+                520
+              ]
+            ]
+          ],
+          "reason": "This native frame independently shows two same-class physical cards; split the merged draft. Last 2-heart card extends to x=955."
+        }
+      ],
+      "previous_review_preserved": true
+    },
+    {
+      "image": "goal_20261019_batch001_00035.png",
+      "image_sha256": "68e2d0c6e32f7b500d52cd74e149a2149989aaa20e896776bff02ae65a8dfdca",
+      "proposal_sha256": "2ebb50a1a31abeb80d23eedc2a29415e8e5b35c1ef7ae95808c836c41848f965",
+      "reviewed_annotation_sha256": "e1fbe6a8e7e00edbd0281eed8350a7b770c79fe1799ece23009d6cd75b48d004",
+      "shape_count": 8,
+      "scene": "sorted|others_play|pass",
+      "coordinate_corrections": [],
+      "split_merged_shapes": [],
+      "previous_review_preserved": true
+    },
+    {
+      "image": "goal_20261019_batch001_00036.png",
+      "image_sha256": "3dfb97729d8d9fed4143cc78bed041172f815dac9b7afeabfcc79984ad60b30c",
+      "proposal_sha256": "70616157f65283662150af766832fa03c1351a8596b6ccb58c6638b9a264df9c",
+      "reviewed_annotation_sha256": "7fbb5480d9c29144b8d0c0651daec48723e4d923e8452bf4b429fa7656a6d540",
+      "shape_count": 7,
+      "scene": "sorted|others_play|pass",
+      "coordinate_corrections": [],
+      "split_merged_shapes": [],
+      "previous_review_preserved": true
+    },
+    {
+      "image": "goal_20261019_batch001_00037.png",
+      "image_sha256": "ecefe720b45dd49079ac00232b386f1fc3a17a7fe116ecb0278649605f196c73",
+      "proposal_sha256": "990ce589d97a36e8814f5f009c1f0000099c83131a9a310e6ee1bc4916ecea86",
+      "reviewed_annotation_sha256": "1f7567c1ba53a74d2f3be58848ad7cb47fe659c99ab11c20983201f37592c4d3",
+      "shape_count": 12,
+      "scene": "sorted|others_play|pass",
+      "coordinate_corrections": [],
+      "split_merged_shapes": [],
+      "previous_review_preserved": true
+    },
+    {
+      "image": "goal_20261019_batch001_00038.png",
+      "image_sha256": "032159888e48855062369160a88b500f9afc7c3aaaa93ea8c134e80ef80ed610",
+      "proposal_sha256": "8821f77ed9329b5bcaea464e33a69d639ee6f164f91d2058982dcc94cef9fb4f",
+      "reviewed_annotation_sha256": "ca15b64ab72fbbbad186ad022a25b46d94bf3736d6a5721499412f0539309424",
+      "shape_count": 12,
+      "scene": "sorted|others_play|pass",
+      "coordinate_corrections": [],
+      "split_merged_shapes": [],
+      "previous_review_preserved": true
+    },
+    {
+      "image": "goal_20261019_batch001_00039.png",
+      "image_sha256": "e4101c83bb8c727e2b9f10a5c7f09f31b1bc9e4be4dfe438d0fc74af444a4afe",
+      "proposal_sha256": "4ccc100d1c38fbd3c6b5fb877e125e859c5300e8f1227ad8d9ecd179563bf629",
+      "reviewed_annotation_sha256": "2f15908f6d3d7b6a70c2d3a4e6e843b5b6c7e02a36b74d3191262b78d51e16cd",
+      "shape_count": 11,
+      "scene": "sorted|others_play|pass",
+      "coordinate_corrections": [],
+      "split_merged_shapes": [],
+      "previous_review_preserved": true
+    },
+    {
+      "image": "goal_20261019_batch001_00040.png",
+      "image_sha256": "1ad7ac95e338cb931ae465cc811fb3e82200bc329ca5defe759b55dffd5cde09",
+      "proposal_sha256": "1b7d94171b0c5a82c398b2f8baa93cd2a6599d65fe1c06b3ba09fbc6076f0ff6",
+      "reviewed_annotation_sha256": "ec6f1f56b631c6b83d9a25ad066538867ee682fa0840f2ae406331b54ec4947e",
+      "shape_count": 1,
+      "scene": "pass",
+      "coordinate_corrections": [],
+      "split_merged_shapes": [],
+      "previous_review_preserved": true
+    },
+    {
+      "image": "goal_20261019_batch001_00041.png",
+      "image_sha256": "5528cefe20b80f9ee3c3e1d6bae6510981cec0c527e1cef026ae89a75061efea",
+      "proposal_sha256": "05593fe7c502e5ee6268595db06e55e2ce5cd21de50e1926c74f800fec8d2ac5",
+      "reviewed_annotation_sha256": "b055b40c5d273f9a5a1fb6dd347402d84a5e0ab62c145b65fb8a06bd759fbbe7",
+      "shape_count": 0,
+      "scene": "negative",
+      "coordinate_corrections": [],
+      "split_merged_shapes": [],
+      "previous_review_preserved": true
+    },
+    {
+      "image": "goal_20261019_batch001_00042.png",
+      "image_sha256": "bb1eaad1b230d6eafc7416d82d2deb880eff3de9ce29aea88f2f24df14a7d144",
+      "proposal_sha256": "ca73cccbe7dcd2cfbaff809c6e11f49b39c8fe0a9223c1bf0b8523ac69d722f3",
+      "reviewed_annotation_sha256": "33f64a87818ac31d41560b7f5a9de5dad8d6527ebd24a5fd01346bf0c48e03fc",
+      "shape_count": 27,
+      "scene": "sorted",
+      "coordinate_corrections": [],
+      "split_merged_shapes": [],
+      "previous_review_preserved": true
+    },
+    {
+      "image": "goal_20261019_batch001_00043.png",
+      "image_sha256": "4bc51ebacf36b332da4656e6d6985fa11f2d1381600b9712c26b7b3e78603102",
+      "proposal_sha256": "c3574a840e6d720717677b10bf67aa17f55e55315d8bb2d0bc029ef0694e37c3",
+      "shape_count": 27,
+      "scene": "sorted",
+      "coordinate_corrections": [],
+      "split_merged_shapes": [],
+      "added_missing_instances": [],
+      "previous_review_preserved": false,
+      "reviewed_annotation_sha256": "5dd0b9d0154758994e0873014bad376ff0bf0cd8c901f460288c060df4cf2989"
+    },
+    {
+      "image": "goal_20261019_batch001_00044.png",
+      "image_sha256": "c87c54efbed2dffbad3748824d53156f265f0a14610c2d22f645a3695afefe5c",
+      "proposal_sha256": "4663208fc11533fb9d1647bfcb4aca8efa24eaf6aad1a6500e2949563083ce0d",
+      "shape_count": 28,
+      "scene": "sorted|others_play",
+      "coordinate_corrections": [],
+      "split_merged_shapes": [],
+      "added_missing_instances": [],
+      "previous_review_preserved": false,
+      "reviewed_annotation_sha256": "cadac2d95b0b89c51f6fa159c399dc02ac7ad622ad4cd111f3744e7d8845fb42"
+    },
+    {
+      "image": "goal_20261019_batch001_00045.png",
+      "image_sha256": "0d77cb32aae1d6175a707c5a05f0a354f2513268880c6bfb9ab270b546fc880f",
+      "proposal_sha256": "c24956f88b780cda18f13396cc0b10af840d5ecc4491a603b0eb05990d25790d",
+      "shape_count": 29,
+      "scene": "sorted|others_play",
+      "coordinate_corrections": [],
+      "split_merged_shapes": [],
+      "added_missing_instances": [],
+      "previous_review_preserved": false,
+      "reviewed_annotation_sha256": "476e83589fbfe2f0d734876107d26377924613a75074db8f2a06070408cfd402"
+    },
+    {
+      "image": "goal_20261019_batch001_00046.png",
+      "image_sha256": "5a9e0c6c0c12828d4317987ad7b7f887d85753c58fd34797fd80bc7341b9eb46",
+      "proposal_sha256": "c95fec6a70781fcd96aeffdcc84c48b5539c5ea5be6f971240da40a82eadcf3c",
+      "shape_count": 29,
+      "scene": "sorted|self_play|others_play",
+      "coordinate_corrections": [],
+      "split_merged_shapes": [],
+      "added_missing_instances": [],
+      "previous_review_preserved": false,
+      "reviewed_annotation_sha256": "16cb9d5735ffc6bbb5ff2c50afe17af7bc7a45fcf30a875fe4afdf9db7fcc0a7"
+    },
+    {
+      "image": "goal_20261019_batch001_00047.png",
+      "image_sha256": "2a5d889c27b0b5360e8f6af9d351b18d06ab26ee47d0e58d6c690e2c505193b3",
+      "proposal_sha256": "9d864a9a7e9272b9088de518023ffbe365fa1a95d02310b79e9e256e14446d53",
+      "shape_count": 29,
+      "scene": "sorted|others_play|pass",
+      "coordinate_corrections": [],
+      "split_merged_shapes": [],
+      "added_missing_instances": [],
+      "previous_review_preserved": false,
+      "reviewed_annotation_sha256": "2c0acdb2deb6f45f4c8563d08c20a2e60a8d481331e04c00b59387c84a8b0716"
+    },
+    {
+      "image": "goal_20261019_batch001_00048.png",
+      "image_sha256": "11e9be9a3c79b8064a8e62dbc336e8c5d821a47a883c3b008d8687223bd8aea1",
+      "proposal_sha256": "ebace9a167e6cc4de5ac3130dda123fc9770136f098c23ac743d2ecbfd3e41ab",
+      "shape_count": 29,
+      "scene": "sorted|others_play|pass",
+      "coordinate_corrections": [],
+      "split_merged_shapes": [],
+      "added_missing_instances": [],
+      "previous_review_preserved": false,
+      "reviewed_annotation_sha256": "0521013f2b805eaa1a76ba3d2719ab86cba081e98103e6ae110736aff6d2aab6"
+    },
+    {
+      "image": "goal_20261019_batch001_00049.png",
+      "image_sha256": "949df1fb81b980ea2cdc7c670ad4b21df5ecb714c8d87e61dcc5d750fb2cd3be",
+      "proposal_sha256": "693f452c39b16547231cd217b9bca7093d954aa8005c9722be56e6e8a8c2efa8",
+      "shape_count": 28,
+      "scene": "sorted|self_play|others_play|pass",
+      "coordinate_corrections": [],
+      "split_merged_shapes": [],
+      "added_missing_instances": [],
+      "previous_review_preserved": false,
+      "reviewed_annotation_sha256": "5d586eb51238c48a31756bce4497b0de2fda4b29b5bf215abb7482617c4a62a0"
+    },
+    {
+      "image": "goal_20261019_batch001_00050.png",
+      "image_sha256": "41101106f4c2272f6926738c17a4e801062e5a5aeb9f34ac9e39a722399a48f5",
+      "proposal_sha256": "ca33635849608aca7732d9ad2de310b866117fc719e0d300716ef442112dfc7a",
+      "shape_count": 25,
+      "scene": "sorted|self_play|pass",
+      "coordinate_corrections": [],
+      "split_merged_shapes": [],
+      "added_missing_instances": [],
+      "previous_review_preserved": false,
+      "reviewed_annotation_sha256": "d1a4b26f17ba573791738a698b725163770e9d81d097e177fe2d7f1ff0e5ed98"
+    },
+    {
+      "image": "goal_20261019_batch001_00051.png",
+      "image_sha256": "8a77810b7da9b6b0ce4ab18b681b665a935a680a2f53c63dcfb088873c7d9c51",
+      "proposal_sha256": "469ec3df13e21d5e47b52fb20dfc1677286149a0265c4189e94a38ede446c395",
+      "shape_count": 27,
+      "scene": "sorted|self_play|others_play|pass",
+      "coordinate_corrections": [],
+      "split_merged_shapes": [],
+      "added_missing_instances": [],
+      "previous_review_preserved": false,
+      "reviewed_annotation_sha256": "e0a7693420124fe9131c0932d254c0b47320d229dbb381d801164b348009fdb1"
+    },
+    {
+      "image": "goal_20261019_batch001_00052.png",
+      "image_sha256": "bef7799204b6e37fc21e60aa17f7206158e1a21765b1789f5bd0723365d1de89",
+      "proposal_sha256": "e778adafee2b1ee4bbc1092404003959f605700affecfad6dd87261853eb8a50",
+      "shape_count": 26,
+      "scene": "sorted|others_play|pass",
+      "coordinate_corrections": [],
+      "split_merged_shapes": [],
+      "added_missing_instances": [],
+      "previous_review_preserved": false,
+      "reviewed_annotation_sha256": "af3062392cb937b76f74db6e65d68face6a975239f0cbf8c2e7dd2ed6eb248fb"
+    },
+    {
+      "image": "goal_20261019_batch001_00053.png",
+      "image_sha256": "0e142d0f68bde03ae182e4d7a64eff4b157414c98cfd2f15271445e03fefc928",
+      "proposal_sha256": "531140de3a8474bc0765f8fd1e5149cc6bd006405554ee16358d37ae7173967a",
+      "shape_count": 24,
+      "scene": "sorted|self_play|pass",
+      "coordinate_corrections": [],
+      "split_merged_shapes": [],
+      "added_missing_instances": [],
+      "previous_review_preserved": false,
+      "reviewed_annotation_sha256": "839601baae6482e07d03129e638ba9d63c8bf02475193a8cf192bc5e86522222"
+    },
+    {
+      "image": "goal_20261019_batch001_00054.png",
+      "image_sha256": "f4466ae2c11d26564b10b90133e0db6aaf4aa21fc17e148ddec4c308d0c1ac9c",
+      "proposal_sha256": "f4422206d095d7ec3ddfe10a683b7c4834b76db30c03af430b5f970ff4bb3596",
+      "shape_count": 24,
+      "scene": "sorted|others_play|pass",
+      "coordinate_corrections": [],
+      "split_merged_shapes": [],
+      "added_missing_instances": [],
+      "previous_review_preserved": false,
+      "reviewed_annotation_sha256": "04e2ab3466a133f12a0479e61f1cade4563276a5754b424adcd9869d59e68c28"
+    },
+    {
+      "image": "goal_20261019_batch001_00055.png",
+      "image_sha256": "6540b458db033bd3ba16ab11b5543c72d9d1e788d80addc7120dc4d8d762ed93",
+      "proposal_sha256": "924af96cd28ef1a96b63cae0437ace68b20e299e4cbabbf1e8530d8ec282d5bd",
+      "shape_count": 24,
+      "scene": "sorted|others_play|pass",
+      "coordinate_corrections": [],
+      "split_merged_shapes": [],
+      "added_missing_instances": [],
+      "previous_review_preserved": false,
+      "reviewed_annotation_sha256": "e0898b934ab8dcc568a158181b968cee5a1e42d8b15a694f1da9fa64298e98b9"
+    },
+    {
+      "image": "goal_20261019_batch001_00056.png",
+      "image_sha256": "bfdf790c85100f1b98cd2eb69e084b0c2540c09708f79f2d20f1821b85e4546f",
+      "proposal_sha256": "fa70637b88f0139c69b9037ae53294037e14ba92fb5bf86f397d621acabe72bf",
+      "shape_count": 27,
+      "scene": "sorted|others_play|pass",
+      "coordinate_corrections": [],
+      "split_merged_shapes": [],
+      "added_missing_instances": [],
+      "previous_review_preserved": false,
+      "reviewed_annotation_sha256": "eb882860fa1a5df3ec42746ed0a400c7c17f2353dd5f1125f44e302cc42811d7"
+    },
+    {
+      "image": "goal_20261019_batch001_00057.png",
+      "image_sha256": "9e94658d45fd2b3b6fac86cd3d92fdb1f607ab544feaab055e2b1f9a3bf9710e",
+      "proposal_sha256": "bcda7b7440e9e8cd18fcd16f3da03e0567397092ab0128b8fa574f1641fd7c35",
+      "shape_count": 24,
+      "scene": "sorted|self_play|pass",
+      "coordinate_corrections": [],
+      "split_merged_shapes": [],
+      "added_missing_instances": [],
+      "previous_review_preserved": false,
+      "reviewed_annotation_sha256": "8d0db1de087b3c684c6c3d64cfcbd07e5d561316892c081a8e78730d2d66042f"
+    },
+    {
+      "image": "goal_20261019_batch001_00058.png",
+      "image_sha256": "fcb47746c0b212e3425643db79417a12811f1f414e7d122dd93380e309f79085",
+      "proposal_sha256": "659b953c0427196f7562c2126548e8abab5f2f41c98cecaa52ead3e7181f2a8d",
+      "shape_count": 25,
+      "scene": "sorted|others_play|pass",
+      "coordinate_corrections": [],
+      "split_merged_shapes": [],
+      "added_missing_instances": [],
+      "previous_review_preserved": false,
+      "reviewed_annotation_sha256": "29542f63d6df54e4766e4340758125b924e83cb3de2d8faf84d9629a5ac90318"
+    },
+    {
+      "image": "goal_20261019_batch001_00059.png",
+      "image_sha256": "036c9e6491eae5820f9a6aa5586fdac53bd55239c8ce3c000413eba504dcac9b",
+      "proposal_sha256": "a7ae3af0df0da6737421957437730f928156e48ccb402d5adc4e91921d13cb0b",
+      "shape_count": 25,
+      "scene": "sorted|others_play|pass",
+      "coordinate_corrections": [],
+      "split_merged_shapes": [],
+      "added_missing_instances": [],
+      "previous_review_preserved": false,
+      "reviewed_annotation_sha256": "608f2893959916d176fa433a0bc9cba52fdd3a30e87a949c9d0736d3e9373cf5"
+    },
+    {
+      "image": "goal_20261019_batch001_00060.png",
+      "image_sha256": "5e109c58ec6b05078e5a27aeca3d48080f604baa409d5d64efca024e90f65a8c",
+      "proposal_sha256": "9b5617785d47807808ebf46469e9fe7fd6581f44780acb1c60de52ef46b15376",
+      "reviewed_annotation_sha256": "41b065503f64806d252f60bc196ca245ab40de84fc279a2bbe828b19cdedc899",
+      "shape_count": 26,
+      "scene": "others_play|pass|sorted",
+      "coordinate_corrections": [],
+      "split_merged_shapes": [],
+      "previous_review_preserved": true
+    },
+    {
+      "image": "goal_20261019_batch001_00061.png",
+      "image_sha256": "688c4af02da355912e7ba4c8fd50e3fba76e69357db7b14e3c485039cfad9b8c",
+      "proposal_sha256": "4be6e97b4c98ea599ee6195c71365408c0210b14161e03b1981a2d938230ff99",
+      "shape_count": 29,
+      "scene": "sorted|others_play|pass",
+      "coordinate_corrections": [
+        {
+          "shape": 5,
+          "label": "5♥",
+          "before": [
+            [
+              340,
+              308
+            ],
+            [
+              443,
+              308
+            ],
+            [
+              443,
+              445
+            ],
+            [
+              340,
+              445
+            ]
+          ],
+          "after": [
+            [
+              340,
+              308
+            ],
+            [
+              443,
+              308
+            ],
+            [
+              443,
+              406
+            ],
+            [
+              340,
+              406
+            ]
+          ],
+          "reason": "Opaque pass button covers every card pixel below y406; retain only visible-card extent."
+        }
+      ],
+      "split_merged_shapes": [],
+      "added_missing_instances": [],
+      "previous_review_preserved": false,
+      "reviewed_annotation_sha256": "073c3234959a38157f21ba697273776fc51c8d55fca4895293d288ef990f81fa"
+    },
+    {
+      "image": "goal_20261019_batch001_00062.png",
+      "image_sha256": "57a2d376a3f3419324758ed666848bb915545b5cb5d2d66c716ec84831bd9e3c",
+      "proposal_sha256": "b5ff7af3117cf72d4729b54031c5465a38ac170bff517b0c78e6ea6c7d847d3a",
+      "shape_count": 26,
+      "scene": "sorted|self_play|others_play|pass",
+      "coordinate_corrections": [],
+      "split_merged_shapes": [],
+      "added_missing_instances": [],
+      "previous_review_preserved": false,
+      "reviewed_annotation_sha256": "6a5fecb78556ac14a1baf073f96fda2f75cf027ffe825ebbad3d053d1acd5aec"
+    },
+    {
+      "image": "goal_20261019_batch001_00063.png",
+      "image_sha256": "9e77c0ff12fcb836f8d50576327a9adfe0485b71dba3d67d331872b549fb890b",
+      "proposal_sha256": "05dfa875629a3a853987accaaa797bec2cbe4b69ec8d1a8607b14cff43025e32",
+      "shape_count": 26,
+      "scene": "sorted|self_play|others_play|pass",
+      "coordinate_corrections": [],
+      "split_merged_shapes": [],
+      "added_missing_instances": [],
+      "previous_review_preserved": false,
+      "reviewed_annotation_sha256": "73796956ad6e4c26b6478bcdb60b5a144551f0b61639dd0aceddb1811b61624e"
+    },
+    {
+      "image": "goal_20261019_batch001_00064.png",
+      "image_sha256": "f603434c9c16c9cbe226f394e0d6037ceba359382418b1530d2f5bdf881b66eb",
+      "proposal_sha256": "01670a8f7e2e2d236d272ec87a25d74db99a2a7c516ff8461dd7151b5fa694d6",
+      "shape_count": 26,
+      "scene": "sorted|others_play|pass",
+      "coordinate_corrections": [],
+      "split_merged_shapes": [],
+      "added_missing_instances": [],
+      "previous_review_preserved": false,
+      "reviewed_annotation_sha256": "8dd789118476b02e6fc42fe48ece378ac73339c274ef370ce3c65cea83efa041"
+    },
+    {
+      "image": "goal_20261019_batch001_00065.png",
+      "image_sha256": "adcee5f7df89603eb3454dd4048d371fab502988c0e967c954932bb7d3659df5",
+      "proposal_sha256": "86cd4bbc6614afc3a72a87f2f54ccc28c9495ae1095c211be789b5c452db2210",
+      "reviewed_annotation_sha256": "5cc21afe75f0976bb48ffd43f24e9ad6c8f1456c8697c851fab5284ce7983cc7",
+      "shape_count": 26,
+      "scene": "others_play|pass|sorted",
+      "coordinate_corrections": [
+        {
+          "shape_index": 0,
+          "label": "Q♦",
+          "old_points": [
+            [
+              1180,
+              307
+            ],
+            [
+              1228,
+              307
+            ],
+            [
+              1228,
+              444
+            ],
+            [
+              1180,
+              444
+            ]
+          ],
+          "new_points": [
+            [
+              1180,
+              307
+            ],
+            [
+              1228,
+              307
+            ],
+            [
+              1228,
+              406
+            ],
+            [
+              1180,
+              406
+            ]
+          ],
+          "reason": "Opaque play button covers the bottom of the visible card strip; bottom edge follows observed button top y=406."
+        },
+        {
+          "shape_index": 1,
+          "label": "Q♥",
+          "old_points": [
+            [
+              1228,
+              307
+            ],
+            [
+              1277,
+              307
+            ],
+            [
+              1277,
+              444
+            ],
+            [
+              1228,
+              444
+            ]
+          ],
+          "new_points": [
+            [
+              1228,
+              307
+            ],
+            [
+              1277,
+              307
+            ],
+            [
+              1277,
+              406
+            ],
+            [
+              1228,
+              406
+            ]
+          ],
+          "reason": "Opaque play button covers the bottom of the visible card strip; bottom edge follows observed button top y=406."
+        }
+      ],
+      "split_merged_shapes": [],
+      "previous_review_preserved": true
+    },
+    {
+      "image": "goal_20261019_batch001_00066.png",
+      "image_sha256": "678ddbbd37f770597542f2fc209d50928d9c3c6e7c97f2c2e2ff310dda9e3bf3",
+      "proposal_sha256": "91d74449143b46b6f114b7ba98cf97383310f2e1f7cc1a42716ac5fefeca5caf",
+      "shape_count": 23,
+      "scene": "sorted|pass",
+      "coordinate_corrections": [],
+      "split_merged_shapes": [],
+      "added_missing_instances": [],
+      "previous_review_preserved": false,
+      "reviewed_annotation_sha256": "f8d95e95ce5f6d8e052e4bb6803971c13f2fba70ab5ac0a91b34181c2a9ddf54"
+    },
+    {
+      "image": "goal_20261019_batch001_00067.png",
+      "image_sha256": "a5c1d22039c278f9e944dc175bae0c103ec89fce9136a79707b95a32983783d9",
+      "proposal_sha256": "bca4150f27456487a66842e5143c99f6d31d79e52c3da346198fc0e329e29f60",
+      "shape_count": 25,
+      "scene": "sorted|others_play|pass",
+      "coordinate_corrections": [],
+      "split_merged_shapes": [],
+      "added_missing_instances": [],
+      "previous_review_preserved": false,
+      "reviewed_annotation_sha256": "fb03b03b3539abd3c9f610f470d5221365993945bfec908e76cbf031b8d01ee3"
+    },
+    {
+      "image": "goal_20261019_batch001_00068.png",
+      "image_sha256": "68f5925080fe7bef8224e376116c45aa6fec51be4f1a739b2f8c21d0cc3d0adf",
+      "proposal_sha256": "ff1ecb2726e029dc61f48d97a5777a87bc53f8a5ccb5c78b433bd8311f861070",
+      "shape_count": 25,
+      "scene": "sorted|others_play|pass",
+      "coordinate_corrections": [],
+      "split_merged_shapes": [],
+      "added_missing_instances": [],
+      "previous_review_preserved": false,
+      "reviewed_annotation_sha256": "5873873c6055e6494cfac1c831760c60605fb803ebb021af4fc78f73aa40ec47"
+    },
+    {
+      "image": "goal_20261019_batch001_00069.png",
+      "image_sha256": "b9a8528174c088a7000fe88743595528ac19fa9f002f695e421e2d6b4ac19929",
+      "proposal_sha256": "3dc7e935413e84dc70fe2c0948f5606ad7a7a1812275ca506b2b1fa43eb0f02c",
+      "shape_count": 25,
+      "scene": "sorted|self_play|others_play|pass",
+      "coordinate_corrections": [],
+      "split_merged_shapes": [],
+      "added_missing_instances": [],
+      "previous_review_preserved": false,
+      "reviewed_annotation_sha256": "bc95d37b730f46d30e360bd90ef481ff67c3d5e038f29bcb23d7166c9eeb10c2"
+    },
+    {
+      "image": "goal_20261019_batch001_00070.png",
+      "image_sha256": "89e40f360c4ddeeb4fc0b1b496193ee241a855f76a3514e655a8fc37847e9e2c",
+      "proposal_sha256": "71ac68b5936c8b48f49c859e04785f83846746e264065d57aded0f4fba17f72d",
+      "reviewed_annotation_sha256": "0d2eefdebf68932185d01f64ed544ca0dd7ecc0066ac70d86e8d2f41471b12d6",
+      "shape_count": 23,
+      "scene": "others_play|pass|sorted",
+      "coordinate_corrections": [
+        {
+          "shape_index": 0,
+          "label": "2♦",
+          "old_points": [
+            [
+              1230,
+              308
+            ],
+            [
+              1278,
+              308
+            ],
+            [
+              1278,
+              445
+            ],
+            [
+              1230,
+              445
+            ]
+          ],
+          "new_points": [
+            [
+              1230,
+              308
+            ],
+            [
+              1278,
+              308
+            ],
+            [
+              1278,
+              406
+            ],
+            [
+              1230,
+              406
+            ]
+          ],
+          "reason": "Opaque play button covers the bottom of the visible card strip; bottom edge follows observed button top y=406."
+        }
+      ],
+      "split_merged_shapes": [],
+      "previous_review_preserved": true
+    },
+    {
+      "image": "goal_20261019_batch001_00071.png",
+      "image_sha256": "bd45631bc52d187eefcad0daefd37120589a84907c39ef86e5314158c5e36d95",
+      "proposal_sha256": "47fe55eea2d1862b5f1ce0068b9b60916a63a8e6f6178d78a9841e3f2d14b152",
+      "shape_count": 21,
+      "scene": "sorted|self_play|pass",
+      "coordinate_corrections": [],
+      "split_merged_shapes": [],
+      "added_missing_instances": [],
+      "previous_review_preserved": false,
+      "reviewed_annotation_sha256": "70ceabda308668a697dd2a8501bd1e489c118f8a3126a60e627d904d436960a6"
+    },
+    {
+      "image": "goal_20261019_batch001_00072.png",
+      "image_sha256": "a1898b6350e2aa51f6b9c7d53fefb7be4baafa2309fb26608483b5293e167b43",
+      "proposal_sha256": "79c21ce465abca6668fd955b0f1e70c2e4518d6b79acb53c8aa3e37e0c4ba1fd",
+      "shape_count": 26,
+      "scene": "sorted|others_play|pass",
+      "coordinate_corrections": [],
+      "split_merged_shapes": [],
+      "added_missing_instances": [],
+      "previous_review_preserved": false,
+      "reviewed_annotation_sha256": "8939c362fdfcdbb8e239650e40403ccc17f6a0c31977ca95711b59ed6d87019f"
+    },
+    {
+      "image": "goal_20261019_batch001_00073.png",
+      "image_sha256": "fb7fdcd355105c0d6e0931d8efb5c670a9aec642e6c7217cf466a4bbc78cc05b",
+      "proposal_sha256": "aca74f11e253bdaa610af20542a7d2a8d440c971308e769d5977d28fdb98e200",
+      "shape_count": 26,
+      "scene": "sorted|others_play|pass",
+      "coordinate_corrections": [],
+      "split_merged_shapes": [],
+      "added_missing_instances": [],
+      "previous_review_preserved": false,
+      "reviewed_annotation_sha256": "6eb5be4a3184d67bfdf88afc17b6d1c7d551263492e66e4d0f00b88a80e7c403"
+    },
+    {
+      "image": "goal_20261019_batch001_00074.png",
+      "image_sha256": "3b15ff1f41b54e7f819b29d5c946a863b415fdc9faf78773a1f9fa8872a8797d",
+      "proposal_sha256": "d780bb30933fa34e36278b4ba473330e38b1e46c4786dcffc46e0725dc66d0a5",
+      "shape_count": 27,
+      "scene": "sorted|others_play|pass",
+      "coordinate_corrections": [
+        {
+          "shape": 2,
+          "label": "10♣",
+          "before": [
+            [
+              335,
+              308
+            ],
+            [
+              384,
+              308
+            ],
+            [
+              384,
+              445
+            ],
+            [
+              335,
+              445
+            ]
+          ],
+          "after": [
+            [
+              335,
+              308
+            ],
+            [
+              384,
+              308
+            ],
+            [
+              384,
+              406
+            ],
+            [
+              335,
+              406
+            ]
+          ],
+          "reason": "Opaque pass button covers every card pixel below y406; retain only visible-card extent."
+        },
+        {
+          "shape": 3,
+          "label": "10♠",
+          "before": [
+            [
+              384,
+              308
+            ],
+            [
+              436,
+              308
+            ],
+            [
+              436,
+              445
+            ],
+            [
+              384,
+              445
+            ]
+          ],
+          "after": [
+            [
+              384,
+              308
+            ],
+            [
+              436,
+              308
+            ],
+            [
+              436,
+              406
+            ],
+            [
+              384,
+              406
+            ]
+          ],
+          "reason": "Opaque pass button covers every card pixel below y406; retain only visible-card extent."
+        },
+        {
+          "shape": 4,
+          "label": "J♦",
+          "before": [
+            [
+              436,
+              308
+            ],
+            [
+              485,
+              308
+            ],
+            [
+              485,
+              445
+            ],
+            [
+              436,
+              445
+            ]
+          ],
+          "after": [
+            [
+              436,
+              308
+            ],
+            [
+              485,
+              308
+            ],
+            [
+              485,
+              406
+            ],
+            [
+              436,
+              406
+            ]
+          ],
+          "reason": "Opaque pass button covers every card pixel below y406; retain only visible-card extent."
+        }
+      ],
+      "split_merged_shapes": [],
+      "added_missing_instances": [],
+      "previous_review_preserved": false,
+      "reviewed_annotation_sha256": "33a66bb50e7bcfcd5b5572428b15d0088ac6c002659b4d82e24acd70e9f9215a"
+    },
+    {
+      "image": "goal_20261019_batch001_00075.png",
+      "image_sha256": "654bf02cc5cd1e6506e109b0f5243ea59471427606f145016148557a118f784e",
+      "proposal_sha256": "1054aae6ba1dc5a536aa7163895432661d408f626d1eb555137add72a48b8a3b",
+      "shape_count": 27,
+      "scene": "sorted|self_play|others_play|pass",
+      "coordinate_corrections": [],
+      "split_merged_shapes": [],
+      "added_missing_instances": [],
+      "previous_review_preserved": false,
+      "reviewed_annotation_sha256": "46a5d37296ccad4e3c6be8d8e227dd5c384127afbc45532aad0af59c7eb370e6"
+    },
+    {
+      "image": "goal_20261019_batch001_00076.png",
+      "image_sha256": "c35e336baba97ff245ed9899fbc933c509ad497c96a0ad896f830cacb6f36a37",
+      "proposal_sha256": "30a21c9c3ef165c169beeed060196a31d959c6093253cbec3312186165bae660",
+      "shape_count": 26,
+      "scene": "sorted|others_play|pass",
+      "coordinate_corrections": [],
+      "split_merged_shapes": [],
+      "added_missing_instances": [],
+      "previous_review_preserved": false,
+      "reviewed_annotation_sha256": "e677a214f8a95598adb2f4693ce7d74709f7a90d44b875c2d69e0bd53679fda5"
+    },
+    {
+      "image": "goal_20261019_batch001_00077.png",
+      "image_sha256": "de53a40a58e059f838532bdf7a431107fac8f9eabcf999f6a8d212d899f2416c",
+      "proposal_sha256": "586d45a8e0304ff4eadeef47ac5161e673d882c26c45318ab5b3c33165b0c8e2",
+      "shape_count": 26,
+      "scene": "sorted|self_play|others_play|pass",
+      "coordinate_corrections": [],
+      "split_merged_shapes": [],
+      "added_missing_instances": [],
+      "previous_review_preserved": false,
+      "reviewed_annotation_sha256": "f698da1fe13dd0bf12b77e65c5d44704c78270b6d8de15ba891e0b316ca88acf"
+    },
+    {
+      "image": "goal_20261019_batch001_00078.png",
+      "image_sha256": "e62d03540669bbc53e47d530b0fb976146308ce5054370211a828d365f43358e",
+      "proposal_sha256": "b10dc8ae30bee6ab3c02eab7f52334fdf8ddf4520b1d18130eb5b67001d4539c",
+      "shape_count": 26,
+      "scene": "sorted|others_play|pass",
+      "coordinate_corrections": [],
+      "split_merged_shapes": [],
+      "added_missing_instances": [],
+      "previous_review_preserved": false,
+      "reviewed_annotation_sha256": "5ac1fc19f687755e7d1fc7ce9673137437ad6ae2824bdb6b8d1e28b33e12787a"
+    },
+    {
+      "image": "goal_20261019_batch001_00079.png",
+      "image_sha256": "9ea4d695af7fdc506042dfebe7af594d0a83fa6e0b8d81db2a279a6d717bdcbe",
+      "proposal_sha256": "6a5409b7813a818988c9b1e79fb237141a43c40829916a694ba198bc199fe22a",
+      "shape_count": 26,
+      "scene": "sorted|others_play|pass",
+      "coordinate_corrections": [],
+      "split_merged_shapes": [],
+      "added_missing_instances": [],
+      "previous_review_preserved": false,
+      "reviewed_annotation_sha256": "a0e43db4d448c42bc0222d039a9f676dd711379743e9ca9c7996ae6401638e8f"
+    },
+    {
+      "image": "goal_20261019_batch001_00080.png",
+      "image_sha256": "668fd87a931400f0c206ee4fd739dddfd38393201c8ea3541be7528f3919458a",
+      "proposal_sha256": "b9569dda8d65138fa48cfbac66f4fbf23b2e669fcbd387e7df04c76eb6167a20",
+      "reviewed_annotation_sha256": "304f540953a84a4ed8f3095473575c1b049cc05a3ba6bd7ea702a3a3aebec35f",
+      "shape_count": 26,
+      "scene": "others_play|pass|sorted",
+      "coordinate_corrections": [
+        {
+          "shape_index": 0,
+          "label": "9♥",
+          "old_points": [
+            [
+              1229,
+              307
+            ],
+            [
+              1274,
+              307
+            ],
+            [
+              1274,
+              444
+            ],
+            [
+              1229,
+              444
+            ]
+          ],
+          "new_points": [
+            [
+              1229,
+              307
+            ],
+            [
+              1274,
+              307
+            ],
+            [
+              1274,
+              406
+            ],
+            [
+              1229,
+              406
+            ]
+          ],
+          "reason": "Opaque play button covers the bottom of the visible card strip; bottom edge follows observed button top y=406."
+        },
+        {
+          "shape_index": 1,
+          "label": "6♦",
+          "old_points": [
+            [
+              1084,
+              308
+            ],
+            [
+              1134,
+              308
+            ],
+            [
+              1134,
+              445
+            ],
+            [
+              1084,
+              445
+            ]
+          ],
+          "new_points": [
+            [
+              1084,
+              308
+            ],
+            [
+              1134,
+              308
+            ],
+            [
+              1134,
+              406
+            ],
+            [
+              1084,
+              406
+            ]
+          ],
+          "reason": "Opaque play button covers the bottom of the visible card strip; bottom edge follows observed button top y=406."
+        },
+        {
+          "shape_index": 2,
+          "label": "7♥",
+          "old_points": [
+            [
+              1134,
+              308
+            ],
+            [
+              1181,
+              308
+            ],
+            [
+              1181,
+              445
+            ],
+            [
+              1134,
+              445
+            ]
+          ],
+          "new_points": [
+            [
+              1134,
+              308
+            ],
+            [
+              1181,
+              308
+            ],
+            [
+              1181,
+              406
+            ],
+            [
+              1134,
+              406
+            ]
+          ],
+          "reason": "Opaque play button covers the bottom of the visible card strip; bottom edge follows observed button top y=406."
+        },
+        {
+          "shape_index": 3,
+          "label": "8♥",
+          "old_points": [
+            [
+              1181,
+              308
+            ],
+            [
+              1229,
+              308
+            ],
+            [
+              1229,
+              445
+            ],
+            [
+              1181,
+              445
+            ]
+          ],
+          "new_points": [
+            [
+              1181,
+              308
+            ],
+            [
+              1229,
+              308
+            ],
+            [
+              1229,
+              406
+            ],
+            [
+              1181,
+              406
+            ]
+          ],
+          "reason": "Opaque play button covers the bottom of the visible card strip; bottom edge follows observed button top y=406."
+        }
+      ],
+      "split_merged_shapes": [],
+      "previous_review_preserved": true
+    },
+    {
+      "image": "goal_20261019_batch001_00081.png",
+      "image_sha256": "3ad2c8558a36e247a6e2d4a0d8c1b975b83548ba16e8d276ded524ac6ca4e01a",
+      "proposal_sha256": "ac6a258042d4b5b551baec5ccaafb65be2a00ace2a426a4a8a752bf96da500ab",
+      "shape_count": 21,
+      "scene": "sorted|self_play|others_play|pass",
+      "coordinate_corrections": [],
+      "split_merged_shapes": [],
+      "added_missing_instances": [],
+      "previous_review_preserved": false,
+      "reviewed_annotation_sha256": "486c89ed000572760b31e04531f9abe0a40a867dfc0557d87607f8be6a855951"
+    },
+    {
+      "image": "goal_20261019_batch001_00082.png",
+      "image_sha256": "9548b05712da769cbbad7e630b5806db5b205013d654c867198a6b42f5f1131f",
+      "proposal_sha256": "70d5ab8a21af4d3814b0323408b7e3170d27d8d3a18bf5aa9c3370e6694d5c27",
+      "shape_count": 21,
+      "scene": "sorted|self_play|others_play|pass",
+      "coordinate_corrections": [],
+      "split_merged_shapes": [],
+      "added_missing_instances": [],
+      "previous_review_preserved": false,
+      "reviewed_annotation_sha256": "32256d9205b394f4ee47380bdf22aa503b19b5229419cf407cc646d280493144"
+    },
+    {
+      "image": "goal_20261019_batch001_00083.png",
+      "image_sha256": "faf70e83af1782783ce483615ab6319d6268827ce96c693e74a6704e9cc393d4",
+      "proposal_sha256": "fe4b23cbb45e51abf86a2d450ff438ed04ebdb0aa5dde37a6b441b9621795d78",
+      "shape_count": 16,
+      "scene": "sorted|self_play|pass",
+      "coordinate_corrections": [],
+      "split_merged_shapes": [],
+      "added_missing_instances": [],
+      "previous_review_preserved": false,
+      "reviewed_annotation_sha256": "c0da2d6a81b82dc5c2eb7eb5884545af8169f734ae4872f6e97e4650242149f5"
+    },
+    {
+      "image": "goal_20261019_batch001_00084.png",
+      "image_sha256": "a1d4116c0aa6f5df645de38806d57833f2f95f1782e2ec5c15f5b691397b49d0",
+      "proposal_sha256": "fcdcf1104c109ede5ed96038e52d9c2720ded2ee7194134fa48e4cdac8c670e1",
+      "shape_count": 16,
+      "scene": "sorted|self_play|pass",
+      "coordinate_corrections": [],
+      "split_merged_shapes": [],
+      "added_missing_instances": [],
+      "previous_review_preserved": false,
+      "reviewed_annotation_sha256": "8991708ab6281a4697b32e0b59763061e1fbeeeba1016a15f935a3e524c377a2"
+    },
+    {
+      "image": "goal_20261019_batch001_00085.png",
+      "image_sha256": "aab88cde743fdd8b758171021d3887e01e8f2b912566640cb44d315458628eb3",
+      "proposal_sha256": "3a51dbed297819d6696cde86ac55d4dc38e4a554d34618dc39f0442d5d2ced34",
+      "shape_count": 16,
+      "scene": "sorted|self_play|pass",
+      "coordinate_corrections": [],
+      "split_merged_shapes": [],
+      "added_missing_instances": [],
+      "previous_review_preserved": false,
+      "reviewed_annotation_sha256": "c075dc0da7e7946bf935e98a0d25e70e7c6ff15e52608eac4e23abde9560d422"
+    },
+    {
+      "image": "goal_20261019_batch001_00086.png",
+      "image_sha256": "d0cfd8ef6b369c34f43dfb797695e0ca2d83c0f2f8ad3be3832cee4be44cdcc7",
+      "proposal_sha256": "fa7284ac0085a7f492b34aa9b6e85e7825b9ebfdce9a8194b09226f5aa41258f",
+      "shape_count": 11,
+      "scene": "sorted|pass",
+      "coordinate_corrections": [],
+      "split_merged_shapes": [],
+      "added_missing_instances": [],
+      "previous_review_preserved": false,
+      "reviewed_annotation_sha256": "b3d29b46b1b09077552e6fc7b2b7a1e32440e59168e103e31be344285b4b5f42"
+    },
+    {
+      "image": "goal_20261019_batch001_00087.png",
+      "image_sha256": "4fbbea1587a911ef363254caa2721b5727aee1bd29c860d702959a6e19ed09ab",
+      "proposal_sha256": "b3bf632002331621a2d4064d077c79fe1182252ede257128846c6d2792ec3634",
+      "shape_count": 11,
+      "scene": "sorted|self_play|pass",
+      "coordinate_corrections": [],
+      "split_merged_shapes": [],
+      "added_missing_instances": [],
+      "previous_review_preserved": false,
+      "reviewed_annotation_sha256": "112fcf5428ca6cb12e5dc212605ec3fc5d65ba1f0b93696ce5e4ecdb0444e147"
+    },
+    {
+      "image": "goal_20261019_batch001_00088.png",
+      "image_sha256": "f30bb37f662d26e7dfe242df70cf9296421edd462385236c535bd0ffbecf927b",
+      "proposal_sha256": "c929a624cbe3ed307ebe31a2c05f93d74a437434c6dc71b1a1b7af9e6f681c52",
+      "shape_count": 11,
+      "scene": "sorted|self_play|pass",
+      "coordinate_corrections": [],
+      "split_merged_shapes": [],
+      "added_missing_instances": [],
+      "previous_review_preserved": false,
+      "reviewed_annotation_sha256": "7e2a67b7bef865d2c7fcb13dc6f7b5f2ed2e34f4fa8afbe76aa91e5c2c7af0cb"
+    },
+    {
+      "image": "goal_20261019_batch001_00089.png",
+      "image_sha256": "e668293dc7a98a5a4679497c556e48c3afe53c04a58dc7921a8210e5807075e5",
+      "proposal_sha256": "88df274d4ad245977033cdaa80e4c7dbc77499fc018a68827026182366b85d19",
+      "shape_count": 16,
+      "scene": "sorted|self_play|others_play|pass",
+      "coordinate_corrections": [],
+      "split_merged_shapes": [],
+      "added_missing_instances": [],
+      "previous_review_preserved": false,
+      "reviewed_annotation_sha256": "de5b6f41d42e72305936656349728a50bb15585e28341040168340a7fc648645"
+    },
+    {
+      "image": "goal_20261019_batch001_00090.png",
+      "image_sha256": "baa3cd165bd738e4fc08b07e0403f86244ffb8b59e1873a839168a08a281cbdd",
+      "proposal_sha256": "ff01960d99561c61711d264040c43d40a05c10a03bb27d95062da464f79a31d9",
+      "reviewed_annotation_sha256": "48a34cbf58156389c751359991b17d108f0a95871b8a13757860ae8c68f5d4d1",
+      "shape_count": 15,
+      "scene": "others_play|pass|sorted",
+      "coordinate_corrections": [],
+      "split_merged_shapes": [],
+      "previous_review_preserved": true
+    },
+    {
+      "image": "goal_20261019_batch001_00091.png",
+      "image_sha256": "36c33ff86f0e8a432a63492ada84053988a4eff6c805cb8f6aa49fa1624e0443",
+      "proposal_sha256": "81bd9d3d445355f9dbbc25cdbd995d9ee67ee9a2b979ce67f8b882ff9208737a",
+      "shape_count": 8,
+      "scene": "sorted|others_play|pass",
+      "coordinate_corrections": [],
+      "split_merged_shapes": [],
+      "added_missing_instances": [],
+      "previous_review_preserved": false,
+      "reviewed_annotation_sha256": "e07ad5646a2e8ee823888472e1bdbe145526c606cce94db6e1c1325a7c237c47"
+    },
+    {
+      "image": "goal_20261019_batch001_00092.png",
+      "image_sha256": "55c8287753d09f80bac200c47795d901827d6ba4981cbfea6d68606065f17e15",
+      "proposal_sha256": "1d3ace4f0e179517b28e2c0997ae8b4cf59cf5057c29c5a52145ec256082ae2d",
+      "shape_count": 8,
+      "scene": "sorted|others_play|pass",
+      "coordinate_corrections": [],
+      "split_merged_shapes": [],
+      "added_missing_instances": [],
+      "previous_review_preserved": false,
+      "reviewed_annotation_sha256": "3f9f287be9884aca0a63709f20ffe05cc6f51cb308225be6ab30eb23f5f89ec1"
+    },
+    {
+      "image": "goal_20261019_batch001_00093.png",
+      "image_sha256": "cea5f5b52042d4be55d270ca7de2970a36f2d0e235185694fecba720ced650aa",
+      "proposal_sha256": "8000339976464d8a8124608c50d8f88aaa33475a729b289b3271a81e6bddc5e8",
+      "shape_count": 7,
+      "scene": "sorted|others_play|pass",
+      "coordinate_corrections": [],
+      "split_merged_shapes": [],
+      "added_missing_instances": [],
+      "previous_review_preserved": false,
+      "reviewed_annotation_sha256": "5e375283f42de22aae093dc4b4d228f41f55df1257a066016648530a875debf7"
+    },
+    {
+      "image": "goal_20261019_batch001_00094.png",
+      "image_sha256": "ba374a2ed617af4e63d0b2a6775f49875da65b9b3743e9e6e9e24a9306762101",
+      "proposal_sha256": "56fb7b0e93faf3cf634a017c22620c7386243129141a219d16cd0267143e7c7f",
+      "shape_count": 7,
+      "scene": "sorted|self_play|others_play|pass",
+      "coordinate_corrections": [],
+      "split_merged_shapes": [],
+      "added_missing_instances": [],
+      "previous_review_preserved": false,
+      "reviewed_annotation_sha256": "c52c7acc126713fcc2343af5d9708fc028bc9dd5d1acc628004ce63bb8697ab5"
+    },
+    {
+      "image": "goal_20261019_batch001_00095.png",
+      "image_sha256": "2d3f0813f30c865b8a576f86f42b62192adc1086f01ace883ef8afa39774c02e",
+      "proposal_sha256": "9bffb71d7f9904d012ff9193a5ddc7e5e36b14666d5a4392f054316d152cc379",
+      "shape_count": 7,
+      "scene": "sorted|self_play|others_play|pass",
+      "coordinate_corrections": [],
+      "split_merged_shapes": [],
+      "added_missing_instances": [],
+      "previous_review_preserved": false,
+      "reviewed_annotation_sha256": "6264b86adcbbc0174b77d923f00a44ca70389b4d1b87c8cdd45b202f5a443c0f"
+    },
+    {
+      "image": "goal_20261019_batch001_00096.png",
+      "image_sha256": "2f1c6de463e1c8751661217ac4849242c9a33398e508672f0e32bf7d90920600",
+      "proposal_sha256": "c8e8a2776b25b7a7216d633dbf69f91a9c3a3475a104bb06a9b4a751236e0a1c",
+      "shape_count": 7,
+      "scene": "sorted|self_play|others_play|pass",
+      "coordinate_corrections": [],
+      "split_merged_shapes": [],
+      "added_missing_instances": [
+        {
+          "label": "SJ",
+          "bbox": [
+            757,
+            231,
+            860,
+            368
+          ],
+          "reason": "Native frame shows black joker lettering/face under translucent 二游 banner; missed by draft. Reviewed from this frame itself, not inferred from neighboring frames."
+        }
+      ],
+      "previous_review_preserved": false,
+      "reviewed_annotation_sha256": "1d26d86ae5bc0d0b3a89789d37916d2a0d27555251eb702585ffb0d4eb57114b"
+    },
+    {
+      "image": "goal_20261019_batch001_00097.png",
+      "image_sha256": "d27b16bbe9655a5c0babcb8098a52027c5cb30a43e4d8d70c7c9c8fe62b517a0",
+      "proposal_sha256": "4b3a267c25d06ada0391fb537f05128d5d8f704db49ea32c631ac24a732f2e05",
+      "shape_count": 7,
+      "scene": "sorted|self_play|others_play|pass",
+      "coordinate_corrections": [],
+      "split_merged_shapes": [],
+      "added_missing_instances": [],
+      "previous_review_preserved": false,
+      "reviewed_annotation_sha256": "6ad9aacc28503741285cf755920581b779dbefad15f71b2cf438a3696d59abfc"
+    },
+    {
+      "image": "goal_20261019_batch001_00098.png",
+      "image_sha256": "4fe57336be45443de71dc91a38124896be3ea2988450a7473c53fdba2d10d00c",
+      "proposal_sha256": "77087cac6287774cbeb35586408fa67af116270fe72bf2fce8d279156a3bdae3",
+      "reviewed_annotation_sha256": "2fec3007fb3ef8f187419fef7eb895c928a282856db5a234496b6a5cb837fa5d",
+      "shape_count": 1,
+      "scene": "pass|sorted",
+      "coordinate_corrections": [],
+      "split_merged_shapes": [],
+      "previous_review_preserved": true
+    }
+  ]
+}
