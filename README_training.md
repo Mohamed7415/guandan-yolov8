@@ -64,6 +64,23 @@ python3.12 -m venv .venv-label
 
 本次历史运行：第一次完成 2 轮后在第 3 轮 MPS 报错；第二次从其保存权重初始化（重新建立优化器），完成 16 轮后验证收敛停止，选择第 13 轮。没有声称完成 150 轮或触发自然 early stopping。[路径清理后的原训练记录](reports/published/full2000_training_record.json) 仅作历史审计；重新训练生成的新记录才用于导出新模型。
 
+## 中断后恢复新训练
+
+新训练会在启动时保存数据指纹与分组约定；每轮将完整模型和优化器状态原子保存为 `weights/resume.pt`，并保留上一份 `resume.previous.pt`。`last.pt` / `best.pt` 在训练结束后可能被上游去除优化器，因此完整恢复应使用专用文件：
+
+```sh
+.venv/bin/python scripts/train.py --resume runs/cards/full_next/weights/resume.pt
+```
+
+恢复前核对数据与标签指纹、类别、分组和原训练参数；最新文件损坏时会检查上一份。`--weights` 表示新建优化器的另一轮训练，不能代替 `--resume`。改变数据、目标轮数或输入分辨率应新建实验。默认仍为 640；新增 `--imgsz` 用于显式的新实验，正式导出协议目前仍按 640 验证。
+
+恢复机制已用真实 YOLOv8n 的隔离 CPU 小规模运行验证：第一轮保存后直接终止进程，继续运行第二、三轮；在继续更新之前，逐项比较了恢复的优化器张量与参数组。此验证不等于真实断电实验，也不作为模型精度结果。可在新目录复验：
+
+```sh
+.venv/bin/python scripts/verify_training_resume.py \
+  --source data/guandan2000 --output reports/recovery_check_new
+```
+
 ## 导出与评测
 
 ```sh

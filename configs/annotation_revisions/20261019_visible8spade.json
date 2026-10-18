@@ -1,0 +1,130 @@
+{
+  "reviewed": true,
+  "reason": "原图逐项目视复核确认三张8♠可见条带漏标；仅在新回归版本添加，不改模型、不改旧数据或阈值。",
+  "changes": [
+    {
+      "source_name": "capture_20261017_182041_fefea2_01528.png",
+      "image_sha256": "30474ee144e12018a526e9be288fdc86ac868b91188ffe715ec23e985e4b696d",
+      "label_sha256": "47da0db5dfae6ab1de85d4e29baf74468d86d43f9479fb6fd999ef8fdc71b026",
+      "evidence": {
+        "original_image": "capture_20261017_182041_fefea2_01528.png",
+        "finding": "原图中手牌8♠的点数和花色均清晰可辨；顶部被本方已出牌遮挡，实际可见条带在y=520..571；旧JSON与YOLO均漏框。",
+        "reviewer": "assistant_visual_review",
+        "independent_human_review": false
+      },
+      "add_shapes": [
+        {
+          "label": "8♠",
+          "points": [
+            [
+              741,
+              520
+            ],
+            [
+              873,
+              520
+            ],
+            [
+              873,
+              571
+            ],
+            [
+              741,
+              571
+            ]
+          ],
+          "group_id": null,
+          "description": "Visible hand-card strip, rank and suit identifiable; retrospectively corrected missing annotation.",
+          "shape_type": "rectangle",
+          "flags": {
+            "occluded": true
+          }
+        }
+      ],
+      "annotation_semantic_sha256": "2edd8d09befaffcfcf9589d005cf36f72ea7e4df31514d938d7c2d006ef7f70e"
+    },
+    {
+      "source_name": "capture_20261017_182041_fefea2_01544.png",
+      "image_sha256": "3501cca7f61a70eb6c1f6b387b7e12982830e526552c50f63e748cea5e6e3ce1",
+      "label_sha256": "8017c3f636a0e27473ad014e64d955324a9a726b58eb26b6a8a4b2a8467df1cc",
+      "evidence": {
+        "original_image": "capture_20261017_182041_fefea2_01544.png",
+        "finding": "原图中手牌8♠的点数和花色均清晰可辨；顶部被本方已出牌遮挡，实际可见条带在y=520..571；旧JSON与YOLO均漏框。",
+        "reviewer": "assistant_visual_review",
+        "independent_human_review": false
+      },
+      "add_shapes": [
+        {
+          "label": "8♠",
+          "points": [
+            [
+              741,
+              520
+            ],
+            [
+              873,
+              520
+            ],
+            [
+              873,
+              571
+            ],
+            [
+              741,
+              571
+            ]
+          ],
+          "group_id": null,
+          "description": "Visible hand-card strip, rank and suit identifiable; retrospectively corrected missing annotation.",
+          "shape_type": "rectangle",
+          "flags": {
+            "occluded": true
+          }
+        }
+      ],
+      "annotation_semantic_sha256": "31353045b891a82439e720598085abed72c8106907bf118792e988f954c15afb"
+    },
+    {
+      "source_name": "capture_20261017_182041_fefea2_01545.png",
+      "image_sha256": "43890e4c0e80cfc81dd796d10a2458410c93a0d93eec634acd1cacae6a7489ac",
+      "label_sha256": "8017c3f636a0e27473ad014e64d955324a9a726b58eb26b6a8a4b2a8467df1cc",
+      "evidence": {
+        "original_image": "capture_20261017_182041_fefea2_01545.png",
+        "finding": "原图中手牌8♠的点数和花色均清晰可辨；顶部被本方已出牌遮挡，实际可见条带在y=520..571；旧JSON与YOLO均漏框。",
+        "reviewer": "assistant_visual_review",
+        "independent_human_review": false
+      },
+      "add_shapes": [
+        {
+          "label": "8♠",
+          "points": [
+            [
+              741,
+              520
+            ],
+            [
+              873,
+              520
+            ],
+            [
+              873,
+              571
+            ],
+            [
+              741,
+              571
+            ]
+          ],
+          "group_id": null,
+          "description": "Visible hand-card strip, rank and suit identifiable; retrospectively corrected missing annotation.",
+          "shape_type": "rectangle",
+          "flags": {
+            "occluded": true
+          }
+        }
+      ],
+      "annotation_semantic_sha256": "31353045b891a82439e720598085abed72c8106907bf118792e988f954c15afb"
+    }
+  ],
+  "test_is_retrospective_regression": true
+}

@@ -21,6 +21,7 @@ from pathlib import Path
 
 import numpy as np
 from PIL import Image, ImageStat
+from atomic_io import atomic_json
 
 ROOT = Path(__file__).resolve().parents[1]
 CSV_FIELDS = ["filename", "captured_at", "sha256", "width", "height", "window_id",
@@ -33,10 +34,75 @@ def now() -> str:
     return datetime.now(timezone.utc).isoformat(timespec="milliseconds")
 
 
-def atomic_json(path: Path, value: dict) -> None:
-    temporary = path.with_suffix(".tmp")
-    temporary.write_text(json.dumps(value, ensure_ascii=False, indent=2), encoding="utf-8")
-    temporary.replace(path)
+def write_capture_manifest(directory: Path, rows: list[dict]) -> None:
+    fd, name = tempfile.mkstemp(prefix=".captures-", suffix=".tmp", dir=directory)
+    temporary = Path(name)
+    try:
+        with os.fdopen(fd, "w", encoding="utf-8", newline="") as stream:
+            writer = csv.DictWriter(stream, fieldnames=CSV_FIELDS)
+            writer.writeheader(); writer.writerows(rows)
+            stream.flush(); os.fsync(stream.fileno())
+        temporary.replace(directory / "captures.csv")
+        handle = os.open(directory, os.O_RDONLY)
+        try:
+            os.fsync(handle)
+        finally:
+            os.close(handle)
+    finally:
+        temporary.unlink(missing_ok=True)
+
+
+def recover_pending_frame(directory: Path) -> None:
+    journal = directory / ".pending_frame.json"
+    if not journal.exists():
+        return
+    row = json.loads(journal.read_text())["row"]
+    if set(row) != set(CSV_FIELDS) or Path(row["filename"]).name != row["filename"]:
+        raise ValueError("Interrupted frame journal has invalid fields/path")
+    manifest = directory / "captures.csv"
+    rows = []
+    if manifest.exists():
+        with manifest.open(encoding="utf-8", newline="") as stream:
+            reader = csv.DictReader(stream)
+            if reader.fieldnames != CSV_FIELDS:
+                raise ValueError("Interrupted frame manifest has unexpected fields")
+            rows = list(reader)
+    known = [r for r in rows if r["filename"] == row["filename"]]
+    image = directory / row["filename"]
+    if not image.exists():
+        if known:
+            raise ValueError("A registered native image disappeared; refusing recovery")
+        journal.unlink()
+        return
+    data = image.read_bytes()
+    if hashlib.sha256(data).hexdigest() != row["sha256"]:
+        raise ValueError("Interrupted native frame hash differs; preserve it for inspection")
+    _, _, size, _ = frame_features(data)
+    if size != (int(row["width"]), int(row["height"])):
+        raise ValueError("Interrupted native frame dimensions differ")
+    if known:
+        if len(known) != 1 or any(str(known[0][key]) != str(row[key]) for key in CSV_FIELDS):
+            raise ValueError("Interrupted native frame conflicts with the manifest")
+    else:
+        write_capture_manifest(directory, rows + [row])
+    journal.unlink()
+
+
+def commit_frame(directory: Path, data: bytes, row: dict, previous_rows: list[dict]) -> None:
+    """Commit exact native bytes and metadata, recoverable at every boundary."""
+    if Path(row["filename"]).name != row["filename"] or hashlib.sha256(data).hexdigest() != row["sha256"]:
+        raise ValueError("Frame filename/hash does not match native bytes")
+    atomic_json(directory / ".pending_frame.json", {"row": row})
+    fd, name = tempfile.mkstemp(prefix=".native-", suffix=".tmp", dir=directory)
+    temporary = Path(name)
+    try:
+        with os.fdopen(fd, "wb") as stream:
+            stream.write(data); stream.flush(); os.fsync(stream.fileno())
+        os.link(temporary, directory / row["filename"])
+        write_capture_manifest(directory, previous_rows + [row])
+        (directory / ".pending_frame.json").unlink()
+    finally:
+        temporary.unlink(missing_ok=True)
 
 
 def choose_window(windows: list[dict], title: str, window_id: int | None = None) -> dict:
@@ -141,6 +207,7 @@ def looks_like_green_table(data: bytes) -> bool:
 
 
 def load_run(directory: Path) -> tuple[list[dict], list[tuple[np.ndarray, np.ndarray]], set[str]]:
+    recover_pending_frame(directory)
     rows, history, hashes = [], [], set()
     path = directory / "captures.csv"
     if path.exists():
@@ -309,25 +376,11 @@ def run(args: argparse.Namespace) -> int:
                         counts["duplicate"] += 1
                     else:
                         filename = f"{sequence_id}_{len(rows) + 1:05d}.png"
-                        target = directory / filename
-                        # Original native PNG bytes, no resizing, crop, annotation, or rewrite.
-                        with target.open("xb") as stream:
-                            stream.write(data)
-                            stream.flush()
-                            os.fsync(stream.fileno())
                         row = dict(filename=filename, captured_at=timestamp, sha256=digest,
                                    width=size[0], height=size[1], window_id=window_id,
                                    sequence_id=sequence_id, source="current_wechat_miniprogram_window",
                                    scene="", reviewed="false")
-                        csv_path = directory / "captures.csv"
-                        first = not csv_path.exists()
-                        with csv_path.open("a", encoding="utf-8", newline="") as stream:
-                            writer = csv.DictWriter(stream, fieldnames=CSV_FIELDS)
-                            if first:
-                                writer.writeheader()
-                            writer.writerow(row)
-                            stream.flush()
-                            os.fsync(stream.fileno())
+                        commit_frame(directory, data, row, rows)
                         rows.append(row)
                         write_review_queue(directory, rows)
                         history.append(current)

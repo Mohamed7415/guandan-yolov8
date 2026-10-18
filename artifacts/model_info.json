@@ -131,7 +131,7 @@
     "median_inference_ms": 28.002146049402654,
     "timing_note": "ONNX session.run only, 4 CPU threads; excludes file loading/preprocessing/NMS; first run included."
   },
-  "annotation_revision": "reports/test_annotation_revision/audit.json",
+  "annotation_revision": "reports/published/annotation_revision.json",
   "review": "Assistant visual review with X-AnyLabeling compatibility and native GUI checks; no independent human second review.",
   "limitations": [
     "Same mini-program visual theme, predominantly 1620x1000 native captures; other themes/resolutions not independently validated.",
@@ -139,5 +139,28 @@
     "A separate true fanned-hand layout was not independently verified; scene fan in one legacy tutorial record is not evidence of coverage.",
     "24 extra detections remain on 18 test images at conf .25; per-image exact accuracy is 190/208, not 100%.",
     "Corrected test labels were reviewed after initial evaluation; original metrics and annotation backups remain available. Model and thresholds were not retuned."
-  ]
+  ],
+  "test_operating_point_label_version": "v1.0.0 published labels, before 2026-10-19 follow-up audit",
+  "annotation_followup": {
+    "report": "docs/REGRESSION_V2_AUDIT.md",
+    "review_date": "2026-10-19",
+    "additional_missing_boxes": 3,
+    "total_instances": 38125,
+    "model_unchanged": true,
+    "test_is_retrospective_regression": true,
+    "new_blind_test": false
+  },
+  "latest_regression_operating_point": {
+    "images": 208,
+    "confidence": 0.25,
+    "nms_iou": 0.45,
+    "match_iou": 0.5,
+    "true_positive": 3643,
+    "false_positive": 22,
+    "false_negative": 1,
+    "precision": 0.9939972714870395,
+    "recall": 0.9997255762897914,
+    "exact_images": 190,
+    "exact_image_fraction": 0.9134615384615384
+  }
 }

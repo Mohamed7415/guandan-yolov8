@@ -66,6 +66,9 @@ def validate(data: Path, *, dataset_root: Path | None = None, full: bool = False
             image_splits[row.get("source_image", row["image"])].add(split)
             try:
                 labels = read_labels(Path(row["label"]))
+                scenes = {s.strip() for s in row["scene"].split("|") if s.strip()}
+                if ("negative" in scenes) != (not labels):
+                    raise ValueError(f"{row['label']}: empty labels require explicit negative scene; negative scenes must have no boxes")
                 with Image.open(row["image"]) as original:
                     image = original.convert("RGB")
                     width, height = image.size

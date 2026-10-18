@@ -17,6 +17,7 @@ import numpy as np
 from PIL import Image
 
 from auto_capture import MacWindowCapture, ROOT, frame_features, now, positive_float
+from atomic_io import atomic_json
 
 
 class SettlementDetector:
@@ -237,18 +238,21 @@ def click_verified(capture: MacWindowCapture, detector: SettlementDetector, outp
     if targeted:
         # Public Core Graphics per-process routing. Never inject a global click
         # into the foreground app when the mini-program is behind another app.
-        for event in (down, up):
+        for index, event in enumerate((down, up)):
             q.CGEventSetIntegerValueField(event, q.kCGMouseEventWindowUnderMousePointer, window_id)
             q.CGEventSetIntegerValueField(event, q.kCGMouseEventWindowUnderMousePointerThatCanHandleThisEvent, window_id)
             q.CGEventSetIntegerValueField(event, q.kCGMouseEventClickState, 1)
             q.CGEventPostToPid(int(after["kCGWindowOwnerPID"]), event)
+            if index == 0:
+                time.sleep(.15)
     else:
         q.CGEventPost(q.kCGHIDEventTap, down)
+        time.sleep(.15)
         q.CGEventPost(q.kCGHIDEventTap, up)
     with (output / "actions.jsonl").open("a", encoding="utf-8") as stream:
         stream.write(json.dumps(dict(time=now(), action=action_name,
                                      window_id=window_id, proof=proof.name,
-                                     routing="targeted_process" if targeted else "foreground"), ensure_ascii=False) + "\n")
+                                     routing="targeted_process" if targeted else "foreground", mouse_hold_ms=150), ensure_ascii=False) + "\n")
     return True
 
 
@@ -324,8 +328,7 @@ def main() -> int:
                 print(f"目标窗口不可用，停止：{exc}")
                 return 2
             state = detector.inspect(data)
-            (args.output / "latest_state.json").write_text(
-                json.dumps(dict(time=now(), window_id=window_id, **state), ensure_ascii=False, indent=2), encoding="utf-8")
+            atomic_json(args.output / "latest_state.json", dict(time=now(), window_id=window_id, **state))
             if args.once:
                 (args.output / "inspection.png").write_bytes(data)
                 print(json.dumps(state, ensure_ascii=False, indent=2))
