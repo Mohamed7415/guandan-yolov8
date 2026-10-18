@@ -1,0 +1,399 @@
+{
+  "reviewer": "assistant_visual",
+  "independent_human_second_review": false,
+  "purpose": "development_only_not_new_blind_test",
+  "images": 12,
+  "boxes": 203,
+  "negatives": 1,
+  "coordinate_corrections": 7,
+  "grouping": "Entire capture sequence conservatively kept in one split unit; 2 actual games observed, no count toward independent blind sessions. Remaining 86 images unreviewed.",
+  "items": [
+    {
+      "image": "goal_20261019_batch001_00001.png",
+      "image_sha256": "494fe4c13324b313cad1129a2088b2ad69ab8ce99e0ef70e8ed261c8fcc55e23",
+      "scene": "sorted",
+      "shape_count": 27,
+      "coordinate_corrections": []
+    },
+    {
+      "image": "goal_20261019_batch001_00015.png",
+      "image_sha256": "1293ec917dd98cbaf03021ca4aaddede62fa705de468a53e5d45a80c89412409",
+      "scene": "self_play|pass|sorted",
+      "shape_count": 20,
+      "coordinate_corrections": []
+    },
+    {
+      "image": "goal_20261019_batch001_00030.png",
+      "image_sha256": "3d1ada8ad9c82a857c64e1b30d801e6edc17f69d6b0be51611ed4f46f43ed41f",
+      "scene": "self_play|pass|sorted",
+      "shape_count": 11,
+      "coordinate_corrections": []
+    },
+    {
+      "image": "goal_20261019_batch001_00040.png",
+      "image_sha256": "1ad7ac95e338cb931ae465cc811fb3e82200bc329ca5defe759b55dffd5cde09",
+      "scene": "pass",
+      "shape_count": 1,
+      "coordinate_corrections": []
+    },
+    {
+      "image": "goal_20261019_batch001_00041.png",
+      "image_sha256": "5528cefe20b80f9ee3c3e1d6bae6510981cec0c527e1cef026ae89a75061efea",
+      "scene": "negative",
+      "shape_count": 0,
+      "coordinate_corrections": []
+    },
+    {
+      "image": "goal_20261019_batch001_00042.png",
+      "image_sha256": "bb1eaad1b230d6eafc7416d82d2deb880eff3de9ce29aea88f2f24df14a7d144",
+      "scene": "sorted",
+      "shape_count": 27,
+      "coordinate_corrections": []
+    },
+    {
+      "image": "goal_20261019_batch001_00060.png",
+      "image_sha256": "5e109c58ec6b05078e5a27aeca3d48080f604baa409d5d64efca024e90f65a8c",
+      "scene": "others_play|pass|sorted",
+      "shape_count": 26,
+      "coordinate_corrections": []
+    },
+    {
+      "image": "goal_20261019_batch001_00065.png",
+      "image_sha256": "adcee5f7df89603eb3454dd4048d371fab502988c0e967c954932bb7d3659df5",
+      "scene": "others_play|pass|sorted",
+      "shape_count": 26,
+      "coordinate_corrections": [
+        {
+          "shape_index": 0,
+          "label": "Q♦",
+          "old_points": [
+            [
+              1180,
+              307
+            ],
+            [
+              1228,
+              307
+            ],
+            [
+              1228,
+              444
+            ],
+            [
+              1180,
+              444
+            ]
+          ],
+          "new_points": [
+            [
+              1180,
+              307
+            ],
+            [
+              1228,
+              307
+            ],
+            [
+              1228,
+              406
+            ],
+            [
+              1180,
+              406
+            ]
+          ],
+          "reason": "Opaque play button covers the bottom of the visible card strip; bottom edge follows observed button top y=406."
+        },
+        {
+          "shape_index": 1,
+          "label": "Q♥",
+          "old_points": [
+            [
+              1228,
+              307
+            ],
+            [
+              1277,
+              307
+            ],
+            [
+              1277,
+              444
+            ],
+            [
+              1228,
+              444
+            ]
+          ],
+          "new_points": [
+            [
+              1228,
+              307
+            ],
+            [
+              1277,
+              307
+            ],
+            [
+              1277,
+              406
+            ],
+            [
+              1228,
+              406
+            ]
+          ],
+          "reason": "Opaque play button covers the bottom of the visible card strip; bottom edge follows observed button top y=406."
+        }
+      ]
+    },
+    {
+      "image": "goal_20261019_batch001_00070.png",
+      "image_sha256": "89e40f360c4ddeeb4fc0b1b496193ee241a855f76a3514e655a8fc37847e9e2c",
+      "scene": "others_play|pass|sorted",
+      "shape_count": 23,
+      "coordinate_corrections": [
+        {
+          "shape_index": 0,
+          "label": "2♦",
+          "old_points": [
+            [
+              1230,
+              308
+            ],
+            [
+              1278,
+              308
+            ],
+            [
+              1278,
+              445
+            ],
+            [
+              1230,
+              445
+            ]
+          ],
+          "new_points": [
+            [
+              1230,
+              308
+            ],
+            [
+              1278,
+              308
+            ],
+            [
+              1278,
+              406
+            ],
+            [
+              1230,
+              406
+            ]
+          ],
+          "reason": "Opaque play button covers the bottom of the visible card strip; bottom edge follows observed button top y=406."
+        }
+      ]
+    },
+    {
+      "image": "goal_20261019_batch001_00080.png",
+      "image_sha256": "668fd87a931400f0c206ee4fd739dddfd38393201c8ea3541be7528f3919458a",
+      "scene": "others_play|pass|sorted",
+      "shape_count": 26,
+      "coordinate_corrections": [
+        {
+          "shape_index": 0,
+          "label": "9♥",
+          "old_points": [
+            [
+              1229,
+              307
+            ],
+            [
+              1274,
+              307
+            ],
+            [
+              1274,
+              444
+            ],
+            [
+              1229,
+              444
+            ]
+          ],
+          "new_points": [
+            [
+              1229,
+              307
+            ],
+            [
+              1274,
+              307
+            ],
+            [
+              1274,
+              406
+            ],
+            [
+              1229,
+              406
+            ]
+          ],
+          "reason": "Opaque play button covers the bottom of the visible card strip; bottom edge follows observed button top y=406."
+        },
+        {
+          "shape_index": 1,
+          "label": "6♦",
+          "old_points": [
+            [
+              1084,
+              308
+            ],
+            [
+              1134,
+              308
+            ],
+            [
+              1134,
+              445
+            ],
+            [
+              1084,
+              445
+            ]
+          ],
+          "new_points": [
+            [
+              1084,
+              308
+            ],
+            [
+              1134,
+              308
+            ],
+            [
+              1134,
+              406
+            ],
+            [
+              1084,
+              406
+            ]
+          ],
+          "reason": "Opaque play button covers the bottom of the visible card strip; bottom edge follows observed button top y=406."
+        },
+        {
+          "shape_index": 2,
+          "label": "7♥",
+          "old_points": [
+            [
+              1134,
+              308
+            ],
+            [
+              1181,
+              308
+            ],
+            [
+              1181,
+              445
+            ],
+            [
+              1134,
+              445
+            ]
+          ],
+          "new_points": [
+            [
+              1134,
+              308
+            ],
+            [
+              1181,
+              308
+            ],
+            [
+              1181,
+              406
+            ],
+            [
+              1134,
+              406
+            ]
+          ],
+          "reason": "Opaque play button covers the bottom of the visible card strip; bottom edge follows observed button top y=406."
+        },
+        {
+          "shape_index": 3,
+          "label": "8♥",
+          "old_points": [
+            [
+              1181,
+              308
+            ],
+            [
+              1229,
+              308
+            ],
+            [
+              1229,
+              445
+            ],
+            [
+              1181,
+              445
+            ]
+          ],
+          "new_points": [
+            [
+              1181,
+              308
+            ],
+            [
+              1229,
+              308
+            ],
+            [
+              1229,
+              406
+            ],
+            [
+              1181,
+              406
+            ]
+          ],
+          "reason": "Opaque play button covers the bottom of the visible card strip; bottom edge follows observed button top y=406."
+        }
+      ]
+    },
+    {
+      "image": "goal_20261019_batch001_00090.png",
+      "image_sha256": "baa3cd165bd738e4fc08b07e0403f86244ffb8b59e1873a839168a08a281cbdd",
+      "scene": "others_play|pass|sorted",
+      "shape_count": 15,
+      "coordinate_corrections": []
+    },
+    {
+      "image": "goal_20261019_batch001_00098.png",
+      "image_sha256": "4fe57336be45443de71dc91a38124896be3ea2988450a7473c53fdba2d10d00c",
+      "scene": "pass|sorted",
+      "shape_count": 1,
+      "coordinate_corrections": []
+    }
+  ],
+  "v1_development_result": {
+    "model_sha256": "b09a8a82311b5233998b41e7f7a8c1aff7077c89efa00d8d2681daff96f4f7a5",
+    "input_size": 640,
+    "confidence": 0.25,
+    "nms_iou": 0.45,
+    "match_iou": 0.5,
+    "images": 12,
+    "tp": 203,
+    "fp": 1,
+    "fn": 0,
+    "exact_images": 11
+  },
+  "public_error_example": "examples/native_regression/extra_kclub_on_aceclub.png"
+}

@@ -20,6 +20,8 @@
 
 **后续复核（2026-10-19）：** 又确认三张图有可见 8♠ 漏标。在保留 v1 发布数据的前提下，新回归版本统计为 **TP 3643、误报 22、漏检 1，190/208 张整图全对**；正式模型没有变化。上面的零漏检属于旧标签版本。[追加审计说明](docs/REGRESSION_V2_AUDIT.md) · [持续优化目标](docs/CONTINUOUS_GOAL.md)。
 
+新原生开发采集已另行复核 12 张、203 个目标，v1 在这批数据上有 1 个额外误报；这些图片已经用于诊断，不能计入新盲测。[开发复核记录](docs/DEVELOPMENT_DATA_REVIEW.md)包含按钮遮挡框修正及一个可复现的原生误报样本。
+
 ## 识别一张截图
 
 建议 Python 3.12。仅做 ONNX 推理无需安装训练框架：
@@ -43,7 +45,7 @@ python3.12 -m venv .venv
 - [规格约定](specs/SPEC_NOTES.md)
 - [第三方组件及游戏素材说明](THIRD_PARTY_NOTICES.md)
 
-当前本机仍可双击 `X-AnyLabeling Project.app` 查看已整理的 2000 张工程；换机器后先安装 `requirements-label.txt` 并加载解压后的图像/标注目录。自动截图和续局进程已停止。
+当前本机仍可双击 `X-AnyLabeling Project.app` 查看已整理的 2000 张工程；换机器后先安装 `requirements-label.txt` 并加载解压后的图像/标注目录。后续采集与训练按[持续优化目标](docs/CONTINUOUS_GOAL.md)接续，实时运行状态保存在本机进度记录中。
 
 ## 仓库维护
 

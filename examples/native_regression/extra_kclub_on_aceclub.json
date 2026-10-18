@@ -1,0 +1,743 @@
+{
+  "version": "4.1.3",
+  "flags": {
+    "sorted": true
+  },
+  "shapes": [
+    {
+      "label": "10♠",
+      "points": [
+        [
+          685,
+          628
+        ],
+        [
+          799,
+          628
+        ],
+        [
+          799,
+          686
+        ],
+        [
+          685,
+          686
+        ]
+      ],
+      "group_id": null,
+      "description": "Assistant visually reviewed against this native frame; no independent human second review.",
+      "shape_type": "rectangle",
+      "flags": {
+        "occluded": true
+      }
+    },
+    {
+      "label": "8♠",
+      "points": [
+        [
+          799,
+          628
+        ],
+        [
+          915,
+          628
+        ],
+        [
+          915,
+          686
+        ],
+        [
+          799,
+          686
+        ]
+      ],
+      "group_id": null,
+      "description": "Assistant visually reviewed against this native frame; no independent human second review.",
+      "shape_type": "rectangle",
+      "flags": {
+        "occluded": true
+      }
+    },
+    {
+      "label": "3♣",
+      "points": [
+        [
+          1379,
+          628
+        ],
+        [
+          1511,
+          628
+        ],
+        [
+          1511,
+          686
+        ],
+        [
+          1379,
+          686
+        ]
+      ],
+      "group_id": null,
+      "description": "Assistant visually reviewed against this native frame; no independent human second review.",
+      "shape_type": "rectangle",
+      "flags": {
+        "occluded": true
+      }
+    },
+    {
+      "label": "7♠",
+      "points": [
+        [
+          915,
+          629
+        ],
+        [
+          1047,
+          629
+        ],
+        [
+          1047,
+          686
+        ],
+        [
+          915,
+          686
+        ]
+      ],
+      "group_id": null,
+      "description": "Assistant visually reviewed against this native frame; no independent human second review.",
+      "shape_type": "rectangle",
+      "flags": {
+        "occluded": true
+      }
+    },
+    {
+      "label": "5♠",
+      "points": [
+        [
+          1146,
+          629
+        ],
+        [
+          1278,
+          629
+        ],
+        [
+          1278,
+          686
+        ],
+        [
+          1146,
+          686
+        ]
+      ],
+      "group_id": null,
+      "description": "Assistant visually reviewed against this native frame; no independent human second review.",
+      "shape_type": "rectangle",
+      "flags": {
+        "occluded": true
+      }
+    },
+    {
+      "label": "2♣",
+      "points": [
+        [
+          222,
+          686
+        ],
+        [
+          337,
+          686
+        ],
+        [
+          337,
+          744
+        ],
+        [
+          222,
+          744
+        ]
+      ],
+      "group_id": null,
+      "description": "Assistant visually reviewed against this native frame; no independent human second review.",
+      "shape_type": "rectangle",
+      "flags": {
+        "occluded": true
+      }
+    },
+    {
+      "label": "A♣",
+      "points": [
+        [
+          337,
+          686
+        ],
+        [
+          469,
+          686
+        ],
+        [
+          469,
+          744
+        ],
+        [
+          337,
+          744
+        ]
+      ],
+      "group_id": null,
+      "description": "Assistant visually reviewed against this native frame; no independent human second review.",
+      "shape_type": "rectangle",
+      "flags": {
+        "occluded": true
+      }
+    },
+    {
+      "label": "J♥",
+      "points": [
+        [
+          568,
+          686
+        ],
+        [
+          685,
+          686
+        ],
+        [
+          685,
+          744
+        ],
+        [
+          568,
+          744
+        ]
+      ],
+      "group_id": null,
+      "description": "Assistant visually reviewed against this native frame; no independent human second review.",
+      "shape_type": "rectangle",
+      "flags": {
+        "occluded": true
+      }
+    },
+    {
+      "label": "10♦",
+      "points": [
+        [
+          685,
+          686
+        ],
+        [
+          799,
+          686
+        ],
+        [
+          799,
+          744
+        ],
+        [
+          685,
+          744
+        ]
+      ],
+      "group_id": null,
+      "description": "Assistant visually reviewed against this native frame; no independent human second review.",
+      "shape_type": "rectangle",
+      "flags": {
+        "occluded": true
+      }
+    },
+    {
+      "label": "8♣",
+      "points": [
+        [
+          799,
+          686
+        ],
+        [
+          915,
+          686
+        ],
+        [
+          915,
+          744
+        ],
+        [
+          799,
+          744
+        ]
+      ],
+      "group_id": null,
+      "description": "Assistant visually reviewed against this native frame; no independent human second review.",
+      "shape_type": "rectangle",
+      "flags": {
+        "occluded": true
+      }
+    },
+    {
+      "label": "7♦",
+      "points": [
+        [
+          915,
+          686
+        ],
+        [
+          1032,
+          686
+        ],
+        [
+          1032,
+          744
+        ],
+        [
+          915,
+          744
+        ]
+      ],
+      "group_id": null,
+      "description": "Assistant visually reviewed against this native frame; no independent human second review.",
+      "shape_type": "rectangle",
+      "flags": {
+        "occluded": true
+      }
+    },
+    {
+      "label": "6♠",
+      "points": [
+        [
+          1032,
+          686
+        ],
+        [
+          1146,
+          686
+        ],
+        [
+          1146,
+          744
+        ],
+        [
+          1032,
+          744
+        ]
+      ],
+      "group_id": null,
+      "description": "Assistant visually reviewed against this native frame; no independent human second review.",
+      "shape_type": "rectangle",
+      "flags": {
+        "occluded": true
+      }
+    },
+    {
+      "label": "5♠",
+      "points": [
+        [
+          1146,
+          686
+        ],
+        [
+          1263,
+          686
+        ],
+        [
+          1263,
+          744
+        ],
+        [
+          1146,
+          744
+        ]
+      ],
+      "group_id": null,
+      "description": "Assistant visually reviewed against this native frame; no independent human second review.",
+      "shape_type": "rectangle",
+      "flags": {
+        "occluded": true
+      }
+    },
+    {
+      "label": "4♠",
+      "points": [
+        [
+          1263,
+          686
+        ],
+        [
+          1379,
+          686
+        ],
+        [
+          1379,
+          744
+        ],
+        [
+          1263,
+          744
+        ]
+      ],
+      "group_id": null,
+      "description": "Assistant visually reviewed against this native frame; no independent human second review.",
+      "shape_type": "rectangle",
+      "flags": {
+        "occluded": true
+      }
+    },
+    {
+      "label": "3♦",
+      "points": [
+        [
+          1379,
+          686
+        ],
+        [
+          1511,
+          686
+        ],
+        [
+          1511,
+          744
+        ],
+        [
+          1379,
+          744
+        ]
+      ],
+      "group_id": null,
+      "description": "Assistant visually reviewed against this native frame; no independent human second review.",
+      "shape_type": "rectangle",
+      "flags": {
+        "occluded": true
+      }
+    },
+    {
+      "label": "2♥",
+      "points": [
+        [
+          222,
+          744
+        ],
+        [
+          337,
+          744
+        ],
+        [
+          337,
+          918
+        ],
+        [
+          222,
+          918
+        ]
+      ],
+      "group_id": null,
+      "description": "Assistant visually reviewed against this native frame; no independent human second review.",
+      "shape_type": "rectangle",
+      "flags": {
+        "occluded": true
+      }
+    },
+    {
+      "label": "A♥",
+      "points": [
+        [
+          337,
+          744
+        ],
+        [
+          453,
+          744
+        ],
+        [
+          453,
+          918
+        ],
+        [
+          337,
+          918
+        ]
+      ],
+      "group_id": null,
+      "description": "Assistant visually reviewed against this native frame; no independent human second review.",
+      "shape_type": "rectangle",
+      "flags": {
+        "occluded": true
+      }
+    },
+    {
+      "label": "K♠",
+      "points": [
+        [
+          453,
+          744
+        ],
+        [
+          568,
+          744
+        ],
+        [
+          568,
+          918
+        ],
+        [
+          453,
+          918
+        ]
+      ],
+      "group_id": null,
+      "description": "Assistant visually reviewed against this native frame; no independent human second review.",
+      "shape_type": "rectangle",
+      "flags": {
+        "occluded": true
+      }
+    },
+    {
+      "label": "J♥",
+      "points": [
+        [
+          568,
+          744
+        ],
+        [
+          685,
+          744
+        ],
+        [
+          685,
+          918
+        ],
+        [
+          568,
+          918
+        ]
+      ],
+      "group_id": null,
+      "description": "Assistant visually reviewed against this native frame; no independent human second review.",
+      "shape_type": "rectangle",
+      "flags": {
+        "occluded": true
+      }
+    },
+    {
+      "label": "10♥",
+      "points": [
+        [
+          685,
+          744
+        ],
+        [
+          799,
+          744
+        ],
+        [
+          799,
+          918
+        ],
+        [
+          685,
+          918
+        ]
+      ],
+      "group_id": null,
+      "description": "Assistant visually reviewed against this native frame; no independent human second review.",
+      "shape_type": "rectangle",
+      "flags": {
+        "occluded": true
+      }
+    },
+    {
+      "label": "8♦",
+      "points": [
+        [
+          799,
+          744
+        ],
+        [
+          915,
+          744
+        ],
+        [
+          915,
+          918
+        ],
+        [
+          799,
+          918
+        ]
+      ],
+      "group_id": null,
+      "description": "Assistant visually reviewed against this native frame; no independent human second review.",
+      "shape_type": "rectangle",
+      "flags": {
+        "occluded": true
+      }
+    },
+    {
+      "label": "7♦",
+      "points": [
+        [
+          915,
+          744
+        ],
+        [
+          1032,
+          744
+        ],
+        [
+          1032,
+          918
+        ],
+        [
+          915,
+          918
+        ]
+      ],
+      "group_id": null,
+      "description": "Assistant visually reviewed against this native frame; no independent human second review.",
+      "shape_type": "rectangle",
+      "flags": {
+        "occluded": true
+      }
+    },
+    {
+      "label": "6♠",
+      "points": [
+        [
+          1032,
+          744
+        ],
+        [
+          1146,
+          744
+        ],
+        [
+          1146,
+          918
+        ],
+        [
+          1032,
+          918
+        ]
+      ],
+      "group_id": null,
+      "description": "Assistant visually reviewed against this native frame; no independent human second review.",
+      "shape_type": "rectangle",
+      "flags": {
+        "occluded": true
+      }
+    },
+    {
+      "label": "5♥",
+      "points": [
+        [
+          1146,
+          744
+        ],
+        [
+          1263,
+          744
+        ],
+        [
+          1263,
+          918
+        ],
+        [
+          1146,
+          918
+        ]
+      ],
+      "group_id": null,
+      "description": "Assistant visually reviewed against this native frame; no independent human second review.",
+      "shape_type": "rectangle",
+      "flags": {
+        "occluded": true
+      }
+    },
+    {
+      "label": "4♣",
+      "points": [
+        [
+          1263,
+          744
+        ],
+        [
+          1379,
+          744
+        ],
+        [
+          1379,
+          918
+        ],
+        [
+          1263,
+          918
+        ]
+      ],
+      "group_id": null,
+      "description": "Assistant visually reviewed against this native frame; no independent human second review.",
+      "shape_type": "rectangle",
+      "flags": {
+        "occluded": true
+      }
+    },
+    {
+      "label": "3♦",
+      "points": [
+        [
+          1379,
+          744
+        ],
+        [
+          1511,
+          744
+        ],
+        [
+          1511,
+          918
+        ],
+        [
+          1379,
+          918
+        ]
+      ],
+      "group_id": null,
+      "description": "Assistant visually reviewed against this native frame; no independent human second review.",
+      "shape_type": "rectangle",
+      "flags": {
+        "occluded": true
+      }
+    },
+    {
+      "label": "BJ",
+      "points": [
+        [
+          105,
+          745
+        ],
+        [
+          222,
+          745
+        ],
+        [
+          222,
+          919
+        ],
+        [
+          105,
+          919
+        ]
+      ],
+      "group_id": null,
+      "description": "Assistant visually reviewed against this native frame; no independent human second review.",
+      "shape_type": "rectangle",
+      "flags": {
+        "occluded": true
+      }
+    }
+  ],
+  "imagePath": "extra_kclub_on_aceclub.png",
+  "imageData": null,
+  "imageHeight": 1000,
+  "imageWidth": 1620,
+  "checked": true,
+  "description": "Assistant visual review of labels, completeness, visible bounding boxes, UI exclusions and negative status. Development data; not blind test."
+}

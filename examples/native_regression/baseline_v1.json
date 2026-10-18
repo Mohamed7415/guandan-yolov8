@@ -1,0 +1,312 @@
+{
+  "purpose": "retrospective_development_diagnostic_not_new_blind_test",
+  "model_sha256": "b09a8a82311b5233998b41e7f7a8c1aff7077c89efa00d8d2681daff96f4f7a5",
+  "input_size": 640,
+  "confidence": 0.25,
+  "nms_iou": 0.45,
+  "match_iou": 0.5,
+  "image": "extra_kclub_on_aceclub.png",
+  "image_sha256": "bb1eaad1b230d6eafc7416d82d2deb880eff3de9ce29aea88f2f24df14a7d144",
+  "annotation": "extra_kclub_on_aceclub.json",
+  "annotation_sha256": "a0114b6eb35dbf3cb83419ec55641db3ae73ef89bf2ff9c262b03407399415cb",
+  "true_positive": 27,
+  "false_positive": 1,
+  "false_negative": 0,
+  "predictions": [
+    {
+      "class_id": 40,
+      "confidence": 0.998426,
+      "xyxy": [
+        452.23,
+        744.08,
+        568.47,
+        917.27
+      ]
+    },
+    {
+      "class_id": 12,
+      "confidence": 0.995163,
+      "xyxy": [
+        1031.16,
+        744.62,
+        1145.29,
+        917.2
+      ]
+    },
+    {
+      "class_id": 18,
+      "confidence": 0.994188,
+      "xyxy": [
+        914.35,
+        744.59,
+        1031.81,
+        917.25
+      ]
+    },
+    {
+      "class_id": 30,
+      "confidence": 0.993456,
+      "xyxy": [
+        684.14,
+        686.75,
+        799.32,
+        745.03
+      ]
+    },
+    {
+      "class_id": 8,
+      "confidence": 0.990328,
+      "xyxy": [
+        1145.65,
+        629.01,
+        1278.55,
+        686.99
+      ]
+    },
+    {
+      "class_id": 23,
+      "confidence": 0.989345,
+      "xyxy": [
+        799.62,
+        686.43,
+        914.24,
+        744.36
+      ]
+    },
+    {
+      "class_id": 33,
+      "confidence": 0.989279,
+      "xyxy": [
+        566.13,
+        745.8,
+        684.43,
+        918.25
+      ]
+    },
+    {
+      "class_id": 7,
+      "confidence": 0.989111,
+      "xyxy": [
+        1263.37,
+        744.37,
+        1378.28,
+        918.67
+      ]
+    },
+    {
+      "class_id": 2,
+      "confidence": 0.988577,
+      "xyxy": [
+        1379.03,
+        743.69,
+        1511.22,
+        917.48
+      ]
+    },
+    {
+      "class_id": 3,
+      "confidence": 0.988365,
+      "xyxy": [
+        1378.89,
+        628.5,
+        1510.26,
+        686.55
+      ]
+    },
+    {
+      "class_id": 9,
+      "confidence": 0.987378,
+      "xyxy": [
+        1145.79,
+        744.55,
+        1263.66,
+        917.97
+      ]
+    },
+    {
+      "class_id": 16,
+      "confidence": 0.986935,
+      "xyxy": [
+        914.39,
+        629.22,
+        1046.05,
+        686.47
+      ]
+    },
+    {
+      "class_id": 53,
+      "confidence": 0.98322,
+      "xyxy": [
+        105.56,
+        744.07,
+        221.77,
+        919.96
+      ]
+    },
+    {
+      "class_id": 12,
+      "confidence": 0.981314,
+      "xyxy": [
+        1031.46,
+        685.6,
+        1145.84,
+        744.51
+      ]
+    },
+    {
+      "class_id": 18,
+      "confidence": 0.981041,
+      "xyxy": [
+        914.2,
+        686.68,
+        1031.28,
+        745.0
+      ]
+    },
+    {
+      "class_id": 4,
+      "confidence": 0.977729,
+      "xyxy": [
+        1264.18,
+        685.99,
+        1379.32,
+        744.99
+      ]
+    },
+    {
+      "class_id": 22,
+      "confidence": 0.97691,
+      "xyxy": [
+        798.85,
+        744.61,
+        914.68,
+        917.82
+      ]
+    },
+    {
+      "class_id": 47,
+      "confidence": 0.974094,
+      "xyxy": [
+        336.75,
+        686.35,
+        468.22,
+        745.39
+      ]
+    },
+    {
+      "class_id": 8,
+      "confidence": 0.973495,
+      "xyxy": [
+        1145.81,
+        686.29,
+        1263.21,
+        744.71
+      ]
+    },
+    {
+      "class_id": 45,
+      "confidence": 0.973324,
+      "xyxy": [
+        336.89,
+        744.17,
+        453.08,
+        918.67
+      ]
+    },
+    {
+      "class_id": 28,
+      "confidence": 0.97329,
+      "xyxy": [
+        684.92,
+        628.68,
+        799.62,
+        686.98
+      ]
+    },
+    {
+      "class_id": 49,
+      "confidence": 0.970573,
+      "xyxy": [
+        221.43,
+        743.83,
+        336.46,
+        918.27
+      ]
+    },
+    {
+      "class_id": 2,
+      "confidence": 0.966033,
+      "xyxy": [
+        1379.01,
+        686.74,
+        1510.35,
+        743.82
+      ]
+    },
+    {
+      "class_id": 29,
+      "confidence": 0.965433,
+      "xyxy": [
+        684.34,
+        745.8,
+        798.16,
+        918.59
+      ]
+    },
+    {
+      "class_id": 20,
+      "confidence": 0.931612,
+      "xyxy": [
+        799.37,
+        628.54,
+        914.62,
+        686.99
+      ]
+    },
+    {
+      "class_id": 51,
+      "confidence": 0.90543,
+      "xyxy": [
+        222.38,
+        686.08,
+        337.3,
+        744.48
+      ]
+    },
+    {
+      "class_id": 33,
+      "confidence": 0.764973,
+      "xyxy": [
+        567.12,
+        685.66,
+        684.57,
+        745.02
+      ]
+    },
+    {
+      "class_id": 43,
+      "confidence": 0.256013,
+      "xyxy": [
+        337.96,
+        686.08,
+        469.25,
+        744.4
+      ]
+    }
+  ],
+  "error": {
+    "type": "cross_class_duplicate",
+    "actual_class": "A♣",
+    "extra_class": "K♣",
+    "extra_confidence": 0.256013,
+    "xyxy": [
+      337.96,
+      686.08,
+      469.25,
+      744.4
+    ]
+  },
+  "reviewer": "assistant_visual",
+  "independent_human_second_review": false,
+  "note": "A development regression, excluded from future independent blind-test counts; v1 also correctly predicts the actual A♣."
+}
