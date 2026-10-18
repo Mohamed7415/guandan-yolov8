@@ -1,0 +1,13 @@
+{
+  "passed": true,
+  "tracked_files": 130,
+  "portable_dataset_images": {
+    "train": 1392,
+    "val": 400,
+    "test": 208
+  },
+  "portable_dataset_boxes": 38122,
+  "native_image_archive_members": 2000,
+  "markdown_links_valid": true,
+  "no_validation_warnings": true
+}

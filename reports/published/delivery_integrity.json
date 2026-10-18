@@ -1,0 +1,10 @@
+{
+  "passed": true,
+  "gui_annotations_checked": 2000,
+  "gui_labels_match_corrected_yolo": true,
+  "original_frozen_fingerprint_preserved": true,
+  "model_hashes_match": true,
+  "validated_json_files": 6,
+  "publication_note": "Path-redacted copy for GitHub; numerical metrics and hashes are unchanged. Original records remain in the local project.",
+  "original_record_sha256": "83806fd4fd12a4af0dcf085488176f1e2931313ced2f75dfc3a2f956e74c8d95"
+}

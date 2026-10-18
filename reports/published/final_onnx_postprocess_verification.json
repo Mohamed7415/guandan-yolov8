@@ -1,0 +1,10 @@
+{
+  "passed": true,
+  "model": "artifacts/card_model.onnx",
+  "image": "data/raw/capture_20261017_045524_3816aa_00159.png",
+  "objects": 27,
+  "reference": "Ultralytics ONNX predict, rect=False, conf=.25, iou=.45",
+  "max_box_error_px": 0.004862060546884095,
+  "publication_note": "Path-redacted copy for GitHub; numerical metrics and hashes are unchanged. Original records remain in the local project.",
+  "original_record_sha256": "42401149febac65cdbf92ff7003c9808583df30d81f2492e3593a1a2b2576b7c"
+}

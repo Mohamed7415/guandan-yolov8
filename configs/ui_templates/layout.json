@@ -1,0 +1,34 @@
+{
+  "reference_size": [
+    1620,
+    1000
+  ],
+  "source_sha256": "9fa278459a162ae53538a70bd6f6c4d8ca9cf487e69d6dcd52d11ae7138f5d1e",
+  "source": "actual current mini-program ordinary round settlement, game002",
+  "regions": {
+    "next_round": [
+      568,
+      874,
+      746,
+      921
+    ],
+    "settlement_label": [
+      522,
+      279,
+      614,
+      318
+    ],
+    "settlement_tools": [
+      40,
+      852,
+      364,
+      939
+    ]
+  },
+  "minimum_correlation": 0.91,
+  "maximum_color_error": 20,
+  "next_button_center": [
+    654,
+    893
+  ]
+}

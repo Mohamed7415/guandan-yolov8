@@ -1,0 +1,23 @@
+import sys,unittest
+from pathlib import Path
+import numpy as np
+sys.path.insert(0,str(Path(__file__).resolve().parents[1]/'scripts'))
+from infer_onnx import preprocess,decode
+class InferenceBoundaryTests(unittest.TestCase):
+ def output(self):return np.zeros((1,58,8400),dtype=np.float32)
+ def test_empty_background(self):self.assertEqual(decode(self.output(),(1000,1620,3),640/1620,(0,122)),[])
+ def test_exact_confidence_boundary_does_not_crash(self):
+  out=self.output();out[0,:4,0]=[100,100,20,20];out[0,4,0]=.25
+  self.assertEqual(decode(out,(640,640,3),1,(0,0),.25),[])
+ def test_overlapping_different_cards_survive_duplicate_is_removed(self):
+  out=self.output()
+  for i,(c,score) in enumerate([(0,.9),(0,.8),(1,.85)]):out[0,:4,i]=[200,200,100,100];out[0,4+c,i]=score
+  result=decode(out,(640,640,3),1,(0,0));self.assertEqual([r['class_id'] for r in result],[0,1])
+ def test_letterbox_restores_original_coordinates(self):
+  image=np.zeros((1000,1600,3),dtype=np.uint8);tensor,ratio,pad=preprocess(image);self.assertEqual(tensor.shape,(1,3,640,640));self.assertEqual(pad,(0,120))
+  out=self.output();out[0,:4,0]=[200,260,80,120];out[0,4,0]=.9
+  self.assertEqual(decode(out,image.shape,ratio,pad)[0]['xyxy'],[400.0,200.0,600.0,500.0])
+ def test_nonfinite_output_rejected(self):
+  out=self.output();out[0,0,0]=np.nan
+  with self.assertRaises(ValueError):decode(out,(640,640,3),1,(0,0))
+if __name__=='__main__':unittest.main()

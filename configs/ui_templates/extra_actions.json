@@ -1,0 +1,242 @@
+{
+  "server_retry": {
+    "directory": "server_retry",
+    "regions": {
+      "header": [
+        650,
+        311,
+        981,
+        364
+      ],
+      "message": [
+        440,
+        442,
+        1180,
+        527
+      ],
+      "retry": [
+        884,
+        618,
+        1140,
+        706
+      ]
+    },
+    "point": [
+      1011,
+      661
+    ],
+    "action": "known_server_connection_retry",
+    "source": "reports/auto_next/server_retry/inspection.png",
+    "source_sha256": "2335a58cf93163927b55de13f620c9d20dc125e20110dca4ab11f3fd27fbbb8e"
+  },
+  "close_loss_offer": {
+    "directory": "close_loss_offer",
+    "regions": {
+      "header": [
+        690,
+        200,
+        1240,
+        350
+      ],
+      "close": [
+        1420,
+        300,
+        1500,
+        380
+      ],
+      "bonus_label": [
+        807,
+        523,
+        990,
+        576
+      ]
+    },
+    "point": [
+      1455,
+      339
+    ],
+    "action": "close_paid_offer_only",
+    "source": "reports/auto_next/popup_loss_offer/inspection.png",
+    "source_sha256": "8c5617d9490d24d770f40f596482470beca406198f2bd5b4ddb9eec8a90cd92d"
+  },
+  "close_comeback_offer": {
+    "directory": "close_comeback_offer",
+    "regions": {
+      "header": [
+        500,
+        135,
+        1130,
+        350
+      ],
+      "close": [
+        1395,
+        229,
+        1467,
+        299
+      ],
+      "banner": [
+        580,
+        353,
+        1060,
+        392
+      ]
+    },
+    "point": [
+      1428,
+      262
+    ],
+    "action": "close_paid_comeback_offer_only",
+    "source": "reports/auto_next/popup_comeback_offer/inspection.png",
+    "source_sha256": "dbdfaec5cad1f6c2b82db6f210e3b5b1a630b2b1b65f64316f965dfd659f39b2"
+  },
+  "close_windfall_offer": {
+    "directory": "close_windfall_offer",
+    "regions": {
+      "header": [
+        237,
+        175,
+        745,
+        350
+      ],
+      "close": [
+        1508,
+        244,
+        1573,
+        311
+      ],
+      "price": [
+        350,
+        770,
+        440,
+        833
+      ]
+    },
+    "point": [
+      1539,
+      275
+    ],
+    "action": "close_paid_windfall_offer_only",
+    "source": "reports/auto_next/popup_windfall_offer/inspection.png",
+    "source_sha256": "cdae10bf4fec367bc7794189b22c3cc7aafdb566e61edbfb441d98679b232ee6"
+  },
+  "free_video_gold": {
+    "directory": "free_video_gold",
+    "regions": {
+      "header": [
+        555,
+        198,
+        1110,
+        358
+      ],
+      "amount": [
+        543,
+        425,
+        1165,
+        611
+      ],
+      "claim": [
+        634,
+        691,
+        1039,
+        781
+      ]
+    },
+    "point": [
+      831,
+      738
+    ],
+    "action": "known_free_ad_virtual_gold_claim",
+    "source": "reports/auto_next/popup_free_video_gold/inspection.png",
+    "source_sha256": "637854396a58a77eaf23fbb19f2a950f82bb4fd853ee61aebb889f83d6f68a83"
+  },
+  "close_completed_ad": {
+    "directory": "close_completed_ad",
+    "regions": {
+      "ad_label": [
+        141,
+        139,
+        222,
+        169
+      ],
+      "reward_status": [
+        268,
+        139,
+        406,
+        169
+      ],
+      "close": [
+        1420,
+        138,
+        1479,
+        170
+      ]
+    },
+    "point": [
+      1451,
+      152
+    ],
+    "action": "close_completed_ad_only_after_reward_status",
+    "source": "reports/auto_next/completed_ad/inspection.png",
+    "source_sha256": "6e42e311a7b5fecbedbc19801fba8a2af5e9d606d91dbe52922f2833434b9819"
+  },
+  "free_gold_reward_ack": {
+    "directory": "free_gold_reward_ack",
+    "regions": {
+      "header": [
+        110,
+        190,
+        570,
+        284
+      ],
+      "coin": [
+        763,
+        455,
+        864,
+        533
+      ],
+      "confirm": [
+        670,
+        722,
+        950,
+        810
+      ]
+    },
+    "point": [
+      810,
+      763
+    ],
+    "action": "known_free_virtual_gold_reward_confirm",
+    "source": "reports/auto_next/free_gold_reward_ack/inspection.png",
+    "source_sha256": "af81429a266913b605e0623091c9e0778729ac9c41f21fcb3b17805d857bcaa0"
+  },
+  "server_retry_plain": {
+    "directory": "server_retry_plain",
+    "regions": {
+      "header": [
+        650,
+        311,
+        981,
+        364
+      ],
+      "message": [
+        440,
+        442,
+        1180,
+        535
+      ],
+      "retry": [
+        884,
+        618,
+        1140,
+        706
+      ]
+    },
+    "point": [
+      1011,
+      661
+    ],
+    "action": "known_server_connection_retry",
+    "source": "reports/auto_next/server_retry_plain/inspection.png",
+    "source_sha256": "5d3adbb42c51da526fd3a6751ca5efa7daae0ac99faa35ea4239c88624842b5e"
+  }
+}

@@ -1,0 +1,479 @@
+{
+  "split": "test",
+  "images": 208,
+  "confidence": 0.25,
+  "nms_iou": 0.45,
+  "match_iou": 0.5,
+  "true_positive": 3641,
+  "false_positive": 24,
+  "false_negative": 0,
+  "precision": 0.9934515688949522,
+  "recall": 1.0,
+  "exact_images": 190,
+  "exact_image_fraction": 0.9134615384615384,
+  "per_class": {
+    "3♠": {
+      "tp": 59,
+      "fp": 0,
+      "fn": 0
+    },
+    "3♥": {
+      "tp": 71,
+      "fp": 0,
+      "fn": 0
+    },
+    "3♦": {
+      "tp": 48,
+      "fp": 0,
+      "fn": 0
+    },
+    "3♣": {
+      "tp": 54,
+      "fp": 1,
+      "fn": 0
+    },
+    "4♠": {
+      "tp": 91,
+      "fp": 0,
+      "fn": 0
+    },
+    "4♥": {
+      "tp": 68,
+      "fp": 0,
+      "fn": 0
+    },
+    "4♦": {
+      "tp": 18,
+      "fp": 0,
+      "fn": 0
+    },
+    "4♣": {
+      "tp": 32,
+      "fp": 1,
+      "fn": 0
+    },
+    "5♠": {
+      "tp": 46,
+      "fp": 2,
+      "fn": 0
+    },
+    "5♥": {
+      "tp": 40,
+      "fp": 0,
+      "fn": 0
+    },
+    "5♦": {
+      "tp": 39,
+      "fp": 0,
+      "fn": 0
+    },
+    "5♣": {
+      "tp": 22,
+      "fp": 0,
+      "fn": 0
+    },
+    "6♠": {
+      "tp": 56,
+      "fp": 0,
+      "fn": 0
+    },
+    "6♥": {
+      "tp": 145,
+      "fp": 1,
+      "fn": 0
+    },
+    "6♦": {
+      "tp": 64,
+      "fp": 0,
+      "fn": 0
+    },
+    "6♣": {
+      "tp": 33,
+      "fp": 3,
+      "fn": 0
+    },
+    "7♠": {
+      "tp": 14,
+      "fp": 0,
+      "fn": 0
+    },
+    "7♥": {
+      "tp": 61,
+      "fp": 0,
+      "fn": 0
+    },
+    "7♦": {
+      "tp": 117,
+      "fp": 0,
+      "fn": 0
+    },
+    "7♣": {
+      "tp": 61,
+      "fp": 0,
+      "fn": 0
+    },
+    "8♠": {
+      "tp": 104,
+      "fp": 2,
+      "fn": 0
+    },
+    "8♥": {
+      "tp": 76,
+      "fp": 0,
+      "fn": 0
+    },
+    "8♦": {
+      "tp": 104,
+      "fp": 0,
+      "fn": 0
+    },
+    "8♣": {
+      "tp": 186,
+      "fp": 0,
+      "fn": 0
+    },
+    "9♠": {
+      "tp": 34,
+      "fp": 0,
+      "fn": 0
+    },
+    "9♥": {
+      "tp": 44,
+      "fp": 1,
+      "fn": 0
+    },
+    "9♦": {
+      "tp": 88,
+      "fp": 0,
+      "fn": 0
+    },
+    "9♣": {
+      "tp": 82,
+      "fp": 0,
+      "fn": 0
+    },
+    "10♠": {
+      "tp": 168,
+      "fp": 3,
+      "fn": 0
+    },
+    "10♥": {
+      "tp": 77,
+      "fp": 0,
+      "fn": 0
+    },
+    "10♦": {
+      "tp": 89,
+      "fp": 0,
+      "fn": 0
+    },
+    "10♣": {
+      "tp": 99,
+      "fp": 0,
+      "fn": 0
+    },
+    "J♠": {
+      "tp": 25,
+      "fp": 0,
+      "fn": 0
+    },
+    "J♥": {
+      "tp": 77,
+      "fp": 0,
+      "fn": 0
+    },
+    "J♦": {
+      "tp": 86,
+      "fp": 0,
+      "fn": 0
+    },
+    "J♣": {
+      "tp": 73,
+      "fp": 0,
+      "fn": 0
+    },
+    "Q♠": {
+      "tp": 124,
+      "fp": 0,
+      "fn": 0
+    },
+    "Q♥": {
+      "tp": 116,
+      "fp": 0,
+      "fn": 0
+    },
+    "Q♦": {
+      "tp": 14,
+      "fp": 0,
+      "fn": 0
+    },
+    "Q♣": {
+      "tp": 20,
+      "fp": 0,
+      "fn": 0
+    },
+    "K♠": {
+      "tp": 107,
+      "fp": 2,
+      "fn": 0
+    },
+    "K♥": {
+      "tp": 96,
+      "fp": 0,
+      "fn": 0
+    },
+    "K♦": {
+      "tp": 31,
+      "fp": 0,
+      "fn": 0
+    },
+    "K♣": {
+      "tp": 11,
+      "fp": 0,
+      "fn": 0
+    },
+    "A♠": {
+      "tp": 34,
+      "fp": 2,
+      "fn": 0
+    },
+    "A♥": {
+      "tp": 60,
+      "fp": 0,
+      "fn": 0
+    },
+    "A♦": {
+      "tp": 50,
+      "fp": 0,
+      "fn": 0
+    },
+    "A♣": {
+      "tp": 87,
+      "fp": 6,
+      "fn": 0
+    },
+    "2♠": {
+      "tp": 93,
+      "fp": 0,
+      "fn": 0
+    },
+    "2♥": {
+      "tp": 62,
+      "fp": 0,
+      "fn": 0
+    },
+    "2♦": {
+      "tp": 17,
+      "fp": 0,
+      "fn": 0
+    },
+    "2♣": {
+      "tp": 77,
+      "fp": 0,
+      "fn": 0
+    },
+    "SJ": {
+      "tp": 66,
+      "fp": 0,
+      "fn": 0
+    },
+    "BJ": {
+      "tp": 25,
+      "fp": 0,
+      "fn": 0
+    }
+  },
+  "mean_inference_ms": 28.103016869303808,
+  "median_inference_ms": 28.002146049402654,
+  "timing_note": "ONNX session.run only, 4 CPU threads; excludes file loading/preprocessing/NMS; first run included.",
+  "errors": [
+    {
+      "image": "data/prepared_full2000_corrected/images/test/card_0480b3ceb8a96e7d.png",
+      "source_image": "data/raw/capture_20261017_182041_fefea2_01528.png",
+      "false_positives": 3,
+      "missed_cards": 0,
+      "missed_classes": {},
+      "false_positive_classes": {
+        "8♠": 1,
+        "A♠": 1,
+        "A♣": 1
+      }
+    },
+    {
+      "image": "data/prepared_full2000_corrected/images/test/card_b74713fc14ce029c.png",
+      "source_image": "data/raw/capture_20261017_045524_3816aa_00186.png",
+      "false_positives": 2,
+      "missed_cards": 0,
+      "missed_classes": {},
+      "false_positive_classes": {
+        "5♠": 1,
+        "6♣": 1
+      }
+    },
+    {
+      "image": "data/prepared_full2000_corrected/images/test/card_56e831e51c3f9a5a.png",
+      "source_image": "data/raw/capture_20261017_182041_fefea2_01527.png",
+      "false_positives": 2,
+      "missed_cards": 0,
+      "missed_classes": {},
+      "false_positive_classes": {
+        "A♠": 1,
+        "A♣": 1
+      }
+    },
+    {
+      "image": "data/prepared_full2000_corrected/images/test/card_154371235ec64cd4.png",
+      "source_image": "data/raw/capture_20261017_182041_fefea2_01532.png",
+      "false_positives": 2,
+      "missed_cards": 0,
+      "missed_classes": {},
+      "false_positive_classes": {
+        "10♠": 1,
+        "A♣": 1
+      }
+    },
+    {
+      "image": "data/prepared_full2000_corrected/images/test/card_984b8a0df77cf4d2.png",
+      "source_image": "data/raw/capture_20261017_182041_fefea2_01533.png",
+      "false_positives": 2,
+      "missed_cards": 0,
+      "missed_classes": {},
+      "false_positive_classes": {
+        "10♠": 1,
+        "A♣": 1
+      }
+    },
+    {
+      "image": "data/prepared_full2000_corrected/images/test/card_4cd306d076f3951d.png",
+      "source_image": "data/raw/capture_20261017_045524_3816aa_00164.png",
+      "false_positives": 1,
+      "missed_cards": 0,
+      "missed_classes": {},
+      "false_positive_classes": {
+        "A♣": 1
+      }
+    },
+    {
+      "image": "data/prepared_full2000_corrected/images/test/card_0714aca07ca0f3ae.png",
+      "source_image": "data/raw/capture_20261017_045524_3816aa_00165.png",
+      "false_positives": 1,
+      "missed_cards": 0,
+      "missed_classes": {},
+      "false_positive_classes": {
+        "A♣": 1
+      }
+    },
+    {
+      "image": "data/prepared_full2000_corrected/images/test/card_c9f0070f31a4c349.png",
+      "source_image": "data/raw/capture_20261017_045524_3816aa_00185.png",
+      "false_positives": 1,
+      "missed_cards": 0,
+      "missed_classes": {},
+      "false_positive_classes": {
+        "5♠": 1
+      }
+    },
+    {
+      "image": "data/prepared_full2000_corrected/images/test/card_ddf7695762c50264.png",
+      "source_image": "data/raw/capture_20261017_045524_3816aa_00218.png",
+      "false_positives": 1,
+      "missed_cards": 0,
+      "missed_classes": {},
+      "false_positive_classes": {
+        "K♠": 1
+      }
+    },
+    {
+      "image": "data/prepared_full2000_corrected/images/test/card_3d0eb018775c0b3a.png",
+      "source_image": "data/raw/capture_20261017_045524_3816aa_00219.png",
+      "false_positives": 1,
+      "missed_cards": 0,
+      "missed_classes": {},
+      "false_positive_classes": {
+        "K♠": 1
+      }
+    },
+    {
+      "image": "data/prepared_full2000_corrected/images/test/card_53db7aa782afad7e.png",
+      "source_image": "data/raw/capture_20261017_182041_fefea2_00334.png",
+      "false_positives": 1,
+      "missed_cards": 0,
+      "missed_classes": {},
+      "false_positive_classes": {
+        "6♥": 1
+      }
+    },
+    {
+      "image": "data/prepared_full2000_corrected/images/test/card_6705ac7a97c788f3.png",
+      "source_image": "data/raw/capture_20261017_182041_fefea2_00360.png",
+      "false_positives": 1,
+      "missed_cards": 0,
+      "missed_classes": {},
+      "false_positive_classes": {
+        "3♣": 1
+      }
+    },
+    {
+      "image": "data/prepared_full2000_corrected/images/test/card_9e6bde480e73f6db.png",
+      "source_image": "data/raw/capture_20261017_182041_fefea2_01348.png",
+      "false_positives": 1,
+      "missed_cards": 0,
+      "missed_classes": {},
+      "false_positive_classes": {
+        "4♣": 1
+      }
+    },
+    {
+      "image": "data/prepared_full2000_corrected/images/test/card_4bbae4b53e1cddb1.png",
+      "source_image": "data/raw/capture_20261017_182041_fefea2_01349.png",
+      "false_positives": 1,
+      "missed_cards": 0,
+      "missed_classes": {},
+      "false_positive_classes": {
+        "10♠": 1
+      }
+    },
+    {
+      "image": "data/prepared_full2000_corrected/images/test/card_27136b950e757d6d.png",
+      "source_image": "data/raw/capture_20261017_182041_fefea2_01525.png",
+      "false_positives": 1,
+      "missed_cards": 0,
+      "missed_classes": {},
+      "false_positive_classes": {
+        "9♥": 1
+      }
+    },
+    {
+      "image": "data/prepared_full2000_corrected/images/test/card_9459a3ddc5054d8b.png",
+      "source_image": "data/raw/capture_20261017_182041_fefea2_01545.png",
+      "false_positives": 1,
+      "missed_cards": 0,
+      "missed_classes": {},
+      "false_positive_classes": {
+        "8♠": 1
+      }
+    },
+    {
+      "image": "data/prepared_full2000_corrected/images/test/card_f55fc2b311c32a7e.png",
+      "source_image": "data/raw/capture_20261017_182041_fefea2_01654.png",
+      "false_positives": 1,
+      "missed_cards": 0,
+      "missed_classes": {},
+      "false_positive_classes": {
+        "6♣": 1
+      }
+    },
+    {
+      "image": "data/prepared_full2000_corrected/images/test/card_3f30023d5f561cd0.png",
+      "source_image": "data/raw/capture_20261017_182041_fefea2_01655.png",
+      "false_positives": 1,
+      "missed_cards": 0,
+      "missed_classes": {},
+      "false_positive_classes": {
+        "6♣": 1
+      }
+    }
+  ],
+  "publication_note": "Path-redacted copy for GitHub; numerical metrics and hashes are unchanged. Original records remain in the local project.",
+  "original_record_sha256": "e49459b9571d92207d995bf8b158da853864b4755b8a4f6486abb0e815e74ea1"
+}

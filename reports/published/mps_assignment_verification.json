@@ -1,0 +1,13 @@
+{
+  "passed": true,
+  "repeats": 10,
+  "batch": 8,
+  "max_targets": 45,
+  "anchors": 8400,
+  "classes": 54,
+  "exact_cpu_parity": true,
+  "elapsed_seconds": 0.3879972919821739,
+  "source": "https://github.com/ultralytics/ultralytics/pull/24200",
+  "publication_note": "Path-redacted copy for GitHub; numerical metrics and hashes are unchanged. Original records remain in the local project.",
+  "original_record_sha256": "844f8cecdad270e9709eac2b9b78432e33f8047b2acabcec70c478eb1b351b9b"
+}

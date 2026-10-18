@@ -1,0 +1,48 @@
+# Local Python/runtime state
+.venv*/
+__pycache__/
+*.py[cod]
+.DS_Store
+.env
+.env.*
+!.env.example
+.local_archive/
+
+# Native images, historical candidates and machine-specific manifests
+/data/*
+!/data/README.md
+!/data/dataset_manifest.csv
+/runs/
+/models/
+/releases/
+*.pt
+*.onnx
+!artifacts/card_model.pt
+!artifacts/card_model.onnx
+
+# Ship only final model outputs; release ZIPs are uploaded separately
+/artifacts/*
+!/artifacts/card_model.onnx
+!/artifacts/card_model.pt
+!/artifacts/classes.txt
+!/artifacts/classes.json
+!/artifacts/model_info.json
+!/artifacts/card_model.verification.json
+!/artifacts/requirements-inference.txt
+!/artifacts/使用说明.md
+
+# Keep final metrics/evidence summaries, not transient capture logs or full review grids
+/reports/*
+!/reports/FULL_2000_REPORT.md
+!/reports/tests_final.log
+!/reports/published/
+!/reports/test_annotation_review/
+!/reports/final_predictions/
+/reports/full_review02/*
+/reports/test_annotation_revision/original_json/
+/reports/test_annotation_review/records.json
+/reports/final_predictions/*.json
+
+# One-time historical import/correction steps are local provenance, not generic tools
+/scripts/finalize_full2000.py
+/scripts/revise_test_annotations.py

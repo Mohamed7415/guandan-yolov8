@@ -1,0 +1,2 @@
+# 独立标注环境；不要安装到训练 .venv
+x-anylabeling-cvhub[cpu]==4.1.3

@@ -1,0 +1,11 @@
+{
+  "decided_at": "2026-10-17T16:51:25.236541+00:00",
+  "reason": "Validation convergence; avoid spending further epochs after 5 consecutive mAP50 >= .993 and CPU validation confirms all 54 AP50 >= .988.",
+  "requested_epoch_upper_limit": 150,
+  "selected_checkpoint": "artifacts/checkpoints/full2000_candidate.pt",
+  "selection_uses": "validation only",
+  "test_set_used_for_selection": false,
+  "cpu_validation_report": "reports/full2000_cpu_validation.json",
+  "publication_note": "Path-redacted copy for GitHub; numerical metrics and hashes are unchanged. Original records remain in the local project.",
+  "original_record_sha256": "afa34f8dbd1ac1a8534606dbeaf8129f247a63dfc2298acbf2e31abb184b7b3b"
+}

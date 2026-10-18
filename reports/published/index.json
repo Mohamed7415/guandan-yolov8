@@ -1,0 +1,50 @@
+[
+  {
+    "file": "full2000_corrected_test_metrics.json",
+    "original_record_sha256": "839143659fbb162a9a6e29c03cf15a93565bfa4b05d3c326ba63ea5b80c2b13a"
+  },
+  {
+    "file": "full2000_corrected_test_point025.json",
+    "original_record_sha256": "e49459b9571d92207d995bf8b158da853864b4755b8a4f6486abb0e815e74ea1"
+  },
+  {
+    "file": "full2000_cpu_validation.json",
+    "original_record_sha256": "1e66ffc8844c36f975d28f25790e554866e281b8b1f0751e1ee419b7e20259b1"
+  },
+  {
+    "file": "full2000_corrected_validation.json",
+    "original_record_sha256": "ddc8f48ab24568d5f96fa085926400ec05b34a298f924e5313d4e08c6d0640aa"
+  },
+  {
+    "file": "full2000_validation.json",
+    "original_record_sha256": "9aec4dd9b7b37c2bd73733cafe2f46a306a6350d64c34b4add10f50cebf442b4"
+  },
+  {
+    "file": "full2000_selection.json",
+    "original_record_sha256": "b5267f0653eaef4f85ad38106aba9cfc5252c26fb90e4bd643430c032f3568e9"
+  },
+  {
+    "file": "full2000_training_stop_decision.json",
+    "original_record_sha256": "afa34f8dbd1ac1a8534606dbeaf8129f247a63dfc2298acbf2e31abb184b7b3b"
+  },
+  {
+    "file": "mps_assignment_verification.json",
+    "original_record_sha256": "844f8cecdad270e9709eac2b9b78432e33f8047b2acabcec70c478eb1b351b9b"
+  },
+  {
+    "file": "final_onnx_postprocess_verification.json",
+    "original_record_sha256": "42401149febac65cdbf92ff7003c9808583df30d81f2492e3593a1a2b2576b7c"
+  },
+  {
+    "file": "delivery_integrity.json",
+    "original_record_sha256": "83806fd4fd12a4af0dcf085488176f1e2931313ced2f75dfc3a2f956e74c8d95"
+  },
+  {
+    "file": "full2000_training_record.json",
+    "original_record_sha256": "f1b97b70abdba72ceaa421a0709b97d570aae01740b375d9f5c83f86ae2207be"
+  },
+  {
+    "file": "annotation_revision.json",
+    "original_record_sha256": "1704459451fd3d3331d2d79824322653f43a14b7fc9803797fded7eaeccb85e3"
+  }
+]
