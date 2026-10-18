@@ -59,3 +59,8 @@ launchctl bootout gui/$(id -u) ~/Library/LaunchAgents/com.guandan.yolov8.goal-re
 - 旧 960 候选在完整 98 图上仍有一例 SJ→BJ 错类；之前 48 图全对不能代表全批全对。新实验参数先保存于 `configs/experiments/native2098_960_v1.json`，新优化器及新运行名；不得恢复已经完成的 `resolution960_v1`。
 - 用户已重新打开普通经典初级场，原生工具读取和点击已恢复，游戏托管横幅已确认。`reports/continuous_goal/native2098_chain_job.json` 记录一个持有 `active_task.lock` 的顺序任务：`batch002` 原生隔离采集与守卫续局停止后，才启动 `native2098_960_v1` 训练。接续先读该文件、当前进程与状态，避免重复启动。
 - `batch002` 预先指定为新盲测候选隔离区，未审核封存前计数仍为 0；不运行模型推理，不加到上述训练。记录真实对局边界；首次采集是中途对局，不能说是已完整采集的一局。后续先审核标签并封存，满足原定规模、按协议冻结模型后再评测。
+
+
+`batch002` 的 28 张/655 框现已目视审核并封存标签，完整像素与当前2098图对照无精确重复/组号重叠。位置为 `data/blind_reviewed/goal_20261019_batch002_v1/label_seal.json`，尚未运行目标检测器、未加入训练；一局中途片段，完整采集对局0，正式新盲测评测仍0。后续按 [盲测候选池](BLIND_POOL.md)继续扩大，禁止将这28图当开发样本。
+
+续局新增可选 `--activate-before-click`，保留识别、身份、位置、前台及无遮挡验证；六项新增检查通过，真实新局转场待训练结束后验证。现有训练真实首轮优化器检查点已载入验证，后续轮次按 `training_progress.json` 接续，不重跑。新一轮目标调度已由平台合法恢复为 active，不应继续引用先前 usageLimited 状态为当前状态。

@@ -1,0 +1,37 @@
+{
+  "status": "labels_frozen_waiting_large_blind_corpus_and_final_model_freeze",
+  "sealed_at": "2026-10-18T22:41:35.254947+00:00",
+  "purpose": "new_blind_candidate_quarantine",
+  "images": 28,
+  "boxes": 655,
+  "negative_images": 1,
+  "actual_games_observed": 1,
+  "complete_games_captured": 0,
+  "initial_game_partial": true,
+  "label_review": "assistant_visual_no_independent_human_second_review",
+  "target_detector_evaluated": false,
+  "used_for_training": false,
+  "used_for_model_selection": false,
+  "final_model_frozen": false,
+  "formal_new_blind_test_images": 0,
+  "required_corpus": {
+    "minimum_images": 10000,
+    "minimum_real_games_or_sessions": 100
+  },
+  "content_fingerprint": "c83b9054efd1e52b55ee326f2d4e6c4bb57ffd8a4408f944714e03ca4ca423a1",
+  "isolation": {
+    "compared_dataset": "data/prepared_full2098_native_v1",
+    "compared_dataset_fingerprint": "feb7cf5316380933cae9ce5587ae640024cea9106a8f82ef71f0117a768d3c9e",
+    "compared_images": 2098,
+    "exact_pixel_duplicates": [],
+    "group_or_session_overlap": [],
+    "note": "Full RGB pixels plus width/height hashed. This does not replace manual real-game provenance; all28 are one partial-game unit."
+  },
+  "label_seal_sha256": "6b8d27825268d807b93b7d14bfc3ea5764f3f495a1b1969e19e7e8a649b68404",
+  "review_audit_sha256": "df8819065ba0e1d4b0a547bee2f5c5b53c267024ae2193802abb7900b5743817",
+  "coordinate_corrections": 8,
+  "occlusion_flag_corrections": 49,
+  "full_native_frames_reviewed": 28,
+  "unique_complete_native_crop_groups_reviewed": 125,
+  "labels_and_originals": "Local quarantine; not exposed to training or detector evaluation. Public summary is an integrity/progress receipt, not a performance report."
+}

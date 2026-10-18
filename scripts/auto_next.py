@@ -189,24 +189,40 @@ def frontmost(window: dict, point: tuple[float, float]) -> bool:
     return window_point_clear(list(windows or []), int(window["kCGWindowNumber"]), point)
 
 
-def click_verified(capture: MacWindowCapture, detector: SettlementDetector, output: Path, targeted: bool = False, kind: str = 'settlement') -> bool:
+def activate_game_window(window: dict) -> bool:
+    """Raise only the already located game window, retaining the foreground guard."""
+    from AppKit import (NSRunningApplication, NSApplicationActivateIgnoringOtherApps,
+                        NSApplicationActivateAllWindows)
+    from ApplicationServices import (AXUIElementCreateApplication, AXUIElementCopyAttributeValue,
+        AXUIElementPerformAction, AXUIElementSetAttributeValue, kAXWindowsAttribute,
+        kAXTitleAttribute, kAXRaiseAction, kAXFrontmostAttribute)
+
+    app = NSRunningApplication.runningApplicationWithProcessIdentifier_(int(window["kCGWindowOwnerPID"]))
+    if app is None or not app.activateWithOptions_(NSApplicationActivateIgnoringOtherApps | NSApplicationActivateAllWindows):
+        return False
+    ax_app = AXUIElementCreateApplication(int(window["kCGWindowOwnerPID"]))
+    err, windows = AXUIElementCopyAttributeValue(ax_app, kAXWindowsAttribute, None)
+    matching = []
+    for candidate in windows or []:
+        error, title = AXUIElementCopyAttributeValue(candidate, kAXTitleAttribute, None)
+        if not error and title == "天天爱掼蛋":
+            matching.append(candidate)
+    if err or len(matching) != 1 or AXUIElementPerformAction(matching[0], kAXRaiseAction):
+        return False
+    return AXUIElementSetAttributeValue(ax_app, kAXFrontmostAttribute, True) == 0
+
+
+def same_window(before: dict, after: dict, captured_id: int) -> bool:
+    return (int(before["kCGWindowNumber"]) == captured_id == int(after["kCGWindowNumber"])
+            and int(before["kCGWindowOwnerPID"]) == int(after["kCGWindowOwnerPID"])
+            and dict(before["kCGWindowBounds"]) == dict(after["kCGWindowBounds"]))
+
+
+def click_verified(capture: MacWindowCapture, detector: SettlementDetector, output: Path, targeted: bool = False, kind: str = 'settlement', activate_before_click: bool = False) -> bool:
     if kind not in {'settlement',*detector.popup_actions}:
         raise ValueError('Unrecognized input action')
     if not accessibility_allowed():
         raise RuntimeError("缺少辅助功能权限，未发送点击。请在系统设置中手动允许启动脚本的应用后重开脚本。")
-    before = capture.locate()
-    if not targeted and not frontmost(before, detector.target_point(before,kind)):
-        return False
-    # Re-capture immediately before input; never click from an old observation.
-    data, window_id = capture.capture(output)
-    state = detector.inspect(data)
-    after = capture.locate()
-    if (window_id != int(after["kCGWindowNumber"])
-            or dict(before["kCGWindowBounds"]) != dict(after["kCGWindowBounds"])
-            or int(before["kCGWindowOwnerPID"]) != int(after["kCGWindowOwnerPID"])
-            or not state.get(kind,False)
-            or (not targeted and not frontmost(after, detector.target_point(after,kind)))):
-        return False
     action_name={'level_up':'known_level_up_confirm',
                  'free_gold_base':'known_free_virtual_gold_base_claim',
                  'settlement':'ordinary_settlement_next_round',
@@ -223,6 +239,29 @@ def click_verified(capture: MacWindowCapture, detector: SettlementDetector, outp
         if moments and current-max(moments)<cooldown: return False
         if sum(current-t<300 for t in moments)>=3:
             raise RuntimeError('同一提示在五分钟内已处理三次，停止并保留证据，避免反复点击。')
+    before = capture.locate()
+    if not targeted and not frontmost(before, detector.target_point(before,kind)):
+        if not activate_before_click:
+            return False
+        # Prove the exact known screen before bringing anything to the front.
+        # Raising a window never substitutes for a fresh foreground check.
+        probe, probe_id = capture.capture(output)
+        observed = capture.locate()
+        if (not same_window(before, observed, probe_id)
+                or not detector.inspect(probe).get(kind, False)):
+            return False
+        if (not activate_game_window(observed)
+                or not frontmost(observed, detector.target_point(observed, kind))):
+            return False
+        before = observed
+    # Re-capture after any activation; never click from the earlier probe.
+    data, window_id = capture.capture(output)
+    state = detector.inspect(data)
+    after = capture.locate()
+    if (not same_window(before, after, window_id)
+            or not state.get(kind,False)
+            or (not targeted and not frontmost(after, detector.target_point(after,kind)))):
+        return False
     q = capture.quartz
     # The pointer in the upper-left corner is an additional emergency stop.
     pointer = q.CGEventGetLocation(q.CGEventCreate(None))
@@ -246,6 +285,11 @@ def click_verified(capture: MacWindowCapture, detector: SettlementDetector, outp
             if index == 0:
                 time.sleep(.15)
     else:
+        # Proof-file I/O and event construction can take time. Check again at
+        # the final boundary so a new foreground app never receives this click.
+        current = capture.locate()
+        if not same_window(after, current, window_id) or not frontmost(current, point):
+            return False
         q.CGEventPost(q.kCGHIDEventTap, down)
         time.sleep(.15)
         q.CGEventPost(q.kCGHIDEventTap, up)
@@ -264,10 +308,13 @@ def main() -> int:
     p.add_argument("--max-minutes", type=positive_float, default=60)
     p.add_argument("--interval", type=positive_float, default=2)
     p.add_argument("--activate-on-start", action="store_true", help="启动时将已确认的小程序进程置前一次")
+    p.add_argument("--activate-before-click", action="store_true", help="仅在重新确认已知结算/提示后置前游戏；仍重新截图并验证前台和无遮挡，可能切换当前前台应用")
     p.add_argument("--targeted-input", action="store_true", help="只向小程序进程及窗口发送事件，不向其他前台应用发送点击")
     p.add_argument("--capture-run-dir", type=Path, help="关联采集批次；采集器停止后同步结束续局")
     p.add_argument("--output", type=Path, default=ROOT / "reports/auto_next")
     args = p.parse_args()
+    if args.activate_before_click and args.targeted_input:
+        p.error("--activate-before-click 与 --targeted-input 不可同时使用")
     if args.max_rounds < 1 or args.interval < 1:
         p.error("max-rounds 至少 1；interval 至少 1 秒")
     args.output.mkdir(parents=True, exist_ok=True)
@@ -287,24 +334,8 @@ def main() -> int:
         if not (args.dry_run or args.once) and not accessibility_allowed():
             raise RuntimeError("尚无辅助功能权限。请手动授权启动脚本的应用；脚本不会自行修改权限。")
         if args.activate_on_start and not (args.dry_run or args.once):
-            from AppKit import NSRunningApplication, NSApplicationActivateIgnoringOtherApps, NSApplicationActivateAllWindows
-            from ApplicationServices import (AXUIElementCreateApplication, AXUIElementCopyAttributeValue,
-                AXUIElementPerformAction, AXUIElementSetAttributeValue, kAXWindowsAttribute,
-                kAXTitleAttribute, kAXRaiseAction, kAXFrontmostAttribute)
-            window = capture.locate()
-            app = NSRunningApplication.runningApplicationWithProcessIdentifier_(int(window["kCGWindowOwnerPID"]))
-            if app is None or not app.activateWithOptions_(NSApplicationActivateIgnoringOtherApps | NSApplicationActivateAllWindows):
-                raise RuntimeError("未能将小程序进程置前，未发送点击。")
-            ax_app = AXUIElementCreateApplication(int(window["kCGWindowOwnerPID"]))
-            err, windows = AXUIElementCopyAttributeValue(ax_app, kAXWindowsAttribute, None)
-            matching = []
-            for candidate in windows or []:
-                error, title = AXUIElementCopyAttributeValue(candidate, kAXTitleAttribute, None)
-                if not error and title == "天天爱掼蛋":
-                    matching.append(candidate)
-            if err or len(matching) != 1 or AXUIElementPerformAction(matching[0], kAXRaiseAction):
+            if not activate_game_window(capture.locate()):
                 raise RuntimeError("不能唯一激活已确认的小程序窗口，未发送点击。")
-            AXUIElementSetAttributeValue(ax_app, kAXFrontmostAttribute, True)
         print("仅用于已进入的普通金蛋场。请先开启游戏自带托管，再保持小程序在前台。", flush=True)
         started, last_known, attempts = time.monotonic(), time.monotonic(), 0
         level_stable, level_pending, popup_name = 0, None, None
@@ -349,7 +380,7 @@ def main() -> int:
                 elif level_stable >= 2:
                     if args.dry_run:
                         if level_stable == 2: print(f'识别到已知提示 {popup}；试运行不点击。',flush=True)
-                    elif click_verified(capture,detector,args.output,targeted=args.targeted_input,kind=popup):
+                    elif click_verified(capture,detector,args.output,targeted=args.targeted_input,kind=popup,activate_before_click=args.activate_before_click):
                         level_pending=time.monotonic()
                         print(f'已处理已知提示 {popup}，等待其消失。',flush=True)
                 time.sleep(args.interval)
@@ -369,7 +400,7 @@ def main() -> int:
                 elif attempts >= args.max_rounds:
                     print("达到续局次数上限，停止。")
                     return 0
-                elif click_verified(capture, detector, args.output, targeted=args.targeted_input):
+                elif click_verified(capture, detector, args.output, targeted=args.targeted_input,activate_before_click=args.activate_before_click):
                     attempts += 1
                     machine.clicked(time.monotonic())
                     print(f"已点普通场「再来一局」({attempts}/{args.max_rounds})，等待实际新局确认。", flush=True)
