@@ -1,0 +1,336 @@
+{
+  "split": "val",
+  "images": 400,
+  "input_size": 960,
+  "confidence": 0.25,
+  "nms_iou": 0.45,
+  "match_iou": 0.5,
+  "nms_mode": "class_aware",
+  "true_positive": 7802,
+  "false_positive": 3,
+  "false_negative": 1,
+  "precision": 0.9996156310057656,
+  "recall": 0.9998718441625016,
+  "exact_images": 396,
+  "exact_image_fraction": 0.99,
+  "per_class": {
+    "3♠": {
+      "tp": 354,
+      "fp": 0,
+      "fn": 0
+    },
+    "3♥": {
+      "tp": 161,
+      "fp": 0,
+      "fn": 0
+    },
+    "3♦": {
+      "tp": 153,
+      "fp": 0,
+      "fn": 0
+    },
+    "3♣": {
+      "tp": 304,
+      "fp": 0,
+      "fn": 0
+    },
+    "4♠": {
+      "tp": 125,
+      "fp": 0,
+      "fn": 0
+    },
+    "4♥": {
+      "tp": 107,
+      "fp": 0,
+      "fn": 0
+    },
+    "4♦": {
+      "tp": 67,
+      "fp": 0,
+      "fn": 0
+    },
+    "4♣": {
+      "tp": 79,
+      "fp": 0,
+      "fn": 0
+    },
+    "5♠": {
+      "tp": 103,
+      "fp": 0,
+      "fn": 0
+    },
+    "5♥": {
+      "tp": 87,
+      "fp": 0,
+      "fn": 1
+    },
+    "5♦": {
+      "tp": 195,
+      "fp": 0,
+      "fn": 0
+    },
+    "5♣": {
+      "tp": 123,
+      "fp": 0,
+      "fn": 0
+    },
+    "6♠": {
+      "tp": 135,
+      "fp": 0,
+      "fn": 0
+    },
+    "6♥": {
+      "tp": 99,
+      "fp": 0,
+      "fn": 0
+    },
+    "6♦": {
+      "tp": 34,
+      "fp": 0,
+      "fn": 0
+    },
+    "6♣": {
+      "tp": 107,
+      "fp": 0,
+      "fn": 0
+    },
+    "7♠": {
+      "tp": 115,
+      "fp": 0,
+      "fn": 0
+    },
+    "7♥": {
+      "tp": 158,
+      "fp": 0,
+      "fn": 0
+    },
+    "7♦": {
+      "tp": 96,
+      "fp": 0,
+      "fn": 0
+    },
+    "7♣": {
+      "tp": 168,
+      "fp": 0,
+      "fn": 0
+    },
+    "8♠": {
+      "tp": 129,
+      "fp": 0,
+      "fn": 0
+    },
+    "8♥": {
+      "tp": 168,
+      "fp": 0,
+      "fn": 0
+    },
+    "8♦": {
+      "tp": 116,
+      "fp": 0,
+      "fn": 0
+    },
+    "8♣": {
+      "tp": 143,
+      "fp": 0,
+      "fn": 0
+    },
+    "9♠": {
+      "tp": 211,
+      "fp": 0,
+      "fn": 0
+    },
+    "9♥": {
+      "tp": 100,
+      "fp": 0,
+      "fn": 0
+    },
+    "9♦": {
+      "tp": 123,
+      "fp": 0,
+      "fn": 0
+    },
+    "9♣": {
+      "tp": 172,
+      "fp": 1,
+      "fn": 0
+    },
+    "10♠": {
+      "tp": 118,
+      "fp": 0,
+      "fn": 0
+    },
+    "10♥": {
+      "tp": 198,
+      "fp": 0,
+      "fn": 0
+    },
+    "10♦": {
+      "tp": 281,
+      "fp": 0,
+      "fn": 0
+    },
+    "10♣": {
+      "tp": 107,
+      "fp": 0,
+      "fn": 0
+    },
+    "J♠": {
+      "tp": 237,
+      "fp": 0,
+      "fn": 0
+    },
+    "J♥": {
+      "tp": 147,
+      "fp": 0,
+      "fn": 0
+    },
+    "J♦": {
+      "tp": 143,
+      "fp": 0,
+      "fn": 0
+    },
+    "J♣": {
+      "tp": 243,
+      "fp": 0,
+      "fn": 0
+    },
+    "Q♠": {
+      "tp": 139,
+      "fp": 0,
+      "fn": 0
+    },
+    "Q♥": {
+      "tp": 133,
+      "fp": 0,
+      "fn": 0
+    },
+    "Q♦": {
+      "tp": 94,
+      "fp": 0,
+      "fn": 0
+    },
+    "Q♣": {
+      "tp": 170,
+      "fp": 0,
+      "fn": 0
+    },
+    "K♠": {
+      "tp": 158,
+      "fp": 0,
+      "fn": 0
+    },
+    "K♥": {
+      "tp": 284,
+      "fp": 0,
+      "fn": 0
+    },
+    "K♦": {
+      "tp": 215,
+      "fp": 0,
+      "fn": 0
+    },
+    "K♣": {
+      "tp": 89,
+      "fp": 0,
+      "fn": 0
+    },
+    "A♠": {
+      "tp": 120,
+      "fp": 0,
+      "fn": 0
+    },
+    "A♥": {
+      "tp": 62,
+      "fp": 0,
+      "fn": 0
+    },
+    "A♦": {
+      "tp": 46,
+      "fp": 0,
+      "fn": 0
+    },
+    "A♣": {
+      "tp": 28,
+      "fp": 0,
+      "fn": 0
+    },
+    "2♠": {
+      "tp": 106,
+      "fp": 0,
+      "fn": 0
+    },
+    "2♥": {
+      "tp": 267,
+      "fp": 0,
+      "fn": 0
+    },
+    "2♦": {
+      "tp": 280,
+      "fp": 0,
+      "fn": 0
+    },
+    "2♣": {
+      "tp": 161,
+      "fp": 0,
+      "fn": 0
+    },
+    "SJ": {
+      "tp": 21,
+      "fp": 0,
+      "fn": 0
+    },
+    "BJ": {
+      "tp": 23,
+      "fp": 2,
+      "fn": 0
+    }
+  },
+  "mean_inference_ms": 72.40035141905537,
+  "median_inference_ms": 70.20262500736862,
+  "timing_note": "ONNX session.run only, 4 CPU threads; excludes file loading/preprocessing/NMS; first run included.",
+  "errors": [
+    {
+      "image": "images/val/card_cf08b78ae73916ed.png",
+      "source_image": "capture_20261017_182041_fefea2_00978.png",
+      "false_positives": 1,
+      "missed_cards": 0,
+      "missed_classes": {},
+      "false_positive_classes": {
+        "BJ": 1
+      }
+    },
+    {
+      "image": "images/val/card_8d05fd2b0b826587.png",
+      "source_image": "capture_20261017_182041_fefea2_00979.png",
+      "false_positives": 1,
+      "missed_cards": 0,
+      "missed_classes": {},
+      "false_positive_classes": {
+        "BJ": 1
+      }
+    },
+    {
+      "image": "images/val/card_6a73d6c1ed17453f.png",
+      "source_image": "capture_20261017_182041_fefea2_01600.png",
+      "false_positives": 1,
+      "missed_cards": 0,
+      "missed_classes": {},
+      "false_positive_classes": {
+        "9♣": 1
+      }
+    },
+    {
+      "image": "images/val/card_6e71eac8741eef05.png",
+      "source_image": "capture_20261017_182041_fefea2_01602.png",
+      "false_positives": 0,
+      "missed_cards": 1,
+      "missed_classes": {
+        "5♥": 1
+      },
+      "false_positive_classes": {}
+    }
+  ],
+  "purpose": "retrospective_validation_annotation_review_not_original_selection_score",
+  "label_version": "prepared_full2000_review_v3",
+  "note": "Model and thresholds unchanged; two Q-heart omissions corrected after model selection. Preserve original frozen-v2 FP5/FN1/exact394 score."
+}

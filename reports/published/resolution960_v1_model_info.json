@@ -1,0 +1,157 @@
+{
+  "candidate_id": "resolution960_v1",
+  "status": "prerelease_not_final_acceptance",
+  "architecture": "YOLOv8n",
+  "onnx_sha256": "2fa7355e8ab52975a49d2cdd1488d95185fd1bf54895c4774dd8864dd1e8adbc",
+  "source_checkpoint_sha256": "53228c43b56e1142d3c51eef15e72c6785bd80b32e1eb4308548e6182aba56af",
+  "class_names": [
+    "3♠",
+    "3♥",
+    "3♦",
+    "3♣",
+    "4♠",
+    "4♥",
+    "4♦",
+    "4♣",
+    "5♠",
+    "5♥",
+    "5♦",
+    "5♣",
+    "6♠",
+    "6♥",
+    "6♦",
+    "6♣",
+    "7♠",
+    "7♥",
+    "7♦",
+    "7♣",
+    "8♠",
+    "8♥",
+    "8♦",
+    "8♣",
+    "9♠",
+    "9♥",
+    "9♦",
+    "9♣",
+    "10♠",
+    "10♥",
+    "10♦",
+    "10♣",
+    "J♠",
+    "J♥",
+    "J♦",
+    "J♣",
+    "Q♠",
+    "Q♥",
+    "Q♦",
+    "Q♣",
+    "K♠",
+    "K♥",
+    "K♦",
+    "K♣",
+    "A♠",
+    "A♥",
+    "A♦",
+    "A♣",
+    "2♠",
+    "2♥",
+    "2♦",
+    "2♣",
+    "SJ",
+    "BJ"
+  ],
+  "input_shape": [
+    1,
+    3,
+    960,
+    960
+  ],
+  "output_shape": [
+    1,
+    58,
+    18900
+  ],
+  "opset": 12,
+  "output_dtype": "float32",
+  "nms_mode": "class_aware",
+  "confidence": 0.25,
+  "nms_iou": 0.45,
+  "max_detections": 300,
+  "training": {
+    "input_size": 960,
+    "batch": 2,
+    "requested_epochs": 40,
+    "completed_epochs": 38,
+    "selected_epoch": 13,
+    "early_stopping_patience": 25,
+    "seed": 42,
+    "initial_weights": "v1.0.0/card_model.pt",
+    "ultralytics_version": "8.3.230",
+    "torch_version": "2.8.0",
+    "device": "mps",
+    "dataset_version": "prepared_full2000_review_v2",
+    "dataset_fingerprint": "e44711b02e86d804d64f44db6fb104bcc67fbf9ea4a9a3a8619c548f1ff3e904",
+    "split_images": {
+      "train": 1392,
+      "val": 400,
+      "test_regression": 208
+    },
+    "new_development_images_used_for_training": 0
+  },
+  "parity_on_real_validation_images": [
+    {
+      "image": "card_000dd75544878539.png",
+      "max_coordinate_error_px": 0.000946044921875,
+      "max_score_error": 1.341104507446289e-06
+    },
+    {
+      "image": "card_00f64bff9a8c227b.png",
+      "max_coordinate_error_px": 0.00152587890625,
+      "max_score_error": 4.1425228118896484e-06
+    },
+    {
+      "image": "card_015fb71528f94be1.png",
+      "max_coordinate_error_px": 0.0013580322265625,
+      "max_score_error": 3.159046173095703e-06
+    },
+    {
+      "image": "card_0219b6abdaa4dca3.png",
+      "max_coordinate_error_px": 0.00091552734375,
+      "max_score_error": 3.3974647521972656e-06
+    },
+    {
+      "image": "card_03439616a45c1fb6.png",
+      "max_coordinate_error_px": 0.0009765625,
+      "max_score_error": 5.245208740234375e-06
+    }
+  ],
+  "frozen_v2_validation": {
+    "images": 400,
+    "tp": 7800,
+    "fp": 5,
+    "fn": 1,
+    "exact_images": 394
+  },
+  "retrospective_v3_validation": {
+    "images": 400,
+    "tp": 7802,
+    "fp": 3,
+    "fn": 1,
+    "exact_images": 396,
+    "reason": "two missing Q-heart labels added after selection; no model change"
+  },
+  "regression208": {
+    "tp": 3644,
+    "fp": 2,
+    "fn": 0,
+    "exact_images": 206
+  },
+  "development48": {
+    "tp": 890,
+    "fp": 0,
+    "fn": 0,
+    "exact_images": 48
+  },
+  "new_independent_blind_test_images": 0,
+  "formal_v1_unchanged": true
+}

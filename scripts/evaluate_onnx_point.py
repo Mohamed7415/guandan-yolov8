@@ -43,6 +43,7 @@ def main():
     p.add_argument('--model',type=Path,default=Path('artifacts/card_model.onnx'))
     p.add_argument('--split',choices=['val','test'],required=True)
     p.add_argument('--confidence',type=float,default=.25)
+    p.add_argument('--agnostic-nms',action='store_true',help='Experimental standard cross-class NMS; default remains class-aware')
     p.add_argument('--output',type=Path,required=True)
     a=p.parse_args()
     if not 0 < a.confidence < 1:p.error('confidence must be between 0 and 1')
@@ -54,11 +55,11 @@ def main():
     for row in rows:
         path=a.data/row['image'];im=cv2.imread(str(path));tensor,ratio,padding=preprocess(im,input_size)
         start=time.perf_counter();out=session.run(None,{session.get_inputs()[0].name:tensor})[0];durations.append(time.perf_counter()-start)
-        pred=decode(out,im.shape,ratio,padding,a.confidence,.45,input_size)
+        pred=decode(out,im.shape,ratio,padding,a.confidence,.45,input_size,a.agnostic_nms)
         t,f,n=match(pred,a.data/row['label'],im.shape[1],im.shape[0]);tp+=t;fp+=f;fn+=n
         if not f.sum() and not n.sum():perfect+=1
         else:errors.append(dict(image=str(path.resolve()),source_image=row['source_image'],false_positives=int(f.sum()),missed_cards=int(n.sum()),missed_classes={CLASS_NAMES[i]:int(v) for i,v in enumerate(n) if v},false_positive_classes={CLASS_NAMES[i]:int(v) for i,v in enumerate(f) if v}))
-    report=dict(split=a.split,images=len(rows),input_size=input_size,confidence=a.confidence,nms_iou=.45,match_iou=.5,
+    report=dict(split=a.split,images=len(rows),input_size=input_size,confidence=a.confidence,nms_iou=.45,match_iou=.5,nms_mode='agnostic' if a.agnostic_nms else 'class_aware',
                 true_positive=int(tp.sum()),false_positive=int(fp.sum()),false_negative=int(fn.sum()),
                 precision=float(tp.sum()/max(1,tp.sum()+fp.sum())),recall=float(tp.sum()/max(1,tp.sum()+fn.sum())),
                 exact_images=perfect,exact_image_fraction=perfect/len(rows),

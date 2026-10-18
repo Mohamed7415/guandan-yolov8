@@ -1,0 +1,234 @@
+{
+  "purpose": "validation_only_model_and_standard_nms_comparison",
+  "protocol_sha256": "05bca6049b374ab26c918b555eabe9d8a04d7991d743a609977c47c0eedc0cc7",
+  "results": {
+    "v1_640/class_aware": {
+      "images": 400,
+      "true_positive": 7791,
+      "false_positive": 121,
+      "false_negative": 10,
+      "exact_images": 294,
+      "input_size": 640,
+      "scene_counts": {
+        "negative": {
+          "images": 5,
+          "tp": 0,
+          "fp": 0,
+          "fn": 0,
+          "exact": 5
+        },
+        "sorted": {
+          "images": 395,
+          "tp": 7791,
+          "fp": 121,
+          "fn": 10,
+          "exact": 289
+        },
+        "others_play": {
+          "images": 326,
+          "tp": 6653,
+          "fp": 105,
+          "fn": 7,
+          "exact": 235
+        },
+        "self_play": {
+          "images": 48,
+          "tp": 1106,
+          "fp": 14,
+          "fn": 0,
+          "exact": 35
+        },
+        "pass": {
+          "images": 29,
+          "tp": 370,
+          "fp": 2,
+          "fn": 0,
+          "exact": 27
+        }
+      },
+      "groups": 9,
+      "sessions": 9,
+      "mean_inference_ms": 31.45252261019778,
+      "worsened_miss_images": []
+    },
+    "v1_640/agnostic": {
+      "images": 400,
+      "true_positive": 7788,
+      "false_positive": 15,
+      "false_negative": 13,
+      "exact_images": 386,
+      "input_size": 640,
+      "scene_counts": {
+        "negative": {
+          "images": 5,
+          "tp": 0,
+          "fp": 0,
+          "fn": 0,
+          "exact": 5
+        },
+        "sorted": {
+          "images": 395,
+          "tp": 7788,
+          "fp": 15,
+          "fn": 13,
+          "exact": 381
+        },
+        "others_play": {
+          "images": 326,
+          "tp": 6650,
+          "fp": 12,
+          "fn": 10,
+          "exact": 315
+        },
+        "self_play": {
+          "images": 48,
+          "tp": 1106,
+          "fp": 4,
+          "fn": 0,
+          "exact": 45
+        },
+        "pass": {
+          "images": 29,
+          "tp": 370,
+          "fp": 0,
+          "fn": 0,
+          "exact": 29
+        }
+      },
+      "groups": 9,
+      "sessions": 9,
+      "mean_inference_ms": 31.45252261019778,
+      "worsened_miss_images": [
+        {
+          "image": "images/val/card_a27ac4bad7993620.png",
+          "baseline_fn": 0,
+          "candidate_fn": 1
+        },
+        {
+          "image": "images/val/card_3142acd16f8351a1.png",
+          "baseline_fn": 1,
+          "candidate_fn": 2
+        },
+        {
+          "image": "images/val/card_4102308b351803fc.png",
+          "baseline_fn": 0,
+          "candidate_fn": 1
+        }
+      ]
+    },
+    "resolution960_v1/class_aware": {
+      "images": 400,
+      "true_positive": 7800,
+      "false_positive": 5,
+      "false_negative": 1,
+      "exact_images": 394,
+      "input_size": 960,
+      "scene_counts": {
+        "negative": {
+          "images": 5,
+          "tp": 0,
+          "fp": 0,
+          "fn": 0,
+          "exact": 5
+        },
+        "sorted": {
+          "images": 395,
+          "tp": 7800,
+          "fp": 5,
+          "fn": 1,
+          "exact": 389
+        },
+        "others_play": {
+          "images": 326,
+          "tp": 6659,
+          "fp": 4,
+          "fn": 1,
+          "exact": 321
+        },
+        "self_play": {
+          "images": 48,
+          "tp": 1106,
+          "fp": 0,
+          "fn": 0,
+          "exact": 48
+        },
+        "pass": {
+          "images": 29,
+          "tp": 370,
+          "fp": 0,
+          "fn": 0,
+          "exact": 29
+        }
+      },
+      "groups": 9,
+      "sessions": 9,
+      "mean_inference_ms": 75.64783738343976,
+      "worsened_miss_images": []
+    },
+    "resolution960_v1/agnostic": {
+      "images": 400,
+      "true_positive": 7798,
+      "false_positive": 4,
+      "false_negative": 3,
+      "exact_images": 395,
+      "input_size": 960,
+      "scene_counts": {
+        "negative": {
+          "images": 5,
+          "tp": 0,
+          "fp": 0,
+          "fn": 0,
+          "exact": 5
+        },
+        "sorted": {
+          "images": 395,
+          "tp": 7798,
+          "fp": 4,
+          "fn": 3,
+          "exact": 390
+        },
+        "others_play": {
+          "images": 326,
+          "tp": 6657,
+          "fp": 3,
+          "fn": 3,
+          "exact": 322
+        },
+        "self_play": {
+          "images": 48,
+          "tp": 1106,
+          "fp": 0,
+          "fn": 0,
+          "exact": 48
+        },
+        "pass": {
+          "images": 29,
+          "tp": 370,
+          "fp": 0,
+          "fn": 0,
+          "exact": 29
+        }
+      },
+      "groups": 9,
+      "sessions": 9,
+      "mean_inference_ms": 75.64783738343976,
+      "worsened_miss_images": [
+        {
+          "image": "images/val/card_cf08b78ae73916ed.png",
+          "baseline_fn": 0,
+          "candidate_fn": 1
+        },
+        {
+          "image": "images/val/card_8d05fd2b0b826587.png",
+          "baseline_fn": 0,
+          "candidate_fn": 1
+        }
+      ]
+    }
+  },
+  "nominated_for_regression": "resolution960_v1/class_aware",
+  "new_blind_test_images": 0,
+  "formal_model_unchanged": true,
+  "label_version": "prepared_full2000_review_v2",
+  "note": "Frozen labels used for model/NMS selection before subsequent Q-heart audit; new independent blind-test count remains 0."
+}

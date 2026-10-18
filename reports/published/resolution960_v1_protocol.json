@@ -1,0 +1,28 @@
+{
+  "purpose": "validation_only_model_and_standard_nms_comparison",
+  "dataset": "data/prepared_full2000_review_v2",
+  "dataset_fingerprint": "e44711b02e86d804d64f44db6fb104bcc67fbf9ea4a9a3a8619c548f1ff3e904",
+  "split": "val",
+  "expected_images": 400,
+  "models": {
+    "v1_640": {
+      "path": "artifacts/card_model.onnx",
+      "sha256": "b09a8a82311b5233998b41e7f7a8c1aff7077c89efa00d8d2681daff96f4f7a5"
+    },
+    "resolution960_v1": {
+      "path": "artifacts/candidates/resolution960_v1.onnx",
+      "sha256": "2fa7355e8ab52975a49d2cdd1488d95185fd1bf54895c4774dd8864dd1e8adbc"
+    }
+  },
+  "modes": [
+    "class_aware",
+    "agnostic"
+  ],
+  "confidence": 0.25,
+  "nms_iou": 0.45,
+  "match_iou": 0.5,
+  "reference": "v1_640/class_aware",
+  "nomination_rule": "Candidate must not increase missed-card count in any validation image or class; must reduce total false positives and increase exact-image count. Choose lowest FN, lowest FP, highest exact count, then retain lower input size on ties. This nominates a frozen candidate for regression, never proves new-blind-test success.",
+  "new_blind_test_images": 0,
+  "formal_v1_unchanged": true
+}

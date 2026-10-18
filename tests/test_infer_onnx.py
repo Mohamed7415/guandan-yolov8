@@ -17,6 +17,18 @@ class InferenceBoundaryTests(unittest.TestCase):
   image=np.zeros((1000,1600,3),dtype=np.uint8);tensor,ratio,pad=preprocess(image);self.assertEqual(tensor.shape,(1,3,640,640));self.assertEqual(pad,(0,120))
   out=self.output();out[0,:4,0]=[200,260,80,120];out[0,4,0]=.9
   self.assertEqual(decode(out,image.shape,ratio,pad)[0]['xyxy'],[400.0,200.0,600.0,500.0])
+ def test_explicit_agnostic_nms_removes_cross_class_duplicate_only(self):
+  out=self.output()
+  for i,(c,score,x) in enumerate([(0,.9,200),(1,.85,200),(2,.8,400)]):
+   out[0,:4,i]=[x,200,100,100];out[0,4+c,i]=score
+  self.assertEqual([r['class_id'] for r in decode(out,(640,640,3),1,(0,0),agnostic_nms=True)],[0,2])
+  self.assertEqual([r['class_id'] for r in decode(out,(640,640,3),1,(0,0))],[0,1,2])
+ def test_agnostic_nms_is_explicitly_lossy_for_overlapping_objects(self):
+  out=self.output()
+  for i,(c,score) in enumerate([(0,.9),(1,.85)]):out[0,:4,i]=[200,200,100,100];out[0,4+c,i]=score
+  self.assertEqual(len(decode(out,(640,640,3),1,(0,0))),2)
+  self.assertEqual(len(decode(out,(640,640,3),1,(0,0),agnostic_nms=True)),1)
+  self.assertEqual(decode(self.output(),(640,640,3),1,(0,0),agnostic_nms=True),[])
  def test_nonfinite_output_rejected(self):
   out=self.output();out[0,0,0]=np.nan
   with self.assertRaises(ValueError):decode(out,(640,640,3),1,(0,0))

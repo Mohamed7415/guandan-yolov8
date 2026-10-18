@@ -42,7 +42,7 @@ def preprocess(image, input_size=640):
     return tensor, ratio, (left, top)
 
 
-def decode(output, shape, ratio, padding, confidence=.25, iou=.45, input_size=640):
+def decode(output, shape, ratio, padding, confidence=.25, iou=.45, input_size=640, agnostic_nms=False):
     if output.shape != (1,58,candidate_count(input_size)) or not np.isfinite(output).all():
         raise ValueError(f"Invalid model output: {output.shape}")
     predictions = output[0].T
@@ -53,9 +53,11 @@ def decode(output, shape, ratio, padding, confidence=.25, iou=.45, input_size=64
     boxes = predictions.copy()
     boxes[:,:2] -= boxes[:,2:] / 2
     selected = []
-    # Class-aware NMS keeps visually overlapping cards with different classes.
-    for c in np.unique(classes):
-        subset = np.where(classes == c)[0]
+    # Default preserves overlapping cards of different classes. The explicit
+    # experiment option compares standard cross-class NMS on the same outputs.
+    subsets = ([np.arange(len(classes))] if agnostic_nms and len(classes) else
+               [np.where(classes == c)[0] for c in np.unique(classes)])
+    for subset in subsets:
         indices = cv2.dnn.NMSBoxes(boxes[subset].tolist(),scores[subset].tolist(),confidence,iou)
         selected.extend(subset[np.asarray(indices, dtype=np.int64).reshape(-1)].tolist())
     selected.sort(key=lambda i:float(scores[i]),reverse=True)
@@ -78,6 +80,7 @@ def main():
     p.add_argument("--output",type=Path,default=Path("reports/inference"))
     p.add_argument("--confidence",type=float,default=.25)
     p.add_argument("--iou",type=float,default=.45)
+    p.add_argument("--agnostic-nms",action="store_true",help="Experimental standard NMS across all classes; validate crowded-card recall before use")
     a = p.parse_args()
     if not (0 < a.confidence < 1 and 0 < a.iou < 1): p.error("Thresholds must be between 0 and 1")
     original = cv2.imread(str(a.image))
@@ -88,11 +91,11 @@ def main():
     names = ast.literal_eval(session.get_modelmeta().custom_metadata_map["names"])
     tensor,ratio,padding = preprocess(original,input_size)
     output = session.run(None,{session.get_inputs()[0].name:tensor})[0]
-    detections = decode(output,original.shape,ratio,padding,a.confidence,a.iou,input_size)
+    detections = decode(output,original.shape,ratio,padding,a.confidence,a.iou,input_size,a.agnostic_nms)
     for d in detections: d["label"] = names[d["class_id"]]
     a.output.mkdir(parents=True,exist_ok=True)
     record = dict(image=str(a.image.resolve()),model=str(a.model.resolve()),confidence=a.confidence,
-                  iou=a.iou,input_size=input_size,detections=detections)
+                  iou=a.iou,input_size=input_size,nms_mode="agnostic" if a.agnostic_nms else "class_aware",detections=detections)
     (a.output/(a.image.stem+".json")).write_text(json.dumps(record,ensure_ascii=False,indent=2)+"\n")
     from PIL import Image,ImageDraw,ImageFont
     preview = Image.fromarray(cv2.cvtColor(original,cv2.COLOR_BGR2RGB))

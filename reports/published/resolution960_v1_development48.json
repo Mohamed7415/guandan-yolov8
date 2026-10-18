@@ -1,0 +1,2945 @@
+{
+  "purpose": "development_regression_only_not_blind_test",
+  "candidate_config_sha256": "86b43406270895e8c4baa866beb0154f1c5c601afcd53324d2346c12875457a8",
+  "manifest_sha256": "8e5586a7513627c880dce8a15ea6ec70df7829f95fce942926c938d4a4022bf5",
+  "confidence": 0.25,
+  "nms_iou": 0.45,
+  "nms_mode": "class_aware",
+  "match_iou": 0.5,
+  "conservative_split_units": 1,
+  "actual_games_observed": 2,
+  "new_blind_test_images": 0,
+  "scene_note": "Image scene labels overlap; do not sum scene row image counts.",
+  "results": {
+    "v1_640": {
+      "model_sha256": "b09a8a82311b5233998b41e7f7a8c1aff7077c89efa00d8d2681daff96f4f7a5",
+      "input_size": 640,
+      "images": 48,
+      "tp": 887,
+      "fp": 5,
+      "fn": 3,
+      "exact_images": 41,
+      "scene_counts": {
+        "sorted": {
+          "images": 46,
+          "tp": 886,
+          "fp": 5,
+          "fn": 3,
+          "exact": 39
+        },
+        "self_play": {
+          "images": 15,
+          "tp": 290,
+          "fp": 2,
+          "fn": 3,
+          "exact": 11
+        },
+        "others_play": {
+          "images": 23,
+          "tp": 475,
+          "fp": 1,
+          "fn": 1,
+          "exact": 21
+        },
+        "pass": {
+          "images": 40,
+          "tp": 695,
+          "fp": 4,
+          "fn": 3,
+          "exact": 34
+        },
+        "negative": {
+          "images": 1,
+          "tp": 0,
+          "fp": 0,
+          "fn": 0,
+          "exact": 1
+        }
+      },
+      "per_class": {
+        "3♠": {
+          "tp": 13,
+          "fp": 0,
+          "fn": 0
+        },
+        "3♥": {
+          "tp": 13,
+          "fp": 0,
+          "fn": 0
+        },
+        "3♦": {
+          "tp": 12,
+          "fp": 0,
+          "fn": 0
+        },
+        "3♣": {
+          "tp": 10,
+          "fp": 0,
+          "fn": 0
+        },
+        "4♠": {
+          "tp": 10,
+          "fp": 0,
+          "fn": 0
+        },
+        "4♥": {
+          "tp": 35,
+          "fp": 2,
+          "fn": 0
+        },
+        "4♦": {
+          "tp": 5,
+          "fp": 0,
+          "fn": 0
+        },
+        "4♣": {
+          "tp": 39,
+          "fp": 0,
+          "fn": 0
+        },
+        "5♠": {
+          "tp": 13,
+          "fp": 0,
+          "fn": 0
+        },
+        "5♥": {
+          "tp": 2,
+          "fp": 0,
+          "fn": 0
+        },
+        "5♦": {
+          "tp": 4,
+          "fp": 0,
+          "fn": 0
+        },
+        "5♣": {
+          "tp": 2,
+          "fp": 0,
+          "fn": 0
+        },
+        "6♠": {
+          "tp": 43,
+          "fp": 0,
+          "fn": 0
+        },
+        "6♥": {
+          "tp": 1,
+          "fp": 0,
+          "fn": 0
+        },
+        "6♦": {
+          "tp": 53,
+          "fp": 0,
+          "fn": 0
+        },
+        "6♣": {
+          "tp": 27,
+          "fp": 0,
+          "fn": 0
+        },
+        "7♠": {
+          "tp": 5,
+          "fp": 0,
+          "fn": 0
+        },
+        "7♥": {
+          "tp": 7,
+          "fp": 0,
+          "fn": 0
+        },
+        "7♦": {
+          "tp": 12,
+          "fp": 0,
+          "fn": 0
+        },
+        "7♣": {
+          "tp": 1,
+          "fp": 0,
+          "fn": 0
+        },
+        "8♠": {
+          "tp": 21,
+          "fp": 0,
+          "fn": 0
+        },
+        "8♥": {
+          "tp": 17,
+          "fp": 0,
+          "fn": 0
+        },
+        "8♦": {
+          "tp": 7,
+          "fp": 0,
+          "fn": 0
+        },
+        "8♣": {
+          "tp": 6,
+          "fp": 0,
+          "fn": 0
+        },
+        "9♠": {
+          "tp": 4,
+          "fp": 0,
+          "fn": 0
+        },
+        "9♥": {
+          "tp": 3,
+          "fp": 0,
+          "fn": 0
+        },
+        "9♦": {
+          "tp": 20,
+          "fp": 0,
+          "fn": 0
+        },
+        "9♣": {
+          "tp": 10,
+          "fp": 0,
+          "fn": 2
+        },
+        "10♠": {
+          "tp": 7,
+          "fp": 0,
+          "fn": 0
+        },
+        "10♥": {
+          "tp": 7,
+          "fp": 0,
+          "fn": 0
+        },
+        "10♦": {
+          "tp": 8,
+          "fp": 0,
+          "fn": 0
+        },
+        "10♣": {
+          "tp": 1,
+          "fp": 0,
+          "fn": 0
+        },
+        "J♠": {
+          "tp": 32,
+          "fp": 0,
+          "fn": 0
+        },
+        "J♥": {
+          "tp": 45,
+          "fp": 0,
+          "fn": 0
+        },
+        "J♦": {
+          "tp": 33,
+          "fp": 0,
+          "fn": 0
+        },
+        "J♣": {
+          "tp": 2,
+          "fp": 0,
+          "fn": 0
+        },
+        "Q♠": {
+          "tp": 13,
+          "fp": 1,
+          "fn": 0
+        },
+        "Q♥": {
+          "tp": 13,
+          "fp": 0,
+          "fn": 0
+        },
+        "Q♦": {
+          "tp": 1,
+          "fp": 0,
+          "fn": 0
+        },
+        "Q♣": {
+          "tp": 6,
+          "fp": 0,
+          "fn": 0
+        },
+        "K♠": {
+          "tp": 2,
+          "fp": 0,
+          "fn": 0
+        },
+        "K♥": {
+          "tp": 3,
+          "fp": 0,
+          "fn": 0
+        },
+        "K♦": {
+          "tp": 36,
+          "fp": 0,
+          "fn": 0
+        },
+        "K♣": {
+          "tp": 68,
+          "fp": 1,
+          "fn": 0
+        },
+        "A♠": {
+          "tp": 21,
+          "fp": 0,
+          "fn": 0
+        },
+        "A♥": {
+          "tp": 8,
+          "fp": 0,
+          "fn": 0
+        },
+        "A♦": {
+          "tp": 5,
+          "fp": 0,
+          "fn": 0
+        },
+        "A♣": {
+          "tp": 23,
+          "fp": 0,
+          "fn": 0
+        },
+        "2♠": {
+          "tp": 5,
+          "fp": 0,
+          "fn": 0
+        },
+        "2♥": {
+          "tp": 74,
+          "fp": 0,
+          "fn": 1
+        },
+        "2♦": {
+          "tp": 2,
+          "fp": 1,
+          "fn": 0
+        },
+        "2♣": {
+          "tp": 14,
+          "fp": 0,
+          "fn": 0
+        },
+        "SJ": {
+          "tp": 31,
+          "fp": 0,
+          "fn": 0
+        },
+        "BJ": {
+          "tp": 32,
+          "fp": 0,
+          "fn": 0
+        }
+      },
+      "items": [
+        {
+          "image": "goal_20261019_batch001_00001.png",
+          "tp": 27,
+          "fp": 0,
+          "fn": 0,
+          "exact": true,
+          "scene": "sorted",
+          "missed_classes": {},
+          "false_positive_classes": {}
+        },
+        {
+          "image": "goal_20261019_batch001_00002.png",
+          "tp": 27,
+          "fp": 0,
+          "fn": 0,
+          "exact": true,
+          "scene": "sorted",
+          "missed_classes": {},
+          "false_positive_classes": {}
+        },
+        {
+          "image": "goal_20261019_batch001_00003.png",
+          "tp": 27,
+          "fp": 0,
+          "fn": 0,
+          "exact": true,
+          "scene": "sorted",
+          "missed_classes": {},
+          "false_positive_classes": {}
+        },
+        {
+          "image": "goal_20261019_batch001_00004.png",
+          "tp": 27,
+          "fp": 0,
+          "fn": 0,
+          "exact": true,
+          "scene": "sorted",
+          "missed_classes": {},
+          "false_positive_classes": {}
+        },
+        {
+          "image": "goal_20261019_batch001_00005.png",
+          "tp": 28,
+          "fp": 0,
+          "fn": 0,
+          "exact": true,
+          "scene": "sorted|self_play|others_play",
+          "missed_classes": {},
+          "false_positive_classes": {}
+        },
+        {
+          "image": "goal_20261019_batch001_00006.png",
+          "tp": 29,
+          "fp": 0,
+          "fn": 0,
+          "exact": true,
+          "scene": "sorted|others_play",
+          "missed_classes": {},
+          "false_positive_classes": {}
+        },
+        {
+          "image": "goal_20261019_batch001_00007.png",
+          "tp": 26,
+          "fp": 0,
+          "fn": 0,
+          "exact": true,
+          "scene": "sorted|pass",
+          "missed_classes": {},
+          "false_positive_classes": {}
+        },
+        {
+          "image": "goal_20261019_batch001_00008.png",
+          "tp": 31,
+          "fp": 0,
+          "fn": 0,
+          "exact": true,
+          "scene": "sorted|others_play|pass",
+          "missed_classes": {},
+          "false_positive_classes": {}
+        },
+        {
+          "image": "goal_20261019_batch001_00009.png",
+          "tp": 30,
+          "fp": 0,
+          "fn": 1,
+          "exact": false,
+          "scene": "sorted|self_play|others_play|pass",
+          "missed_classes": {
+            "9♣": 1
+          },
+          "false_positive_classes": {},
+          "predictions": [
+            {
+              "class_id": 1,
+              "confidence": 0.999184,
+              "xyxy": [
+                805.42,
+                382.91,
+                855.01,
+                520.0
+              ]
+            },
+            {
+              "class_id": 34,
+              "confidence": 0.994851,
+              "xyxy": [
+                868.85,
+                685.93,
+                996.49,
+                744.27
+              ]
+            },
+            {
+              "class_id": 1,
+              "confidence": 0.993743,
+              "xyxy": [
+                387.93,
+                307.31,
+                435.72,
+                445.18
+              ]
+            },
+            {
+              "class_id": 26,
+              "confidence": 0.992602,
+              "xyxy": [
+                708.86,
+                382.47,
+                758.07,
+                519.62
+              ]
+            },
+            {
+              "class_id": 42,
+              "confidence": 0.99229,
+              "xyxy": [
+                741.75,
+                744.7,
+                868.26,
+                918.19
+              ]
+            },
+            {
+              "class_id": 3,
+              "confidence": 0.991372,
+              "xyxy": [
+                435.75,
+                308.22,
+                538.11,
+                445.43
+              ]
+            },
+            {
+              "class_id": 47,
+              "confidence": 0.991329,
+              "xyxy": [
+                615.25,
+                744.36,
+                742.74,
+                918.55
+              ]
+            },
+            {
+              "class_id": 44,
+              "confidence": 0.990041,
+              "xyxy": [
+                614.47,
+                685.91,
+                741.73,
+                744.83
+              ]
+            },
+            {
+              "class_id": 32,
+              "confidence": 0.989292,
+              "xyxy": [
+                869.22,
+                629.18,
+                1000.74,
+                686.42
+              ]
+            },
+            {
+              "class_id": 49,
+              "confidence": 0.989062,
+              "xyxy": [
+                488.1,
+                743.95,
+                615.06,
+                917.31
+              ]
+            },
+            {
+              "class_id": 5,
+              "confidence": 0.988561,
+              "xyxy": [
+                290.56,
+                307.95,
+                339.01,
+                445.3
+              ]
+            },
+            {
+              "class_id": 7,
+              "confidence": 0.986341,
+              "xyxy": [
+                1252.27,
+                685.45,
+                1383.51,
+                744.4
+              ]
+            },
+            {
+              "class_id": 52,
+              "confidence": 0.986203,
+              "xyxy": [
+                359.87,
+                744.7,
+                487.35,
+                919.25
+              ]
+            },
+            {
+              "class_id": 5,
+              "confidence": 0.983229,
+              "xyxy": [
+                1251.54,
+                745.7,
+                1383.95,
+                918.91
+              ]
+            },
+            {
+              "class_id": 26,
+              "confidence": 0.982833,
+              "xyxy": [
+                660.35,
+                382.93,
+                708.77,
+                519.87
+              ]
+            },
+            {
+              "class_id": 49,
+              "confidence": 0.9824,
+              "xyxy": [
+                488.49,
+                686.64,
+                615.45,
+                743.89
+              ]
+            },
+            {
+              "class_id": 53,
+              "confidence": 0.982126,
+              "xyxy": [
+                231.89,
+                744.82,
+                360.25,
+                919.89
+              ]
+            },
+            {
+              "class_id": 6,
+              "confidence": 0.981741,
+              "xyxy": [
+                241.44,
+                307.86,
+                289.84,
+                445.1
+              ]
+            },
+            {
+              "class_id": 14,
+              "confidence": 0.978651,
+              "xyxy": [
+                1124.23,
+                744.55,
+                1251.75,
+                917.61
+              ]
+            },
+            {
+              "class_id": 4,
+              "confidence": 0.978108,
+              "xyxy": [
+                338.89,
+                308.01,
+                387.93,
+                445.07
+              ]
+            },
+            {
+              "class_id": 33,
+              "confidence": 0.975645,
+              "xyxy": [
+                869.01,
+                744.49,
+                996.53,
+                919.4
+              ]
+            },
+            {
+              "class_id": 0,
+              "confidence": 0.972641,
+              "xyxy": [
+                854.97,
+                383.46,
+                957.99,
+                519.08
+              ]
+            },
+            {
+              "class_id": 51,
+              "confidence": 0.969615,
+              "xyxy": [
+                488.19,
+                628.3,
+                619.72,
+                686.25
+              ]
+            },
+            {
+              "class_id": 15,
+              "confidence": 0.968237,
+              "xyxy": [
+                1124.25,
+                628.13,
+                1256.35,
+                686.55
+              ]
+            },
+            {
+              "class_id": 12,
+              "confidence": 0.963035,
+              "xyxy": [
+                1124.31,
+                570.56,
+                1256.09,
+                628.5
+              ]
+            },
+            {
+              "class_id": 21,
+              "confidence": 0.960931,
+              "xyxy": [
+                996.52,
+                744.47,
+                1125.07,
+                919.12
+              ]
+            },
+            {
+              "class_id": 43,
+              "confidence": 0.956975,
+              "xyxy": [
+                741.52,
+                686.09,
+                869.26,
+                744.33
+              ]
+            },
+            {
+              "class_id": 20,
+              "confidence": 0.954317,
+              "xyxy": [
+                996.4,
+                685.97,
+                1124.17,
+                745.18
+              ]
+            },
+            {
+              "class_id": 43,
+              "confidence": 0.948734,
+              "xyxy": [
+                741.49,
+                628.99,
+                869.64,
+                686.11
+              ]
+            },
+            {
+              "class_id": 14,
+              "confidence": 0.893362,
+              "xyxy": [
+                1124.12,
+                686.18,
+                1252.29,
+                744.92
+              ]
+            }
+          ]
+        },
+        {
+          "image": "goal_20261019_batch001_00010.png",
+          "tp": 25,
+          "fp": 0,
+          "fn": 1,
+          "exact": false,
+          "scene": "sorted|self_play|pass",
+          "missed_classes": {
+            "9♣": 1
+          },
+          "false_positive_classes": {},
+          "predictions": [
+            {
+              "class_id": 1,
+              "confidence": 0.99919,
+              "xyxy": [
+                805.43,
+                382.91,
+                855.02,
+                519.99
+              ]
+            },
+            {
+              "class_id": 34,
+              "confidence": 0.994704,
+              "xyxy": [
+                868.85,
+                685.93,
+                996.48,
+                744.27
+              ]
+            },
+            {
+              "class_id": 26,
+              "confidence": 0.992631,
+              "xyxy": [
+                708.88,
+                382.5,
+                758.09,
+                519.63
+              ]
+            },
+            {
+              "class_id": 42,
+              "confidence": 0.992519,
+              "xyxy": [
+                741.75,
+                744.71,
+                868.25,
+                918.18
+              ]
+            },
+            {
+              "class_id": 47,
+              "confidence": 0.991356,
+              "xyxy": [
+                615.25,
+                744.36,
+                742.73,
+                918.54
+              ]
+            },
+            {
+              "class_id": 44,
+              "confidence": 0.98993,
+              "xyxy": [
+                614.48,
+                685.91,
+                741.73,
+                744.84
+              ]
+            },
+            {
+              "class_id": 32,
+              "confidence": 0.989599,
+              "xyxy": [
+                869.22,
+                629.17,
+                1000.75,
+                686.42
+              ]
+            },
+            {
+              "class_id": 49,
+              "confidence": 0.989001,
+              "xyxy": [
+                488.11,
+                743.95,
+                615.05,
+                917.31
+              ]
+            },
+            {
+              "class_id": 52,
+              "confidence": 0.98624,
+              "xyxy": [
+                359.88,
+                744.71,
+                487.36,
+                919.26
+              ]
+            },
+            {
+              "class_id": 7,
+              "confidence": 0.986215,
+              "xyxy": [
+                1252.27,
+                685.45,
+                1383.51,
+                744.39
+              ]
+            },
+            {
+              "class_id": 5,
+              "confidence": 0.983252,
+              "xyxy": [
+                1251.54,
+                745.7,
+                1383.95,
+                918.92
+              ]
+            },
+            {
+              "class_id": 26,
+              "confidence": 0.983158,
+              "xyxy": [
+                660.36,
+                382.96,
+                708.8,
+                519.89
+              ]
+            },
+            {
+              "class_id": 49,
+              "confidence": 0.982138,
+              "xyxy": [
+                488.5,
+                686.66,
+                615.45,
+                743.9
+              ]
+            },
+            {
+              "class_id": 53,
+              "confidence": 0.981171,
+              "xyxy": [
+                231.91,
+                744.82,
+                360.26,
+                919.89
+              ]
+            },
+            {
+              "class_id": 14,
+              "confidence": 0.978523,
+              "xyxy": [
+                1124.23,
+                744.55,
+                1251.75,
+                917.61
+              ]
+            },
+            {
+              "class_id": 33,
+              "confidence": 0.976406,
+              "xyxy": [
+                869.01,
+                744.49,
+                996.53,
+                919.39
+              ]
+            },
+            {
+              "class_id": 0,
+              "confidence": 0.971633,
+              "xyxy": [
+                854.93,
+                383.33,
+                958.59,
+                520.33
+              ]
+            },
+            {
+              "class_id": 51,
+              "confidence": 0.968569,
+              "xyxy": [
+                488.21,
+                628.3,
+                619.72,
+                686.24
+              ]
+            },
+            {
+              "class_id": 15,
+              "confidence": 0.968443,
+              "xyxy": [
+                1124.25,
+                628.13,
+                1256.35,
+                686.55
+              ]
+            },
+            {
+              "class_id": 12,
+              "confidence": 0.963172,
+              "xyxy": [
+                1124.31,
+                570.56,
+                1256.08,
+                628.49
+              ]
+            },
+            {
+              "class_id": 21,
+              "confidence": 0.961139,
+              "xyxy": [
+                996.52,
+                744.47,
+                1125.06,
+                919.12
+              ]
+            },
+            {
+              "class_id": 43,
+              "confidence": 0.957585,
+              "xyxy": [
+                741.52,
+                686.08,
+                869.25,
+                744.33
+              ]
+            },
+            {
+              "class_id": 20,
+              "confidence": 0.954549,
+              "xyxy": [
+                996.4,
+                685.97,
+                1124.16,
+                745.18
+              ]
+            },
+            {
+              "class_id": 43,
+              "confidence": 0.947069,
+              "xyxy": [
+                741.48,
+                628.99,
+                869.64,
+                686.11
+              ]
+            },
+            {
+              "class_id": 14,
+              "confidence": 0.893129,
+              "xyxy": [
+                1124.12,
+                686.18,
+                1252.29,
+                744.92
+              ]
+            }
+          ]
+        },
+        {
+          "image": "goal_20261019_batch001_00011.png",
+          "tp": 21,
+          "fp": 0,
+          "fn": 0,
+          "exact": true,
+          "scene": "sorted|pass",
+          "missed_classes": {},
+          "false_positive_classes": {}
+        },
+        {
+          "image": "goal_20261019_batch001_00012.png",
+          "tp": 21,
+          "fp": 0,
+          "fn": 0,
+          "exact": true,
+          "scene": "sorted|self_play|pass",
+          "missed_classes": {},
+          "false_positive_classes": {}
+        },
+        {
+          "image": "goal_20261019_batch001_00013.png",
+          "tp": 21,
+          "fp": 0,
+          "fn": 0,
+          "exact": true,
+          "scene": "sorted|self_play|pass",
+          "missed_classes": {},
+          "false_positive_classes": {}
+        },
+        {
+          "image": "goal_20261019_batch001_00014.png",
+          "tp": 20,
+          "fp": 0,
+          "fn": 0,
+          "exact": true,
+          "scene": "sorted|pass",
+          "missed_classes": {},
+          "false_positive_classes": {}
+        },
+        {
+          "image": "goal_20261019_batch001_00015.png",
+          "tp": 20,
+          "fp": 0,
+          "fn": 0,
+          "exact": true,
+          "scene": "self_play|pass|sorted",
+          "missed_classes": {},
+          "false_positive_classes": {}
+        },
+        {
+          "image": "goal_20261019_batch001_00016.png",
+          "tp": 22,
+          "fp": 0,
+          "fn": 0,
+          "exact": true,
+          "scene": "sorted|self_play|others_play|pass",
+          "missed_classes": {},
+          "false_positive_classes": {}
+        },
+        {
+          "image": "goal_20261019_batch001_00017.png",
+          "tp": 20,
+          "fp": 0,
+          "fn": 0,
+          "exact": true,
+          "scene": "sorted|others_play|pass",
+          "missed_classes": {},
+          "false_positive_classes": {}
+        },
+        {
+          "image": "goal_20261019_batch001_00018.png",
+          "tp": 20,
+          "fp": 0,
+          "fn": 0,
+          "exact": true,
+          "scene": "sorted|self_play|others_play|pass",
+          "missed_classes": {},
+          "false_positive_classes": {}
+        },
+        {
+          "image": "goal_20261019_batch001_00019.png",
+          "tp": 22,
+          "fp": 0,
+          "fn": 0,
+          "exact": true,
+          "scene": "sorted|others_play|pass",
+          "missed_classes": {},
+          "false_positive_classes": {}
+        },
+        {
+          "image": "goal_20261019_batch001_00020.png",
+          "tp": 19,
+          "fp": 0,
+          "fn": 0,
+          "exact": true,
+          "scene": "sorted|self_play|pass",
+          "missed_classes": {},
+          "false_positive_classes": {}
+        },
+        {
+          "image": "goal_20261019_batch001_00021.png",
+          "tp": 19,
+          "fp": 0,
+          "fn": 0,
+          "exact": true,
+          "scene": "sorted|self_play|pass",
+          "missed_classes": {},
+          "false_positive_classes": {}
+        },
+        {
+          "image": "goal_20261019_batch001_00022.png",
+          "tp": 20,
+          "fp": 0,
+          "fn": 0,
+          "exact": true,
+          "scene": "sorted|others_play|pass",
+          "missed_classes": {},
+          "false_positive_classes": {}
+        },
+        {
+          "image": "goal_20261019_batch001_00023.png",
+          "tp": 20,
+          "fp": 0,
+          "fn": 0,
+          "exact": true,
+          "scene": "sorted|others_play|pass",
+          "missed_classes": {},
+          "false_positive_classes": {}
+        },
+        {
+          "image": "goal_20261019_batch001_00024.png",
+          "tp": 21,
+          "fp": 0,
+          "fn": 0,
+          "exact": true,
+          "scene": "sorted|others_play|pass",
+          "missed_classes": {},
+          "false_positive_classes": {}
+        },
+        {
+          "image": "goal_20261019_batch001_00025.png",
+          "tp": 26,
+          "fp": 0,
+          "fn": 0,
+          "exact": true,
+          "scene": "sorted|others_play|pass",
+          "missed_classes": {},
+          "false_positive_classes": {}
+        },
+        {
+          "image": "goal_20261019_batch001_00026.png",
+          "tp": 20,
+          "fp": 0,
+          "fn": 0,
+          "exact": true,
+          "scene": "sorted|self_play|others_play|pass",
+          "missed_classes": {},
+          "false_positive_classes": {}
+        },
+        {
+          "image": "goal_20261019_batch001_00027.png",
+          "tp": 12,
+          "fp": 0,
+          "fn": 0,
+          "exact": true,
+          "scene": "sorted|pass",
+          "missed_classes": {},
+          "false_positive_classes": {}
+        },
+        {
+          "image": "goal_20261019_batch001_00028.png",
+          "tp": 12,
+          "fp": 1,
+          "fn": 0,
+          "exact": false,
+          "scene": "sorted|self_play|pass",
+          "missed_classes": {},
+          "false_positive_classes": {
+            "4♥": 1
+          },
+          "predictions": [
+            {
+              "class_id": 49,
+              "confidence": 0.996559,
+              "xyxy": [
+                615.38,
+                685.81,
+                742.39,
+                745.19
+              ]
+            },
+            {
+              "class_id": 7,
+              "confidence": 0.990304,
+              "xyxy": [
+                996.8,
+                685.66,
+                1127.69,
+                744.39
+              ]
+            },
+            {
+              "class_id": 53,
+              "confidence": 0.989276,
+              "xyxy": [
+                487.18,
+                744.92,
+                615.68,
+                919.36
+              ]
+            },
+            {
+              "class_id": 42,
+              "confidence": 0.98895,
+              "xyxy": [
+                741.87,
+                744.96,
+                868.29,
+                918.07
+              ]
+            },
+            {
+              "class_id": 5,
+              "confidence": 0.987734,
+              "xyxy": [
+                997.12,
+                745.83,
+                1129.0,
+                918.59
+              ]
+            },
+            {
+              "class_id": 34,
+              "confidence": 0.985056,
+              "xyxy": [
+                869.23,
+                686.14,
+                997.1,
+                743.99
+              ]
+            },
+            {
+              "class_id": 49,
+              "confidence": 0.977132,
+              "xyxy": [
+                615.8,
+                743.88,
+                742.5,
+                918.52
+              ]
+            },
+            {
+              "class_id": 43,
+              "confidence": 0.972441,
+              "xyxy": [
+                741.64,
+                629.03,
+                869.63,
+                686.11
+              ]
+            },
+            {
+              "class_id": 52,
+              "confidence": 0.965774,
+              "xyxy": [
+                756.86,
+                383.15,
+                860.31,
+                520.16
+              ]
+            },
+            {
+              "class_id": 32,
+              "confidence": 0.960832,
+              "xyxy": [
+                869.38,
+                629.01,
+                1000.39,
+                686.09
+              ]
+            },
+            {
+              "class_id": 43,
+              "confidence": 0.956774,
+              "xyxy": [
+                742.02,
+                686.12,
+                869.24,
+                744.35
+              ]
+            },
+            {
+              "class_id": 33,
+              "confidence": 0.753314,
+              "xyxy": [
+                869.05,
+                745.62,
+                996.77,
+                918.02
+              ]
+            },
+            {
+              "class_id": 5,
+              "confidence": 0.647845,
+              "xyxy": [
+                868.72,
+                744.22,
+                997.0,
+                918.94
+              ]
+            }
+          ]
+        },
+        {
+          "image": "goal_20261019_batch001_00029.png",
+          "tp": 11,
+          "fp": 1,
+          "fn": 0,
+          "exact": false,
+          "scene": "sorted|pass",
+          "missed_classes": {},
+          "false_positive_classes": {
+            "4♥": 1
+          },
+          "predictions": [
+            {
+              "class_id": 49,
+              "confidence": 0.996862,
+              "xyxy": [
+                615.39,
+                685.82,
+                742.38,
+                745.21
+              ]
+            },
+            {
+              "class_id": 7,
+              "confidence": 0.990579,
+              "xyxy": [
+                996.8,
+                685.66,
+                1127.72,
+                744.38
+              ]
+            },
+            {
+              "class_id": 53,
+              "confidence": 0.98954,
+              "xyxy": [
+                487.17,
+                744.92,
+                615.69,
+                919.35
+              ]
+            },
+            {
+              "class_id": 42,
+              "confidence": 0.989433,
+              "xyxy": [
+                741.87,
+                744.98,
+                868.31,
+                918.03
+              ]
+            },
+            {
+              "class_id": 5,
+              "confidence": 0.988258,
+              "xyxy": [
+                997.11,
+                745.83,
+                1129.02,
+                918.58
+              ]
+            },
+            {
+              "class_id": 34,
+              "confidence": 0.984159,
+              "xyxy": [
+                869.25,
+                686.15,
+                997.08,
+                743.99
+              ]
+            },
+            {
+              "class_id": 49,
+              "confidence": 0.978211,
+              "xyxy": [
+                615.82,
+                743.89,
+                742.5,
+                918.51
+              ]
+            },
+            {
+              "class_id": 43,
+              "confidence": 0.96701,
+              "xyxy": [
+                741.64,
+                629.01,
+                869.63,
+                686.11
+              ]
+            },
+            {
+              "class_id": 32,
+              "confidence": 0.963189,
+              "xyxy": [
+                869.39,
+                629.01,
+                1000.35,
+                686.09
+              ]
+            },
+            {
+              "class_id": 43,
+              "confidence": 0.958189,
+              "xyxy": [
+                742.02,
+                686.12,
+                869.24,
+                744.36
+              ]
+            },
+            {
+              "class_id": 33,
+              "confidence": 0.742399,
+              "xyxy": [
+                869.06,
+                745.61,
+                996.75,
+                918.0
+              ]
+            },
+            {
+              "class_id": 5,
+              "confidence": 0.665114,
+              "xyxy": [
+                868.73,
+                744.21,
+                997.0,
+                918.94
+              ]
+            }
+          ]
+        },
+        {
+          "image": "goal_20261019_batch001_00030.png",
+          "tp": 11,
+          "fp": 0,
+          "fn": 0,
+          "exact": true,
+          "scene": "self_play|pass|sorted",
+          "missed_classes": {},
+          "false_positive_classes": {}
+        },
+        {
+          "image": "goal_20261019_batch001_00031.png",
+          "tp": 10,
+          "fp": 0,
+          "fn": 0,
+          "exact": true,
+          "scene": "sorted|pass",
+          "missed_classes": {},
+          "false_positive_classes": {}
+        },
+        {
+          "image": "goal_20261019_batch001_00032.png",
+          "tp": 10,
+          "fp": 0,
+          "fn": 0,
+          "exact": true,
+          "scene": "sorted|self_play|pass",
+          "missed_classes": {},
+          "false_positive_classes": {}
+        },
+        {
+          "image": "goal_20261019_batch001_00033.png",
+          "tp": 5,
+          "fp": 0,
+          "fn": 0,
+          "exact": true,
+          "scene": "sorted|pass",
+          "missed_classes": {},
+          "false_positive_classes": {}
+        },
+        {
+          "image": "goal_20261019_batch001_00034.png",
+          "tp": 12,
+          "fp": 1,
+          "fn": 1,
+          "exact": false,
+          "scene": "sorted|self_play|pass",
+          "missed_classes": {
+            "2♥": 1
+          },
+          "false_positive_classes": {
+            "2♦": 1
+          },
+          "predictions": [
+            {
+              "class_id": 4,
+              "confidence": 0.998522,
+              "xyxy": [
+                932.19,
+                743.35,
+                1064.45,
+                917.42
+              ]
+            },
+            {
+              "class_id": 37,
+              "confidence": 0.99694,
+              "xyxy": [
+                551.01,
+                745.03,
+                679.11,
+                918.44
+              ]
+            },
+            {
+              "class_id": 37,
+              "confidence": 0.994596,
+              "xyxy": [
+                551.05,
+                687.16,
+                682.53,
+                746.06
+              ]
+            },
+            {
+              "class_id": 12,
+              "confidence": 0.993149,
+              "xyxy": [
+                804.99,
+                743.69,
+                932.6,
+                916.93
+              ]
+            },
+            {
+              "class_id": 43,
+              "confidence": 0.98716,
+              "xyxy": [
+                708.68,
+                382.22,
+                758.08,
+                521.2
+              ]
+            },
+            {
+              "class_id": 36,
+              "confidence": 0.98578,
+              "xyxy": [
+                550.87,
+                570.79,
+                681.52,
+                629.25
+              ]
+            },
+            {
+              "class_id": 36,
+              "confidence": 0.98412,
+              "xyxy": [
+                550.73,
+                513.86,
+                680.35,
+                570.84
+              ]
+            },
+            {
+              "class_id": 52,
+              "confidence": 0.981966,
+              "xyxy": [
+                678.67,
+                744.47,
+                805.58,
+                918.11
+              ]
+            },
+            {
+              "class_id": 43,
+              "confidence": 0.978987,
+              "xyxy": [
+                758.34,
+                381.94,
+                806.03,
+                522.39
+              ]
+            },
+            {
+              "class_id": 39,
+              "confidence": 0.951368,
+              "xyxy": [
+                550.68,
+                629.49,
+                681.78,
+                687.43
+              ]
+            },
+            {
+              "class_id": 49,
+              "confidence": 0.890199,
+              "xyxy": [
+                855.7,
+                383.64,
+                957.94,
+                521.83
+              ]
+            },
+            {
+              "class_id": 50,
+              "confidence": 0.726629,
+              "xyxy": [
+                806.39,
+                383.0,
+                854.86,
+                517.87
+              ]
+            },
+            {
+              "class_id": 42,
+              "confidence": 0.685755,
+              "xyxy": [
+                660.24,
+                383.48,
+                708.68,
+                517.61
+              ]
+            }
+          ]
+        },
+        {
+          "image": "goal_20261019_batch001_00035.png",
+          "tp": 8,
+          "fp": 1,
+          "fn": 0,
+          "exact": false,
+          "scene": "sorted|others_play|pass",
+          "missed_classes": {},
+          "false_positive_classes": {
+            "Q♠": 1
+          },
+          "predictions": [
+            {
+              "class_id": 12,
+              "confidence": 0.996464,
+              "xyxy": [
+                868.89,
+                743.67,
+                1000.79,
+                917.31
+              ]
+            },
+            {
+              "class_id": 37,
+              "confidence": 0.995767,
+              "xyxy": [
+                614.67,
+                745.03,
+                742.57,
+                918.62
+              ]
+            },
+            {
+              "class_id": 4,
+              "confidence": 0.994154,
+              "xyxy": [
+                758.0,
+                230.25,
+                860.63,
+                367.24
+              ]
+            },
+            {
+              "class_id": 37,
+              "confidence": 0.993871,
+              "xyxy": [
+                614.92,
+                687.22,
+                746.58,
+                746.08
+              ]
+            },
+            {
+              "class_id": 36,
+              "confidence": 0.991443,
+              "xyxy": [
+                614.82,
+                512.76,
+                745.64,
+                571.0
+              ]
+            },
+            {
+              "class_id": 36,
+              "confidence": 0.989166,
+              "xyxy": [
+                614.86,
+                570.95,
+                745.96,
+                629.21
+              ]
+            },
+            {
+              "class_id": 39,
+              "confidence": 0.959802,
+              "xyxy": [
+                614.66,
+                629.54,
+                745.91,
+                687.57
+              ]
+            },
+            {
+              "class_id": 52,
+              "confidence": 0.625105,
+              "xyxy": [
+                742.06,
+                744.24,
+                868.82,
+                916.79
+              ]
+            },
+            {
+              "class_id": 36,
+              "confidence": 0.289562,
+              "xyxy": [
+                615.02,
+                557.32,
+                746.5,
+                595.3
+              ]
+            }
+          ]
+        },
+        {
+          "image": "goal_20261019_batch001_00036.png",
+          "tp": 7,
+          "fp": 0,
+          "fn": 0,
+          "exact": true,
+          "scene": "sorted|others_play|pass",
+          "missed_classes": {},
+          "false_positive_classes": {}
+        },
+        {
+          "image": "goal_20261019_batch001_00037.png",
+          "tp": 12,
+          "fp": 0,
+          "fn": 0,
+          "exact": true,
+          "scene": "sorted|others_play|pass",
+          "missed_classes": {},
+          "false_positive_classes": {}
+        },
+        {
+          "image": "goal_20261019_batch001_00038.png",
+          "tp": 12,
+          "fp": 0,
+          "fn": 0,
+          "exact": true,
+          "scene": "sorted|others_play|pass",
+          "missed_classes": {},
+          "false_positive_classes": {}
+        },
+        {
+          "image": "goal_20261019_batch001_00039.png",
+          "tp": 11,
+          "fp": 0,
+          "fn": 0,
+          "exact": true,
+          "scene": "sorted|others_play|pass",
+          "missed_classes": {},
+          "false_positive_classes": {}
+        },
+        {
+          "image": "goal_20261019_batch001_00040.png",
+          "tp": 1,
+          "fp": 0,
+          "fn": 0,
+          "exact": true,
+          "scene": "pass",
+          "missed_classes": {},
+          "false_positive_classes": {}
+        },
+        {
+          "image": "goal_20261019_batch001_00041.png",
+          "tp": 0,
+          "fp": 0,
+          "fn": 0,
+          "exact": true,
+          "scene": "negative",
+          "missed_classes": {},
+          "false_positive_classes": {}
+        },
+        {
+          "image": "goal_20261019_batch001_00042.png",
+          "tp": 27,
+          "fp": 1,
+          "fn": 0,
+          "exact": false,
+          "scene": "sorted",
+          "missed_classes": {},
+          "false_positive_classes": {
+            "K♣": 1
+          },
+          "predictions": [
+            {
+              "class_id": 40,
+              "confidence": 0.998426,
+              "xyxy": [
+                452.23,
+                744.08,
+                568.47,
+                917.27
+              ]
+            },
+            {
+              "class_id": 12,
+              "confidence": 0.995163,
+              "xyxy": [
+                1031.16,
+                744.62,
+                1145.29,
+                917.2
+              ]
+            },
+            {
+              "class_id": 18,
+              "confidence": 0.994188,
+              "xyxy": [
+                914.35,
+                744.59,
+                1031.81,
+                917.25
+              ]
+            },
+            {
+              "class_id": 30,
+              "confidence": 0.993456,
+              "xyxy": [
+                684.14,
+                686.75,
+                799.32,
+                745.03
+              ]
+            },
+            {
+              "class_id": 8,
+              "confidence": 0.990328,
+              "xyxy": [
+                1145.65,
+                629.01,
+                1278.55,
+                686.99
+              ]
+            },
+            {
+              "class_id": 23,
+              "confidence": 0.989345,
+              "xyxy": [
+                799.62,
+                686.43,
+                914.24,
+                744.36
+              ]
+            },
+            {
+              "class_id": 33,
+              "confidence": 0.989279,
+              "xyxy": [
+                566.13,
+                745.8,
+                684.43,
+                918.25
+              ]
+            },
+            {
+              "class_id": 7,
+              "confidence": 0.989111,
+              "xyxy": [
+                1263.37,
+                744.37,
+                1378.28,
+                918.67
+              ]
+            },
+            {
+              "class_id": 2,
+              "confidence": 0.988577,
+              "xyxy": [
+                1379.03,
+                743.69,
+                1511.22,
+                917.48
+              ]
+            },
+            {
+              "class_id": 3,
+              "confidence": 0.988365,
+              "xyxy": [
+                1378.89,
+                628.5,
+                1510.26,
+                686.55
+              ]
+            },
+            {
+              "class_id": 9,
+              "confidence": 0.987378,
+              "xyxy": [
+                1145.79,
+                744.55,
+                1263.66,
+                917.97
+              ]
+            },
+            {
+              "class_id": 16,
+              "confidence": 0.986935,
+              "xyxy": [
+                914.39,
+                629.22,
+                1046.05,
+                686.47
+              ]
+            },
+            {
+              "class_id": 53,
+              "confidence": 0.98322,
+              "xyxy": [
+                105.56,
+                744.07,
+                221.77,
+                919.96
+              ]
+            },
+            {
+              "class_id": 12,
+              "confidence": 0.981314,
+              "xyxy": [
+                1031.46,
+                685.6,
+                1145.84,
+                744.51
+              ]
+            },
+            {
+              "class_id": 18,
+              "confidence": 0.981041,
+              "xyxy": [
+                914.2,
+                686.68,
+                1031.28,
+                745.0
+              ]
+            },
+            {
+              "class_id": 4,
+              "confidence": 0.977729,
+              "xyxy": [
+                1264.18,
+                685.99,
+                1379.32,
+                744.99
+              ]
+            },
+            {
+              "class_id": 22,
+              "confidence": 0.97691,
+              "xyxy": [
+                798.85,
+                744.61,
+                914.68,
+                917.82
+              ]
+            },
+            {
+              "class_id": 47,
+              "confidence": 0.974094,
+              "xyxy": [
+                336.75,
+                686.35,
+                468.22,
+                745.39
+              ]
+            },
+            {
+              "class_id": 8,
+              "confidence": 0.973495,
+              "xyxy": [
+                1145.81,
+                686.29,
+                1263.21,
+                744.71
+              ]
+            },
+            {
+              "class_id": 45,
+              "confidence": 0.973324,
+              "xyxy": [
+                336.89,
+                744.17,
+                453.08,
+                918.67
+              ]
+            },
+            {
+              "class_id": 28,
+              "confidence": 0.97329,
+              "xyxy": [
+                684.92,
+                628.68,
+                799.62,
+                686.98
+              ]
+            },
+            {
+              "class_id": 49,
+              "confidence": 0.970573,
+              "xyxy": [
+                221.43,
+                743.83,
+                336.46,
+                918.27
+              ]
+            },
+            {
+              "class_id": 2,
+              "confidence": 0.966033,
+              "xyxy": [
+                1379.01,
+                686.74,
+                1510.35,
+                743.82
+              ]
+            },
+            {
+              "class_id": 29,
+              "confidence": 0.965433,
+              "xyxy": [
+                684.34,
+                745.8,
+                798.16,
+                918.59
+              ]
+            },
+            {
+              "class_id": 20,
+              "confidence": 0.931612,
+              "xyxy": [
+                799.37,
+                628.54,
+                914.62,
+                686.99
+              ]
+            },
+            {
+              "class_id": 51,
+              "confidence": 0.90543,
+              "xyxy": [
+                222.38,
+                686.08,
+                337.3,
+                744.48
+              ]
+            },
+            {
+              "class_id": 33,
+              "confidence": 0.764973,
+              "xyxy": [
+                567.12,
+                685.66,
+                684.57,
+                745.02
+              ]
+            },
+            {
+              "class_id": 43,
+              "confidence": 0.256013,
+              "xyxy": [
+                337.96,
+                686.08,
+                469.25,
+                744.4
+              ]
+            }
+          ]
+        },
+        {
+          "image": "goal_20261019_batch001_00060.png",
+          "tp": 26,
+          "fp": 0,
+          "fn": 0,
+          "exact": true,
+          "scene": "others_play|pass|sorted",
+          "missed_classes": {},
+          "false_positive_classes": {}
+        },
+        {
+          "image": "goal_20261019_batch001_00065.png",
+          "tp": 26,
+          "fp": 0,
+          "fn": 0,
+          "exact": true,
+          "scene": "others_play|pass|sorted",
+          "missed_classes": {},
+          "false_positive_classes": {}
+        },
+        {
+          "image": "goal_20261019_batch001_00070.png",
+          "tp": 23,
+          "fp": 0,
+          "fn": 0,
+          "exact": true,
+          "scene": "others_play|pass|sorted",
+          "missed_classes": {},
+          "false_positive_classes": {}
+        },
+        {
+          "image": "goal_20261019_batch001_00080.png",
+          "tp": 26,
+          "fp": 0,
+          "fn": 0,
+          "exact": true,
+          "scene": "others_play|pass|sorted",
+          "missed_classes": {},
+          "false_positive_classes": {}
+        },
+        {
+          "image": "goal_20261019_batch001_00090.png",
+          "tp": 15,
+          "fp": 0,
+          "fn": 0,
+          "exact": true,
+          "scene": "others_play|pass|sorted",
+          "missed_classes": {},
+          "false_positive_classes": {}
+        },
+        {
+          "image": "goal_20261019_batch001_00098.png",
+          "tp": 1,
+          "fp": 0,
+          "fn": 0,
+          "exact": true,
+          "scene": "pass|sorted",
+          "missed_classes": {},
+          "false_positive_classes": {}
+        }
+      ]
+    },
+    "resolution960_v1": {
+      "model_sha256": "2fa7355e8ab52975a49d2cdd1488d95185fd1bf54895c4774dd8864dd1e8adbc",
+      "input_size": 960,
+      "images": 48,
+      "tp": 890,
+      "fp": 0,
+      "fn": 0,
+      "exact_images": 48,
+      "scene_counts": {
+        "sorted": {
+          "images": 46,
+          "tp": 889,
+          "fp": 0,
+          "fn": 0,
+          "exact": 46
+        },
+        "self_play": {
+          "images": 15,
+          "tp": 293,
+          "fp": 0,
+          "fn": 0,
+          "exact": 15
+        },
+        "others_play": {
+          "images": 23,
+          "tp": 476,
+          "fp": 0,
+          "fn": 0,
+          "exact": 23
+        },
+        "pass": {
+          "images": 40,
+          "tp": 698,
+          "fp": 0,
+          "fn": 0,
+          "exact": 40
+        },
+        "negative": {
+          "images": 1,
+          "tp": 0,
+          "fp": 0,
+          "fn": 0,
+          "exact": 1
+        }
+      },
+      "per_class": {
+        "3♠": {
+          "tp": 13,
+          "fp": 0,
+          "fn": 0
+        },
+        "3♥": {
+          "tp": 13,
+          "fp": 0,
+          "fn": 0
+        },
+        "3♦": {
+          "tp": 12,
+          "fp": 0,
+          "fn": 0
+        },
+        "3♣": {
+          "tp": 10,
+          "fp": 0,
+          "fn": 0
+        },
+        "4♠": {
+          "tp": 10,
+          "fp": 0,
+          "fn": 0
+        },
+        "4♥": {
+          "tp": 35,
+          "fp": 0,
+          "fn": 0
+        },
+        "4♦": {
+          "tp": 5,
+          "fp": 0,
+          "fn": 0
+        },
+        "4♣": {
+          "tp": 39,
+          "fp": 0,
+          "fn": 0
+        },
+        "5♠": {
+          "tp": 13,
+          "fp": 0,
+          "fn": 0
+        },
+        "5♥": {
+          "tp": 2,
+          "fp": 0,
+          "fn": 0
+        },
+        "5♦": {
+          "tp": 4,
+          "fp": 0,
+          "fn": 0
+        },
+        "5♣": {
+          "tp": 2,
+          "fp": 0,
+          "fn": 0
+        },
+        "6♠": {
+          "tp": 43,
+          "fp": 0,
+          "fn": 0
+        },
+        "6♥": {
+          "tp": 1,
+          "fp": 0,
+          "fn": 0
+        },
+        "6♦": {
+          "tp": 53,
+          "fp": 0,
+          "fn": 0
+        },
+        "6♣": {
+          "tp": 27,
+          "fp": 0,
+          "fn": 0
+        },
+        "7♠": {
+          "tp": 5,
+          "fp": 0,
+          "fn": 0
+        },
+        "7♥": {
+          "tp": 7,
+          "fp": 0,
+          "fn": 0
+        },
+        "7♦": {
+          "tp": 12,
+          "fp": 0,
+          "fn": 0
+        },
+        "7♣": {
+          "tp": 1,
+          "fp": 0,
+          "fn": 0
+        },
+        "8♠": {
+          "tp": 21,
+          "fp": 0,
+          "fn": 0
+        },
+        "8♥": {
+          "tp": 17,
+          "fp": 0,
+          "fn": 0
+        },
+        "8♦": {
+          "tp": 7,
+          "fp": 0,
+          "fn": 0
+        },
+        "8♣": {
+          "tp": 6,
+          "fp": 0,
+          "fn": 0
+        },
+        "9♠": {
+          "tp": 4,
+          "fp": 0,
+          "fn": 0
+        },
+        "9♥": {
+          "tp": 3,
+          "fp": 0,
+          "fn": 0
+        },
+        "9♦": {
+          "tp": 20,
+          "fp": 0,
+          "fn": 0
+        },
+        "9♣": {
+          "tp": 12,
+          "fp": 0,
+          "fn": 0
+        },
+        "10♠": {
+          "tp": 7,
+          "fp": 0,
+          "fn": 0
+        },
+        "10♥": {
+          "tp": 7,
+          "fp": 0,
+          "fn": 0
+        },
+        "10♦": {
+          "tp": 8,
+          "fp": 0,
+          "fn": 0
+        },
+        "10♣": {
+          "tp": 1,
+          "fp": 0,
+          "fn": 0
+        },
+        "J♠": {
+          "tp": 32,
+          "fp": 0,
+          "fn": 0
+        },
+        "J♥": {
+          "tp": 45,
+          "fp": 0,
+          "fn": 0
+        },
+        "J♦": {
+          "tp": 33,
+          "fp": 0,
+          "fn": 0
+        },
+        "J♣": {
+          "tp": 2,
+          "fp": 0,
+          "fn": 0
+        },
+        "Q♠": {
+          "tp": 13,
+          "fp": 0,
+          "fn": 0
+        },
+        "Q♥": {
+          "tp": 13,
+          "fp": 0,
+          "fn": 0
+        },
+        "Q♦": {
+          "tp": 1,
+          "fp": 0,
+          "fn": 0
+        },
+        "Q♣": {
+          "tp": 6,
+          "fp": 0,
+          "fn": 0
+        },
+        "K♠": {
+          "tp": 2,
+          "fp": 0,
+          "fn": 0
+        },
+        "K♥": {
+          "tp": 3,
+          "fp": 0,
+          "fn": 0
+        },
+        "K♦": {
+          "tp": 36,
+          "fp": 0,
+          "fn": 0
+        },
+        "K♣": {
+          "tp": 68,
+          "fp": 0,
+          "fn": 0
+        },
+        "A♠": {
+          "tp": 21,
+          "fp": 0,
+          "fn": 0
+        },
+        "A♥": {
+          "tp": 8,
+          "fp": 0,
+          "fn": 0
+        },
+        "A♦": {
+          "tp": 5,
+          "fp": 0,
+          "fn": 0
+        },
+        "A♣": {
+          "tp": 23,
+          "fp": 0,
+          "fn": 0
+        },
+        "2♠": {
+          "tp": 5,
+          "fp": 0,
+          "fn": 0
+        },
+        "2♥": {
+          "tp": 75,
+          "fp": 0,
+          "fn": 0
+        },
+        "2♦": {
+          "tp": 2,
+          "fp": 0,
+          "fn": 0
+        },
+        "2♣": {
+          "tp": 14,
+          "fp": 0,
+          "fn": 0
+        },
+        "SJ": {
+          "tp": 31,
+          "fp": 0,
+          "fn": 0
+        },
+        "BJ": {
+          "tp": 32,
+          "fp": 0,
+          "fn": 0
+        }
+      },
+      "items": [
+        {
+          "image": "goal_20261019_batch001_00001.png",
+          "tp": 27,
+          "fp": 0,
+          "fn": 0,
+          "exact": true,
+          "scene": "sorted",
+          "missed_classes": {},
+          "false_positive_classes": {}
+        },
+        {
+          "image": "goal_20261019_batch001_00002.png",
+          "tp": 27,
+          "fp": 0,
+          "fn": 0,
+          "exact": true,
+          "scene": "sorted",
+          "missed_classes": {},
+          "false_positive_classes": {}
+        },
+        {
+          "image": "goal_20261019_batch001_00003.png",
+          "tp": 27,
+          "fp": 0,
+          "fn": 0,
+          "exact": true,
+          "scene": "sorted",
+          "missed_classes": {},
+          "false_positive_classes": {}
+        },
+        {
+          "image": "goal_20261019_batch001_00004.png",
+          "tp": 27,
+          "fp": 0,
+          "fn": 0,
+          "exact": true,
+          "scene": "sorted",
+          "missed_classes": {},
+          "false_positive_classes": {}
+        },
+        {
+          "image": "goal_20261019_batch001_00005.png",
+          "tp": 28,
+          "fp": 0,
+          "fn": 0,
+          "exact": true,
+          "scene": "sorted|self_play|others_play",
+          "missed_classes": {},
+          "false_positive_classes": {}
+        },
+        {
+          "image": "goal_20261019_batch001_00006.png",
+          "tp": 29,
+          "fp": 0,
+          "fn": 0,
+          "exact": true,
+          "scene": "sorted|others_play",
+          "missed_classes": {},
+          "false_positive_classes": {}
+        },
+        {
+          "image": "goal_20261019_batch001_00007.png",
+          "tp": 26,
+          "fp": 0,
+          "fn": 0,
+          "exact": true,
+          "scene": "sorted|pass",
+          "missed_classes": {},
+          "false_positive_classes": {}
+        },
+        {
+          "image": "goal_20261019_batch001_00008.png",
+          "tp": 31,
+          "fp": 0,
+          "fn": 0,
+          "exact": true,
+          "scene": "sorted|others_play|pass",
+          "missed_classes": {},
+          "false_positive_classes": {}
+        },
+        {
+          "image": "goal_20261019_batch001_00009.png",
+          "tp": 31,
+          "fp": 0,
+          "fn": 0,
+          "exact": true,
+          "scene": "sorted|self_play|others_play|pass",
+          "missed_classes": {},
+          "false_positive_classes": {}
+        },
+        {
+          "image": "goal_20261019_batch001_00010.png",
+          "tp": 26,
+          "fp": 0,
+          "fn": 0,
+          "exact": true,
+          "scene": "sorted|self_play|pass",
+          "missed_classes": {},
+          "false_positive_classes": {}
+        },
+        {
+          "image": "goal_20261019_batch001_00011.png",
+          "tp": 21,
+          "fp": 0,
+          "fn": 0,
+          "exact": true,
+          "scene": "sorted|pass",
+          "missed_classes": {},
+          "false_positive_classes": {}
+        },
+        {
+          "image": "goal_20261019_batch001_00012.png",
+          "tp": 21,
+          "fp": 0,
+          "fn": 0,
+          "exact": true,
+          "scene": "sorted|self_play|pass",
+          "missed_classes": {},
+          "false_positive_classes": {}
+        },
+        {
+          "image": "goal_20261019_batch001_00013.png",
+          "tp": 21,
+          "fp": 0,
+          "fn": 0,
+          "exact": true,
+          "scene": "sorted|self_play|pass",
+          "missed_classes": {},
+          "false_positive_classes": {}
+        },
+        {
+          "image": "goal_20261019_batch001_00014.png",
+          "tp": 20,
+          "fp": 0,
+          "fn": 0,
+          "exact": true,
+          "scene": "sorted|pass",
+          "missed_classes": {},
+          "false_positive_classes": {}
+        },
+        {
+          "image": "goal_20261019_batch001_00015.png",
+          "tp": 20,
+          "fp": 0,
+          "fn": 0,
+          "exact": true,
+          "scene": "self_play|pass|sorted",
+          "missed_classes": {},
+          "false_positive_classes": {}
+        },
+        {
+          "image": "goal_20261019_batch001_00016.png",
+          "tp": 22,
+          "fp": 0,
+          "fn": 0,
+          "exact": true,
+          "scene": "sorted|self_play|others_play|pass",
+          "missed_classes": {},
+          "false_positive_classes": {}
+        },
+        {
+          "image": "goal_20261019_batch001_00017.png",
+          "tp": 20,
+          "fp": 0,
+          "fn": 0,
+          "exact": true,
+          "scene": "sorted|others_play|pass",
+          "missed_classes": {},
+          "false_positive_classes": {}
+        },
+        {
+          "image": "goal_20261019_batch001_00018.png",
+          "tp": 20,
+          "fp": 0,
+          "fn": 0,
+          "exact": true,
+          "scene": "sorted|self_play|others_play|pass",
+          "missed_classes": {},
+          "false_positive_classes": {}
+        },
+        {
+          "image": "goal_20261019_batch001_00019.png",
+          "tp": 22,
+          "fp": 0,
+          "fn": 0,
+          "exact": true,
+          "scene": "sorted|others_play|pass",
+          "missed_classes": {},
+          "false_positive_classes": {}
+        },
+        {
+          "image": "goal_20261019_batch001_00020.png",
+          "tp": 19,
+          "fp": 0,
+          "fn": 0,
+          "exact": true,
+          "scene": "sorted|self_play|pass",
+          "missed_classes": {},
+          "false_positive_classes": {}
+        },
+        {
+          "image": "goal_20261019_batch001_00021.png",
+          "tp": 19,
+          "fp": 0,
+          "fn": 0,
+          "exact": true,
+          "scene": "sorted|self_play|pass",
+          "missed_classes": {},
+          "false_positive_classes": {}
+        },
+        {
+          "image": "goal_20261019_batch001_00022.png",
+          "tp": 20,
+          "fp": 0,
+          "fn": 0,
+          "exact": true,
+          "scene": "sorted|others_play|pass",
+          "missed_classes": {},
+          "false_positive_classes": {}
+        },
+        {
+          "image": "goal_20261019_batch001_00023.png",
+          "tp": 20,
+          "fp": 0,
+          "fn": 0,
+          "exact": true,
+          "scene": "sorted|others_play|pass",
+          "missed_classes": {},
+          "false_positive_classes": {}
+        },
+        {
+          "image": "goal_20261019_batch001_00024.png",
+          "tp": 21,
+          "fp": 0,
+          "fn": 0,
+          "exact": true,
+          "scene": "sorted|others_play|pass",
+          "missed_classes": {},
+          "false_positive_classes": {}
+        },
+        {
+          "image": "goal_20261019_batch001_00025.png",
+          "tp": 26,
+          "fp": 0,
+          "fn": 0,
+          "exact": true,
+          "scene": "sorted|others_play|pass",
+          "missed_classes": {},
+          "false_positive_classes": {}
+        },
+        {
+          "image": "goal_20261019_batch001_00026.png",
+          "tp": 20,
+          "fp": 0,
+          "fn": 0,
+          "exact": true,
+          "scene": "sorted|self_play|others_play|pass",
+          "missed_classes": {},
+          "false_positive_classes": {}
+        },
+        {
+          "image": "goal_20261019_batch001_00027.png",
+          "tp": 12,
+          "fp": 0,
+          "fn": 0,
+          "exact": true,
+          "scene": "sorted|pass",
+          "missed_classes": {},
+          "false_positive_classes": {}
+        },
+        {
+          "image": "goal_20261019_batch001_00028.png",
+          "tp": 12,
+          "fp": 0,
+          "fn": 0,
+          "exact": true,
+          "scene": "sorted|self_play|pass",
+          "missed_classes": {},
+          "false_positive_classes": {}
+        },
+        {
+          "image": "goal_20261019_batch001_00029.png",
+          "tp": 11,
+          "fp": 0,
+          "fn": 0,
+          "exact": true,
+          "scene": "sorted|pass",
+          "missed_classes": {},
+          "false_positive_classes": {}
+        },
+        {
+          "image": "goal_20261019_batch001_00030.png",
+          "tp": 11,
+          "fp": 0,
+          "fn": 0,
+          "exact": true,
+          "scene": "self_play|pass|sorted",
+          "missed_classes": {},
+          "false_positive_classes": {}
+        },
+        {
+          "image": "goal_20261019_batch001_00031.png",
+          "tp": 10,
+          "fp": 0,
+          "fn": 0,
+          "exact": true,
+          "scene": "sorted|pass",
+          "missed_classes": {},
+          "false_positive_classes": {}
+        },
+        {
+          "image": "goal_20261019_batch001_00032.png",
+          "tp": 10,
+          "fp": 0,
+          "fn": 0,
+          "exact": true,
+          "scene": "sorted|self_play|pass",
+          "missed_classes": {},
+          "false_positive_classes": {}
+        },
+        {
+          "image": "goal_20261019_batch001_00033.png",
+          "tp": 5,
+          "fp": 0,
+          "fn": 0,
+          "exact": true,
+          "scene": "sorted|pass",
+          "missed_classes": {},
+          "false_positive_classes": {}
+        },
+        {
+          "image": "goal_20261019_batch001_00034.png",
+          "tp": 13,
+          "fp": 0,
+          "fn": 0,
+          "exact": true,
+          "scene": "sorted|self_play|pass",
+          "missed_classes": {},
+          "false_positive_classes": {}
+        },
+        {
+          "image": "goal_20261019_batch001_00035.png",
+          "tp": 8,
+          "fp": 0,
+          "fn": 0,
+          "exact": true,
+          "scene": "sorted|others_play|pass",
+          "missed_classes": {},
+          "false_positive_classes": {}
+        },
+        {
+          "image": "goal_20261019_batch001_00036.png",
+          "tp": 7,
+          "fp": 0,
+          "fn": 0,
+          "exact": true,
+          "scene": "sorted|others_play|pass",
+          "missed_classes": {},
+          "false_positive_classes": {}
+        },
+        {
+          "image": "goal_20261019_batch001_00037.png",
+          "tp": 12,
+          "fp": 0,
+          "fn": 0,
+          "exact": true,
+          "scene": "sorted|others_play|pass",
+          "missed_classes": {},
+          "false_positive_classes": {}
+        },
+        {
+          "image": "goal_20261019_batch001_00038.png",
+          "tp": 12,
+          "fp": 0,
+          "fn": 0,
+          "exact": true,
+          "scene": "sorted|others_play|pass",
+          "missed_classes": {},
+          "false_positive_classes": {}
+        },
+        {
+          "image": "goal_20261019_batch001_00039.png",
+          "tp": 11,
+          "fp": 0,
+          "fn": 0,
+          "exact": true,
+          "scene": "sorted|others_play|pass",
+          "missed_classes": {},
+          "false_positive_classes": {}
+        },
+        {
+          "image": "goal_20261019_batch001_00040.png",
+          "tp": 1,
+          "fp": 0,
+          "fn": 0,
+          "exact": true,
+          "scene": "pass",
+          "missed_classes": {},
+          "false_positive_classes": {}
+        },
+        {
+          "image": "goal_20261019_batch001_00041.png",
+          "tp": 0,
+          "fp": 0,
+          "fn": 0,
+          "exact": true,
+          "scene": "negative",
+          "missed_classes": {},
+          "false_positive_classes": {}
+        },
+        {
+          "image": "goal_20261019_batch001_00042.png",
+          "tp": 27,
+          "fp": 0,
+          "fn": 0,
+          "exact": true,
+          "scene": "sorted",
+          "missed_classes": {},
+          "false_positive_classes": {}
+        },
+        {
+          "image": "goal_20261019_batch001_00060.png",
+          "tp": 26,
+          "fp": 0,
+          "fn": 0,
+          "exact": true,
+          "scene": "others_play|pass|sorted",
+          "missed_classes": {},
+          "false_positive_classes": {}
+        },
+        {
+          "image": "goal_20261019_batch001_00065.png",
+          "tp": 26,
+          "fp": 0,
+          "fn": 0,
+          "exact": true,
+          "scene": "others_play|pass|sorted",
+          "missed_classes": {},
+          "false_positive_classes": {}
+        },
+        {
+          "image": "goal_20261019_batch001_00070.png",
+          "tp": 23,
+          "fp": 0,
+          "fn": 0,
+          "exact": true,
+          "scene": "others_play|pass|sorted",
+          "missed_classes": {},
+          "false_positive_classes": {}
+        },
+        {
+          "image": "goal_20261019_batch001_00080.png",
+          "tp": 26,
+          "fp": 0,
+          "fn": 0,
+          "exact": true,
+          "scene": "others_play|pass|sorted",
+          "missed_classes": {},
+          "false_positive_classes": {}
+        },
+        {
+          "image": "goal_20261019_batch001_00090.png",
+          "tp": 15,
+          "fp": 0,
+          "fn": 0,
+          "exact": true,
+          "scene": "others_play|pass|sorted",
+          "missed_classes": {},
+          "false_positive_classes": {}
+        },
+        {
+          "image": "goal_20261019_batch001_00098.png",
+          "tp": 1,
+          "fp": 0,
+          "fn": 0,
+          "exact": true,
+          "scene": "pass|sorted",
+          "missed_classes": {},
+          "false_positive_classes": {}
+        }
+      ]
+    }
+  }
+}

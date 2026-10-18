@@ -1,0 +1,90 @@
+{
+  "reviewed": true,
+  "reason": "Two independently visible Q-heart cards were missing from validation annotations; add to a new retrospective label version, preserving original model-selection metrics, model weights, test labels and all original boxes.",
+  "changes": [
+    {
+      "source_name": "capture_20261017_182041_fefea2_01411.png",
+      "image_sha256": "262e4daa2ece67fcbaca7a64319bf1551ea3654c41681fe02c57fd4a6434d0da",
+      "label_sha256": "ea52bd8d64ad254e506b2c6dc0b53c1dc79c1ec63dc7bfa13fed6a3da151399d",
+      "annotation_semantic_sha256": "c09039875c69d54cb8ffea1171dad51dfe179fd9f5d20fda235a18e15f32cbfe",
+      "evidence": {
+        "reviewer": "assistant_visual_review",
+        "independent_human_review": false,
+        "finding": "Native full frame separately viewed: Q rank and heart suit are both clear on the leftmost partner card. It is absent from the old JSON and YOLO labels. Translucent partner-hand banner leaves visible card bounds; no class guessed from another frame.",
+        "original_image": "capture_20261017_182041_fefea2_01411.png"
+      },
+      "add_shapes": [
+        {
+          "label": "Q♥",
+          "points": [
+            [
+              615,
+              745
+            ],
+            [
+              743,
+              745
+            ],
+            [
+              743,
+              918
+            ],
+            [
+              615,
+              918
+            ]
+          ],
+          "group_id": null,
+          "description": "Visible partner hand Q-heart confirmed independently in the native frame; retrospectively added missing annotation.",
+          "shape_type": "rectangle",
+          "flags": {
+            "occluded": true
+          }
+        }
+      ]
+    },
+    {
+      "source_name": "capture_20261017_182041_fefea2_01413.png",
+      "image_sha256": "43c06ecf107e99c306889aa8489256444c0a297b05e9f3272b205fcfc5ff9897",
+      "label_sha256": "bba5de21f0418de6bc51f0a6bc8cc4937beb4dd581bb8cfffd61a4e81bcad5e5",
+      "annotation_semantic_sha256": "f868b59206fcd91e42c5870189fd371bfaaff3cb4856f616decf1a923305d1e1",
+      "evidence": {
+        "reviewer": "assistant_visual_review",
+        "independent_human_review": false,
+        "finding": "Native full frame separately viewed: Q rank and heart suit are both clear on the leftmost partner card. It is absent from the old JSON and YOLO labels. Translucent partner-hand banner leaves visible card bounds; no class guessed from another frame.",
+        "original_image": "capture_20261017_182041_fefea2_01413.png"
+      },
+      "add_shapes": [
+        {
+          "label": "Q♥",
+          "points": [
+            [
+              615,
+              745
+            ],
+            [
+              743,
+              745
+            ],
+            [
+              743,
+              918
+            ],
+            [
+              615,
+              918
+            ]
+          ],
+          "group_id": null,
+          "description": "Visible partner hand Q-heart confirmed independently in the native frame; retrospectively added missing annotation.",
+          "shape_type": "rectangle",
+          "flags": {
+            "occluded": true
+          }
+        }
+      ]
+    }
+  ],
+  "validation_is_retrospective_review": true,
+  "test_labels_unchanged": true
+}

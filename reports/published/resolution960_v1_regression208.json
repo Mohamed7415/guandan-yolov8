@@ -1,0 +1,316 @@
+{
+  "split": "test",
+  "images": 208,
+  "input_size": 960,
+  "confidence": 0.25,
+  "nms_iou": 0.45,
+  "match_iou": 0.5,
+  "nms_mode": "class_aware",
+  "true_positive": 3644,
+  "false_positive": 2,
+  "false_negative": 0,
+  "precision": 0.9994514536478333,
+  "recall": 1.0,
+  "exact_images": 206,
+  "exact_image_fraction": 0.9903846153846154,
+  "per_class": {
+    "3♠": {
+      "tp": 59,
+      "fp": 0,
+      "fn": 0
+    },
+    "3♥": {
+      "tp": 71,
+      "fp": 0,
+      "fn": 0
+    },
+    "3♦": {
+      "tp": 48,
+      "fp": 0,
+      "fn": 0
+    },
+    "3♣": {
+      "tp": 54,
+      "fp": 0,
+      "fn": 0
+    },
+    "4♠": {
+      "tp": 91,
+      "fp": 0,
+      "fn": 0
+    },
+    "4♥": {
+      "tp": 68,
+      "fp": 0,
+      "fn": 0
+    },
+    "4♦": {
+      "tp": 18,
+      "fp": 0,
+      "fn": 0
+    },
+    "4♣": {
+      "tp": 32,
+      "fp": 0,
+      "fn": 0
+    },
+    "5♠": {
+      "tp": 46,
+      "fp": 0,
+      "fn": 0
+    },
+    "5♥": {
+      "tp": 40,
+      "fp": 0,
+      "fn": 0
+    },
+    "5♦": {
+      "tp": 39,
+      "fp": 0,
+      "fn": 0
+    },
+    "5♣": {
+      "tp": 22,
+      "fp": 0,
+      "fn": 0
+    },
+    "6♠": {
+      "tp": 56,
+      "fp": 0,
+      "fn": 0
+    },
+    "6♥": {
+      "tp": 145,
+      "fp": 0,
+      "fn": 0
+    },
+    "6♦": {
+      "tp": 64,
+      "fp": 0,
+      "fn": 0
+    },
+    "6♣": {
+      "tp": 33,
+      "fp": 0,
+      "fn": 0
+    },
+    "7♠": {
+      "tp": 14,
+      "fp": 0,
+      "fn": 0
+    },
+    "7♥": {
+      "tp": 61,
+      "fp": 0,
+      "fn": 0
+    },
+    "7♦": {
+      "tp": 117,
+      "fp": 0,
+      "fn": 0
+    },
+    "7♣": {
+      "tp": 61,
+      "fp": 0,
+      "fn": 0
+    },
+    "8♠": {
+      "tp": 107,
+      "fp": 0,
+      "fn": 0
+    },
+    "8♥": {
+      "tp": 76,
+      "fp": 2,
+      "fn": 0
+    },
+    "8♦": {
+      "tp": 104,
+      "fp": 0,
+      "fn": 0
+    },
+    "8♣": {
+      "tp": 186,
+      "fp": 0,
+      "fn": 0
+    },
+    "9♠": {
+      "tp": 34,
+      "fp": 0,
+      "fn": 0
+    },
+    "9♥": {
+      "tp": 44,
+      "fp": 0,
+      "fn": 0
+    },
+    "9♦": {
+      "tp": 88,
+      "fp": 0,
+      "fn": 0
+    },
+    "9♣": {
+      "tp": 82,
+      "fp": 0,
+      "fn": 0
+    },
+    "10♠": {
+      "tp": 168,
+      "fp": 0,
+      "fn": 0
+    },
+    "10♥": {
+      "tp": 77,
+      "fp": 0,
+      "fn": 0
+    },
+    "10♦": {
+      "tp": 89,
+      "fp": 0,
+      "fn": 0
+    },
+    "10♣": {
+      "tp": 99,
+      "fp": 0,
+      "fn": 0
+    },
+    "J♠": {
+      "tp": 25,
+      "fp": 0,
+      "fn": 0
+    },
+    "J♥": {
+      "tp": 77,
+      "fp": 0,
+      "fn": 0
+    },
+    "J♦": {
+      "tp": 86,
+      "fp": 0,
+      "fn": 0
+    },
+    "J♣": {
+      "tp": 73,
+      "fp": 0,
+      "fn": 0
+    },
+    "Q♠": {
+      "tp": 124,
+      "fp": 0,
+      "fn": 0
+    },
+    "Q♥": {
+      "tp": 116,
+      "fp": 0,
+      "fn": 0
+    },
+    "Q♦": {
+      "tp": 14,
+      "fp": 0,
+      "fn": 0
+    },
+    "Q♣": {
+      "tp": 20,
+      "fp": 0,
+      "fn": 0
+    },
+    "K♠": {
+      "tp": 107,
+      "fp": 0,
+      "fn": 0
+    },
+    "K♥": {
+      "tp": 96,
+      "fp": 0,
+      "fn": 0
+    },
+    "K♦": {
+      "tp": 31,
+      "fp": 0,
+      "fn": 0
+    },
+    "K♣": {
+      "tp": 11,
+      "fp": 0,
+      "fn": 0
+    },
+    "A♠": {
+      "tp": 34,
+      "fp": 0,
+      "fn": 0
+    },
+    "A♥": {
+      "tp": 60,
+      "fp": 0,
+      "fn": 0
+    },
+    "A♦": {
+      "tp": 50,
+      "fp": 0,
+      "fn": 0
+    },
+    "A♣": {
+      "tp": 87,
+      "fp": 0,
+      "fn": 0
+    },
+    "2♠": {
+      "tp": 93,
+      "fp": 0,
+      "fn": 0
+    },
+    "2♥": {
+      "tp": 62,
+      "fp": 0,
+      "fn": 0
+    },
+    "2♦": {
+      "tp": 17,
+      "fp": 0,
+      "fn": 0
+    },
+    "2♣": {
+      "tp": 77,
+      "fp": 0,
+      "fn": 0
+    },
+    "SJ": {
+      "tp": 66,
+      "fp": 0,
+      "fn": 0
+    },
+    "BJ": {
+      "tp": 25,
+      "fp": 0,
+      "fn": 0
+    }
+  },
+  "mean_inference_ms": 71.71509236762247,
+  "median_inference_ms": 70.34158351598307,
+  "timing_note": "ONNX session.run only, 4 CPU threads; excludes file loading/preprocessing/NMS; first run included.",
+  "errors": [
+    {
+      "image": "images/test/card_8b45dc108336419b.png",
+      "source_image": "capture_20261017_182041_fefea2_01355.png",
+      "false_positives": 1,
+      "missed_cards": 0,
+      "missed_classes": {},
+      "false_positive_classes": {
+        "8♥": 1
+      }
+    },
+    {
+      "image": "images/test/card_376f6b3a8e222c8e.png",
+      "source_image": "capture_20261017_182041_fefea2_01356.png",
+      "false_positives": 1,
+      "missed_cards": 0,
+      "missed_classes": {},
+      "false_positive_classes": {
+        "8♥": 1
+      }
+    }
+  ],
+  "purpose": "retrospective_regression_not_new_blind_test",
+  "model_sha256": "2fa7355e8ab52975a49d2cdd1488d95185fd1bf54895c4774dd8864dd1e8adbc",
+  "label_version": "prepared_full2000_review_v2"
+}
