@@ -5,4 +5,4 @@
 - ONNX Runtime, PyTorch, OpenCV, NumPy, Pillow and the other Python dependencies retain their respective upstream licenses.
 - Game screenshots and visual templates originate from the WeChat mini-program 《天天爱掼蛋》. Game artwork, interface graphics and avatars remain the property of their respective owners. This is a task-specific recognition dataset, not a grant of rights to the game assets.
 
-The source repository and native screenshot assets are prepared for a private GitHub repository. No new blanket license is asserted over third-party game imagery or pretrained components.
+The source repository and native screenshot assets are publicly accessible on GitHub at the owner's request. No new blanket license is asserted over third-party game imagery or pretrained components.

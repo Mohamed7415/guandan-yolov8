@@ -1,6 +1,6 @@
 # 2000 张真实截图数据
 
-完整原生图像和标注在私有仓库的 [v1.0.0 Release](https://github.com/Mohamed7415/guandan-yolov8/releases/tag/v1.0.0)。下载：
+完整原生图像和标注已公开在 [v1.0.0 Release](https://github.com/Mohamed7415/guandan-yolov8/releases/tag/v1.0.0)。下载：
 
 - `dataset-metadata.zip`：2000 份 X-AnyLabeling JSON、YOLO 标签、54 类清单、固定数据划分和说明。
 - 全部 `dataset-images-001.zip` 至 `dataset-images-005.zip`：5 个独立 ZIP 分卷，合计 2000 张原生截图。
