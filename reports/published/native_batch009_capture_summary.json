@@ -1,0 +1,29 @@
+{
+  "batch": "goal_20261019_batch009",
+  "source": "native_wechat_miniprogram_window",
+  "native_images": 335,
+  "original_hashes_and1620x1000_dimensions_verified": 335,
+  "actual_new_dealt_games_visually_verified": 8,
+  "new_hand_frame_indices_reviewed": [
+    5,
+    41,
+    85,
+    133,
+    171,
+    221,
+    268,
+    322
+  ],
+  "complete_games_captured_verified": 0,
+  "reviewed_label_images": 0,
+  "blind_model_evaluation_images": 0,
+  "target_model_inference_used": false,
+  "used_for_training": false,
+  "initial_shared_group": "goal_20261019_batch008_partial001",
+  "terminal_reason": "Same target window unavailable for30-second fixed passive grace; no click while absent. Window visible at follow-up; underlying cause not established.",
+  "native30second_safety_stop_verified": true,
+  "successful_native_grace_recovery_observed": false,
+  "capture_gap_retained": true,
+  "next_initial_shared_group": "goal_20261019_batch009_game008",
+  "note": "335 native candidates remain unreviewed and unsealed. Window recovery is not claimed as continuous uptime or fully autonomous stability."
+}
