@@ -1,0 +1,56 @@
+{
+  "images": 844,
+  "draft_shapes": 16454,
+  "all_original_and_draft_hashes_verified": true,
+  "all_drafts_unchecked": true,
+  "target_detector_used": false,
+  "training_started": false,
+  "label_seals_created": false,
+  "items": [
+    {
+      "batch": "batch007",
+      "images": 1,
+      "draft_shapes": 0,
+      "empty_drafts_not_approved_negatives": 1,
+      "approved_images": 0
+    },
+    {
+      "batch": "batch008",
+      "images": 21,
+      "draft_shapes": 390,
+      "empty_drafts_not_approved_negatives": 0,
+      "approved_images": 0
+    },
+    {
+      "batch": "batch009",
+      "images": 335,
+      "draft_shapes": 6162,
+      "empty_drafts_not_approved_negatives": 20,
+      "approved_images": 0
+    },
+    {
+      "batch": "batch010",
+      "images": 340,
+      "draft_shapes": 6839,
+      "empty_drafts_not_approved_negatives": 19,
+      "approved_images": 0
+    },
+    {
+      "batch": "batch011",
+      "images": 91,
+      "draft_shapes": 2123,
+      "empty_drafts_not_approved_negatives": 7,
+      "approved_images": 0
+    },
+    {
+      "batch": "batch012",
+      "images": 56,
+      "draft_shapes": 940,
+      "empty_drafts_not_approved_negatives": 3,
+      "approved_images": 0
+    }
+  ],
+  "status": "completed",
+  "original_images_not_new_capture": true,
+  "config_sha256": "a2b9ec637ea55ef08ae9d9f4b4b5b37be84aeedba3ffa4439f9baa648709427d"
+}
