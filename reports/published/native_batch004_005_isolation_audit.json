@@ -1,0 +1,129 @@
+{
+  "at": "2026-10-19T17:24:46.405031+00:00",
+  "batch": "goal_20261019_batch004",
+  "status": "five_deal_boundaries_reconfirmed_cross_batch_conservative_link_enforced",
+  "newly_approved_images_this_check": 0,
+  "approved_images": 249,
+  "approved_targets": 4669,
+  "unresolved_frames": [
+    100,
+    144
+  ],
+  "originals_batch004_hashed": 251,
+  "approved_annotation_hashes_verified": 249,
+  "boundaries": [
+    {
+      "previous_frame": 44,
+      "first_observed_new_deal_frame": 45,
+      "both_full_native_frames_viewed_this_check": true,
+      "evidence": [
+        {
+          "frame": 44,
+          "image": "goal_20261019_batch004_00044.png",
+          "sha256": "c8660c10763ad22629e0b25f6bb822cc267171fc1a1512178afa360ed23a2e3c",
+          "captured_at": "2026-10-19T03:33:59.838+00:00"
+        },
+        {
+          "frame": 45,
+          "image": "goal_20261019_batch004_00045.png",
+          "sha256": "708e1709ef46f03278188bf3569d4d1347e9b2a44c8d8a5250e2b41bd293dcd4",
+          "captured_at": "2026-10-19T03:34:10.391+00:00"
+        }
+      ]
+    },
+    {
+      "previous_frame": 101,
+      "first_observed_new_deal_frame": 102,
+      "both_full_native_frames_viewed_this_check": true,
+      "evidence": [
+        {
+          "frame": 101,
+          "image": "goal_20261019_batch004_00101.png",
+          "sha256": "1b300e3f496b89ab656d3c8aed13d7dfd28e79fbd46cc21ee99029ed270ed3d8",
+          "captured_at": "2026-10-19T03:39:26.159+00:00"
+        },
+        {
+          "frame": 102,
+          "image": "goal_20261019_batch004_00102.png",
+          "sha256": "b7384bd51a6ee97a45047d7fe7d6f3a191aff2e0e11d9542fd6e588f1c2883ce",
+          "captured_at": "2026-10-19T03:39:32.167+00:00"
+        }
+      ]
+    },
+    {
+      "previous_frame": 145,
+      "first_observed_new_deal_frame": 146,
+      "both_full_native_frames_viewed_this_check": true,
+      "evidence": [
+        {
+          "frame": 145,
+          "image": "goal_20261019_batch004_00145.png",
+          "sha256": "03a508038d9b0a68683a80bdb54d2931bfac297639c85dd0d2d20408bc497f48",
+          "captured_at": "2026-10-19T03:44:16.379+00:00"
+        },
+        {
+          "frame": 146,
+          "image": "goal_20261019_batch004_00146.png",
+          "sha256": "8468e1d22e55c5b788a376633ffe4b3d3ff8a0eb4dc0eef32820e6c9dd1048a7",
+          "captured_at": "2026-10-19T03:44:23.897+00:00"
+        }
+      ]
+    },
+    {
+      "previous_frame": 175,
+      "first_observed_new_deal_frame": 176,
+      "both_full_native_frames_viewed_this_check": true,
+      "evidence": [
+        {
+          "frame": 175,
+          "image": "goal_20261019_batch004_00175.png",
+          "sha256": "5a6123e9580e2aa411382926665347af682cd9d5898d86136f3c37e4f0717bb2",
+          "captured_at": "2026-10-19T03:48:01.932+00:00"
+        },
+        {
+          "frame": 176,
+          "image": "goal_20261019_batch004_00176.png",
+          "sha256": "008aef737e08adc167dada168ec8b92987d1bfce133fc56b5658055e32a63534",
+          "captured_at": "2026-10-19T03:48:10.971+00:00"
+        }
+      ]
+    },
+    {
+      "previous_frame": 215,
+      "first_observed_new_deal_frame": 216,
+      "both_full_native_frames_viewed_this_check": true,
+      "evidence": [
+        {
+          "frame": 215,
+          "image": "goal_20261019_batch004_00215.png",
+          "sha256": "f7d26b7bb47aae144d8d66cb9f764b4faa7a6885fc39f346f318a1077396c997",
+          "captured_at": "2026-10-19T03:51:50.463+00:00"
+        },
+        {
+          "frame": 216,
+          "image": "goal_20261019_batch004_00216.png",
+          "sha256": "488411b07ee1d643e43d5b5259e525e639346b6cb1ecfc2cdf0585ebdeebd58b",
+          "captured_at": "2026-10-19T03:52:00.988+00:00"
+        }
+      ]
+    }
+  ],
+  "actual_next_rounds_unchanged": 5,
+  "minimum_actual_games_observed_unchanged": 6,
+  "complete_games_verified_for_final_acceptance": 0,
+  "target_detector_used": false,
+  "sealed": false,
+  "linked_group": "goal_20261019_batch004_005_linked_conservative",
+  "batch004_manifest_before_sha256": "f614e5f877f19350b0bcab5219cd7e16ec7be486e3e0fa8cf41de923d1a91f26",
+  "batch004_manifest_after_sha256": "065c864396652484e244b5b7de8c4ad13eaffe6d9cd46625a55b28738912304a",
+  "batch005_review_workspace": "data/blind_review_work/goal_20261019_batch005_v1",
+  "batch005_originals_and_drafts_hashed": 280,
+  "batch005_approved_images": 0,
+  "batch005_pending_draft_shapes": 5289,
+  "initial_batch005_frames1_5_session": "goal_20261019_batch004_game006",
+  "batch004_last_and_batch005_first_full_native_viewed": true,
+  "capture_gap_seconds": 431.701,
+  "capture_gap_does_not_count_as_another_game": true,
+  "later_batch006_linkage_pending_before_any_seal": true,
+  "images_or_card_labels_changed": false
+}
