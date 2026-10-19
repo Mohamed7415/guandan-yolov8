@@ -204,6 +204,18 @@ class ContinueChecks(unittest.TestCase):
             image.paste((0,0,0),button)
             self.assertFalse(self.detector.inspect(png(image))[kind],kind)
 
+    def test_r_timeout_retry_requires_every_native_anchor(self):
+        source=ROOT/'tests/fixtures/server_retry_r_inspection.png'
+        original=Image.open(source).convert('RGB')
+        self.assertTrue(self.detector.inspect(png(original))['server_retry_r'])
+        spec=self.detector.extra_actions['server_retry_r']
+        for name,box in spec['regions'].items():
+            with self.subTest(anchor=name):
+                changed=original.copy();changed.paste((0,0,0),box)
+                self.assertFalse(self.detector.inspect(png(changed))['server_retry_r'])
+        dimmed=ImageEnhance.Brightness(original).enhance(.5)
+        self.assertFalse(self.detector.inspect(png(dimmed))['server_retry_r'])
+
 
 if __name__ == "__main__":
     unittest.main()

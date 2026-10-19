@@ -238,5 +238,36 @@
     "action": "known_server_connection_retry",
     "source": "reports/auto_next/server_retry_plain/inspection.png",
     "source_sha256": "5d3adbb42c51da526fd3a6751ca5efa7daae0ac99faa35ea4239c88624842b5e"
+  },
+  "server_retry_r": {
+    "directory": "server_retry_r",
+    "regions": {
+      "header": [
+        650,
+        311,
+        981,
+        364
+      ],
+      "message": [
+        440,
+        442,
+        1180,
+        535
+      ],
+      "retry": [
+        884,
+        618,
+        1140,
+        706
+      ]
+    },
+    "point": [
+      1011,
+      661
+    ],
+    "action": "known_server_connection_retry",
+    "source": "reports/auto_next/server_retry_r/inspection.png",
+    "source_sha256": "1704fe67180664dfde67fc21c7b1d5d3e941ad74a38df0687806ec3b3f8d32c4",
+    "public_fixture_note": "Only the native opaque dialog panel is preserved; blank exterior masks cards. UI automation regression only, not card training or blind-test data."
   }
 }
