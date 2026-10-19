@@ -1,0 +1,30 @@
+{
+  "batch": "goal_20261019_batch010",
+  "source": "native_wechat_miniprogram_window",
+  "native_images": 340,
+  "original_hashes_and1620x1000_dimensions_verified": 340,
+  "actual_new_dealt_games_visually_verified": 8,
+  "new_hand_frame_indices_reviewed": [
+    7,
+    58,
+    91,
+    127,
+    168,
+    213,
+    238,
+    288
+  ],
+  "complete_games_captured_verified": 0,
+  "reviewed_label_images": 0,
+  "blind_model_evaluation_images": 0,
+  "target_model_inference_used": false,
+  "used_for_training": false,
+  "initial_shared_group": "goal_20261019_batch009_game008",
+  "successful_native30second_passive_grace_recovery_observed": true,
+  "native_evidence": "Controller log recorded unavailable→same-window recovered→subsequent level-up confirmation/next round. No input while missing.",
+  "terminal_reason": "Known paid offer remained visible20 seconds after one close action; stopped without repeating or purchasing. Clear same-game settlement at follow-up.",
+  "next_initial_shared_group": "goal_20261019_batch010_game008",
+  "last_game_scene": "ordinary_classic_middle_virtual_gold_base6000",
+  "scene_note": "Game288 shows middle room following same guarded next-round button after wallet exceeded beginner cap. No purchase.",
+  "note": "Candidate originals remain unreviewed/unsealed; one successful recovery does not prove uninterrupted or fully autonomous uptime."
+}
