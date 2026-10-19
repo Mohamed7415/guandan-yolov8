@@ -1,13 +1,13 @@
 {
   "images_total": 280,
-  "approved_images": 28,
+  "approved_images": 33,
   "label_seal_created": false,
   "target_card_detector_used": false,
   "used_for_training": false,
   "used_for_model_selection": false,
   "independent_human_second_review": false,
-  "positive_draft_shapes_pending": 4813,
-  "empty_drafts_pending_not_approved_negatives": 9,
+  "positive_draft_shapes_pending": 4737,
+  "empty_drafts_pending_not_approved_negatives": 7,
   "provisional_session_boundaries": [
     6,
     38,
@@ -17,59 +17,88 @@
     206
   ],
   "grouping_note": "004–006 share conservative split group. 005 frames1–3 settlement of004_game006;4–5 matchmaking transition, same conservative session provenance, not another captured deal. 005→006 capture gap/different opponents; no assertion they are one game and no complete-game credit.",
-  "approved_negatives": 5,
-  "approved_positive_images": 23,
-  "reviewed_positive_boxes": 521,
-  "positive_images_pending": 252,
-  "missing_draft_targets_added": 45,
-  "total_occlusion_flags_corrected_in_positive_review": 44,
+  "approved_negatives": 7,
+  "approved_positive_images": 26,
+  "reviewed_positive_boxes": 602,
+  "positive_images_pending": 247,
+  "missing_draft_targets_added": 50,
+  "total_occlusion_flags_corrected_in_positive_review": 47,
   "total_visible_extent_corrections_in_positive_review": 0,
   "linked_conservative_group": "goal_20261019_batch004_006_linked_conservative",
-  "full_native_frames_reviewed_this_stage": 28,
-  "complete_pixel_groups_viewed": 149,
-  "complete_pixel_pages_all_viewed": 8,
+  "full_native_frames_reviewed_this_stage": 33,
+  "complete_pixel_groups_viewed": 177,
+  "complete_pixel_pages_all_viewed": 10,
   "format_normalization_note": "15 new axis-aligned boxes use supported rectangle type; coordinates and reviewed pixels unchanged.",
-  "last_reviewed_frame": 28,
+  "last_reviewed_frame": 40,
   "unapproved_visual_issues": [
     "reports/continuous_goal/blind_batch005_review/frame00029_review_issue.json",
-    "reports/continuous_goal/blind_batch005_review/frame00030_review_issue.json"
+    "reports/continuous_goal/blind_batch005_review/frame00030_review_issue.json",
+    "reports/continuous_goal/blind_batch005_review/frame00031_review_issue.json",
+    "reports/continuous_goal/blind_batch005_review/frame00032_review_issue.json",
+    "reports/continuous_goal/blind_batch005_review/frame00033_review_issue.json",
+    "reports/continuous_goal/blind_batch005_review/frame00034_review_issue.json",
+    "reports/continuous_goal/blind_batch005_review/frame00035_review_issue.json"
   ],
-  "at": "2026-10-19T18:22:54.611610+00:00",
-  "newly_approved_images_this_check": 8,
-  "newly_reviewed_targets_this_check": 143,
-  "newly_added_missing_targets_this_check": 3,
-  "newly_corrected_occlusion_flags_this_check": 18,
+  "at": "2026-10-19T18:43:26.757792+00:00",
+  "newly_approved_images_this_check": 5,
+  "newly_reviewed_targets_this_check": 81,
+  "newly_added_missing_targets_this_check": 5,
+  "newly_corrected_occlusion_flags_this_check": 3,
   "newly_corrected_visible_extents_this_check": 0,
-  "conversion_validated_images": 28,
-  "conversion_validated_targets": 521,
-  "annotation_audit_sha256": "657d425b008b3189ea891c9fc1b34f1e7f8f41c0190ec1d47dc63453c7ed7b1b",
-  "full_native_frame_range_reviewed": [
+  "conversion_validated_images": 33,
+  "conversion_validated_targets": 602,
+  "annotation_audit_sha256": "7212a7faae4411da2481d134f9924f75dca02eb7394a7d1af11f59e67a2ed1c9",
+  "full_native_frame_range_viewed": [
     1,
-    28
+    40
   ],
-  "latest_full_native_frame_range_reviewed": [
-    21,
-    30
+  "approved_frame_segments": [
+    [
+      1,
+      28
+    ],
+    [
+      36,
+      40
+    ]
+  ],
+  "latest_full_native_frame_range_viewed": [
+    31,
+    40
   ],
   "latest_approved_frame_range": [
-    21,
-    28
+    36,
+    40
   ],
   "unapproved_frames_this_check": [
-    29,
-    30
+    31,
+    32,
+    33,
+    34,
+    35
   ],
-  "latest_complete_pixel_groups_viewed": 32,
+  "unresolved_frames": [
+    29,
+    30,
+    31,
+    32,
+    33,
+    34,
+    35
+  ],
+  "latest_complete_pixel_groups_viewed": 28,
   "latest_complete_pixel_pages_all_viewed": 2,
-  "pending_images": 252,
+  "pending_images": 247,
   "settlement_frames": [
     1,
     2,
-    3
+    3,
+    36
   ],
   "matchmaking_frames": [
     4,
-    5
+    5,
+    37
   ],
   "complete_games_verified_for_final_acceptance": 0,
   "formal_new_blind_evaluation_images": 0,
