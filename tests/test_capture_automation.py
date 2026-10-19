@@ -143,6 +143,34 @@ class ContinueChecks(unittest.TestCase):
         self.assertEqual(machine.observe(dict(settlement=True, gameplay=False), 50), "transition_failed_stop")
         self.assertEqual(machine.completed_transitions, 0)
 
+    def test_native_matchmaking_cannot_complete_or_rearm_transition(self):
+        # Genuine post-click waiting screen: old opponents' cards remain, but
+        # no own hand has been dealt. These are UI fixtures, not model inputs.
+        state = self.detector.inspect((ROOT/'tests/fixtures/native_waiting_ready.png').read_bytes())
+        self.assertGreater(state['green_fraction'], .45)
+        self.assertGreater(state['white_fraction'], .012)
+        self.assertFalse(state['gameplay'])
+        machine = ContinueState()
+        machine.clicked(0)
+        for time in (2, 4, 6, 20, 44):
+            self.assertEqual(machine.observe(state, time), 'awaiting_game')
+        self.assertEqual(machine.observe(state, 45), 'transition_failed_stop')
+        self.assertEqual(machine.completed_transitions, 0)
+        empty = self.detector.inspect((ROOT/'tests/fixtures/native_empty_matchmaking.png').read_bytes())
+        self.assertFalse(empty['gameplay'])
+
+    def test_dealt_hand_still_confirms_game_at_native_and_retina_sizes(self):
+        # Existing development image, not an image from the blind pool.
+        original = Image.open(ROOT/'tests/fixtures/native_development_hand.png').convert('RGB')
+        machine = ContinueState()
+        machine.clicked(0)
+        for time, size in zip((2, 4, 6), ((810, 500), (1620, 1000), (3240, 2000))):
+            state = self.detector.inspect(png(original.resize(size)))
+            self.assertTrue(state['gameplay'])
+            result = machine.observe(state, time)
+        self.assertEqual(result, 'new_game_observed')
+        self.assertEqual(machine.completed_transitions, 1)
+
     def test_other_wechat_window_in_front_blocks_input(self):
         bounds = dict(X=0, Y=0, Width=810, Height=500)
         target = dict(kCGWindowNumber=7, kCGWindowLayer=0, kCGWindowBounds=bounds)

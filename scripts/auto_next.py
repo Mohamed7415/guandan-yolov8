@@ -81,14 +81,19 @@ class SettlementDetector:
             _, _, scores[name], errors[name] = max(options)
         settlement = all(scores[n] >= self.layout["minimum_correlation"]
                          and errors[n] <= self.layout["maximum_color_error"] for n in scores)
-        # Confirm a green-table game between settlements. A different screen,
-        # including the lobby and a purchase dialog, cannot re-arm the clicker.
+        # A green empty matchmaking table also contains white HUD icons. Require
+        # visible neutral card surfaces above the bottom toolbar/hosting banner
+        # before counting a dealt game. This UI guard does not classify cards.
         table = rgb[260:700, 320:1300].astype(np.int16)
         green = float(((table[:, :, 1] > table[:, :, 0] * 1.25)
                        & (table[:, :, 1] > table[:, :, 2] * .8)
                        & (table[:, :, 0] < 135)).mean())
         _, _, _, white = frame_features(data)
-        gameplay = not settlement and green > .45 and .012 < white < .55
+        hand = rgb[700:810, 230:1515].astype(np.int16)
+        hand_white = float(((hand.min(axis=2) > 150)
+                            & (hand.max(axis=2) - hand.min(axis=2) < 45)).mean())
+        gameplay = (not settlement and green > .45 and .012 < white < .55
+                    and hand_white > .025)
         level_up = self.popup_matches(rgb,self.level_templates,self.level_regions)
         free_gold_base = self.popup_matches(rgb,self.gold_templates,self.gold_regions)
         extras = {kind:self.popup_matches(rgb,self.extra_templates[kind],spec['regions'])
@@ -96,6 +101,7 @@ class SettlementDetector:
         if level_up or free_gold_base or any(extras.values()): gameplay = False
         return dict(settlement=settlement, gameplay=gameplay, scores=scores,
                     color_errors=errors, green_fraction=green, white_fraction=white,
+                    hand_white_fraction=hand_white,
                     level_up=bool(level_up), free_gold_base=bool(free_gold_base), **extras)
 
     def target_point(self, window: dict, kind: str = 'settlement') -> tuple[float, float]:

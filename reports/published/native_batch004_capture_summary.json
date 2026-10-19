@@ -1,0 +1,16 @@
+{
+  "batch": "goal_20261019_batch004",
+  "native_candidates": 251,
+  "original_hashes_verified": 251,
+  "verified_actual_next_rounds": 5,
+  "minimum_actual_games_observed": 6,
+  "complete_games_verified_for_final_acceptance": 0,
+  "reviewed_labels": 0,
+  "formal_new_blind_evaluation_images": 0,
+  "target_card_detector_used": false,
+  "capture_terminal_reason": "Bounded controller reached5 next-rounds; wrapper stopped collector. Not a user pause.",
+  "ui_guard_fix": "Require visible own-hand neutral card surfaces above toolbar before3 consecutive gameplay observations can confirm a new game. Reject native ready/waiting screen with old opponents cards and empty matchmaking. All existing input guards and45second failure stop preserved.",
+  "card_model_or_postprocess_changed": false,
+  "offline_checks_passed": 81,
+  "ui_fixture_note": "Native ready/matching images used only for UI-state regression; positive fixture from existing development data. Never target model training, candidate selection or blind inference."
+}
