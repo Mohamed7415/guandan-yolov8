@@ -1,0 +1,19 @@
+{
+  "native_images_final": 56,
+  "original_hashes_and_dimensions_verified": 56,
+  "new_dealt_games_verified": 1,
+  "complete_games_captured_verified": 0,
+  "target_model_inference_run": false,
+  "reviewed_images": 0,
+  "training_used": false,
+  "initial_shared_group": "goal_20261019_batch011_game002",
+  "last_observed_group": "goal_20261019_batch012_game001",
+  "terminal_time": "2026-10-19T08:23:11+00:00",
+  "controller_exit_code": 2,
+  "capture_exit_code": 0,
+  "terminal_reason": "close_comeback_offer persisted20 seconds after one close; safe stop. Native frame56 shows60-minute offer, so do not extend using5-minute close_loss_offer rule. Later lobby gap not credited as captured game.",
+  "paid_action_performed": false,
+  "status": "terminal_not_running",
+  "capture_recovery": "Awaiting user after one explicit request; native lobby action had no observed effect. No capture or training is running.",
+  "final_blind_evaluation_images": 0
+}
