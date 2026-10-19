@@ -1,0 +1,22 @@
+{
+  "verified_at": "2026-10-19T03:39:31+00:00",
+  "status": "first_real_guarded_auto_next_transition_verified",
+  "game": "native_wechat_miniprogram_ordinary_classic_beginner_virtual_gold",
+  "click_time": "2026-10-19T03:34:04.203+00:00",
+  "transition_time": "2026-10-19T03:34:10.818+00:00",
+  "controller_observation": "three consecutive gameplay observations after one settlement click",
+  "assistant_visual_review": "Native before-click victory settlement and committed frame00046 after transition both inspected. Different opponents and fresh27-card hand confirm new actual round.",
+  "settlement_proof": "reports/continuous_goal/auto_next_batch004/before_next_1792380844046460000.png",
+  "settlement_proof_sha256": "deebf4a4c64107257271a9c4df30a6e56a32c7e92d59a0150726cf52f29a418f",
+  "new_game_frame": "data/candidates/goal_20261019_batch004/goal_20261019_batch004_00046.png",
+  "new_game_frame_sha256": "8bf882d9d8be8c0a4a5c2fe42bc935788d8726f43d840c0120e49eb111e042e9",
+  "verified_auto_next_transitions": 1,
+  "minimum_actual_games_observed": 2,
+  "complete_game_boundary_audit_pending": true,
+  "all_foreground_identity_recapture_occlusion_guards_preserved": true,
+  "menu_did_not_block_actual_settlement": "Observed settlement panel replaces the menu; original settlement anchors matched without changes.",
+  "paid_action_performed": false,
+  "target_card_detector_used": false,
+  "new_blind_evaluation_images": 0,
+  "not_a_guarantee_of_all_future_transitions": true
+}
