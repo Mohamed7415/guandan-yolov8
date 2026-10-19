@@ -1,0 +1,21 @@
+{
+  "batch": "goal_20261019_batch011",
+  "source": "native_wechat_miniprogram_window",
+  "native_images": 91,
+  "original_hashes_and1620x1000_dimensions_verified": 91,
+  "actual_new_dealt_games_visually_verified": 2,
+  "new_hand_frame_indices_reviewed": [
+    3,
+    61
+  ],
+  "complete_games_captured_verified": 0,
+  "reviewed_label_images": 0,
+  "blind_model_evaluation_images": 0,
+  "target_model_inference_used": false,
+  "used_for_training": false,
+  "initial_shared_group": "goal_20261019_batch010_game008",
+  "next_initial_shared_group": "goal_20261019_batch011_game002",
+  "terminal_reason": "Known timed paid offer remained visible20 seconds after a single close; controller stopped without repeating or buying. Same-game settlement clear at follow-up.",
+  "recovery_change": "Only known close_loss_offer with no pending next-round confirmation may passively await expiry up to300 seconds from its single close. Timestamp survives a brief recognition mismatch. Other popup waits remain20 seconds; next-round deadlines remain45/120 seconds. No paid action or additional close input.",
+  "validation": "95 offline checks passed, including fixed deadline/flicker, no repeated close, actual game confirmation before rearming, expiration followed by next round, and original transition deadline. Native extended-offer recovery still pending observation."
+}

@@ -371,6 +371,7 @@ def main() -> int:
         started, last_known, attempts = time.monotonic(), time.monotonic(), 0
         level_stable, level_pending, popup_name = 0, None, None
         missing_since = None
+        loss_offer_pending_since = None
         while time.monotonic() - started < args.max_minutes * 60:
             if not (args.dry_run or args.once):
                 pointer = capture.quartz.CGEventGetLocation(capture.quartz.CGEventCreate(None))
@@ -424,16 +425,28 @@ def main() -> int:
             if popup:
                 if popup_name != popup:
                     level_stable, level_pending, popup_name = 0, None, popup
+                if popup == 'close_loss_offer' and loss_offer_pending_since is not None:
+                    level_pending = loss_offer_pending_since
                 level_stable += 1
+                # A known timed paid offer can ignore its close button until
+                # expiry. Wait passively after ONE close; keep the original
+                # timestamp even if an animation briefly breaks the match.
+                wait_limit = 300 if popup == 'close_loss_offer' and machine.pending_since is None else 20
+                if machine.pending_since is not None:
+                    deadline = 120 if machine.known_ready_wait_observed else 45
+                    if time.monotonic() - machine.pending_since >= deadline:
+                        raise RuntimeError(f"续局后 {deadline} 秒未观察到新对局，停止；不会再次盲点。")
                 if level_pending is not None:
-                    if time.monotonic()-level_pending > 20:
-                        raise RuntimeError('已知提示点击后仍未消失，停止；不会重复点击。')
+                    if time.monotonic()-level_pending >= wait_limit:
+                        raise RuntimeError(f'已知提示关闭后{wait_limit}秒仍未消失，停止；不会重复点击。')
                 elif level_stable >= 2:
                     if args.dry_run:
                         if level_stable == 2: print(f'识别到已知提示 {popup}；试运行不点击。',flush=True)
                     elif click_verified(capture,detector,args.output,targeted=args.targeted_input,kind=popup,activate_before_click=args.activate_before_click):
                         level_pending=time.monotonic()
-                        print(f'已处理已知提示 {popup}，等待其消失。',flush=True)
+                        if popup == 'close_loss_offer':
+                            loss_offer_pending_since = level_pending
+                        print(f'已处理已知提示 {popup}，被动等待最多{wait_limit}秒，不重复点击。',flush=True)
                 time.sleep(args.interval)
                 continue
             level_stable, level_pending, popup_name = 0, None, None
@@ -442,6 +455,7 @@ def main() -> int:
                 deadline = 120 if machine.known_ready_wait_observed else 45
                 raise RuntimeError(f"续局后 {deadline} 秒未观察到新对局，停止；不会再次盲点。")
             if action == "new_game_observed":
+                loss_offer_pending_since = None
                 with (args.output / "transitions.jsonl").open("a", encoding="utf-8") as stream:
                     stream.write(json.dumps(dict(time=now(), event=action,
                         completed_transitions=machine.completed_transitions)) + "\n")
