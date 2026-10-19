@@ -1,0 +1,14 @@
+{
+  "batch": "goal_20261019_batch006",
+  "native_candidate_images": 271,
+  "native_image_hashes_and_sizes_verified": 271,
+  "verified_actual_next_rounds_with_native_before_after": 7,
+  "reviewed_labels": 0,
+  "formal_new_blind_evaluation_images": 0,
+  "target_card_detector_used": false,
+  "card_model_changed": false,
+  "capture_stop_reason": "Rewarded ad changed same native window to portrait; stopped on window guard. No ad image entered card dataset.",
+  "native_recovery": "Closed completed ad and confirmed free virtual gold; restored810x500 window; all3 original settlement anchors pass.",
+  "automatic_portrait_ad_close_implemented": false,
+  "known120second_ready_wait_native_extended_case_observed": false
+}
