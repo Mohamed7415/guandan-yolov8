@@ -349,8 +349,8 @@ def main() -> int:
     if args.max_rounds < 1 or args.interval < 1:
         p.error("max-rounds 至少 1；interval 至少 1 秒")
     args.output.mkdir(parents=True, exist_ok=True)
+    input_lock = None
     try:
-        input_lock = None
         if not (args.dry_run or args.once):
             import fcntl
             lock_path = ROOT / "reports/.auto_next.lock"
@@ -370,6 +370,7 @@ def main() -> int:
         print("仅用于已进入的普通金蛋场。请先开启游戏自带托管，再保持小程序在前台。", flush=True)
         started, last_known, attempts = time.monotonic(), time.monotonic(), 0
         level_stable, level_pending, popup_name = 0, None, None
+        missing_since = None
         while time.monotonic() - started < args.max_minutes * 60:
             if not (args.dry_run or args.once):
                 pointer = capture.quartz.CGEventGetLocation(capture.quartz.CGEventCreate(None))
@@ -387,8 +388,27 @@ def main() -> int:
             try:
                 data, window_id = capture.capture(args.output)
             except LookupError as exc:
-                print(f"目标窗口不可用，停止：{exc}")
-                return 2
+                current = time.monotonic()
+                if args.once:
+                    print(f"目标窗口不可用，停止：{exc}")
+                    return 2
+                if missing_since is None:
+                    missing_since = current
+                    print(f"目标窗口暂不可用，被动等待最多30秒，不发送输入：{exc}", flush=True)
+                # A gap breaks consecutive observations, but must not reset a
+                # pending click or extend its original45/120-second deadline.
+                machine.stable_settlement = machine.game_observations = 0
+                level_stable = 0
+                if current - missing_since >= 30:
+                    print(f"目标窗口连续30秒不可用，停止：{exc}", flush=True)
+                    return 2
+                time.sleep(min(args.interval, 30 - (current - missing_since)))
+                continue
+            if capture.window_id is None:
+                capture.window_id = window_id
+            if missing_since is not None:
+                print("同一目标窗口已恢复，重新核验当前界面。", flush=True)
+                missing_since = None
             state = detector.inspect(data)
             atomic_json(args.output / "latest_state.json", dict(time=now(), window_id=window_id, **state))
             if args.once:
@@ -445,6 +465,9 @@ def main() -> int:
     except (OSError, ValueError, RuntimeError) as exc:
         print(f"已停止：{exc}", file=sys.stderr)
         return 2
+    finally:
+        if input_lock is not None:
+            input_lock.close()
 
 
 if __name__ == "__main__":

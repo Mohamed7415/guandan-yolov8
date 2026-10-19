@@ -1,0 +1,20 @@
+{
+  "source": "native_wechat_miniprogram_window",
+  "batch": "goal_20261019_batch008",
+  "native_images": 21,
+  "original_hashes_verified": 21,
+  "native_size": [
+    1620,
+    1000
+  ],
+  "reviewed_images": 0,
+  "new_independent_dealt_games_verified": 0,
+  "complete_games_verified": 0,
+  "blind_model_evaluation_images": 0,
+  "target_model_inference_used": false,
+  "used_for_training": false,
+  "terminal_reason": "Controller stopped immediately on one target-window lookup failure; same13234 window was visible at follow-up. Duration/cause of disappearance not established.",
+  "recovery_change": "Passive30-second fixed grace for missing window; no input, reset consecutive observations, pin first successfully observed window ID, preserve original pending-click deadline and all click guards. Single-observation mode remains single-shot.",
+  "validation": "90 offline checks passed; real repeated window-loss recovery remains to be observed.",
+  "initial_game_partial": true
+}
