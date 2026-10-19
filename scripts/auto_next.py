@@ -46,6 +46,11 @@ class SettlementDetector:
         self.gold_templates = {name: np.asarray(Image.open(directory/'free_gold_base'/f'{name}.png').convert('RGB'))
                                for name in self.gold_regions
                                if (directory/'free_gold_base'/f'{name}.png').is_file()}
+        self.wait_regions = {'center': (714,329,892,384),
+                             'left': (221,443,401,499), 'self': (750,694,868,754)}
+        self.wait_templates = {name: np.asarray(Image.open(directory/'waiting_ready'/f'{name}.png').convert('RGB'))
+                               for name in self.wait_regions
+                               if (directory/'waiting_ready'/f'{name}.png').is_file()}
 
     @staticmethod
     def popup_matches(rgb, templates, regions):
@@ -98,10 +103,15 @@ class SettlementDetector:
         free_gold_base = self.popup_matches(rgb,self.gold_templates,self.gold_regions)
         extras = {kind:self.popup_matches(rgb,self.extra_templates[kind],spec['regions'])
                   for kind,spec in self.extra_actions.items()}
-        if level_up or free_gold_base or any(extras.values()): gameplay = False
+        waiting_ready = (not settlement and green > .45
+                         and self.popup_matches(rgb, self.wait_templates, self.wait_regions))
+        if level_up or free_gold_base or any(extras.values()):
+            gameplay = waiting_ready = False
+        if waiting_ready: gameplay = False
         return dict(settlement=settlement, gameplay=gameplay, scores=scores,
                     color_errors=errors, green_fraction=green, white_fraction=white,
                     hand_white_fraction=hand_white,
+                    waiting_ready=bool(waiting_ready),
                     level_up=bool(level_up), free_gold_base=bool(free_gold_base), **extras)
 
     def target_point(self, window: dict, kind: str = 'settlement') -> tuple[float, float]:
@@ -119,17 +129,25 @@ class ContinueState:
         self.stable_settlement = 0
         self.game_observations = 0
         self.completed_transitions = 0
+        self.known_ready_wait_observed = False
 
     def observe(self, state: dict, current_time: float) -> str:
         if self.pending_since is not None:
+            # A native ready screen can display a90-second countdown. A known
+            # three-anchor match grants one fixed120-second total deadline,
+            # never a sliding extension or another click. Unknown states alone
+            # retain the45-second stop; only a dealt hand confirms completion.
+            if state.get('waiting_ready'):
+                self.known_ready_wait_observed = True
+            deadline = 120 if self.known_ready_wait_observed else 45
+            if current_time - self.pending_since >= deadline:
+                return "transition_failed_stop"
             self.game_observations = self.game_observations + 1 if state["gameplay"] else 0
             if self.game_observations >= 3:
                 self.completed_transitions += 1
                 self.pending_since = None
                 self.game_observations = self.stable_settlement = 0
                 return "new_game_observed"
-            if current_time - self.pending_since >= 45:
-                return "transition_failed_stop"
             return "awaiting_game"
         self.stable_settlement = self.stable_settlement + 1 if state["settlement"] else 0
         return "ready_to_continue" if self.stable_settlement >= 2 else "observe"
@@ -138,6 +156,7 @@ class ContinueState:
         self.pending_since = current_time
         self.stable_settlement = 0
         self.game_observations = 0
+        self.known_ready_wait_observed = False
 
 
 def accessibility_allowed() -> bool:
@@ -376,7 +395,7 @@ def main() -> int:
                 (args.output / "inspection.png").write_bytes(data)
                 print(json.dumps(state, ensure_ascii=False, indent=2))
                 return 0
-            if state["gameplay"] or state["settlement"] or any(state.get(k) for k in detector.popup_actions):
+            if state["gameplay"] or state["settlement"] or state.get('waiting_ready') or any(state.get(k) for k in detector.popup_actions):
                 last_known = time.monotonic()
             elif time.monotonic() - last_known > 60:
                 (args.output/'unrecognized_stop.png').write_bytes(data)
@@ -400,7 +419,8 @@ def main() -> int:
             level_stable, level_pending, popup_name = 0, None, None
             action = machine.observe(state, time.monotonic())
             if action == "transition_failed_stop":
-                raise RuntimeError("续局后 45 秒未观察到新对局，停止；不会再次盲点。")
+                deadline = 120 if machine.known_ready_wait_observed else 45
+                raise RuntimeError(f"续局后 {deadline} 秒未观察到新对局，停止；不会再次盲点。")
             if action == "new_game_observed":
                 with (args.output / "transitions.jsonl").open("a", encoding="utf-8") as stream:
                     stream.write(json.dumps(dict(time=now(), event=action,

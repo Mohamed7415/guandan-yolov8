@@ -1,0 +1,17 @@
+{
+  "batch": "goal_20261019_batch005",
+  "native_candidate_images": 280,
+  "original_hashes_verified": 280,
+  "verified_actual_next_rounds_in_captured_images": 6,
+  "initial_settlement_shared_with_batch004_game006": true,
+  "reviewed_labels": 0,
+  "formal_new_blind_evaluation_images": 0,
+  "target_card_detector_used": false,
+  "complete_games_verified_for_final_acceptance": 0,
+  "stop_reason": "Seventh click reached45-second transition stop while native ready table still displayed countdown. Collector was stopped by wrapper, not by user.",
+  "capture_gap": "A later native settlement showed different opponents, suggesting play continued after collection stopped. No missing hand or game is credited as captured.",
+  "recovery_change": "A strict three-anchor known ready-table recognition permits a fixed120-second total wait from the click; unknown states alone retain45seconds. It never clicks this waiting UI or counts it as a dealt game; three own-hand observations are still required.",
+  "offline_checks_passed": 85,
+  "card_model_and_postprocess_unchanged": true,
+  "native_extended_wait_validation": "Pending future occurrence; offline native-anchor rejection and deadline checks passed."
+}

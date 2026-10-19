@@ -171,6 +171,50 @@ class ContinueChecks(unittest.TestCase):
         self.assertEqual(result, 'new_game_observed')
         self.assertEqual(machine.completed_transitions, 1)
 
+    def test_known_ready_wait_requires_all_three_native_anchors(self):
+        original = Image.open(ROOT/'tests/fixtures/native_waiting_ready_countdown.png').convert('RGB')
+        state = self.detector.inspect(png(original))
+        self.assertTrue(state['waiting_ready'])
+        self.assertFalse(state['gameplay'])
+        self.assertFalse(state['settlement'])
+        for name, box in self.detector.wait_regions.items():
+            with self.subTest(anchor=name):
+                changed = original.copy(); changed.paste((0,0,0), box)
+                self.assertFalse(self.detector.inspect(png(changed))['waiting_ready'])
+        dimmed = ImageEnhance.Brightness(original).enhance(.5)
+        self.assertFalse(self.detector.inspect(png(dimmed))['waiting_ready'])
+
+    def test_known_ready_wait_is_bounded_and_does_not_count_a_game(self):
+        machine = ContinueState(); machine.clicked(0)
+        waiting = dict(settlement=False, gameplay=False, waiting_ready=True)
+        unknown = dict(settlement=False, gameplay=False)
+        for time in (2, 46, 90, 119):
+            self.assertEqual(machine.observe(waiting, time), 'awaiting_game')
+        self.assertEqual(machine.completed_transitions, 0)
+        self.assertEqual(machine.observe(waiting, 120), 'transition_failed_stop')
+        # A new click clears the previous ready evidence; unknown still45s.
+        machine.clicked(200)
+        self.assertEqual(machine.observe(unknown, 245), 'transition_failed_stop')
+
+    def test_hand_after_known_ready_countdown_needs_three_new_observations(self):
+        machine = ContinueState(); machine.clicked(0)
+        waiting = dict(settlement=False, gameplay=False, waiting_ready=True)
+        game = dict(settlement=False, gameplay=True)
+        self.assertEqual(machine.observe(waiting, 2), 'awaiting_game')
+        self.assertEqual(machine.observe(game, 100), 'awaiting_game')
+        self.assertEqual(machine.observe(game, 102), 'awaiting_game')
+        self.assertEqual(machine.observe(game, 104), 'new_game_observed')
+        self.assertEqual(machine.completed_transitions, 1)
+
+    def test_third_hand_observation_cannot_overrun_fixed_ready_deadline(self):
+        machine = ContinueState(); machine.clicked(0)
+        machine.observe(dict(settlement=False, gameplay=False, waiting_ready=True), 2)
+        game = dict(settlement=False, gameplay=True)
+        self.assertEqual(machine.observe(game, 116), 'awaiting_game')
+        self.assertEqual(machine.observe(game, 118), 'awaiting_game')
+        self.assertEqual(machine.observe(game, 121), 'transition_failed_stop')
+        self.assertEqual(machine.completed_transitions, 0)
+
     def test_other_wechat_window_in_front_blocks_input(self):
         bounds = dict(X=0, Y=0, Width=810, Height=500)
         target = dict(kCGWindowNumber=7, kCGWindowLayer=0, kCGWindowBounds=bounds)

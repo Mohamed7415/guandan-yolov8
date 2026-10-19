@@ -1,0 +1,28 @@
+{
+  "source_sha256": "15e73c70f6a27f6a938249672e89a1a624bd1bae40386ee42fa8ab3fb0ff2e4e",
+  "source_description": "Native post-settlement ready table, countdown88 visible, no own dealt hand. Three fixed text anchors exclude dynamic countdown digits.",
+  "regions": {
+    "center": [
+      714,
+      329,
+      892,
+      384
+    ],
+    "left": [
+      221,
+      443,
+      401,
+      499
+    ],
+    "self": [
+      750,
+      694,
+      868,
+      754
+    ]
+  },
+  "ui_state_only": true,
+  "sends_input": false,
+  "not_card_model_data": true,
+  "maximum_total_wait_seconds_from_click": 120
+}
