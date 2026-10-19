@@ -209,7 +209,13 @@ def activate_game_window(window: dict) -> bool:
             matching.append(candidate)
     if err or len(matching) != 1 or AXUIElementPerformAction(matching[0], kAXRaiseAction):
         return False
-    return AXUIElementSetAttributeValue(ax_app, kAXFrontmostAttribute, True) == 0
+    if AXUIElementSetAttributeValue(ax_app, kAXFrontmostAttribute, True) != 0:
+        return False
+    # Activation can still be pending when AX returns. Process its events
+    # before the caller rechecks all foreground/window guards.
+    from Foundation import NSDate, NSRunLoop
+    NSRunLoop.currentRunLoop().runUntilDate_(NSDate.dateWithTimeIntervalSinceNow_(.25))
+    return True
 
 
 def same_window(before: dict, after: dict, captured_id: int) -> bool:
