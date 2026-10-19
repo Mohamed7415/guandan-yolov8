@@ -60,16 +60,16 @@
     100,
     144
   ],
-  "last_check_at": "2026-10-19T22:01:29.821586+00:00",
+  "last_check_at": "2026-10-19T22:22:47.846836+00:00",
   "cross_batch_isolation_audit": "reports/published/native_batch004_005_isolation_audit.json",
   "linked_conservative_group": "goal_20261019_batch004_006_linked_conservative",
   "batch005_unreviewed_workspace_created": true,
-  "batch005_approved_images": 113,
-  "batch005_pending_images": 167,
-  "batch005_pending_draft_shapes": 3099,
+  "batch005_approved_images": 123,
+  "batch005_pending_images": 157,
+  "batch005_pending_draft_shapes": 2912,
   "later_batch006_linkage_pending_before_any_seal": false,
   "later_batch007_linkage_pending_before_any_seal": true,
-  "batch005_reviewed_targets": 2300,
+  "batch005_reviewed_targets": 2487,
   "batch005_review_progress": "reports/published/native_batch005_label_review_progress.json",
-  "latest_check_stage": "batch005_frames111_120_visual_review"
+  "latest_check_stage": "batch005_frames121_130_visual_review"
 }

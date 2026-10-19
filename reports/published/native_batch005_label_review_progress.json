@@ -1,35 +1,35 @@
 {
   "images_total": 280,
-  "approved_images": 113,
+  "approved_images": 123,
   "label_seal_created": false,
   "target_card_detector_used": false,
   "used_for_training": false,
   "used_for_model_selection": false,
   "independent_human_second_review": false,
-  "positive_draft_shapes_pending": 3099,
-  "empty_drafts_pending_not_approved_negatives": 5,
+  "positive_draft_shapes_pending": 2912,
+  "empty_drafts_pending_not_approved_negatives": 4,
   "provisional_session_boundaries": [
     6,
     38,
     85,
-    126,
+    125,
     172,
     206
   ],
   "grouping_note": "004–006 share conservative split group. 005 frames1–3 settlement of004_game006;4–5 matchmaking transition, same conservative session provenance, not another captured deal. 005→006 capture gap/different opponents; no assertion they are one game and no complete-game credit.",
-  "approved_negatives": 9,
-  "approved_positive_images": 104,
-  "reviewed_positive_boxes": 2300,
-  "positive_images_pending": 167,
+  "approved_negatives": 10,
+  "approved_positive_images": 113,
+  "reviewed_positive_boxes": 2487,
+  "positive_images_pending": 157,
   "missing_draft_targets_added": 110,
-  "total_occlusion_flags_corrected_in_positive_review": 212,
+  "total_occlusion_flags_corrected_in_positive_review": 197,
   "total_visible_extent_corrections_in_positive_review": 29,
   "linked_conservative_group": "goal_20261019_batch004_006_linked_conservative",
-  "full_native_frames_reviewed_this_stage": 113,
-  "complete_pixel_groups_viewed": 705,
-  "complete_pixel_pages_all_viewed": 36,
+  "full_native_frames_reviewed_this_stage": 123,
+  "complete_pixel_groups_viewed": 751,
+  "complete_pixel_pages_all_viewed": 38,
   "format_normalization_note": "15 new axis-aligned boxes use supported rectangle type; coordinates and reviewed pixels unchanged.",
-  "last_reviewed_frame": 120,
+  "last_reviewed_frame": 130,
   "unapproved_visual_issues": [
     "reports/continuous_goal/blind_batch005_review/frame00029_review_issue.json",
     "reports/continuous_goal/blind_batch005_review/frame00030_review_issue.json",
@@ -45,18 +45,103 @@
     "session_id": "goal_20261019_batch005_game003",
     "evidence": "Full native84 settlement popup then85 new opponents and fresh27-card hand in ordinary middle room base6000;86 identical hand. No complete-game credit;conservative004–006group unchanged."
   },
-  "at": "2026-10-19T22:01:29.821586+00:00",
+  "post_approval_corrections": [
+    {
+      "at": "2026-10-19T22:21:57.539756+00:00",
+      "frames": [
+        85,
+        86,
+        87,
+        88
+      ],
+      "reverted_prior_flag_changes": 28,
+      "reason": "Horizontal card overlap was overlooked in earlier unoccluded changes. Restore occluded=true for7bottom cards/frame.Original classes,boxes and image counts unchanged.",
+      "items": [
+        {
+          "frame": 85,
+          "old_approved_sha256": "be7c584edc6ea709c2db500c81df21f0a9e40e270233e8d45bf5e34ed866c1c5",
+          "corrected_approved_sha256": "a2d00f5c5873eb3118213eec4ba4cdc8bef0431e2142139b5020aac18d07ddf4",
+          "reverted_flags": 7,
+          "changed_shapes": [
+            15,
+            16,
+            17,
+            18,
+            19,
+            20,
+            22
+          ],
+          "prior_annotation_archive": "reports/continuous_goal/blind_batch005_review/overlap_flag_correction_85_88/goal_20261019_batch005_00085.json"
+        },
+        {
+          "frame": 86,
+          "old_approved_sha256": "4c09b71ec1ac37e2fce830df8153270fd176186b09ab64193e80c7a7a2636977",
+          "corrected_approved_sha256": "2b0b15d3ad83a97dba27d656c81dbf48906230bca34ffc48c2918cf058fa6b1a",
+          "reverted_flags": 7,
+          "changed_shapes": [
+            15,
+            16,
+            17,
+            18,
+            19,
+            20,
+            22
+          ],
+          "prior_annotation_archive": "reports/continuous_goal/blind_batch005_review/overlap_flag_correction_85_88/goal_20261019_batch005_00086.json"
+        },
+        {
+          "frame": 87,
+          "old_approved_sha256": "d7d2ba435c935a96182fb10166ca995ed0a0dcbd9ef2d1e3227b95f3bdfb8f68",
+          "corrected_approved_sha256": "0d3e327ae690ace934d638f3dccba900edd3a444ca262ae1ae4ffd5e470b6227",
+          "reverted_flags": 7,
+          "changed_shapes": [
+            15,
+            16,
+            17,
+            18,
+            19,
+            20,
+            22
+          ],
+          "prior_annotation_archive": "reports/continuous_goal/blind_batch005_review/overlap_flag_correction_85_88/goal_20261019_batch005_00087.json"
+        },
+        {
+          "frame": 88,
+          "old_approved_sha256": "8afa514167e6417d3318c9d785b93258bf6c55e9f7f3d0c63da37f6e988ca7cf",
+          "corrected_approved_sha256": "96b2af4a5438ae4b9a57701d631096cc26d6001ca7a774b7fcc433110cd30b52",
+          "reverted_flags": 7,
+          "changed_shapes": [
+            17,
+            18,
+            19,
+            20,
+            21,
+            22,
+            24
+          ],
+          "prior_annotation_archive": "reports/continuous_goal/blind_batch005_review/overlap_flag_correction_85_88/goal_20261019_batch005_00088.json"
+        }
+      ]
+    }
+  ],
+  "boundary_refinement_125": {
+    "previous_provisional_first_frame": 126,
+    "verified_first_frame": 125,
+    "session_id": "goal_20261019_batch005_game004",
+    "evidence": "124settlement then125 new opponents and27card hand;126same hand. Conservative split group unchanged,no complete-game credit."
+  },
+  "at": "2026-10-19T22:22:47.846836+00:00",
   "newly_approved_images_this_check": 10,
-  "newly_reviewed_targets_this_check": 170,
+  "newly_reviewed_targets_this_check": 187,
   "newly_added_missing_targets_this_check": 0,
   "newly_corrected_occlusion_flags_this_check": 13,
-  "newly_corrected_visible_extents_this_check": 14,
-  "conversion_validated_images": 113,
-  "conversion_validated_targets": 2300,
-  "annotation_audit_sha256": "248c8fd3672d497752c69c78e28b9949824d70bdb4c2cfa8371fe1352713af0c",
+  "newly_corrected_visible_extents_this_check": 0,
+  "conversion_validated_images": 123,
+  "conversion_validated_targets": 2487,
+  "annotation_audit_sha256": "7562d727c68b617be952193c2f4f56697b298c0e85d4f3a51aa421c2beb26905",
   "full_native_frame_range_viewed": [
     1,
-    120
+    130
   ],
   "approved_frame_segments": [
     [
@@ -65,16 +150,16 @@
     ],
     [
       36,
-      120
+      130
     ]
   ],
   "latest_full_native_frame_range_viewed": [
-    111,
-    120
+    121,
+    130
   ],
   "latest_approved_frame_range": [
-    111,
-    120
+    121,
+    130
   ],
   "unapproved_frames_this_check": [],
   "unresolved_frames": [
@@ -86,12 +171,12 @@
     34,
     35
   ],
-  "latest_complete_pixel_groups_viewed": 87,
-  "latest_complete_pixel_pages_all_viewed": 4,
-  "pending_images": 167,
+  "latest_complete_pixel_groups_viewed": 46,
+  "latest_complete_pixel_pages_all_viewed": 2,
+  "pending_images": 157,
   "complete_games_verified_for_final_acceptance": 0,
   "formal_new_blind_evaluation_images": 0,
   "background_capture_or_training_running": false,
-  "native_ui_checked_this_check": true,
-  "native_ui_current_observation": "window_unavailable_no_input_sent"
+  "native_ui_checked_this_check": false,
+  "native_ui_current_observation": "previous_window_unavailable;30minute_UI_gate_not_due"
 }
