@@ -1,0 +1,55 @@
+{
+  "images_total": 280,
+  "approved_images": 10,
+  "label_seal_created": false,
+  "target_card_detector_used": false,
+  "used_for_training": false,
+  "used_for_model_selection": false,
+  "independent_human_second_review": false,
+  "positive_draft_shapes_pending": 5169,
+  "empty_drafts_pending_not_approved_negatives": 9,
+  "provisional_session_boundaries": [
+    6,
+    38,
+    86,
+    126,
+    172,
+    206
+  ],
+  "grouping_note": "004–006 share conservative split group. 005 frames1–3 settlement of004_game006;4–5 matchmaking transition, same conservative session provenance, not another captured deal. 005→006 capture gap/different opponents; no assertion they are one game and no complete-game credit.",
+  "approved_negatives": 5,
+  "approved_positive_images": 5,
+  "reviewed_positive_boxes": 135,
+  "positive_images_pending": 270,
+  "missing_draft_targets_added": 15,
+  "total_occlusion_flags_corrected_in_positive_review": 6,
+  "total_visible_extent_corrections_in_positive_review": 0,
+  "linked_conservative_group": "goal_20261019_batch004_006_linked_conservative",
+  "full_native_frames_reviewed_this_stage": 10,
+  "complete_pixel_groups_viewed": 54,
+  "complete_pixel_pages_all_viewed": 3,
+  "format_normalization_note": "15 new axis-aligned boxes use supported rectangle type; coordinates and reviewed pixels unchanged.",
+  "at": "2026-10-19T17:43:10.325245+00:00",
+  "newly_approved_images_this_check": 10,
+  "newly_reviewed_targets_this_check": 135,
+  "conversion_validated_images": 10,
+  "conversion_validated_targets": 135,
+  "annotation_audit_sha256": "fddb489fedfa2de3162a008cf3de64afb47c7d750bb0502beb618ef0409d4172",
+  "full_native_frame_range_reviewed": [
+    1,
+    10
+  ],
+  "pending_images": 270,
+  "settlement_frames": [
+    1,
+    2,
+    3
+  ],
+  "matchmaking_frames": [
+    4,
+    5
+  ],
+  "complete_games_verified_for_final_acceptance": 0,
+  "formal_new_blind_evaluation_images": 0,
+  "background_capture_or_training_running": false
+}

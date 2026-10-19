@@ -1,0 +1,25 @@
+{
+  "at": "2026-10-19T17:41:43.996746+00:00",
+  "full_native_boundary_frames_viewed": [
+    "goal_20261019_batch005_00280.png",
+    "goal_20261019_batch006_00001.png"
+  ],
+  "before_sha256": "15e73c70f6a27f6a938249672e89a1a624bd1bae40386ee42fa8ab3fb0ff2e4e",
+  "after_sha256": "d111a04a4c231b8c6e7515c2b41214b7c63b5597d79fb684a579d36597021979",
+  "capture_gap_seconds": 1250.015,
+  "observation": "005 ends ready table with visible remaining cards;006 begins later defeat settlement with changed opponents. Missing play is not reconstructed or counted.",
+  "same_game_asserted": false,
+  "complete_games_verified_for_final_acceptance": 0,
+  "conservative_group_enforced_in_current_manifests": "goal_20261019_batch004_006_linked_conservative",
+  "workspaces": [
+    "data/blind_review_work/goal_20261019_batch004_v1",
+    "data/blind_review_work/goal_20261019_batch005_v1",
+    "data/blind_review_work/goal_20261019_batch006_v1"
+  ],
+  "batch006_originals_and_source_drafts_verified": 271,
+  "batch006_approved_images": 0,
+  "batch006_pending_draft_shapes": 5176,
+  "later_batch007_linkage_pending_before_any_seal": true,
+  "sealed": false,
+  "target_detector_used": false
+}

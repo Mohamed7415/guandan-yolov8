@@ -124,6 +124,21 @@
   "batch004_last_and_batch005_first_full_native_viewed": true,
   "capture_gap_seconds": 431.701,
   "capture_gap_does_not_count_as_another_game": true,
-  "later_batch006_linkage_pending_before_any_seal": true,
-  "images_or_card_labels_changed": false
+  "later_batch006_linkage_pending_before_any_seal": false,
+  "images_or_card_labels_changed": false,
+  "initial_batch005_scene_correction": {
+    "at": "2026-10-19T17:41:43.996746+00:00",
+    "settlement_frames": [
+      1,
+      2,
+      3
+    ],
+    "matchmaking_frames": [
+      4,
+      5
+    ],
+    "note": "Prior wording that all1–5 were settlement was inaccurate;4–5 are matchmaking transition, kept in conservative provenance group without new-deal credit."
+  },
+  "followup_link006_audit": "reports/published/native_batch005_006_isolation_audit.json",
+  "current_group_superseded_by": "goal_20261019_batch004_006_linked_conservative"
 }

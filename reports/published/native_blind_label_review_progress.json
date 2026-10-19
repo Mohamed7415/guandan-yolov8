@@ -32,7 +32,7 @@
   "conversion_validated_images": 249,
   "conversion_validated_targets": 4669,
   "formal_new_blind_evaluation_images": 0,
-  "annotation_audit_sha256": "31ac9fc40c7a33b4b7326e58cadb6b5b869f5813199efd520da5eb1e80c8acc2",
+  "annotation_audit_sha256": "a42f030e6f3da0184cff3e8d4a6621781d734ec7635e57bf6a2e15ed8a80e6dc",
   "next_draft_batch006_completed_images": 271,
   "next_draft_batch006_unreviewed_shapes": 5176,
   "further_draft_queue_images_completed": 844,
@@ -60,12 +60,16 @@
     100,
     144
   ],
-  "last_check_at": "2026-10-19T17:27:46.927316+00:00",
+  "last_check_at": "2026-10-19T17:43:10.325245+00:00",
   "cross_batch_isolation_audit": "reports/published/native_batch004_005_isolation_audit.json",
-  "linked_conservative_group": "goal_20261019_batch004_005_linked_conservative",
+  "linked_conservative_group": "goal_20261019_batch004_006_linked_conservative",
   "batch005_unreviewed_workspace_created": true,
-  "batch005_approved_images": 0,
-  "batch005_pending_images": 280,
-  "batch005_pending_draft_shapes": 5289,
-  "later_batch006_linkage_pending_before_any_seal": true
+  "batch005_approved_images": 10,
+  "batch005_pending_images": 270,
+  "batch005_pending_draft_shapes": 5169,
+  "later_batch006_linkage_pending_before_any_seal": false,
+  "later_batch007_linkage_pending_before_any_seal": true,
+  "batch005_reviewed_targets": 135,
+  "batch005_review_progress": "reports/published/native_batch005_label_review_progress.json",
+  "latest_check_stage": "batch005_frames1_10_visual_review_and_gap_isolation"
 }
