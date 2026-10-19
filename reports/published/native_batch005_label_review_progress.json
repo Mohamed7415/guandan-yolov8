@@ -1,12 +1,12 @@
 {
   "images_total": 280,
-  "approved_images": 63,
+  "approved_images": 73,
   "label_seal_created": false,
   "target_card_detector_used": false,
   "used_for_training": false,
   "used_for_model_selection": false,
   "independent_human_second_review": false,
-  "positive_draft_shapes_pending": 3995,
+  "positive_draft_shapes_pending": 3885,
   "empty_drafts_pending_not_approved_negatives": 7,
   "provisional_session_boundaries": [
     6,
@@ -18,18 +18,18 @@
   ],
   "grouping_note": "004–006 share conservative split group. 005 frames1–3 settlement of004_game006;4–5 matchmaking transition, same conservative session provenance, not another captured deal. 005→006 capture gap/different opponents; no assertion they are one game and no complete-game credit.",
   "approved_negatives": 7,
-  "approved_positive_images": 56,
-  "reviewed_positive_boxes": 1379,
-  "positive_images_pending": 217,
-  "missing_draft_targets_added": 85,
-  "total_occlusion_flags_corrected_in_positive_review": 108,
-  "total_visible_extent_corrections_in_positive_review": 2,
+  "approved_positive_images": 66,
+  "reviewed_positive_boxes": 1497,
+  "positive_images_pending": 207,
+  "missing_draft_targets_added": 93,
+  "total_occlusion_flags_corrected_in_positive_review": 127,
+  "total_visible_extent_corrections_in_positive_review": 9,
   "linked_conservative_group": "goal_20261019_batch004_006_linked_conservative",
-  "full_native_frames_reviewed_this_stage": 63,
-  "complete_pixel_groups_viewed": 364,
-  "complete_pixel_pages_all_viewed": 20,
+  "full_native_frames_reviewed_this_stage": 73,
+  "complete_pixel_groups_viewed": 434,
+  "complete_pixel_pages_all_viewed": 23,
   "format_normalization_note": "15 new axis-aligned boxes use supported rectangle type; coordinates and reviewed pixels unchanged.",
-  "last_reviewed_frame": 70,
+  "last_reviewed_frame": 80,
   "unapproved_visual_issues": [
     "reports/continuous_goal/blind_batch005_review/frame00029_review_issue.json",
     "reports/continuous_goal/blind_batch005_review/frame00030_review_issue.json",
@@ -39,18 +39,18 @@
     "reports/continuous_goal/blind_batch005_review/frame00034_review_issue.json",
     "reports/continuous_goal/blind_batch005_review/frame00035_review_issue.json"
   ],
-  "at": "2026-10-19T20:23:28.990181+00:00",
+  "at": "2026-10-19T20:44:04.738242+00:00",
   "newly_approved_images_this_check": 10,
-  "newly_reviewed_targets_this_check": 226,
-  "newly_added_missing_targets_this_check": 9,
+  "newly_reviewed_targets_this_check": 118,
+  "newly_added_missing_targets_this_check": 8,
   "newly_corrected_occlusion_flags_this_check": 19,
-  "newly_corrected_visible_extents_this_check": 2,
-  "conversion_validated_images": 63,
-  "conversion_validated_targets": 1379,
-  "annotation_audit_sha256": "21267b4476c5f8a666e6ef2c72beeb99b4941002246aef7ca17d39e02d569f26",
+  "newly_corrected_visible_extents_this_check": 7,
+  "conversion_validated_images": 73,
+  "conversion_validated_targets": 1497,
+  "annotation_audit_sha256": "6d1fc80cf6983c6510d78817cead5db9dad6f238c8105c8a93afcdb8ea82b87b",
   "full_native_frame_range_viewed": [
     1,
-    70
+    80
   ],
   "approved_frame_segments": [
     [
@@ -59,16 +59,16 @@
     ],
     [
       36,
-      70
+      80
     ]
   ],
   "latest_full_native_frame_range_viewed": [
-    61,
-    70
+    71,
+    80
   ],
   "latest_approved_frame_range": [
-    61,
-    70
+    71,
+    80
   ],
   "unapproved_frames_this_check": [],
   "unresolved_frames": [
@@ -80,11 +80,12 @@
     34,
     35
   ],
-  "latest_complete_pixel_groups_viewed": 83,
-  "latest_complete_pixel_pages_all_viewed": 4,
-  "pending_images": 217,
+  "latest_complete_pixel_groups_viewed": 70,
+  "latest_complete_pixel_pages_all_viewed": 3,
+  "pending_images": 207,
   "complete_games_verified_for_final_acceptance": 0,
   "formal_new_blind_evaluation_images": 0,
   "background_capture_or_training_running": false,
-  "native_ui_checked_this_check": false
+  "native_ui_checked_this_check": true,
+  "native_ui_current_observation": "window_unavailable_no_input_sent"
 }
