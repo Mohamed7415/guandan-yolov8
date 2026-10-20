@@ -1,0 +1,19 @@
+{
+  "checked_at": "2026-10-20T12:46:31.388813+00:00",
+  "cua_background_click_when_game_not_frontmost_verified": true,
+  "foreground_app_stayed_codex_at_before_after_checks": true,
+  "game_target_was_onscreen": true,
+  "game_was_not_minimized": true,
+  "known_nonpurchase_ui_effects_verified": true,
+  "prior_offscreen_window_input_failure": "noWindowsAvailable",
+  "failure_boundary_narrowed_to_window_availability": true,
+  "unique_cross_space_root_cause_proven": false,
+  "cg_pid_route_effect_verified": false,
+  "helper_has_no_ax_window": true,
+  "activation_requested": false,
+  "paid_action_performed": false,
+  "screen_off_or_locked_input_verified": false,
+  "capture_restarted": false,
+  "formal_new_blind_test_images": 0,
+  "complete_games_accepted": 0
+}
