@@ -1,8 +1,8 @@
 {
   "images_total": 271,
-  "approved_images": 109,
-  "positive_draft_shapes_pending": 2872,
-  "empty_drafts_pending_not_approved_negatives": 11,
+  "approved_images": 119,
+  "positive_draft_shapes_pending": 2794,
+  "empty_drafts_pending_not_approved_negatives": 10,
   "label_seal_created": false,
   "target_card_detector_used": false,
   "used_for_training": false,
@@ -19,23 +19,24 @@
     190,
     238
   ],
-  "approved_positive_images": 105,
-  "approved_negatives": 4,
-  "reviewed_positive_boxes": 2378,
-  "positive_images_pending": 162,
-  "full_native_frames_reviewed_this_stage": 110,
-  "missing_draft_targets_added": 74,
-  "total_occlusion_flags_corrected_in_positive_review": 178,
+  "approved_positive_images": 114,
+  "approved_negatives": 5,
+  "reviewed_positive_boxes": 2465,
+  "positive_images_pending": 152,
+  "full_native_frames_reviewed_this_stage": 120,
+  "missing_draft_targets_added": 83,
+  "total_occlusion_flags_corrected_in_positive_review": 195,
   "total_visible_extent_corrections_in_positive_review": 40,
-  "complete_pixel_groups_viewed": 832,
-  "complete_pixel_pages_all_viewed": 40,
-  "last_reviewed_frame": 110,
+  "complete_pixel_groups_viewed": 897,
+  "complete_pixel_pages_all_viewed": 43,
+  "last_reviewed_frame": 120,
   "verified_first_deal_frame": 2,
   "first_deal_evidence": "Frame1different-opponent settlement after capturegap then2fresh27card hand/new opponents;no complete-game credit,004–006conservative isolation preserved.",
   "independently_verified_deal_frames": [
     2,
     43,
-    78
+    78,
+    120
   ],
   "frame43_deal_evidence": "41promotion/42settlement followed by43new opponents and27card hand;all visible cards independently reviewed;conservative004–006 isolation unchanged,no complete-game acceptance credit.",
   "unresolved_frames": [
@@ -51,33 +52,35 @@
     ],
     [
       65,
-      110
+      120
     ]
   ],
   "frame78_deal_evidence": "77settlement then78new opponents and27card hand;conservative004–006group unchanged,no complete-game credit.",
-  "at": "2026-10-20T12:08:51.496629+00:00",
-  "newly_approved_images_this_check": 5,
-  "newly_reviewed_targets_this_check": 57,
-  "newly_added_missing_targets_this_check": 0,
-  "newly_corrected_occlusion_flags_this_check": 9,
+  "frame120_deal_evidence": "119ready still old visible played cards, then120new opponents and27card hand;menu-covered4cards readable independently at native pixels;conservative004–006 grouping unchanged,no complete-game credit.",
+  "at": "2026-10-20T12:32:22.964136+00:00",
+  "newly_approved_images_this_check": 10,
+  "newly_reviewed_targets_this_check": 87,
+  "newly_added_missing_targets_this_check": 9,
+  "newly_corrected_occlusion_flags_this_check": 17,
   "newly_corrected_visible_extents_this_check": 0,
-  "conversion_validated_images": 109,
-  "conversion_validated_targets": 2378,
-  "annotation_audit_sha256": "bec57c9f00cfea34baeec7a48e413be9dc6c1bac7aec271a461197afb28930c3",
+  "conversion_validated_images": 119,
+  "conversion_validated_targets": 2465,
+  "annotation_audit_sha256": "8c1889d20b9a116f1d68daff9976a121bb7eefd1224859f1727ed4dc9c38a353",
   "full_native_frame_range_viewed": [
     1,
-    110
+    120
   ],
   "latest_full_native_frame_range_viewed": [
-    106,
-    110
+    111,
+    120
   ],
-  "latest_complete_pixel_groups_viewed": 41,
-  "latest_complete_pixel_pages_all_viewed": 2,
-  "pending_images": 162,
+  "latest_complete_pixel_groups_viewed": 65,
+  "latest_complete_pixel_pages_all_viewed": 3,
+  "pending_images": 152,
   "formal_new_blind_evaluation_images": 0,
   "complete_games_verified_for_final_acceptance": 0,
   "background_capture_or_training_running": false,
-  "native_ui_current_observation": "offscreen: default picker missed; readonly explicit-ID all-window native screenshot succeeds",
-  "remaining_empty_drafts_not_approved_negatives": 11
+  "native_ui_checked_this_check": false,
+  "native_ui_current_observation": "Not due;previous background read succeeds,input unavailable,do not activate while user watches movie",
+  "remaining_empty_drafts_not_approved_negatives": 10
 }
