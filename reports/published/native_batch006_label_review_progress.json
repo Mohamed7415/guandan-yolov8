@@ -1,7 +1,7 @@
 {
   "images_total": 271,
-  "approved_images": 187,
-  "positive_draft_shapes_pending": 1524,
+  "approved_images": 197,
+  "positive_draft_shapes_pending": 1270,
   "empty_drafts_pending_not_approved_negatives": 6,
   "label_seal_created": false,
   "target_card_detector_used": false,
@@ -19,17 +19,17 @@
     190,
     238
   ],
-  "approved_positive_images": 178,
+  "approved_positive_images": 188,
   "approved_negatives": 9,
-  "reviewed_positive_boxes": 3779,
-  "positive_images_pending": 84,
-  "full_native_frames_reviewed_this_stage": 190,
+  "reviewed_positive_boxes": 4033,
+  "positive_images_pending": 74,
+  "full_native_frames_reviewed_this_stage": 200,
   "missing_draft_targets_added": 127,
-  "total_occlusion_flags_corrected_in_positive_review": 313,
+  "total_occlusion_flags_corrected_in_positive_review": 329,
   "total_visible_extent_corrections_in_positive_review": 75,
-  "complete_pixel_groups_viewed": 1469,
-  "complete_pixel_pages_all_viewed": 70,
-  "last_reviewed_frame": 190,
+  "complete_pixel_groups_viewed": 1547,
+  "complete_pixel_pages_all_viewed": 74,
+  "last_reviewed_frame": 200,
   "verified_first_deal_frame": 2,
   "first_deal_evidence": "Frame1different-opponent settlement after capturegap then2fresh27card hand/new opponents;no complete-game credit,004–006conservative isolation preserved.",
   "independently_verified_deal_frames": [
@@ -66,33 +66,33 @@
     ],
     [
       190,
-      190
+      200
     ]
   ],
   "frame78_deal_evidence": "77settlement then78new opponents and27card hand;conservative004–006group unchanged,no complete-game credit.",
   "frame120_deal_evidence": "119ready still old visible played cards, then120new opponents and27card hand;menu-covered4cards readable independently at native pixels;conservative004–006 grouping unchanged,no complete-game credit.",
   "frame162_deal_evidence": "161ready still old cards then162fresh27card hand/new opponents;no whole-game acceptance credit,004–006 conservativegroup unchanged.",
   "frame190_deal_evidence": "189ready contains old cards after188settlement;190new opponents and27newhand independently verified,no whole-game credit/conservative004–006group unchanged.",
-  "at": "2026-10-20T18:35:13.585448+00:00",
-  "newly_approved_images_this_check": 9,
-  "newly_reviewed_targets_this_check": 80,
+  "at": "2026-10-20T18:54:55.432405+00:00",
+  "newly_approved_images_this_check": 10,
+  "newly_reviewed_targets_this_check": 254,
   "newly_added_missing_targets_this_check": 0,
-  "newly_corrected_occlusion_flags_this_check": 12,
+  "newly_corrected_occlusion_flags_this_check": 16,
   "newly_corrected_visible_extents_this_check": 0,
-  "conversion_validated_images": 187,
-  "conversion_validated_targets": 3779,
-  "annotation_audit_sha256": "31df8facb6cecaf6836585cf23e2b799cecd58360e45f189383634d88d5e94a1",
+  "conversion_validated_images": 197,
+  "conversion_validated_targets": 4033,
+  "annotation_audit_sha256": "16de74f75b88f8a709c1bde2049fc76495ddca2d0cb3d4a0bc3df886cc93d590",
   "full_native_frame_range_viewed": [
     1,
-    190
+    200
   ],
   "latest_full_native_frame_range_viewed": [
-    181,
-    190
+    191,
+    200
   ],
-  "latest_complete_pixel_groups_viewed": 62,
-  "latest_complete_pixel_pages_all_viewed": 3,
-  "pending_images": 84,
+  "latest_complete_pixel_groups_viewed": 78,
+  "latest_complete_pixel_pages_all_viewed": 4,
+  "pending_images": 74,
   "formal_new_blind_evaluation_images": 0,
   "complete_games_verified_for_final_acceptance": 0,
   "background_capture_or_training_running": false,
