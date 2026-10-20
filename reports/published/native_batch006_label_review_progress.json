@@ -1,7 +1,7 @@
 {
   "images_total": 271,
-  "approved_images": 104,
-  "positive_draft_shapes_pending": 2929,
+  "approved_images": 109,
+  "positive_draft_shapes_pending": 2872,
   "empty_drafts_pending_not_approved_negatives": 11,
   "label_seal_created": false,
   "target_card_detector_used": false,
@@ -19,17 +19,17 @@
     190,
     238
   ],
-  "approved_positive_images": 100,
+  "approved_positive_images": 105,
   "approved_negatives": 4,
-  "reviewed_positive_boxes": 2321,
-  "positive_images_pending": 167,
-  "full_native_frames_reviewed_this_stage": 105,
+  "reviewed_positive_boxes": 2378,
+  "positive_images_pending": 162,
+  "full_native_frames_reviewed_this_stage": 110,
   "missing_draft_targets_added": 74,
-  "total_occlusion_flags_corrected_in_positive_review": 169,
+  "total_occlusion_flags_corrected_in_positive_review": 178,
   "total_visible_extent_corrections_in_positive_review": 40,
-  "complete_pixel_groups_viewed": 791,
-  "complete_pixel_pages_all_viewed": 38,
-  "last_reviewed_frame": 105,
+  "complete_pixel_groups_viewed": 832,
+  "complete_pixel_pages_all_viewed": 40,
+  "last_reviewed_frame": 110,
   "verified_first_deal_frame": 2,
   "first_deal_evidence": "Frame1different-opponent settlement after capturegap then2fresh27card hand/new opponents;no complete-game credit,004–006conservative isolation preserved.",
   "independently_verified_deal_frames": [
@@ -51,34 +51,33 @@
     ],
     [
       65,
-      105
+      110
     ]
   ],
   "frame78_deal_evidence": "77settlement then78new opponents and27card hand;conservative004–006group unchanged,no complete-game credit.",
-  "at": "2026-10-20T07:13:27.107346+00:00",
-  "newly_approved_images_this_check": 10,
-  "newly_reviewed_targets_this_check": 167,
+  "at": "2026-10-20T12:08:51.496629+00:00",
+  "newly_approved_images_this_check": 5,
+  "newly_reviewed_targets_this_check": 57,
   "newly_added_missing_targets_this_check": 0,
-  "newly_corrected_occlusion_flags_this_check": 19,
-  "newly_corrected_visible_extents_this_check": 2,
-  "conversion_validated_images": 104,
-  "conversion_validated_targets": 2321,
-  "annotation_audit_sha256": "cd023799e2bc6e685f13ce547f4ce16c8d347516baa7b1219e4c7a11827b6faf",
+  "newly_corrected_occlusion_flags_this_check": 9,
+  "newly_corrected_visible_extents_this_check": 0,
+  "conversion_validated_images": 109,
+  "conversion_validated_targets": 2378,
+  "annotation_audit_sha256": "bec57c9f00cfea34baeec7a48e413be9dc6c1bac7aec271a461197afb28930c3",
   "full_native_frame_range_viewed": [
     1,
-    105
+    110
   ],
   "latest_full_native_frame_range_viewed": [
-    96,
-    105
+    106,
+    110
   ],
-  "latest_complete_pixel_groups_viewed": 81,
-  "latest_complete_pixel_pages_all_viewed": 4,
-  "pending_images": 167,
-  "complete_games_verified_for_final_acceptance": 0,
+  "latest_complete_pixel_groups_viewed": 41,
+  "latest_complete_pixel_pages_all_viewed": 2,
+  "pending_images": 162,
   "formal_new_blind_evaluation_images": 0,
+  "complete_games_verified_for_final_acceptance": 0,
   "background_capture_or_training_running": false,
-  "native_ui_checked_this_check": false,
-  "native_ui_current_observation": "previous_window_unavailable;30minute_UI_gate_not_due",
+  "native_ui_current_observation": "offscreen: default picker missed; readonly explicit-ID all-window native screenshot succeeds",
   "remaining_empty_drafts_not_approved_negatives": 11
 }

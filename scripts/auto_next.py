@@ -377,11 +377,16 @@ def main() -> int:
     p.add_argument("--activate-on-start", action="store_true", help="启动时将已确认的小程序进程置前一次")
     p.add_argument("--activate-before-click", action="store_true", help="仅在重新确认已知结算/提示后置前游戏；仍重新截图并验证前台和无遮挡，可能切换当前前台应用")
     p.add_argument("--targeted-input", action="store_true", help="只向小程序进程及窗口发送事件，不向其他前台应用发送点击")
+    p.add_argument("--window-id", type=int, help="固定原生小程序窗口ID")
+    p.add_argument("--allow-background-window", action="store_true", help="观察其他桌面的固定窗口；实际输入必须使用 --targeted-input，不置前")
     p.add_argument("--capture-run-dir", type=Path, help="关联采集批次；采集器停止后同步结束续局")
     p.add_argument("--output", type=Path, default=ROOT / "reports/auto_next")
     args = p.parse_args()
     if args.activate_before_click and args.targeted_input:
         p.error("--activate-before-click 与 --targeted-input 不可同时使用")
+    if args.allow_background_window and (args.window_id is None or args.activate_on_start or args.activate_before_click
+            or (not (args.once or args.dry_run) and not args.targeted_input)):
+        p.error("后台窗口须固定 --window-id；只读检查或 --targeted-input，禁止置前选项")
     if args.max_rounds < 1 or args.interval < 1:
         p.error("max-rounds 至少 1；interval 至少 1 秒")
     args.output.mkdir(parents=True, exist_ok=True)
@@ -396,14 +401,14 @@ def main() -> int:
                 fcntl.flock(input_lock, fcntl.LOCK_EX | fcntl.LOCK_NB)
             except BlockingIOError as exc:
                 raise RuntimeError("已有一个续局脚本在运行，拒绝重复启动。") from exc
-        capture = MacWindowCapture("天天爱掼蛋", None)
+        capture = MacWindowCapture("天天爱掼蛋", args.window_id, allow_background_window=args.allow_background_window)
         detector, machine = SettlementDetector(), ContinueState()
         if not (args.dry_run or args.once) and not accessibility_allowed():
             raise RuntimeError("尚无辅助功能权限。请手动授权启动脚本的应用；脚本不会自行修改权限。")
         if args.activate_on_start and not (args.dry_run or args.once):
             if not activate_game_window(capture.locate()):
                 raise RuntimeError("不能唯一激活已确认的小程序窗口，未发送点击。")
-        print("仅用于已进入的普通金蛋场。请先开启游戏自带托管，再保持小程序在前台。", flush=True)
+        print("仅用于已进入且开启托管的普通金蛋场。" + ("后台定向模式不置前、不发送全局点击。" if args.allow_background_window else "请保持小程序在前台。"), flush=True)
         started, last_known, attempts = time.monotonic(), time.monotonic(), 0
         level_stable, level_pending, popup_name = 0, None, None
         missing_since = None

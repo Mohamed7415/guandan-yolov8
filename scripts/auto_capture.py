@@ -124,7 +124,9 @@ def choose_window(windows: list[dict], title: str, window_id: int | None = None)
 
 
 class MacWindowCapture:
-    def __init__(self, title: str, window_id: int | None):
+    def __init__(self, title: str, window_id: int | None, *, allow_background_window: bool = False):
+        if allow_background_window and window_id is None:
+            raise ValueError("后台采集必须用 --window-id 固定原生小程序窗口。")
         if sys.platform != "darwin":
             raise RuntimeError("此采集器使用 macOS 窗口截图功能，仅支持 Mac。")
         try:
@@ -134,6 +136,7 @@ class MacWindowCapture:
         self.quartz = Quartz
         self.title = title
         self.window_id = window_id
+        self.allow_background_window = allow_background_window
         if not Quartz.CGPreflightScreenCaptureAccess():
             raise RuntimeError(
                 "macOS 尚未授予当前启动应用屏幕录制权限。请在「系统设置 → 隐私与安全性 → "
@@ -142,10 +145,17 @@ class MacWindowCapture:
 
     def locate(self) -> dict:
         q = self.quartz
+        visibility = q.kCGWindowListOptionAll if self.allow_background_window else q.kCGWindowListOptionOnScreenOnly
         windows = q.CGWindowListCopyWindowInfo(
-            q.kCGWindowListOptionOnScreenOnly | q.kCGWindowListExcludeDesktopElements,
+            visibility | q.kCGWindowListExcludeDesktopElements,
             q.kCGNullWindowID)
-        return choose_window(list(windows or []), self.title, self.window_id)
+        window = choose_window(list(windows or []), self.title, self.window_id)
+        if self.allow_background_window:
+            owner = int(window["kCGWindowOwnerPID"])
+            if getattr(self, "_background_owner_pid", owner) != owner:
+                raise LookupError("后台窗口所属进程已改变，拒绝复用窗口ID。")
+            self._background_owner_pid = owner
+        return window
 
     def capture(self, directory: Path) -> tuple[bytes, int]:
         window = self.locate()
@@ -159,7 +169,9 @@ class MacWindowCapture:
                 raise RuntimeError("窗口截图失败。请确认屏幕录制权限及小程序窗口状态；不会回退为全屏截图。")
             # Confirm the same target still exists after capture. Do not accept a reused ID.
             current = self.locate()
-            if int(current["kCGWindowNumber"]) != window_id:
+            if (int(current["kCGWindowNumber"]) != window_id
+                    or current.get("kCGWindowOwnerPID") != window.get("kCGWindowOwnerPID")
+                    or current["kCGWindowBounds"] != window["kCGWindowBounds"]):
                 raise LookupError("截图过程中小程序窗口已改变，本帧已丢弃。")
             return path.read_bytes(), window_id
 
@@ -269,6 +281,7 @@ def parser() -> argparse.ArgumentParser:
     p.add_argument("--sequence-id", help="同一连续采集序列 ID；恢复时必须相同，不自动推断新一局")
     p.add_argument("--window-title", default=WINDOW_TITLE)
     p.add_argument("--window-id", type=int, help="存在多个同名窗口时指定窗口 ID")
+    p.add_argument("--allow-background-window", action="store_true", help="按固定窗口ID读取其他桌面/后台窗口；不置前，不截全屏，无法渲染则停止")
     p.add_argument("--change-threshold", type=positive_float, default=.004, help="牌面白色区域变化阈值，默认 0.004")
     p.add_argument("--include-other-screens", action="store_true", help="也收集无明显白色牌面的候选，仍需复核")
     p.add_argument("--gameplay-only", action="store_true", help="只收集含绿色牌桌的候选，跳过大厅/广告/结算")
@@ -281,7 +294,7 @@ def run(args: argparse.Namespace) -> int:
         raise ValueError("--target 必须在 1..20000 之间。")
     if args.interval < .5 or args.change_threshold >= .1:
         raise ValueError("--interval 至少 0.5；--change-threshold 必须小于 0.1。")
-    capture = MacWindowCapture(args.window_title, args.window_id)
+    capture = MacWindowCapture(args.window_title, args.window_id, allow_background_window=args.allow_background_window)
     if args.check:
         w = capture.locate()
         print(json.dumps({"ready": True, "title": w["kCGWindowName"],
@@ -319,7 +332,8 @@ def run(args: argparse.Namespace) -> int:
     counts = {"saved": len(rows), "duplicate": 0, "unstable": 0, "no_cardlike_area": 0, "not_gameplay": 0, "window_waits": 0}
     metadata.pop("error", None)
     metadata.pop("finished_at", None)
-    metadata.update(started_at=now(), target=args.target, interval=args.interval, status="running", counts=counts)
+    metadata.update(started_at=now(), target=args.target, interval=args.interval, status="running", counts=counts,
+                    allow_background_window=args.allow_background_window, pinned_window_id=args.window_id)
     atomic_json(metadata_path, metadata)
     print(f"采集目录：{directory}\n只观察窗口，不操作游戏。Ctrl+C 安全停止。")
     print(f"已有 {len(rows)} 张候选，目标 {args.target}；候选图片须复核后才计入训练。", flush=True)

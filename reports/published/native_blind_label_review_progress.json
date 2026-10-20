@@ -60,7 +60,7 @@
     100,
     144
   ],
-  "last_check_at": "2026-10-20T07:13:27.107346+00:00",
+  "last_check_at": "2026-10-20T12:08:51.498164+00:00",
   "cross_batch_isolation_audit": "reports/published/native_batch004_005_isolation_audit.json",
   "linked_conservative_group": "goal_20261019_batch004_006_linked_conservative",
   "batch005_unreviewed_workspace_created": true,
@@ -71,11 +71,11 @@
   "later_batch007_linkage_pending_before_any_seal": true,
   "batch005_reviewed_targets": 5360,
   "batch005_review_progress": "reports/published/native_batch005_label_review_progress.json",
-  "latest_check_stage": "batch006_frames096_105_visual_review",
-  "batch006_approved_images": 104,
-  "batch006_pending_images": 167,
-  "batch006_pending_draft_shapes": 2929,
-  "batch006_reviewed_targets": 2321,
+  "latest_check_stage": "batch006_frames106_110_visual_review",
+  "batch006_approved_images": 109,
+  "batch006_pending_images": 162,
+  "batch006_pending_draft_shapes": 2872,
+  "batch006_reviewed_targets": 2378,
   "batch006_unresolved_frames": [
     64
   ]
