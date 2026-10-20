@@ -38,6 +38,7 @@
   "formal_new_blind_evaluation_images": 0,
   "complete_games_verified_for_final_acceptance": 0,
   "new_deals_observed": 0,
-  "later_batch008_linkage_pending_before_any_seal": true,
-  "isolation_audit": "reports/published/native_batch006_007_isolation_audit.json"
+  "later_batch008_linkage_pending_before_any_seal": false,
+  "isolation_audit": "reports/published/native_batch006_007_isolation_audit.json",
+  "later_batch008_linkage_resolution": "reports/published/native_batch007_008_isolation_audit.json"
 }
