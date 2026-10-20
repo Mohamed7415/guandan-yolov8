@@ -1,12 +1,12 @@
 {
   "observed_at": "2026-10-20T08:36:15.856907+00:00",
-  "status": "running_single_capture_and_guarded_controller",
-  "native_images_at_verified_snapshot": 547,
-  "original_hashes_and_dimensions_verified": 547,
+  "status": "terminal_not_running",
+  "native_images_at_verified_snapshot": 678,
+  "original_hashes_and_dimensions_verified": 678,
   "prior_24_originals_preserved": true,
-  "new_dealt_games_verified": 13,
+  "new_dealt_games_verified": 15,
   "verified_first_new_deal_frame": 29,
-  "hosting_confirmed_after_new_deal_frame": 547,
+  "hosting_confirmed_after_new_deal_frame": 650,
   "complete_games_captured_verified": 0,
   "reviewed_images": 0,
   "final_blind_evaluation_images": 0,
@@ -19,8 +19,8 @@
   "initial_grouping": "Overnight gap after batch012; whole-game conservative isolation requires audit. No independent-game credit for capture restart.",
   "recovery": "Same batch resumed from24 originals. First setup stopped at180sec without gate; first resume stopped safely on stale terminal collector metadata; resume wrapper now waits for fresh running metadata before starting controller. Real resumed capture and one guarded next-deal verified.",
   "next_check_not_before_utc": "2026-10-20T08:46:15.856907+00:00",
-  "next_action": "Continue unique native collection; review session boundaries and labels before sealing; no target detector inference.",
-  "new_since_previous_verified_snapshot": 204,
+  "next_action": "Unique batch014 continues from same last settlement; ready fix101checks and public CI passed. Both batches stay conservatively linked pending whole-match/label audit.",
+  "new_since_previous_verified_snapshot": 131,
   "verified_deal_frames": [
     29,
     73,
@@ -34,7 +34,9 @@
     387,
     426,
     473,
-    524
+    524,
+    556,
+    615
   ],
   "whole_match_sessions_accepted": 0,
   "provisional_isolation_group": "goal_20261020_batch013_linked_conservative",
@@ -54,7 +56,16 @@
     ],
     "controller_timestamps_are_not_actual_deal_boundaries": true,
     "fix_required_before_next_controller_launch": true,
-    "status": "reproduced_fix_pending"
+    "status": "fixed101offline_tests_passed_pending_native_ready_occurrence",
+    "fixed_code_commit": "349a3b7",
+    "offline_tests_passed": 101,
+    "ci_status": "success",
+    "ci_url": "https://github.com/Mohamed7415/guandan-yolov8/actions/runs/39398012748"
   },
-  "new_game_hosting_persistence_needs_confirmation": false
+  "new_game_hosting_persistence_needs_confirmation": false,
+  "native_images_final": 678,
+  "terminal_reason": "max15 guarded continuations reached; wrapper safely stopped collector",
+  "terminal_time": "2026-10-20T08:45:31.140+00:00",
+  "capture_exit_code": 0,
+  "controller_exit_code": 0
 }
