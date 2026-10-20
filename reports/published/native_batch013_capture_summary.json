@@ -1,0 +1,23 @@
+{
+  "observed_at": "2026-10-20T07:40:31.164613+00:00",
+  "status": "running_single_capture_and_guarded_controller",
+  "native_images_at_verified_snapshot": 37,
+  "original_hashes_and_dimensions_verified": 37,
+  "prior_24_originals_preserved": true,
+  "new_dealt_games_verified": 1,
+  "verified_first_new_deal_frame": 29,
+  "hosting_confirmed_after_new_deal_frame": 37,
+  "complete_games_captured_verified": 0,
+  "reviewed_images": 0,
+  "final_blind_evaluation_images": 0,
+  "target_model_inference_run": false,
+  "training_used": false,
+  "paid_action_performed": false,
+  "max_minutes_per_resume": 90,
+  "max_auto_next_rounds": 15,
+  "initial_capture_gap_preserved": true,
+  "initial_grouping": "Overnight gap after batch012; whole-game conservative isolation requires audit. No independent-game credit for capture restart.",
+  "recovery": "Same batch resumed from24 originals. First setup stopped at180sec without gate; first resume stopped safely on stale terminal collector metadata; resume wrapper now waits for fresh running metadata before starting controller. Real resumed capture and one guarded next-deal verified.",
+  "next_check_not_before_utc": "2026-10-20T07:50:31.164613+00:00",
+  "next_action": "Continue unique native collection; review session boundaries and labels before sealing; no target detector inference."
+}
