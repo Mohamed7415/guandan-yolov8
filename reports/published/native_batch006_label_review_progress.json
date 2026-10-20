@@ -1,7 +1,7 @@
 {
   "images_total": 271,
-  "approved_images": 159,
-  "positive_draft_shapes_pending": 2062,
+  "approved_images": 168,
+  "positive_draft_shapes_pending": 1798,
   "empty_drafts_pending_not_approved_negatives": 8,
   "label_seal_created": false,
   "target_card_detector_used": false,
@@ -19,31 +19,34 @@
     190,
     238
   ],
-  "approved_positive_images": 152,
+  "approved_positive_images": 161,
   "approved_negatives": 7,
-  "reviewed_positive_boxes": 3241,
-  "positive_images_pending": 112,
-  "full_native_frames_reviewed_this_stage": 160,
+  "reviewed_positive_boxes": 3505,
+  "positive_images_pending": 103,
+  "full_native_frames_reviewed_this_stage": 170,
   "missing_draft_targets_added": 127,
-  "total_occlusion_flags_corrected_in_positive_review": 271,
-  "total_visible_extent_corrections_in_positive_review": 61,
-  "complete_pixel_groups_viewed": 1207,
-  "complete_pixel_pages_all_viewed": 58,
-  "last_reviewed_frame": 160,
+  "total_occlusion_flags_corrected_in_positive_review": 285,
+  "total_visible_extent_corrections_in_positive_review": 66,
+  "complete_pixel_groups_viewed": 1293,
+  "complete_pixel_pages_all_viewed": 62,
+  "last_reviewed_frame": 170,
   "verified_first_deal_frame": 2,
   "first_deal_evidence": "Frame1different-opponent settlement after capturegap then2fresh27card hand/new opponents;no complete-game credit,004–006conservative isolation preserved.",
   "independently_verified_deal_frames": [
     2,
     43,
     78,
-    120
+    120,
+    162
   ],
   "frame43_deal_evidence": "41promotion/42settlement followed by43new opponents and27card hand;all visible cards independently reviewed;conservative004–006 isolation unchanged,no complete-game acceptance credit.",
   "unresolved_frames": [
-    64
+    64,
+    161
   ],
   "unapproved_visual_issues": [
-    "reports/continuous_goal/blind_batch006_review/frame00064_review_issue.json"
+    "reports/continuous_goal/blind_batch006_review/frame00064_review_issue.json",
+    "reports/continuous_goal/blind_batch006_review/frame00161_review_issue.json"
   ],
   "approved_frame_segments": [
     [
@@ -53,30 +56,35 @@
     [
       65,
       160
+    ],
+    [
+      162,
+      170
     ]
   ],
   "frame78_deal_evidence": "77settlement then78new opponents and27card hand;conservative004–006group unchanged,no complete-game credit.",
   "frame120_deal_evidence": "119ready still old visible played cards, then120new opponents and27card hand;menu-covered4cards readable independently at native pixels;conservative004–006 grouping unchanged,no complete-game credit.",
-  "at": "2026-10-20T17:33:11.280474+00:00",
-  "newly_approved_images_this_check": 10,
-  "newly_reviewed_targets_this_check": 85,
+  "frame162_deal_evidence": "161ready still old cards then162fresh27card hand/new opponents;no whole-game acceptance credit,004–006 conservativegroup unchanged.",
+  "at": "2026-10-20T17:56:12.302897+00:00",
+  "newly_approved_images_this_check": 9,
+  "newly_reviewed_targets_this_check": 264,
   "newly_added_missing_targets_this_check": 0,
   "newly_corrected_occlusion_flags_this_check": 14,
-  "newly_corrected_visible_extents_this_check": 6,
-  "conversion_validated_images": 159,
-  "conversion_validated_targets": 3241,
-  "annotation_audit_sha256": "487ed3466aaf7f832b08c030034241ab25163de460783c102e30d835b686ecc4",
+  "newly_corrected_visible_extents_this_check": 5,
+  "conversion_validated_images": 168,
+  "conversion_validated_targets": 3505,
+  "annotation_audit_sha256": "52904b8f4d90df438af8e6b849bae99b8daf065a927efe58fbdc1401260b0ca3",
   "full_native_frame_range_viewed": [
     1,
-    160
+    170
   ],
   "latest_full_native_frame_range_viewed": [
-    151,
-    160
+    161,
+    170
   ],
-  "latest_complete_pixel_groups_viewed": 40,
-  "latest_complete_pixel_pages_all_viewed": 2,
-  "pending_images": 112,
+  "latest_complete_pixel_groups_viewed": 86,
+  "latest_complete_pixel_pages_all_viewed": 4,
+  "pending_images": 103,
   "formal_new_blind_evaluation_images": 0,
   "complete_games_verified_for_final_acceptance": 0,
   "background_capture_or_training_running": false,
