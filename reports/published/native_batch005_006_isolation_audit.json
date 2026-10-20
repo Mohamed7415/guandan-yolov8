@@ -19,7 +19,8 @@
   "batch006_originals_and_source_drafts_verified": 271,
   "batch006_approved_images": 0,
   "batch006_pending_draft_shapes": 5176,
-  "later_batch007_linkage_pending_before_any_seal": true,
+  "later_batch007_linkage_pending_before_any_seal": false,
   "sealed": false,
-  "target_detector_used": false
+  "target_detector_used": false,
+  "later_batch007_linkage_resolution": "reports/published/native_batch006_007_isolation_audit.json"
 }

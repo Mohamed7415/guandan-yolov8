@@ -9,7 +9,7 @@
   "used_for_model_selection": false,
   "independent_human_second_review": false,
   "linked_conservative_group": "goal_20261019_batch004_006_linked_conservative",
-  "grouping_note": "Conservatively bound to004/005 despite gap/different opponents; no unsupported same-game or complete-game claim. Existing7 transition boundaries provisional for label review; subsequent007 link remains pending.",
+  "grouping_note": "Stable conservative anchor group now includes004/005/006/007.007 single image is the restored006game007 settlement, no new deal or whole-game credit.008 linkage remains pending before sealing.",
   "provisional_session_boundaries": [
     2,
     43,
@@ -118,5 +118,7 @@
   "background_capture_or_training_running": false,
   "native_ui_checked_this_check": false,
   "native_ui_current_observation": "one user-requested background game016 already completed;no automatic next game or unnecessary UI poll",
-  "remaining_empty_drafts_not_approved_negatives": 0
+  "remaining_empty_drafts_not_approved_negatives": 0,
+  "later_batch007_linkage_pending_before_any_seal": false,
+  "later_batch007_isolation_audit": "reports/published/native_batch006_007_isolation_audit.json"
 }

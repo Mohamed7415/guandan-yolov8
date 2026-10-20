@@ -1,0 +1,29 @@
+{
+  "at": "2026-10-20T22:00:43.212047+00:00",
+  "status": "batch007_single_old_settlement_reviewed_negative_linked_to006",
+  "batch006_last_source_sha256": "5989c8db37286cd04026776e386bd74f1284c7bba1bcd428e4809bdba15a51a6",
+  "batch007_source_sha256": "de3cd86932f1fabe0021d73958089c8f67f11df4381c10d1fc63b941b3b3b413",
+  "restored_settlement_evidence_sha256": "4e57390b9e56621aadbcf5703a17ab492a68fed48378caa9d1ae36b1810678d5",
+  "capture_gap_seconds": 1585.124,
+  "observation": "Restored006settlement and007frame1 have identical opponent positions,finish ranks and all four settlement amounts. No new hand in007;only countdown/UI changes. Same settlement provenance,not another observed game.",
+  "group_id": "goal_20261019_batch004_006_linked_conservative",
+  "group_name_is_stable_anchor_not_membership_range": true,
+  "current_members": [
+    "batch004",
+    "batch005",
+    "batch006",
+    "batch007"
+  ],
+  "group_enforced_in_all_four_current_manifests": true,
+  "batch007_reviewed_images": 1,
+  "batch007_negative_images": 1,
+  "batch007_targets": 0,
+  "source_draft_unchanged": true,
+  "new_dealt_games_verified": 0,
+  "complete_games_verified_for_final_acceptance": 0,
+  "formal_new_blind_evaluation_images": 0,
+  "sealed": false,
+  "target_detector_used": false,
+  "training_started": false,
+  "later_batch008_linkage_pending_before_any_seal": true
+}
