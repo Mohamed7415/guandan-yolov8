@@ -1,10 +1,10 @@
 {
-  "observed_at": "2026-10-20T07:54:13.154616+00:00",
+  "observed_at": "2026-10-20T08:16:08.201715+00:00",
   "status": "running_single_capture_and_guarded_controller",
-  "native_images_at_verified_snapshot": 175,
-  "original_hashes_and_dimensions_verified": 175,
+  "native_images_at_verified_snapshot": 343,
+  "original_hashes_and_dimensions_verified": 343,
   "prior_24_originals_preserved": true,
-  "new_dealt_games_verified": 4,
+  "new_dealt_games_verified": 9,
   "verified_first_new_deal_frame": 29,
   "hosting_confirmed_after_new_deal_frame": 175,
   "complete_games_captured_verified": 0,
@@ -18,18 +18,37 @@
   "initial_capture_gap_preserved": true,
   "initial_grouping": "Overnight gap after batch012; whole-game conservative isolation requires audit. No independent-game credit for capture restart.",
   "recovery": "Same batch resumed from24 originals. First setup stopped at180sec without gate; first resume stopped safely on stale terminal collector metadata; resume wrapper now waits for fresh running metadata before starting controller. Real resumed capture and one guarded next-deal verified.",
-  "next_check_not_before_utc": "2026-10-20T08:04:13.154616+00:00",
+  "next_check_not_before_utc": "2026-10-20T08:26:08.201715+00:00",
   "next_action": "Continue unique native collection; review session boundaries and labels before sealing; no target detector inference.",
-  "new_since_previous_verified_snapshot": 138,
+  "new_since_previous_verified_snapshot": 168,
   "verified_deal_frames": [
     29,
     73,
     121,
-    167
+    167,
+    203,
+    243,
+    282,
+    307,
+    340
   ],
   "whole_match_sessions_accepted": 0,
   "provisional_isolation_group": "goal_20261020_batch013_linked_conservative",
   "same_opponent_successive_deals_must_share_session": true,
   "short_window_gap_automatic_recovery_verified": true,
-  "actual_extended300second_popup_wait_verified": false
+  "actual_extended300second_popup_wait_verified": false,
+  "ready_variant_issue": {
+    "native_ready_frames_incorrectly_reported_as_gameplay": [
+      200,
+      240
+    ],
+    "actual_verified_deal_frames": [
+      203,
+      243
+    ],
+    "controller_timestamps_are_not_actual_deal_boundaries": true,
+    "fix_required_before_next_controller_launch": true,
+    "status": "reproduced_fix_pending"
+  },
+  "new_game_hosting_persistence_needs_confirmation": true
 }
