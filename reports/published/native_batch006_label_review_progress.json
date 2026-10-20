@@ -1,8 +1,8 @@
 {
   "images_total": 271,
-  "approved_images": 256,
-  "positive_draft_shapes_pending": 240,
-  "empty_drafts_pending_not_approved_negatives": 3,
+  "approved_images": 267,
+  "positive_draft_shapes_pending": 37,
+  "empty_drafts_pending_not_approved_negatives": 0,
   "label_seal_created": false,
   "target_card_detector_used": false,
   "used_for_training": false,
@@ -19,17 +19,17 @@
     190,
     237
   ],
-  "approved_positive_images": 244,
-  "approved_negatives": 12,
-  "reviewed_positive_boxes": 5075,
-  "positive_images_pending": 15,
-  "full_native_frames_reviewed_this_stage": 260,
+  "approved_positive_images": 252,
+  "approved_negatives": 15,
+  "reviewed_positive_boxes": 5278,
+  "positive_images_pending": 4,
+  "full_native_frames_reviewed_this_stage": 271,
   "missing_draft_targets_added": 139,
-  "total_occlusion_flags_corrected_in_positive_review": 420,
-  "total_visible_extent_corrections_in_positive_review": 86,
-  "complete_pixel_groups_viewed": 1880,
-  "complete_pixel_pages_all_viewed": 90,
-  "last_reviewed_frame": 260,
+  "total_occlusion_flags_corrected_in_positive_review": 433,
+  "total_visible_extent_corrections_in_positive_review": 96,
+  "complete_pixel_groups_viewed": 1972,
+  "complete_pixel_pages_all_viewed": 94,
+  "last_reviewed_frame": 271,
   "verified_first_deal_frame": 2,
   "first_deal_evidence": "Frame1different-opponent settlement after capturegap then2fresh27card hand/new opponents;no complete-game credit,004–006conservative isolation preserved.",
   "independently_verified_deal_frames": [
@@ -73,7 +73,7 @@
     ],
     [
       227,
-      260
+      271
     ]
   ],
   "frame78_deal_evidence": "77settlement then78new opponents and27card hand;conservative004–006group unchanged,no complete-game credit.",
@@ -90,30 +90,33 @@
     238
   ],
   "frame237_deal_evidence": "236matchmaking no target cards;237new opponents and27hand independently verified. Original heuristic238 boundary corrected to237 and237manifest game007;conservative004–006group retained,no complete-game credit.",
-  "at": "2026-10-20T20:55:20.054389+00:00",
-  "newly_approved_images_this_check": 10,
-  "newly_reviewed_targets_this_check": 293,
+  "first_visual_pass_complete": true,
+  "all271_full_native_originals_viewed": true,
+  "unresolved_images_not_omitted_from_acceptance": true,
+  "at": "2026-10-20T21:18:49.481917+00:00",
+  "newly_approved_images_this_check": 11,
+  "newly_reviewed_targets_this_check": 203,
   "newly_added_missing_targets_this_check": 0,
-  "newly_corrected_occlusion_flags_this_check": 17,
-  "newly_corrected_visible_extents_this_check": 4,
-  "conversion_validated_images": 256,
-  "conversion_validated_targets": 5075,
-  "annotation_audit_sha256": "e19b92c23ecb7f7dd2256c81c22f180d3cd54de89a1be739a71523e0eb5870ec",
+  "newly_corrected_occlusion_flags_this_check": 13,
+  "newly_corrected_visible_extents_this_check": 10,
+  "conversion_validated_images": 267,
+  "conversion_validated_targets": 5278,
+  "annotation_audit_sha256": "727ea8778f5ab633667a7362c8426cdedc46d929e58726de5c80278f7f18334e",
   "full_native_frame_range_viewed": [
     1,
-    260
+    271
   ],
   "latest_full_native_frame_range_viewed": [
-    251,
-    260
+    261,
+    271
   ],
-  "latest_complete_pixel_groups_viewed": 57,
-  "latest_complete_pixel_pages_all_viewed": 3,
-  "pending_images": 15,
+  "latest_complete_pixel_groups_viewed": 92,
+  "latest_complete_pixel_pages_all_viewed": 4,
+  "pending_images": 4,
   "formal_new_blind_evaluation_images": 0,
   "complete_games_verified_for_final_acceptance": 0,
   "background_capture_or_training_running": false,
   "native_ui_checked_this_check": false,
   "native_ui_current_observation": "one user-requested background game016 already completed;no automatic next game or unnecessary UI poll",
-  "remaining_empty_drafts_not_approved_negatives": 3
+  "remaining_empty_drafts_not_approved_negatives": 0
 }
