@@ -1,12 +1,12 @@
 {
   "images_total": 280,
-  "approved_images": 243,
+  "approved_images": 253,
   "label_seal_created": false,
   "target_card_detector_used": false,
   "used_for_training": false,
   "used_for_model_selection": false,
   "independent_human_second_review": false,
-  "positive_draft_shapes_pending": 444,
+  "positive_draft_shapes_pending": 261,
   "empty_drafts_pending_not_approved_negatives": 2,
   "provisional_session_boundaries": [
     6,
@@ -18,18 +18,18 @@
   ],
   "grouping_note": "004–006 share conservative split group. 005 frames1–3 settlement of004_game006;4–5 matchmaking transition, same conservative session provenance, not another captured deal. 005→006 capture gap/different opponents; no assertion they are one game and no complete-game credit.",
   "approved_negatives": 12,
-  "approved_positive_images": 231,
-  "reviewed_positive_boxes": 4969,
-  "positive_images_pending": 37,
+  "approved_positive_images": 241,
+  "reviewed_positive_boxes": 5152,
+  "positive_images_pending": 27,
   "missing_draft_targets_added": 124,
-  "total_occlusion_flags_corrected_in_positive_review": 402,
-  "total_visible_extent_corrections_in_positive_review": 56,
+  "total_occlusion_flags_corrected_in_positive_review": 419,
+  "total_visible_extent_corrections_in_positive_review": 64,
   "linked_conservative_group": "goal_20261019_batch004_006_linked_conservative",
-  "full_native_frames_reviewed_this_stage": 243,
-  "complete_pixel_groups_viewed": 1589,
-  "complete_pixel_pages_all_viewed": 81,
+  "full_native_frames_reviewed_this_stage": 253,
+  "complete_pixel_groups_viewed": 1650,
+  "complete_pixel_pages_all_viewed": 84,
   "format_normalization_note": "15 new axis-aligned boxes use supported rectangle type; coordinates and reviewed pixels unchanged.",
-  "last_reviewed_frame": 250,
+  "last_reviewed_frame": 260,
   "unapproved_visual_issues": [
     "reports/continuous_goal/blind_batch005_review/frame00029_review_issue.json",
     "reports/continuous_goal/blind_batch005_review/frame00030_review_issue.json",
@@ -130,18 +130,18 @@
     "session_id": "goal_20261019_batch005_game004",
     "evidence": "124settlement then125 new opponents and27card hand;126same hand. Conservative split group unchanged,no complete-game credit."
   },
-  "at": "2026-10-20T02:20:59.989701+00:00",
+  "at": "2026-10-20T02:41:32.717979+00:00",
   "newly_approved_images_this_check": 10,
-  "newly_reviewed_targets_this_check": 207,
+  "newly_reviewed_targets_this_check": 183,
   "newly_added_missing_targets_this_check": 0,
-  "newly_corrected_occlusion_flags_this_check": 18,
-  "newly_corrected_visible_extents_this_check": 0,
-  "conversion_validated_images": 243,
-  "conversion_validated_targets": 4969,
-  "annotation_audit_sha256": "b963282b6e467a18b2f42d1f8264349ad12d9821a671264c74982b549a18805d",
+  "newly_corrected_occlusion_flags_this_check": 17,
+  "newly_corrected_visible_extents_this_check": 8,
+  "conversion_validated_images": 253,
+  "conversion_validated_targets": 5152,
+  "annotation_audit_sha256": "dc3df37c73e133812d0144beba8a484c62755a3ac9b5f3fd284b42f8be1d6422",
   "full_native_frame_range_viewed": [
     1,
-    250
+    260
   ],
   "approved_frame_segments": [
     [
@@ -150,16 +150,16 @@
     ],
     [
       36,
-      250
+      260
     ]
   ],
   "latest_full_native_frame_range_viewed": [
-    241,
-    250
+    251,
+    260
   ],
   "latest_approved_frame_range": [
-    241,
-    250
+    251,
+    260
   ],
   "unapproved_frames_this_check": [],
   "unresolved_frames": [
@@ -171,12 +171,12 @@
     34,
     35
   ],
-  "latest_complete_pixel_groups_viewed": 49,
+  "latest_complete_pixel_groups_viewed": 61,
   "latest_complete_pixel_pages_all_viewed": 3,
-  "pending_images": 37,
+  "pending_images": 27,
   "complete_games_verified_for_final_acceptance": 0,
   "formal_new_blind_evaluation_images": 0,
   "background_capture_or_training_running": false,
-  "native_ui_checked_this_check": false,
-  "native_ui_current_observation": "previous_window_unavailable;30minute_UI_gate_not_due"
+  "native_ui_checked_this_check": true,
+  "native_ui_current_observation": "window_unavailable_no_input_sent"
 }
