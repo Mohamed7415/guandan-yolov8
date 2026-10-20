@@ -39,7 +39,7 @@
     615
   ],
   "whole_match_sessions_accepted": 0,
-  "provisional_isolation_group": "goal_20261020_batch013_linked_conservative",
+  "provisional_isolation_group": "goal_20261020_batch013_015_linked_conservative",
   "same_opponent_successive_deals_must_share_session": true,
   "short_window_gap_automatic_recovery_verified": true,
   "actual_extended300second_popup_wait_verified": false,

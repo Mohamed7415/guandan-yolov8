@@ -1,0 +1,18 @@
+{
+  "checked_at": "2026-10-20T11:51:56.373934+00:00",
+  "status": "capture_and_guarded_controller",
+  "capture_snapshot_images": 8,
+  "original_hashes_and_dimensions_verified": 8,
+  "initial_game_partial": true,
+  "new_dealt_games_verified": 0,
+  "conservative_linkage_audit_pending": true,
+  "target_detector_inference_run": false,
+  "included_in_training": false,
+  "formal_new_blind_test_images": 0,
+  "complete_games_captured_verified": 0,
+  "whole_match_sessions_accepted": 0,
+  "ordinary_virtual_gold_room": true,
+  "paid_action_performed": false,
+  "next_check_not_before_utc": "2026-10-20T12:01:56.373934+00:00",
+  "provisional_isolation_group": "goal_20261020_batch013_015_linked_conservative"
+}
