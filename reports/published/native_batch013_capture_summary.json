@@ -1,12 +1,12 @@
 {
-  "observed_at": "2026-10-20T07:40:31.164613+00:00",
+  "observed_at": "2026-10-20T07:54:13.154616+00:00",
   "status": "running_single_capture_and_guarded_controller",
-  "native_images_at_verified_snapshot": 37,
-  "original_hashes_and_dimensions_verified": 37,
+  "native_images_at_verified_snapshot": 175,
+  "original_hashes_and_dimensions_verified": 175,
   "prior_24_originals_preserved": true,
-  "new_dealt_games_verified": 1,
+  "new_dealt_games_verified": 4,
   "verified_first_new_deal_frame": 29,
-  "hosting_confirmed_after_new_deal_frame": 37,
+  "hosting_confirmed_after_new_deal_frame": 175,
   "complete_games_captured_verified": 0,
   "reviewed_images": 0,
   "final_blind_evaluation_images": 0,
@@ -18,6 +18,18 @@
   "initial_capture_gap_preserved": true,
   "initial_grouping": "Overnight gap after batch012; whole-game conservative isolation requires audit. No independent-game credit for capture restart.",
   "recovery": "Same batch resumed from24 originals. First setup stopped at180sec without gate; first resume stopped safely on stale terminal collector metadata; resume wrapper now waits for fresh running metadata before starting controller. Real resumed capture and one guarded next-deal verified.",
-  "next_check_not_before_utc": "2026-10-20T07:50:31.164613+00:00",
-  "next_action": "Continue unique native collection; review session boundaries and labels before sealing; no target detector inference."
+  "next_check_not_before_utc": "2026-10-20T08:04:13.154616+00:00",
+  "next_action": "Continue unique native collection; review session boundaries and labels before sealing; no target detector inference.",
+  "new_since_previous_verified_snapshot": 138,
+  "verified_deal_frames": [
+    29,
+    73,
+    121,
+    167
+  ],
+  "whole_match_sessions_accepted": 0,
+  "provisional_isolation_group": "goal_20261020_batch013_linked_conservative",
+  "same_opponent_successive_deals_must_share_session": true,
+  "short_window_gap_automatic_recovery_verified": true,
+  "actual_extended300second_popup_wait_verified": false
 }
