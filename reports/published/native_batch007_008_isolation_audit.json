@@ -30,5 +30,6 @@
   "sealed": false,
   "target_detector_used": false,
   "training_started": false,
-  "later_batch009_linkage_pending_before_any_seal": true
+  "later_batch009_linkage_pending_before_any_seal": false,
+  "later_batch009_linkage_resolution": "reports/published/native_batch008_009_isolation_audit.json"
 }

@@ -121,7 +121,8 @@
   ],
   "unresolved_images_not_omitted_from_acceptance": true,
   "next_review_frame": null,
-  "next_step": "Audit008–009linkage before reviewing009drafts;revisit008ambiguities only with new within-frame visibility evidence.",
-  "later_batch009_linkage_pending_before_any_seal": true,
-  "teammate_hand_begins_frame17_not_new_deal": true
+  "next_step": "008–009linkage audited;continue009frame6review. Revisit008ambiguities only with new within-frame visibility evidence.",
+  "later_batch009_linkage_pending_before_any_seal": false,
+  "teammate_hand_begins_frame17_not_new_deal": true,
+  "later_batch009_linkage_resolution": "reports/published/native_batch008_009_isolation_audit.json"
 }

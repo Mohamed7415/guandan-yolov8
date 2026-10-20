@@ -1,0 +1,43 @@
+{
+  "at": "2026-10-20T23:15:53.416826+00:00",
+  "status": "batch009_initial_old_settlement_bound_conservatively_to004_008",
+  "full_native_boundary_images_viewed": [
+    "goal_20261019_batch008_00021.png",
+    "goal_20261019_batch009_00001.png",
+    "goal_20261019_batch009_00002.png",
+    "goal_20261019_batch009_00003.png",
+    "goal_20261019_batch009_00004.png",
+    "goal_20261019_batch009_00005.png"
+  ],
+  "before_sha256": "a27dfed4062b231d8841ddec1747880449d7ced6e0c8fd9415c802856143e638",
+  "after_sha256": "cee81b4c08cf1c238a4349525f6857a40a46f8de0adc6de0812ea4f6e76e639d",
+  "capture_gap_seconds": 409.568,
+  "observation": "008ends same-opponent ongoing teammate hand after selfhead-tour,multiplier2;009starts victory settlement with matching teammate/opponent order,ownhead-tour and multiplier2. Missing play retained as gap,no full-game credit. Frames1–4settlement;5new opponents,new27own hand and betting UI.",
+  "continuous_same_game_proven": false,
+  "initial_settlement_must_not_create_new_game_credit": true,
+  "group_id": "goal_20261019_batch004_006_linked_conservative",
+  "group_name_is_stable_anchor_not_membership_range": true,
+  "current_members": [
+    "batch004",
+    "batch005",
+    "batch006",
+    "batch007",
+    "batch008",
+    "batch009"
+  ],
+  "group_enforced_in_all_six_current_manifests": true,
+  "previous_five_manifests_unchanged": true,
+  "batch009_originals_and_source_drafts_verified": 335,
+  "batch009_approved_images": 5,
+  "batch009_approved_negatives": 4,
+  "batch009_reviewed_targets": 27,
+  "first_native_deal_verified_frame": 5,
+  "new_additional_deal_credit_this_check": 0,
+  "existing_terminal_report_eight_transitions_retained_not_recounted": true,
+  "complete_games_verified_for_final_acceptance": 0,
+  "formal_new_blind_evaluation_images": 0,
+  "sealed": false,
+  "target_detector_used": false,
+  "training_started": false,
+  "later_batch010_linkage_pending_before_any_seal": true
+}
