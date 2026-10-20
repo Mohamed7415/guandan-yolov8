@@ -178,5 +178,17 @@
   "formal_new_blind_evaluation_images": 0,
   "background_capture_or_training_running": false,
   "native_ui_checked_this_check": true,
-  "native_ui_current_observation": "window_unavailable_no_input_sent"
+  "native_ui_current_observation": "window_unavailable_no_input_sent",
+  "latest_ambiguity_recheck_at": "2026-10-20T03:42:52.345083+00:00",
+  "ambiguity_recheck_frames": [
+    29,
+    30,
+    31,
+    32,
+    33,
+    34,
+    35
+  ],
+  "ambiguity_recheck_newly_approved_images": 0,
+  "ambiguity_recheck_result": "Opaque cover still hides decisive rank strokes;all7 retained unchecked and labels unchanged.No repeated recheck without new visibility evidence."
 }

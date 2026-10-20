@@ -1,0 +1,67 @@
+{
+  "images_total": 271,
+  "approved_images": 5,
+  "positive_draft_shapes_pending": 5066,
+  "empty_drafts_pending_not_approved_negatives": 14,
+  "label_seal_created": false,
+  "target_card_detector_used": false,
+  "used_for_training": false,
+  "used_for_model_selection": false,
+  "independent_human_second_review": false,
+  "linked_conservative_group": "goal_20261019_batch004_006_linked_conservative",
+  "grouping_note": "Conservatively bound to004/005 despite gap/different opponents; no unsupported same-game or complete-game claim. Existing7 transition boundaries provisional for label review; subsequent007 link remains pending.",
+  "provisional_session_boundaries": [
+    2,
+    43,
+    78,
+    120,
+    162,
+    190,
+    238
+  ],
+  "approved_positive_images": 4,
+  "approved_negatives": 1,
+  "reviewed_positive_boxes": 110,
+  "positive_images_pending": 266,
+  "full_native_frames_reviewed_this_stage": 5,
+  "missing_draft_targets_added": 0,
+  "total_occlusion_flags_corrected_in_positive_review": 6,
+  "total_visible_extent_corrections_in_positive_review": 0,
+  "complete_pixel_groups_viewed": 55,
+  "complete_pixel_pages_all_viewed": 3,
+  "last_reviewed_frame": 5,
+  "verified_first_deal_frame": 2,
+  "first_deal_evidence": "Frame1different-opponent settlement after capturegap then2fresh27card hand/new opponents;no complete-game credit,004–006conservative isolation preserved.",
+  "at": "2026-10-20T03:42:52.345083+00:00",
+  "newly_approved_images_this_check": 5,
+  "newly_reviewed_targets_this_check": 110,
+  "newly_added_missing_targets_this_check": 0,
+  "newly_corrected_occlusion_flags_this_check": 6,
+  "newly_corrected_visible_extents_this_check": 0,
+  "conversion_validated_images": 5,
+  "conversion_validated_targets": 110,
+  "annotation_audit_sha256": "e936392a274e42f3f4561f73f0174b2c67355455c08a9303c16b69b138f10e28",
+  "full_native_frame_range_viewed": [
+    1,
+    5
+  ],
+  "approved_frame_segments": [
+    [
+      1,
+      5
+    ]
+  ],
+  "latest_full_native_frame_range_viewed": [
+    1,
+    5
+  ],
+  "latest_complete_pixel_groups_viewed": 55,
+  "latest_complete_pixel_pages_all_viewed": 3,
+  "pending_images": 266,
+  "complete_games_verified_for_final_acceptance": 0,
+  "formal_new_blind_evaluation_images": 0,
+  "background_capture_or_training_running": false,
+  "native_ui_checked_this_check": false,
+  "native_ui_current_observation": "previous_window_unavailable;30minute_UI_gate_not_due",
+  "remaining_empty_drafts_not_approved_negatives": 14
+}
