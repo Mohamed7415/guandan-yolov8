@@ -51,6 +51,40 @@ class SettlementDetector:
         self.wait_templates = {name: np.asarray(Image.open(directory/'waiting_ready'/f'{name}.png').convert('RGB'))
                                for name in self.wait_regions
                                if (directory/'waiting_ready'/f'{name}.png').is_file()}
+        # Ready text can sit over the previous hand, and either side can show
+        # "ready" or "preparing". Match only the opaque native UI glyphs;
+        # card pixels and the changing countdown must not become templates.
+        self.wait_variants = []
+        for layout in sorted((directory / 'waiting_ready_variants').glob('*/layout.json')):
+            regions = json.loads(layout.read_text())['regions']
+            anchors = {name: np.asarray(Image.open(layout.parent / f'{name}.png').convert('RGBA'))
+                       for name in regions}
+            self.wait_variants.append((regions, anchors))
+
+    @staticmethod
+    def ready_variant_matches(rgb, regions, anchors):
+        if len(regions) != 3 or set(regions) != set(anchors):
+            return False
+        for name, (x1, y1, x2, y2) in regions.items():
+            template = anchors[name]
+            region = rgb[y1:y2, x1:x2]
+            if region.shape != template[:, :, :3].shape:
+                return False
+            mask = template[:, :, 3] == 255
+            if mask.sum() < 64:
+                return False
+            expected = template[:, :, :3][mask].astype(np.float64)
+            actual = region[mask].astype(np.float64)
+            error = float(np.abs(actual - expected).mean())
+            # Center each RGB channel independently, so a flat orange patch
+            # cannot match merely because its channels have similar colors.
+            a = actual - actual.mean(axis=0)
+            b = expected - expected.mean(axis=0)
+            denominator = float(np.linalg.norm(a) * np.linalg.norm(b))
+            score = float((a * b).sum() / denominator) if denominator else 0
+            if not math.isfinite(score) or score < .93 or error > 20:
+                return False
+        return True
 
     @staticmethod
     def popup_matches(rgb, templates, regions):
@@ -104,7 +138,9 @@ class SettlementDetector:
         extras = {kind:self.popup_matches(rgb,self.extra_templates[kind],spec['regions'])
                   for kind,spec in self.extra_actions.items()}
         waiting_ready = (not settlement and green > .45
-                         and self.popup_matches(rgb, self.wait_templates, self.wait_regions))
+                         and (self.popup_matches(rgb, self.wait_templates, self.wait_regions)
+                              or any(self.ready_variant_matches(rgb, regions, anchors)
+                                     for regions, anchors in self.wait_variants)))
         if level_up or free_gold_base or any(extras.values()):
             gameplay = waiting_ready = False
         if waiting_ready: gameplay = False
