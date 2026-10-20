@@ -1,0 +1,43 @@
+{
+  "checked_at": "2026-10-20T13:28:23.138601+00:00",
+  "sequence_id": "goal_20261020_batch016",
+  "status": "time_limit",
+  "finished_at": "2026-10-20T13:18:30.325+00:00",
+  "capture_exit_code": 0,
+  "candidate_images_final": 10,
+  "original_hashes_verified": 10,
+  "dimensions_verified": [
+    1620,
+    1000
+  ],
+  "capture_counts": {
+    "saved": 10,
+    "duplicate": 4,
+    "unstable": 12,
+    "no_cardlike_area": 0,
+    "not_gameplay": 452,
+    "window_waits": 0
+  },
+  "max_minutes": 12,
+  "target_images": 200,
+  "window_id": 15411,
+  "allow_background_window": true,
+  "sends_input": false,
+  "controller_started": false,
+  "automatic_next_game_started": false,
+  "one_background_cua_game_start_visually_verified": true,
+  "frame1_and10_full_native_viewed": true,
+  "last_saved_frame_is_gameplay_not_settlement": true,
+  "subsequent_readonly_ui_settlement_visually_verified": true,
+  "initial_game_partial": true,
+  "game_or_session_linkage_pending": true,
+  "exclude_from_split_until_group_audited": true,
+  "reviewed_labels": 0,
+  "target_card_detector_used": false,
+  "included_in_training": false,
+  "formal_new_blind_test_images": 0,
+  "complete_games_accepted": 0,
+  "background_capture_or_training_running": false,
+  "user_action_required": false,
+  "source": "native ordinary classic beginner virtual gold, one user-requested background game"
+}

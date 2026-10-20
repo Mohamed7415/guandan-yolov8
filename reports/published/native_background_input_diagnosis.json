@@ -13,7 +13,13 @@
   "activation_requested": false,
   "paid_action_performed": false,
   "screen_off_or_locked_input_verified": false,
-  "capture_restarted": false,
+  "capture_restarted": true,
   "formal_new_blind_test_images": 0,
-  "complete_games_accepted": 0
+  "complete_games_accepted": 0,
+  "latest_followup_check_at": "2026-10-20T13:28:23.138601+00:00",
+  "one_user_requested_ordinary_game_opened_in_background": true,
+  "hosting_banner_after_background_start_verified": true,
+  "foreground_app_at_game_start_before_after_codex": true,
+  "background_readonly_capture_terminal_images": 10,
+  "automatic_next_game_started": false
 }
