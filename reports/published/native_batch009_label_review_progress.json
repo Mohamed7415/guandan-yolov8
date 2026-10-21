@@ -532,7 +532,7 @@
   "new_additional_deal_credit_this_check": 0,
   "background_capture_or_training_running": false,
   "native_ui_checked_this_check": false,
-  "later_batch010_linkage_pending_before_any_seal": true,
+  "later_batch010_linkage_pending_before_any_seal": false,
   "negative_labels_approved_only_after_full_native_review": true,
   "newly_approved_images_this_check": 10,
   "newly_reviewed_targets_this_check": 276,
@@ -544,5 +544,7 @@
   "latest_approved_image_pixel_groups_viewed": 101,
   "latest_unapproved_tentative_pixel_groups_viewed": 0,
   "all_this_stage_crop_groups_from_approved_images": true,
-  "next_batch010_inventory_verified": true
+  "next_batch010_inventory_verified": true,
+  "later_batch010_conservative_linkage_verified_at": "2026-10-21T21:58:36.523816+00:00",
+  "later_batch010_initial_settlement_session": "goal_20261019_batch009_game008"
 }
