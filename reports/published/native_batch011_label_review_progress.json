@@ -182,6 +182,7 @@
   "all_this_stage_crop_groups_from_approved_images": true,
   "initial_cross_batch_isolation_verified": true,
   "source_drafts_regenerated": 0,
-  "later_batch012_linkage_pending_before_any_seal": true,
-  "negative_labels_approved_only_after_full_native_review": true
+  "later_batch012_linkage_pending_before_any_seal": false,
+  "negative_labels_approved_only_after_full_native_review": true,
+  "cross_batch012_isolation_verified": true
 }
