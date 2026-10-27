@@ -509,7 +509,7 @@
   "new_additional_deal_credit_this_check": 0,
   "background_capture_or_training_running": false,
   "native_ui_checked_this_check": false,
-  "later_batch011_linkage_pending_before_any_seal": true,
+  "later_batch011_linkage_pending_before_any_seal": false,
   "negative_labels_approved_only_after_full_native_review": true,
   "newly_approved_images_this_check": 9,
   "newly_reviewed_targets_this_check": 100,
