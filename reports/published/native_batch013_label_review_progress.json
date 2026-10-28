@@ -1,12 +1,12 @@
 {
   "images_total": 678,
-  "approved_images": 143,
-  "approved_positive_images": 134,
+  "approved_images": 144,
+  "approved_positive_images": 135,
   "approved_negatives": 9,
-  "reviewed_positive_boxes": 2921,
-  "pending_images": 535,
-  "positive_images_pending": 505,
-  "positive_draft_shapes_pending": 10019,
+  "reviewed_positive_boxes": 2948,
+  "pending_images": 534,
+  "positive_images_pending": 504,
+  "positive_draft_shapes_pending": 9992,
   "empty_drafts_pending_not_approved_negatives": 30,
   "linked_conservative_group": "goal_20261019_batch004_006_linked_conservative",
   "grouping_note": "004–013 retain conservative stable anchor;013–015 existing linkage retained for future audits.012to013 overnightgap83213.783sec;different initialsettlement not attributed to012.No complete-game credit.",
@@ -33,24 +33,24 @@
   "used_for_model_selection": false,
   "independent_human_second_review": false,
   "first_visual_pass_complete": false,
-  "last_reviewed_frame": 143,
-  "last_full_native_frame_viewed": 143,
+  "last_reviewed_frame": 144,
+  "last_full_native_frame_viewed": 144,
   "boundary_only_full_native_frames_viewed": [
     1,
     2,
     3
   ],
-  "complete_pixel_groups_viewed": 1383,
-  "complete_pixel_pages_all_viewed": 81,
+  "complete_pixel_groups_viewed": 1410,
+  "complete_pixel_pages_all_viewed": 83,
   "missing_draft_targets_added": 50,
-  "total_occlusion_flags_corrected_in_positive_review": 232,
+  "total_occlusion_flags_corrected_in_positive_review": 234,
   "total_visible_extent_corrections_in_positive_review": 59,
   "unapproved_visual_issues": [],
   "unresolved_frames": [],
   "approved_frame_segments": [
     [
       1,
-      143
+      144
     ]
   ],
   "first_deal_verified_frame": 3,
@@ -92,7 +92,7 @@
   "session_ids_after_frame29_provisional_until_sequential_audit": false,
   "capture_restart_gap_after_frame24_seconds": 344.935,
   "continuous_capture_verified": false,
-  "next_review_frame": 144,
+  "next_review_frame": 145,
   "session_ids_after_frame73_provisional_until_sequential_audit": false,
   "session_ids_after_frame121_provisional_until_sequential_audit": false,
   "frame121_boundary_verified_label_review_pending": false,
@@ -115,7 +115,7 @@
       3
     ]
   },
-  "at": "2026-10-28T22:45:56.307802+00:00",
+  "at": "2026-10-28T23:05:35.953649+00:00",
   "full_native_frames_viewed": [
     1,
     2,
@@ -259,18 +259,19 @@
     140,
     141,
     142,
-    143
+    143,
+    144
   ],
   "full_native_frames_reviewed_this_stage": 1,
   "latest_full_native_frames_viewed": [
-    143
+    144
   ],
   "all_original_hashes_verified_unchanged": true,
   "all_source_draft_hashes_verified": true,
   "all_workspace_label_hashes_verified": true,
-  "conversion_validated_images": 143,
-  "conversion_validated_targets": 2921,
-  "annotation_audit_sha256": "64955c1799d70eb08a293126c608ee8de023b040643ad364a9fc72c3a68049a0",
+  "conversion_validated_images": 144,
+  "conversion_validated_targets": 2948,
+  "annotation_audit_sha256": "33889249548c64c5aaa19d13ede3fcb187208cc15ca27c6e51f8b6e0eb4d7362",
   "formal_new_blind_evaluation_images": 0,
   "complete_games_verified_for_final_acceptance": 0,
   "new_additional_deal_credit_this_check": 0,
