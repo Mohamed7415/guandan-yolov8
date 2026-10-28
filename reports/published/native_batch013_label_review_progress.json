@@ -1,12 +1,12 @@
 {
   "images_total": 678,
-  "approved_images": 140,
-  "approved_positive_images": 131,
+  "approved_images": 141,
+  "approved_positive_images": 132,
   "approved_negatives": 9,
-  "reviewed_positive_boxes": 2842,
-  "pending_images": 538,
-  "positive_images_pending": 508,
-  "positive_draft_shapes_pending": 10098,
+  "reviewed_positive_boxes": 2868,
+  "pending_images": 537,
+  "positive_images_pending": 507,
+  "positive_draft_shapes_pending": 10072,
   "empty_drafts_pending_not_approved_negatives": 30,
   "linked_conservative_group": "goal_20261019_batch004_006_linked_conservative",
   "grouping_note": "004–013 retain conservative stable anchor;013–015 existing linkage retained for future audits.012to013 overnightgap83213.783sec;different initialsettlement not attributed to012.No complete-game credit.",
@@ -33,24 +33,24 @@
   "used_for_model_selection": false,
   "independent_human_second_review": false,
   "first_visual_pass_complete": false,
-  "last_reviewed_frame": 140,
-  "last_full_native_frame_viewed": 140,
+  "last_reviewed_frame": 141,
+  "last_full_native_frame_viewed": 141,
   "boundary_only_full_native_frames_viewed": [
     1,
     2,
     3
   ],
-  "complete_pixel_groups_viewed": 1304,
-  "complete_pixel_pages_all_viewed": 75,
+  "complete_pixel_groups_viewed": 1330,
+  "complete_pixel_pages_all_viewed": 77,
   "missing_draft_targets_added": 50,
-  "total_occlusion_flags_corrected_in_positive_review": 226,
+  "total_occlusion_flags_corrected_in_positive_review": 228,
   "total_visible_extent_corrections_in_positive_review": 59,
   "unapproved_visual_issues": [],
   "unresolved_frames": [],
   "approved_frame_segments": [
     [
       1,
-      140
+      141
     ]
   ],
   "first_deal_verified_frame": 3,
@@ -92,7 +92,7 @@
   "session_ids_after_frame29_provisional_until_sequential_audit": false,
   "capture_restart_gap_after_frame24_seconds": 344.935,
   "continuous_capture_verified": false,
-  "next_review_frame": 141,
+  "next_review_frame": 142,
   "session_ids_after_frame73_provisional_until_sequential_audit": false,
   "session_ids_after_frame121_provisional_until_sequential_audit": false,
   "frame121_boundary_verified_label_review_pending": false,
@@ -115,7 +115,7 @@
       3
     ]
   },
-  "at": "2026-10-28T21:45:20.248243+00:00",
+  "at": "2026-10-28T22:06:35.285563+00:00",
   "full_native_frames_viewed": [
     1,
     2,
@@ -256,18 +256,19 @@
     137,
     138,
     139,
-    140
+    140,
+    141
   ],
   "full_native_frames_reviewed_this_stage": 1,
   "latest_full_native_frames_viewed": [
-    140
+    141
   ],
   "all_original_hashes_verified_unchanged": true,
   "all_source_draft_hashes_verified": true,
   "all_workspace_label_hashes_verified": true,
-  "conversion_validated_images": 140,
-  "conversion_validated_targets": 2842,
-  "annotation_audit_sha256": "9fb80b49b308eefef49765726e073f324c9c09788eca0fa6e00ca9f145e7bbdf",
+  "conversion_validated_images": 141,
+  "conversion_validated_targets": 2868,
+  "annotation_audit_sha256": "22f5725484abe0319a88e2d4a99224f91189f7fcb3584ee4c32271e6df70e243",
   "formal_new_blind_evaluation_images": 0,
   "complete_games_verified_for_final_acceptance": 0,
   "new_additional_deal_credit_this_check": 0,
@@ -275,13 +276,13 @@
   "native_ui_checked_this_check": false,
   "native_ui_input_sent": false,
   "newly_approved_images_this_check": 1,
-  "newly_reviewed_targets_this_check": 28,
+  "newly_reviewed_targets_this_check": 26,
   "newly_added_missing_targets_this_check": 0,
-  "newly_corrected_occlusion_flags_this_check": 1,
-  "newly_corrected_visible_extents_this_check": 2,
-  "latest_complete_pixel_groups_viewed": 28,
+  "newly_corrected_occlusion_flags_this_check": 2,
+  "newly_corrected_visible_extents_this_check": 0,
+  "latest_complete_pixel_groups_viewed": 26,
   "latest_complete_pixel_pages_all_viewed": 2,
-  "latest_approved_image_pixel_groups_viewed": 28,
+  "latest_approved_image_pixel_groups_viewed": 26,
   "latest_unapproved_tentative_pixel_groups_viewed": 0,
   "all_this_stage_crop_groups_from_approved_images": true,
   "capture_gap_from_previous_batch_seconds": 83213.783,
