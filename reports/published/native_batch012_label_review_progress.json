@@ -150,6 +150,7 @@
   "boundary_review_only_no_label_approval": false,
   "previous_eight_manifests_unchanged": true,
   "source_drafts_regenerated": 0,
-  "later_batch013_linkage_pending_before_any_seal": true,
-  "negative_labels_approved_only_after_full_native_review": true
+  "later_batch013_linkage_pending_before_any_seal": false,
+  "negative_labels_approved_only_after_full_native_review": true,
+  "cross_batch013_isolation_verified": true
 }
