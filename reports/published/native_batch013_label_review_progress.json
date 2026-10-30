@@ -1,12 +1,12 @@
 {
   "images_total": 678,
-  "approved_images": 184,
-  "approved_positive_images": 172,
+  "approved_images": 185,
+  "approved_positive_images": 173,
   "approved_negatives": 12,
-  "reviewed_positive_boxes": 3906,
-  "pending_images": 494,
-  "positive_images_pending": 467,
-  "positive_draft_shapes_pending": 9043,
+  "reviewed_positive_boxes": 3929,
+  "pending_images": 493,
+  "positive_images_pending": 466,
+  "positive_draft_shapes_pending": 9021,
   "empty_drafts_pending_not_approved_negatives": 27,
   "linked_conservative_group": "goal_20261019_batch004_006_linked_conservative",
   "grouping_note": "004–013 retain conservative stable anchor;013–015 existing linkage retained for future audits.012to013 overnightgap83213.783sec;different initialsettlement not attributed to012.No complete-game credit.",
@@ -33,24 +33,24 @@
   "used_for_model_selection": false,
   "independent_human_second_review": false,
   "first_visual_pass_complete": false,
-  "last_reviewed_frame": 184,
-  "last_full_native_frame_viewed": 184,
+  "last_reviewed_frame": 185,
+  "last_full_native_frame_viewed": 185,
   "boundary_only_full_native_frames_viewed": [
     1,
     2,
     3
   ],
-  "complete_pixel_groups_viewed": 2368,
-  "complete_pixel_pages_all_viewed": 144,
-  "missing_draft_targets_added": 59,
-  "total_occlusion_flags_corrected_in_positive_review": 303,
-  "total_visible_extent_corrections_in_positive_review": 78,
+  "complete_pixel_groups_viewed": 2391,
+  "complete_pixel_pages_all_viewed": 145,
+  "missing_draft_targets_added": 60,
+  "total_occlusion_flags_corrected_in_positive_review": 305,
+  "total_visible_extent_corrections_in_positive_review": 80,
   "unapproved_visual_issues": [],
   "unresolved_frames": [],
   "approved_frame_segments": [
     [
       1,
-      184
+      185
     ]
   ],
   "first_deal_verified_frame": 3,
@@ -92,7 +92,7 @@
   "session_ids_after_frame29_provisional_until_sequential_audit": false,
   "capture_restart_gap_after_frame24_seconds": 344.935,
   "continuous_capture_verified": false,
-  "next_review_frame": 185,
+  "next_review_frame": 186,
   "session_ids_after_frame73_provisional_until_sequential_audit": false,
   "session_ids_after_frame121_provisional_until_sequential_audit": false,
   "frame121_boundary_verified_label_review_pending": false,
@@ -136,7 +136,7 @@
       2
     ]
   },
-  "at": "2026-10-30T19:09:28.652932+00:00",
+  "at": "2026-10-30T19:29:23.141314+00:00",
   "full_native_frames_viewed": [
     1,
     2,
@@ -321,18 +321,19 @@
     181,
     182,
     183,
-    184
+    184,
+    185
   ],
   "full_native_frames_reviewed_this_stage": 1,
   "latest_full_native_frames_viewed": [
-    184
+    185
   ],
   "all_original_hashes_verified_unchanged": true,
   "all_source_draft_hashes_verified": true,
   "all_workspace_label_hashes_verified": true,
-  "conversion_validated_images": 184,
-  "conversion_validated_targets": 3906,
-  "annotation_audit_sha256": "082c27f0a27145ec6aa04a3ad6572e123d9e4b05419e4b6fcf55ecd05f345e92",
+  "conversion_validated_images": 185,
+  "conversion_validated_targets": 3929,
+  "annotation_audit_sha256": "551f0272492ba3d9e5437bbb567c733ebdd0b807765109d26d7b202f0259de1e",
   "formal_new_blind_evaluation_images": 0,
   "complete_games_verified_for_final_acceptance": 0,
   "new_additional_deal_credit_this_check": 0,
@@ -340,13 +341,13 @@
   "native_ui_checked_this_check": false,
   "native_ui_input_sent": false,
   "newly_approved_images_this_check": 1,
-  "newly_reviewed_targets_this_check": 20,
+  "newly_reviewed_targets_this_check": 23,
   "newly_added_missing_targets_this_check": 1,
   "newly_corrected_occlusion_flags_this_check": 2,
-  "newly_corrected_visible_extents_this_check": 0,
-  "latest_complete_pixel_groups_viewed": 20,
+  "newly_corrected_visible_extents_this_check": 2,
+  "latest_complete_pixel_groups_viewed": 23,
   "latest_complete_pixel_pages_all_viewed": 1,
-  "latest_approved_image_pixel_groups_viewed": 20,
+  "latest_approved_image_pixel_groups_viewed": 23,
   "latest_unapproved_tentative_pixel_groups_viewed": 0,
   "all_this_stage_crop_groups_from_approved_images": true,
   "capture_gap_from_previous_batch_seconds": 83213.783,
