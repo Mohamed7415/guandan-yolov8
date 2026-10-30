@@ -1,12 +1,12 @@
 {
   "images_total": 678,
-  "approved_images": 166,
-  "approved_positive_images": 154,
+  "approved_images": 167,
+  "approved_positive_images": 155,
   "approved_negatives": 12,
-  "reviewed_positive_boxes": 3390,
-  "pending_images": 512,
-  "positive_images_pending": 485,
-  "positive_draft_shapes_pending": 9550,
+  "reviewed_positive_boxes": 3417,
+  "pending_images": 511,
+  "positive_images_pending": 484,
+  "positive_draft_shapes_pending": 9524,
   "empty_drafts_pending_not_approved_negatives": 27,
   "linked_conservative_group": "goal_20261019_batch004_006_linked_conservative",
   "grouping_note": "004–013 retain conservative stable anchor;013–015 existing linkage retained for future audits.012to013 overnightgap83213.783sec;different initialsettlement not attributed to012.No complete-game credit.",
@@ -33,24 +33,24 @@
   "used_for_model_selection": false,
   "independent_human_second_review": false,
   "first_visual_pass_complete": false,
-  "last_reviewed_frame": 166,
-  "last_full_native_frame_viewed": 166,
+  "last_reviewed_frame": 167,
+  "last_full_native_frame_viewed": 167,
   "boundary_only_full_native_frames_viewed": [
     1,
     2,
     3
   ],
-  "complete_pixel_groups_viewed": 1852,
-  "complete_pixel_pages_all_viewed": 111,
-  "missing_draft_targets_added": 50,
-  "total_occlusion_flags_corrected_in_positive_review": 266,
+  "complete_pixel_groups_viewed": 1879,
+  "complete_pixel_pages_all_viewed": 113,
+  "missing_draft_targets_added": 51,
+  "total_occlusion_flags_corrected_in_positive_review": 267,
   "total_visible_extent_corrections_in_positive_review": 67,
   "unapproved_visual_issues": [],
   "unresolved_frames": [],
   "approved_frame_segments": [
     [
       1,
-      166
+      167
     ]
   ],
   "first_deal_verified_frame": 3,
@@ -58,7 +58,8 @@
     3,
     29,
     73,
-    121
+    121,
+    167
   ],
   "provisional_session_boundaries": [
     121,
@@ -76,7 +77,6 @@
     615
   ],
   "remaining_provisional_boundaries_need_sequential_label_audit": [
-    167,
     203,
     243,
     282,
@@ -92,7 +92,7 @@
   "session_ids_after_frame29_provisional_until_sequential_audit": false,
   "capture_restart_gap_after_frame24_seconds": 344.935,
   "continuous_capture_verified": false,
-  "next_review_frame": 167,
+  "next_review_frame": 168,
   "session_ids_after_frame73_provisional_until_sequential_audit": false,
   "session_ids_after_frame121_provisional_until_sequential_audit": false,
   "frame121_boundary_verified_label_review_pending": false,
@@ -115,7 +115,28 @@
       3
     ]
   },
-  "at": "2026-10-30T12:28:32.683532+00:00",
+  "session_ids_after_frame167_provisional_until_sequential_audit": false,
+  "frame167_boundary_verified_label_review_pending": false,
+  "frame167_deal_evidence": {
+    "frame": 167,
+    "image_sha256": "de4ec185e224b4ec3e542b5a84b7ad59c2be67f6852b20c43bb50292378c2c55",
+    "session_id": "goal_20261020_batch013_game005",
+    "evidence": "Current original independently shows27 own cards, multiplier reset1, doubling interface and changed players after defeatsettlement166, confirming fifthdeal and game005. All27 fullRGB crops reviewed. Missing upperJspade current visibleJhook and spade independently readable under timer, added614456to746513occludedtrue; terminal4club AIcornertrue. SJ avatar/luck and2diamond level/luck occlusions retained. No adjacentframe class inference or completegame credit.",
+    "current_hand_column_counts": [
+      1,
+      1,
+      2,
+      3,
+      6,
+      3,
+      3,
+      2,
+      1,
+      3,
+      2
+    ]
+  },
+  "at": "2026-10-30T12:56:18.112399+00:00",
   "full_native_frames_viewed": [
     1,
     2,
@@ -282,32 +303,33 @@
     163,
     164,
     165,
-    166
+    166,
+    167
   ],
   "full_native_frames_reviewed_this_stage": 1,
   "latest_full_native_frames_viewed": [
-    166
+    167
   ],
   "all_original_hashes_verified_unchanged": true,
   "all_source_draft_hashes_verified": true,
   "all_workspace_label_hashes_verified": true,
-  "conversion_validated_images": 166,
-  "conversion_validated_targets": 3390,
-  "annotation_audit_sha256": "b7646533543b888d8d1f1e64f03cddb5b23aa9a1334a3a9d368888900ac62da7",
+  "conversion_validated_images": 167,
+  "conversion_validated_targets": 3417,
+  "annotation_audit_sha256": "b82c4de7362417064dd9ded4e8cdc93c55507bde35fe48c50eb9b28b1adf6e26",
   "formal_new_blind_evaluation_images": 0,
   "complete_games_verified_for_final_acceptance": 0,
-  "new_additional_deal_credit_this_check": 0,
+  "new_additional_deal_credit_this_check": 1,
   "background_capture_or_training_running": false,
   "native_ui_checked_this_check": false,
   "native_ui_input_sent": false,
   "newly_approved_images_this_check": 1,
-  "newly_reviewed_targets_this_check": 0,
-  "newly_added_missing_targets_this_check": 0,
-  "newly_corrected_occlusion_flags_this_check": 0,
+  "newly_reviewed_targets_this_check": 27,
+  "newly_added_missing_targets_this_check": 1,
+  "newly_corrected_occlusion_flags_this_check": 1,
   "newly_corrected_visible_extents_this_check": 0,
-  "latest_complete_pixel_groups_viewed": 0,
-  "latest_complete_pixel_pages_all_viewed": 0,
-  "latest_approved_image_pixel_groups_viewed": 0,
+  "latest_complete_pixel_groups_viewed": 27,
+  "latest_complete_pixel_pages_all_viewed": 2,
+  "latest_approved_image_pixel_groups_viewed": 27,
   "latest_unapproved_tentative_pixel_groups_viewed": 0,
   "all_this_stage_crop_groups_from_approved_images": true,
   "capture_gap_from_previous_batch_seconds": 83213.783,
