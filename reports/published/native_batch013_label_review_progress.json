@@ -1,12 +1,12 @@
 {
   "images_total": 678,
-  "approved_images": 403,
-  "approved_positive_images": 374,
+  "approved_images": 408,
+  "approved_positive_images": 379,
   "approved_negatives": 29,
-  "reviewed_positive_boxes": 8331,
-  "pending_images": 275,
-  "positive_images_pending": 265,
-  "positive_draft_shapes_pending": 4632,
+  "reviewed_positive_boxes": 8395,
+  "pending_images": 270,
+  "positive_images_pending": 260,
+  "positive_draft_shapes_pending": 4568,
   "empty_drafts_pending_not_approved_negatives": 10,
   "linked_conservative_group": "goal_20261019_batch004_006_linked_conservative",
   "grouping_note": "004–013 retain conservative stable anchor;013–015 existing linkage retained for future audits.012to013 overnightgap83213.783sec;different initialsettlement not attributed to012.No complete-game credit.",
@@ -33,17 +33,17 @@
   "used_for_model_selection": false,
   "independent_human_second_review": false,
   "first_visual_pass_complete": false,
-  "last_reviewed_frame": 454,
-  "last_full_native_frame_viewed": 454,
+  "last_reviewed_frame": 459,
+  "last_full_native_frame_viewed": 459,
   "boundary_only_full_native_frames_viewed": [
     1,
     2,
     3
   ],
-  "complete_pixel_groups_viewed": 4976,
-  "complete_pixel_pages_all_viewed": 294,
+  "complete_pixel_groups_viewed": 5009,
+  "complete_pixel_pages_all_viewed": 296,
   "missing_draft_targets_added": 73,
-  "total_occlusion_flags_corrected_in_positive_review": 516,
+  "total_occlusion_flags_corrected_in_positive_review": 523,
   "total_visible_extent_corrections_in_positive_review": 141,
   "unapproved_visual_issues": [
     "reports/continuous_goal/blind_batch013_review/frame00200_review_issue.json",
@@ -883,6 +883,26 @@
     [
       454,
       454
+    ],
+    [
+      455,
+      455
+    ],
+    [
+      456,
+      456
+    ],
+    [
+      457,
+      457
+    ],
+    [
+      458,
+      458
+    ],
+    [
+      459,
+      459
     ]
   ],
   "first_deal_verified_frame": 3,
@@ -924,7 +944,7 @@
   "session_ids_after_frame29_provisional_until_sequential_audit": false,
   "capture_restart_gap_after_frame24_seconds": 344.935,
   "continuous_capture_verified": false,
-  "next_review_frame": 455,
+  "next_review_frame": 460,
   "session_ids_after_frame73_provisional_until_sequential_audit": false,
   "session_ids_after_frame121_provisional_until_sequential_audit": false,
   "frame121_boundary_verified_label_review_pending": false,
@@ -1036,7 +1056,7 @@
     "evidence": "Prior settlement, changed opponents, doubling prompt and 27 visible hand positions confirm the new deal.",
     "complete_game_credit": 0
   },
-  "at": "2026-11-04T11:32:36.420005+00:00",
+  "at": "2026-11-04T11:33:11.157404+00:00",
   "full_native_frames_viewed": [
     1,
     2,
@@ -1491,22 +1511,27 @@
     451,
     452,
     453,
-    454
+    454,
+    455,
+    456,
+    457,
+    458,
+    459
   ],
   "full_native_frames_reviewed_this_stage": 5,
   "latest_full_native_frames_viewed": [
-    450,
-    451,
-    452,
-    453,
-    454
+    455,
+    456,
+    457,
+    458,
+    459
   ],
   "all_original_hashes_verified_unchanged": true,
   "all_source_draft_hashes_verified": true,
   "all_workspace_label_hashes_verified": true,
-  "conversion_validated_images": 403,
-  "conversion_validated_targets": 8331,
-  "annotation_audit_sha256": "4a062e820cf1f15870021aa046d1a2cd480d73911e39ecc719c74d5ff6bc77d4",
+  "conversion_validated_images": 408,
+  "conversion_validated_targets": 8395,
+  "annotation_audit_sha256": "b1093f17a9459bd2f25cca91f59edbc2c01d5986041e0251a876c43108bf6d94",
   "formal_new_blind_evaluation_images": 0,
   "complete_games_verified_for_final_acceptance": 0,
   "new_additional_deal_credit_this_check": 0,
@@ -1514,12 +1539,12 @@
   "native_ui_checked_this_check": false,
   "native_ui_input_sent": false,
   "newly_approved_images_this_check": 5,
-  "newly_reviewed_targets_this_check": 76,
+  "newly_reviewed_targets_this_check": 64,
   "newly_added_missing_targets_this_check": 0,
-  "newly_corrected_occlusion_flags_this_check": 6,
+  "newly_corrected_occlusion_flags_this_check": 7,
   "newly_corrected_visible_extents_this_check": 0,
-  "latest_complete_pixel_groups_viewed": 63,
-  "latest_complete_pixel_pages_all_viewed": 3,
+  "latest_complete_pixel_groups_viewed": 33,
+  "latest_complete_pixel_pages_all_viewed": 2,
   "all_this_stage_crop_groups_from_approved_images": true,
   "capture_gap_from_previous_batch_seconds": 83213.783,
   "initial_cross_batch_isolation_verified": true,
