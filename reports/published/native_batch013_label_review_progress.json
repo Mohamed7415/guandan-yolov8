@@ -1,12 +1,12 @@
 {
   "images_total": 678,
-  "approved_images": 210,
-  "approved_positive_images": 194,
+  "approved_images": 211,
+  "approved_positive_images": 195,
   "approved_negatives": 16,
-  "reviewed_positive_boxes": 4325,
-  "pending_images": 468,
-  "positive_images_pending": 445,
-  "positive_draft_shapes_pending": 8627,
+  "reviewed_positive_boxes": 4351,
+  "pending_images": 467,
+  "positive_images_pending": 444,
+  "positive_draft_shapes_pending": 8601,
   "empty_drafts_pending_not_approved_negatives": 23,
   "linked_conservative_group": "goal_20261019_batch004_006_linked_conservative",
   "grouping_note": "004–013 retain conservative stable anchor;013–015 existing linkage retained for future audits.012to013 overnightgap83213.783sec;different initialsettlement not attributed to012.No complete-game credit.",
@@ -33,17 +33,17 @@
   "used_for_model_selection": false,
   "independent_human_second_review": false,
   "first_visual_pass_complete": false,
-  "last_reviewed_frame": 219,
-  "last_full_native_frame_viewed": 219,
+  "last_reviewed_frame": 221,
+  "last_full_native_frame_viewed": 221,
   "boundary_only_full_native_frames_viewed": [
     1,
     2,
     3
   ],
-  "complete_pixel_groups_viewed": 2787,
-  "complete_pixel_pages_all_viewed": 175,
+  "complete_pixel_groups_viewed": 2813,
+  "complete_pixel_pages_all_viewed": 177,
   "missing_draft_targets_added": 62,
-  "total_occlusion_flags_corrected_in_positive_review": 346,
+  "total_occlusion_flags_corrected_in_positive_review": 349,
   "total_visible_extent_corrections_in_positive_review": 80,
   "unapproved_visual_issues": [
     "reports/continuous_goal/blind_batch013_review/frame00200_review_issue.json",
@@ -54,7 +54,8 @@
     "reports/continuous_goal/blind_batch013_review/frame00210_review_issue.json",
     "reports/continuous_goal/blind_batch013_review/frame00212_review_issue.json",
     "reports/continuous_goal/blind_batch013_review/frame00215_review_issue.json",
-    "reports/continuous_goal/blind_batch013_review/frame00217_review_issue.json"
+    "reports/continuous_goal/blind_batch013_review/frame00217_review_issue.json",
+    "reports/continuous_goal/blind_batch013_review/frame00220_review_issue.json"
   ],
   "unresolved_frames": [
     200,
@@ -65,7 +66,8 @@
     210,
     212,
     215,
-    217
+    217,
+    220
   ],
   "approved_frame_segments": [
     [
@@ -99,6 +101,10 @@
     [
       218,
       219
+    ],
+    [
+      221,
+      221
     ]
   ],
   "first_deal_verified_frame": 3,
@@ -140,7 +146,7 @@
   "session_ids_after_frame29_provisional_until_sequential_audit": false,
   "capture_restart_gap_after_frame24_seconds": 344.935,
   "continuous_capture_verified": false,
-  "next_review_frame": 220,
+  "next_review_frame": 222,
   "session_ids_after_frame73_provisional_until_sequential_audit": false,
   "session_ids_after_frame121_provisional_until_sequential_audit": false,
   "frame121_boundary_verified_label_review_pending": false,
@@ -210,7 +216,7 @@
   },
   "frame203_boundary_verified_label_review_pending": true,
   "session_ids_after_frame203_provisional_until_sequential_audit": false,
-  "at": "2026-11-03T17:06:08.232993+00:00",
+  "at": "2026-11-04T04:36:08.570345+00:00",
   "full_native_frames_viewed": [
     1,
     2,
@@ -430,18 +436,20 @@
     216,
     217,
     218,
-    219
+    219,
+    220,
+    221
   ],
   "full_native_frames_reviewed_this_stage": 1,
   "latest_full_native_frames_viewed": [
-    219
+    221
   ],
   "all_original_hashes_verified_unchanged": true,
   "all_source_draft_hashes_verified": true,
   "all_workspace_label_hashes_verified": true,
-  "conversion_validated_images": 210,
-  "conversion_validated_targets": 4325,
-  "annotation_audit_sha256": "4f814b5f3d48cacccccc2dbf4f584ffeae870830565e19eaf53ff4b303a88bc5",
+  "conversion_validated_images": 211,
+  "conversion_validated_targets": 4351,
+  "annotation_audit_sha256": "2a5939189516e85d7b3e78f475f1daf3bef2ea1e629a7953f4fc4bede7bda348",
   "formal_new_blind_evaluation_images": 0,
   "complete_games_verified_for_final_acceptance": 0,
   "new_additional_deal_credit_this_check": 0,
