@@ -34,7 +34,7 @@
   "independent_human_second_review": false,
   "first_visual_pass_complete": false,
   "last_reviewed_frame": 221,
-  "last_full_native_frame_viewed": 221,
+  "last_full_native_frame_viewed": 222,
   "boundary_only_full_native_frames_viewed": [
     1,
     2,
@@ -55,7 +55,8 @@
     "reports/continuous_goal/blind_batch013_review/frame00212_review_issue.json",
     "reports/continuous_goal/blind_batch013_review/frame00215_review_issue.json",
     "reports/continuous_goal/blind_batch013_review/frame00217_review_issue.json",
-    "reports/continuous_goal/blind_batch013_review/frame00220_review_issue.json"
+    "reports/continuous_goal/blind_batch013_review/frame00220_review_issue.json",
+    "reports/continuous_goal/blind_batch013_review/frame00222_review_issue.json"
   ],
   "unresolved_frames": [
     200,
@@ -67,7 +68,8 @@
     212,
     215,
     217,
-    220
+    220,
+    222
   ],
   "approved_frame_segments": [
     [
@@ -146,7 +148,7 @@
   "session_ids_after_frame29_provisional_until_sequential_audit": false,
   "capture_restart_gap_after_frame24_seconds": 344.935,
   "continuous_capture_verified": false,
-  "next_review_frame": 222,
+  "next_review_frame": 223,
   "session_ids_after_frame73_provisional_until_sequential_audit": false,
   "session_ids_after_frame121_provisional_until_sequential_audit": false,
   "frame121_boundary_verified_label_review_pending": false,
@@ -216,7 +218,7 @@
   },
   "frame203_boundary_verified_label_review_pending": true,
   "session_ids_after_frame203_provisional_until_sequential_audit": false,
-  "at": "2026-11-04T04:36:08.570345+00:00",
+  "at": "2026-11-04T04:55:11.273170+00:00",
   "full_native_frames_viewed": [
     1,
     2,
@@ -438,34 +440,35 @@
     218,
     219,
     220,
-    221
+    221,
+    222
   ],
   "full_native_frames_reviewed_this_stage": 1,
   "latest_full_native_frames_viewed": [
-    221
+    222
   ],
   "all_original_hashes_verified_unchanged": true,
   "all_source_draft_hashes_verified": true,
   "all_workspace_label_hashes_verified": true,
   "conversion_validated_images": 211,
   "conversion_validated_targets": 4351,
-  "annotation_audit_sha256": "2a5939189516e85d7b3e78f475f1daf3bef2ea1e629a7953f4fc4bede7bda348",
+  "annotation_audit_sha256": "edc94a227c0fd7564dc9357dbc3f91af2939ffb6002a89f2ace273a1d79520a9",
   "formal_new_blind_evaluation_images": 0,
   "complete_games_verified_for_final_acceptance": 0,
   "new_additional_deal_credit_this_check": 0,
   "background_capture_or_training_running": false,
   "native_ui_checked_this_check": false,
   "native_ui_input_sent": false,
-  "newly_approved_images_this_check": 1,
-  "newly_reviewed_targets_this_check": 26,
+  "newly_approved_images_this_check": 0,
+  "newly_reviewed_targets_this_check": 0,
   "newly_added_missing_targets_this_check": 0,
-  "newly_corrected_occlusion_flags_this_check": 3,
+  "newly_corrected_occlusion_flags_this_check": 0,
   "newly_corrected_visible_extents_this_check": 0,
-  "latest_complete_pixel_groups_viewed": 26,
-  "latest_complete_pixel_pages_all_viewed": 2,
-  "latest_approved_image_pixel_groups_viewed": 26,
-  "latest_unapproved_tentative_pixel_groups_viewed": 0,
-  "all_this_stage_crop_groups_from_approved_images": true,
+  "latest_complete_pixel_groups_viewed": 24,
+  "latest_complete_pixel_pages_all_viewed": 1,
+  "latest_approved_image_pixel_groups_viewed": 0,
+  "latest_unapproved_tentative_pixel_groups_viewed": 24,
+  "all_this_stage_crop_groups_from_approved_images": false,
   "capture_gap_from_previous_batch_seconds": 83213.783,
   "initial_cross_batch_isolation_verified": true,
   "boundary_review_only_no_label_approval": false,
