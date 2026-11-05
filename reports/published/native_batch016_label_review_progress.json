@@ -1,0 +1,16 @@
+{
+  "batch": "016",
+  "total_images": 10,
+  "next_review_frame": 11,
+  "unapproved_visual_issues": [],
+  "target_detector_used": false,
+  "review_completed_images": 10,
+  "approved_images": 10,
+  "reviewed_positive_boxes": 59,
+  "not_yet_reviewed_images": 0,
+  "at": "2026-11-05T17:59:41.677094+00:00",
+  "partial_conversion": "data/blind_review_partial_converted/goal_20261020_batch016_review10_v1",
+  "annotation_audit_sha256": "c4040fc2a636772ece6dc8b6956a1dc595b9da50b2269a5d7b7b758572e1737a",
+  "formal_blind_evaluation_images": 0,
+  "seal_created": false
+}

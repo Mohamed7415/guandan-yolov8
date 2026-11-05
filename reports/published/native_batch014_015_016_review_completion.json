@@ -1,0 +1,58 @@
+{
+  "at": "2026-11-05T18:02:58.975171+00:00",
+  "status": "all_601_review_conclusions_and_integrity_verified",
+  "batches": [
+    {
+      "batch": "014",
+      "total_images": 582,
+      "approved_images": 562,
+      "unidentifiable_images": 20,
+      "targets": 10549,
+      "manifest_sha256": "275dd3860c27d63bee079d60a13909aec194b3872478b540ac4387f7fdb436af",
+      "audit_sha256": "245f1c3a65430bc3fc2e1a7ec40a4ce1eda14f41d2839f0982ac14ad779fe2a1",
+      "conversion_manifest": "data/blind_review_partial_converted/goal_20261020_batch014_review562_through582_v1/manifest.csv",
+      "conversion_manifest_sha256": "ad8e05b000a0d3e364ec6ccb57c9d0a95a8b08635fcc348b53364022ec5e4857"
+    },
+    {
+      "batch": "015",
+      "total_images": 9,
+      "approved_images": 9,
+      "unidentifiable_images": 0,
+      "targets": 213,
+      "manifest_sha256": "0434e74133556a7e37fb4317b8c28544358ba0fdc3bc3f37c79917bb2349cc4a",
+      "audit_sha256": "7edfb86d838e2f16e62d466d23e42daf56def43b2659eb6a4ed384868d4ba25e",
+      "conversion_manifest": "data/blind_review_partial_converted/goal_20261020_batch015_review9_v1/manifest.csv",
+      "conversion_manifest_sha256": "45a9db8b98543a1a36976d04b10ac8402b4c162205cd7da25eab4d06c068b20e"
+    },
+    {
+      "batch": "016",
+      "total_images": 10,
+      "approved_images": 10,
+      "unidentifiable_images": 0,
+      "targets": 59,
+      "manifest_sha256": "1d6b8ba672efd84cbcf58756c18af9a70fe57dd77004a28aabf4894dc7a5643b",
+      "audit_sha256": "c4040fc2a636772ece6dc8b6956a1dc595b9da50b2269a5d7b7b758572e1737a",
+      "conversion_manifest": "data/blind_review_partial_converted/goal_20261020_batch016_review10_v1/manifest.csv",
+      "conversion_manifest_sha256": "170ff32587d7a1e1d6f5b31ca60c4182c96482a1a4dff95dc78466bf12c410f9"
+    }
+  ],
+  "review_completed_images": 601,
+  "approved_images": 581,
+  "unidentifiable_images": 20,
+  "reviewed_targets": 10821,
+  "remaining_review_images": 0,
+  "source_images_and_drafts_verified": 601,
+  "unique_originals": 601,
+  "all_converted_class_geometry_and_exact_text_verified": true,
+  "protected_prior_manifests_verified": 11,
+  "model_and_threshold_freeze_unchanged": true,
+  "formal_v1_unchanged": true,
+  "cross_batch_isolation_receipt": "reports/continuous_goal/native_batch014_015_016_isolation_receipt.json",
+  "target_detector_used": false,
+  "template_or_second_model_used_for_final_conclusions": false,
+  "independent_human_second_review": false,
+  "formal_new_blind_evaluation_images": 0,
+  "formal_independent_complete_sessions_credited": 0,
+  "seal_created": false,
+  "automation_restarted": false
+}
