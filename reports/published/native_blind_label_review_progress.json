@@ -60,7 +60,7 @@
     100,
     144
   ],
-  "last_check_at": "2026-11-05T11:24:25.147951+00:00",
+  "last_check_at": "2026-11-05T11:31:29.600001+00:00",
   "cross_batch_isolation_audit": "reports/published/native_batch004_005_isolation_audit.json",
   "linked_conservative_group": "goal_20261019_batch004_006_linked_conservative",
   "batch005_unreviewed_workspace_created": true,
@@ -71,7 +71,7 @@
   "later_batch007_linkage_pending_before_any_seal": false,
   "batch005_reviewed_targets": 5360,
   "batch005_review_progress": "reports/published/native_batch005_label_review_progress.json",
-  "latest_check_stage": "batch013_frames675_678_visual_review",
+  "latest_check_stage": "batch013_native_followup_14_missing_aces_jacks_resolved",
   "batch006_approved_images": 267,
   "batch006_pending_images": 4,
   "batch006_pending_draft_shapes": 37,
@@ -156,13 +156,13 @@
   ],
   "batch012_negative_images": 3,
   "batch012_first_visual_pass_complete": true,
-  "batch013_approved_images": 625,
-  "batch013_reviewed_targets": 11869,
-  "batch013_pending_images": 53,
+  "batch013_approved_images": 639,
+  "batch013_reviewed_targets": 12230,
+  "batch013_pending_images": 39,
   "batch013_draft_files_saved_at_check": 678,
   "batch013_review_progress": "reports/published/native_batch013_label_review_progress.json",
   "later_batch014_linkage_pending_before_any_seal": true,
-  "batch013_pending_draft_shapes": 1099,
+  "batch013_pending_draft_shapes": 752,
   "batch013_empty_drafts_not_approved_negatives": 4,
   "linked_conservative_group_members_through_batch013": [
     "goal_20261019_batch004",
@@ -177,5 +177,5 @@
     "goal_20261020_batch013"
   ],
   "batch013_negative_images": 35,
-  "batch013_first_visual_pass_complete": false
+  "batch013_first_visual_pass_complete": true
 }
