@@ -1,22 +1,22 @@
 {
   "batch": "goal_20261020_batch014",
   "native_images": 582,
-  "approved_images": 360,
-  "approved_positive_images": 335,
-  "approved_negatives": 25,
-  "reviewed_positive_boxes": 6790,
-  "pending_images": 222,
-  "positive_images_pending": 215,
-  "positive_draft_shapes_pending": 4274,
-  "empty_drafts_pending_not_approved_negatives": 7,
-  "missing_draft_targets_added": 36,
-  "total_occlusion_flags_corrected_in_positive_review": 487,
-  "total_visible_extent_corrections_in_positive_review": 91,
-  "last_reviewed_frame": 380,
-  "last_full_native_frame_viewed": 380,
-  "next_review_frame": 381,
-  "complete_pixel_groups_viewed": 3140,
-  "complete_pixel_pages_all_viewed": 170,
+  "approved_images": 380,
+  "approved_positive_images": 354,
+  "approved_negatives": 26,
+  "reviewed_positive_boxes": 7223,
+  "pending_images": 202,
+  "positive_images_pending": 196,
+  "positive_draft_shapes_pending": 3843,
+  "empty_drafts_pending_not_approved_negatives": 6,
+  "missing_draft_targets_added": 38,
+  "total_occlusion_flags_corrected_in_positive_review": 518,
+  "total_visible_extent_corrections_in_positive_review": 95,
+  "last_reviewed_frame": 400,
+  "last_full_native_frame_viewed": 400,
+  "next_review_frame": 401,
+  "complete_pixel_groups_viewed": 3307,
+  "complete_pixel_pages_all_viewed": 179,
   "approved_frame_segments": [
     [
       1,
@@ -401,6 +401,22 @@
     [
       376,
       380
+    ],
+    [
+      381,
+      385
+    ],
+    [
+      386,
+      390
+    ],
+    [
+      391,
+      395
+    ],
+    [
+      396,
+      400
     ]
   ],
   "unresolved_frames": [
@@ -578,10 +594,10 @@
     222,
     259,
     298,
-    346
+    346,
+    387
   ],
   "provisional_session_boundaries": [
-    387,
     431,
     460,
     489,
@@ -640,6 +656,10 @@
     [
       298,
       345
+    ],
+    [
+      346,
+      386
     ]
   ],
   "frame34_deal_evidence": {
@@ -713,7 +733,7 @@
     "closed_deal_observed": true,
     "final_acceptance_game_credit": 0
   },
-  "review_completed_images": 380,
+  "review_completed_images": 400,
   "review_unidentifiable_images": 20,
   "review_unidentifiable_frames": [
     80,
@@ -737,9 +757,9 @@
     321,
     324
   ],
-  "not_yet_reviewed_images": 202,
+  "not_yet_reviewed_images": 182,
   "frame143_deal_evidence": {
-    "at": "2026-11-05T16:55:27.792844+00:00",
+    "at": "2026-11-05T17:01:18.726560+00:00",
     "previous_deal_frame": 116,
     "settlement_frame": 142,
     "next_deal_frame": 143,
@@ -752,7 +772,7 @@
     "final_acceptance_game_credit": 0
   },
   "frame174_deal_evidence": {
-    "at": "2026-11-05T16:55:27.792844+00:00",
+    "at": "2026-11-05T17:01:18.726560+00:00",
     "previous_deal_frame": 143,
     "settlement_frame": 171,
     "next_deal_frame": 174,
@@ -765,7 +785,7 @@
     "final_acceptance_game_credit": 0
   },
   "frame222_deal_evidence": {
-    "at": "2026-11-05T16:55:27.792844+00:00",
+    "at": "2026-11-05T17:01:18.726560+00:00",
     "previous_deal_frame": 174,
     "settlement_frame": 220,
     "next_deal_frame": 222,
@@ -778,7 +798,7 @@
     "final_acceptance_game_credit": 0
   },
   "frame259_deal_evidence": {
-    "at": "2026-11-05T16:55:27.792844+00:00",
+    "at": "2026-11-05T17:01:18.726560+00:00",
     "previous_deal_frame": 222,
     "settlement_frame": 258,
     "next_deal_frame": 259,
@@ -791,7 +811,7 @@
     "final_acceptance_game_credit": 0
   },
   "frame298_deal_evidence": {
-    "at": "2026-11-05T16:55:27.792844+00:00",
+    "at": "2026-11-05T17:01:18.726560+00:00",
     "previous_deal_frame": 259,
     "settlement_frame": 296,
     "next_deal_frame": 298,
@@ -804,7 +824,7 @@
     "final_acceptance_game_credit": 0
   },
   "frame346_deal_evidence": {
-    "at": "2026-11-05T16:55:27.792844+00:00",
+    "at": "2026-11-05T17:01:18.726560+00:00",
     "previous_deal_frame": 298,
     "settlement_frame": 345,
     "next_deal_frame": 346,
@@ -816,7 +836,20 @@
     "closed_deal_observed": true,
     "final_acceptance_game_credit": 0
   },
-  "at": "2026-11-05T16:55:27.792844+00:00",
+  "frame387_deal_evidence": {
+    "at": "2026-11-05T17:01:18.726560+00:00",
+    "previous_deal_frame": 346,
+    "settlement_frame": 386,
+    "next_deal_frame": 387,
+    "evidence": "Defeat settlement386 total8 ownsecond andpartnerlast -16000each.387 changedplayers, fresh27hand anddoublingcontrols confirms newdeal.",
+    "new_deal_original_sha256": "3beb9975df14b3806a463fd2803d20021cdbd1e7cc7c34e2a904721045fefab2",
+    "settlement_original_sha256": "aa05879927df4ab11debb26daf5bbfc31e2d16da7c48bb071b7469303aead7fb",
+    "group_id": "goal_20261019_batch004_006_linked_conservative",
+    "independent_deal_boundary_verified": true,
+    "closed_deal_observed": true,
+    "final_acceptance_game_credit": 0
+  },
+  "at": "2026-11-05T17:01:18.726560+00:00",
   "full_native_frames_viewed": [
     1,
     2,
@@ -1197,21 +1230,41 @@
     377,
     378,
     379,
-    380
+    380,
+    381,
+    382,
+    383,
+    384,
+    385,
+    386,
+    387,
+    388,
+    389,
+    390,
+    391,
+    392,
+    393,
+    394,
+    395,
+    396,
+    397,
+    398,
+    399,
+    400
   ],
-  "annotation_audit_sha256": "7da236ff61dc432b0ea09c4df8ad0dd3c3fb9a489ba0824f3b2f84a6cd3c0f5c",
-  "partial_conversion": "data/blind_review_partial_converted/goal_20261020_batch014_review360_through380_v1",
-  "conversion_validated_images": 360,
-  "conversion_validated_targets": 6790,
+  "annotation_audit_sha256": "1a06c26f40228aff1f5d01f0148f447a6345b60bf6b05a8483870d2e67fc0ee6",
+  "partial_conversion": "data/blind_review_partial_converted/goal_20261020_batch014_review380_through400_v1",
+  "conversion_validated_images": 380,
+  "conversion_validated_targets": 7223,
   "formal_new_blind_evaluation_images": 0,
   "independent_human_second_review": false,
   "latest_full_native_frames_viewed": [
-    376,
-    377,
-    378,
-    379,
-    380
+    396,
+    397,
+    398,
+    399,
+    400
   ],
-  "latest_complete_pixel_groups_viewed": 30,
+  "latest_complete_pixel_groups_viewed": 34,
   "latest_complete_pixel_pages_all_viewed": 2
 }
