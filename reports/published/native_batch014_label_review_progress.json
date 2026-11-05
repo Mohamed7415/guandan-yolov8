@@ -1,22 +1,22 @@
 {
   "batch": "goal_20261020_batch014",
   "native_images": 582,
-  "approved_images": 123,
-  "approved_positive_images": 109,
-  "approved_negatives": 14,
-  "reviewed_positive_boxes": 2265,
-  "pending_images": 459,
-  "positive_images_pending": 441,
-  "positive_draft_shapes_pending": 8766,
-  "empty_drafts_pending_not_approved_negatives": 18,
+  "approved_images": 193,
+  "approved_positive_images": 173,
+  "approved_negatives": 20,
+  "reviewed_positive_boxes": 3557,
+  "pending_images": 389,
+  "positive_images_pending": 377,
+  "positive_draft_shapes_pending": 7474,
+  "empty_drafts_pending_not_approved_negatives": 12,
   "missing_draft_targets_added": 3,
-  "total_occlusion_flags_corrected_in_positive_review": 161,
-  "total_visible_extent_corrections_in_positive_review": 38,
-  "last_reviewed_frame": 125,
-  "last_full_native_frame_viewed": 125,
-  "next_review_frame": 126,
-  "complete_pixel_groups_viewed": 1080,
-  "complete_pixel_pages_all_viewed": 58,
+  "total_occlusion_flags_corrected_in_positive_review": 240,
+  "total_visible_extent_corrections_in_positive_review": 64,
+  "last_reviewed_frame": 195,
+  "last_full_native_frame_viewed": 195,
+  "next_review_frame": 196,
+  "complete_pixel_groups_viewed": 1672,
+  "complete_pixel_pages_all_viewed": 89,
   "approved_frame_segments": [
     [
       1,
@@ -141,6 +141,62 @@
     [
       121,
       125
+    ],
+    [
+      126,
+      130
+    ],
+    [
+      131,
+      135
+    ],
+    [
+      136,
+      140
+    ],
+    [
+      141,
+      145
+    ],
+    [
+      146,
+      150
+    ],
+    [
+      151,
+      155
+    ],
+    [
+      156,
+      160
+    ],
+    [
+      161,
+      165
+    ],
+    [
+      166,
+      170
+    ],
+    [
+      171,
+      175
+    ],
+    [
+      176,
+      180
+    ],
+    [
+      181,
+      185
+    ],
+    [
+      186,
+      190
+    ],
+    [
+      191,
+      195
     ]
   ],
   "unresolved_frames": [
@@ -168,11 +224,11 @@
     2,
     34,
     74,
-    116
+    116,
+    143,
+    174
   ],
   "provisional_session_boundaries": [
-    143,
-    174,
     222,
     259,
     298,
@@ -212,6 +268,14 @@
     [
       74,
       115
+    ],
+    [
+      116,
+      142
+    ],
+    [
+      143,
+      173
     ]
   ],
   "frame34_deal_evidence": {
@@ -232,7 +296,67 @@
     "final_acceptance_game_credit": 0,
     "note": "Proves one observed deal closure. Conservative whole-match grouping and later batch linkage still apply before seal."
   },
-  "at": "2026-11-05T15:02:18.344124+00:00",
+  "post_review_corrections": [
+    {
+      "receipt": "reports/continuous_goal/blind_batch014_review/gray_dimmer_flag_recheck_through125_transaction.json",
+      "frames": [
+        79,
+        82,
+        83,
+        84,
+        85,
+        86,
+        87,
+        88,
+        89,
+        90,
+        91,
+        92,
+        93,
+        120,
+        121,
+        122,
+        123,
+        124,
+        125
+      ],
+      "reason": "19 overbroad terminalhand occlusion flags undone after exact native RGB reinspection."
+    }
+  ],
+  "frame74_deal_evidence": {
+    "at": "2026-11-05T15:02:18.344124+00:00",
+    "previous_deal_frame": 34,
+    "settlement_frame": 72,
+    "next_deal_frame": 74,
+    "evidence": "Defeat settlement72 total8 with prior players; matching73;74 has changed opponents, fresh27hand and doubling controls.",
+    "new_deal_original_sha256": "b37de3c536a62fd5003f074f2c528f621c52e26aee6c0d4c1f5f8d0573666d89",
+    "settlement_original_sha256": "89abdb5b5ba11ea4eaab02402ddfb56f1942d8a8643a01c4098f5623e75d3bd9",
+    "group_id": "goal_20261019_batch004_006_linked_conservative",
+    "independent_deal_boundary_verified": true,
+    "closed_deal_observed": true,
+    "final_acceptance_game_credit": 0
+  },
+  "frame116_deal_evidence": {
+    "at": "2026-11-05T15:02:18.344124+00:00",
+    "previous_deal_frame": 74,
+    "settlement_frame": 113,
+    "next_deal_frame": 116,
+    "evidence": "Victory settlement113 total16 with own user54196 first +29900 and partner second +32000; matching115;116 changed opponents with fresh27hand and doubling controls.",
+    "new_deal_original_sha256": "3c938f7519eda0f46df608c1a82d2a9019ca8dded91d40111f3116787a02d072",
+    "settlement_original_sha256": "59147e7f90d55b9d556b5b33eff7ea822487e29a86d9cd9a93d57d46705e54e0",
+    "group_id": "goal_20261019_batch004_006_linked_conservative",
+    "independent_deal_boundary_verified": true,
+    "closed_deal_observed": true,
+    "final_acceptance_game_credit": 0
+  },
+  "review_completed_images": 195,
+  "review_unidentifiable_images": 2,
+  "review_unidentifiable_frames": [
+    80,
+    81
+  ],
+  "not_yet_reviewed_images": 387,
+  "at": "2026-11-05T15:17:54.846045+00:00",
   "full_native_frames_viewed": [
     1,
     2,
@@ -358,81 +482,117 @@
     122,
     123,
     124,
-    125
+    125,
+    126,
+    127,
+    128,
+    129,
+    130,
+    131,
+    132,
+    133,
+    134,
+    135,
+    136,
+    137,
+    138,
+    139,
+    140,
+    141,
+    142,
+    143,
+    144,
+    145,
+    146,
+    147,
+    148,
+    149,
+    150,
+    151,
+    152,
+    153,
+    154,
+    155,
+    156,
+    157,
+    158,
+    159,
+    160,
+    161,
+    162,
+    163,
+    164,
+    165,
+    166,
+    167,
+    168,
+    169,
+    170,
+    171,
+    172,
+    173,
+    174,
+    175,
+    176,
+    177,
+    178,
+    179,
+    180,
+    181,
+    182,
+    183,
+    184,
+    185,
+    186,
+    187,
+    188,
+    189,
+    190,
+    191,
+    192,
+    193,
+    194,
+    195
   ],
-  "annotation_audit_sha256": "3089ddf5e561b583d8e95b520d73daa5c84e96d6fa5c591be7bc4c87ccd7516a",
-  "partial_conversion": "data/blind_review_partial_converted/goal_20261020_batch014_review123_graycorrected_v1",
-  "conversion_validated_images": 123,
-  "conversion_validated_targets": 2265,
+  "annotation_audit_sha256": "9c3234b315dc798301d472c950cf58f5e2a7cd50ce96fa7f18624d23cbc180be",
+  "partial_conversion": "data/blind_review_partial_converted/goal_20261020_batch014_review193_v1",
+  "conversion_validated_images": 193,
+  "conversion_validated_targets": 3557,
   "formal_new_blind_evaluation_images": 0,
   "independent_human_second_review": false,
   "latest_full_native_frames_viewed": [
-    121,
-    122,
-    123,
-    124,
-    125
+    191,
+    192,
+    193,
+    194,
+    195
   ],
-  "latest_complete_pixel_groups_viewed": 80,
-  "latest_complete_pixel_pages_all_viewed": 4,
-  "post_review_corrections": [
-    {
-      "receipt": "reports/continuous_goal/blind_batch014_review/gray_dimmer_flag_recheck_through125_transaction.json",
-      "frames": [
-        79,
-        82,
-        83,
-        84,
-        85,
-        86,
-        87,
-        88,
-        89,
-        90,
-        91,
-        92,
-        93,
-        120,
-        121,
-        122,
-        123,
-        124,
-        125
-      ],
-      "reason": "19 overbroad terminalhand occlusion flags undone after exact native RGB reinspection."
-    }
-  ],
-  "frame74_deal_evidence": {
-    "at": "2026-11-05T15:02:18.344124+00:00",
-    "previous_deal_frame": 34,
-    "settlement_frame": 72,
-    "next_deal_frame": 74,
-    "evidence": "Defeat settlement72 total8 with prior players; matching73;74 has changed opponents, fresh27hand and doubling controls.",
-    "new_deal_original_sha256": "b37de3c536a62fd5003f074f2c528f621c52e26aee6c0d4c1f5f8d0573666d89",
-    "settlement_original_sha256": "89abdb5b5ba11ea4eaab02402ddfb56f1942d8a8643a01c4098f5623e75d3bd9",
+  "latest_complete_pixel_groups_viewed": 42,
+  "latest_complete_pixel_pages_all_viewed": 2,
+  "frame143_deal_evidence": {
+    "at": "2026-11-05T15:17:54.846045+00:00",
+    "previous_deal_frame": 116,
+    "settlement_frame": 142,
+    "next_deal_frame": 143,
+    "evidence": "Defeatsettlement142 total8, ownthird/partnerlast -16000each, opponents vivo and40541. Changedopponents143, fresh27hand anddoubling controls confirms newdeal.",
+    "new_deal_original_sha256": "a64aeb7c7212f7e30b46d892187887d8209ed7636dcd7be8316ff847b13c0f46",
+    "settlement_original_sha256": "9a461e404272c61315ef03821b6b8532a50a135050cc3047d0447cf13ae671c6",
     "group_id": "goal_20261019_batch004_006_linked_conservative",
     "independent_deal_boundary_verified": true,
     "closed_deal_observed": true,
     "final_acceptance_game_credit": 0
   },
-  "frame116_deal_evidence": {
-    "at": "2026-11-05T15:02:18.344124+00:00",
-    "previous_deal_frame": 74,
-    "settlement_frame": 113,
-    "next_deal_frame": 116,
-    "evidence": "Victory settlement113 total16 with own user54196 first +29900 and partner second +32000; matching115;116 changed opponents with fresh27hand and doubling controls.",
-    "new_deal_original_sha256": "3c938f7519eda0f46df608c1a82d2a9019ca8dded91d40111f3116787a02d072",
-    "settlement_original_sha256": "59147e7f90d55b9d556b5b33eff7ea822487e29a86d9cd9a93d57d46705e54e0",
+  "frame174_deal_evidence": {
+    "at": "2026-11-05T15:17:54.846045+00:00",
+    "previous_deal_frame": 143,
+    "settlement_frame": 171,
+    "next_deal_frame": 174,
+    "evidence": "Victorysettlement171 total1, ownfirst/partnerlast +2000each. Matching173 haschangedopponents,174 fresh27hand anddoubling controls confirms newdeal.",
+    "new_deal_original_sha256": "6d54b9bc6dacd6b623fd43f8d09faa38af1f754d5a7c619a89bf624947a1c863",
+    "settlement_original_sha256": "af503edf1af3269736f970fd02bf70c5d50f15e68ddc03b36f0b57bb4eeda55f",
     "group_id": "goal_20261019_batch004_006_linked_conservative",
     "independent_deal_boundary_verified": true,
     "closed_deal_observed": true,
     "final_acceptance_game_credit": 0
-  },
-  "review_completed_images": 125,
-  "review_unidentifiable_images": 2,
-  "review_unidentifiable_frames": [
-    80,
-    81
-  ],
-  "not_yet_reviewed_images": 457
+  }
 }
