@@ -1,22 +1,22 @@
 {
   "batch": "goal_20261020_batch014",
   "native_images": 582,
-  "approved_images": 35,
-  "approved_positive_images": 31,
+  "approved_images": 45,
+  "approved_positive_images": 41,
   "approved_negatives": 4,
-  "reviewed_positive_boxes": 713,
-  "pending_images": 547,
-  "positive_images_pending": 519,
-  "positive_draft_shapes_pending": 10315,
+  "reviewed_positive_boxes": 1002,
+  "pending_images": 537,
+  "positive_images_pending": 509,
+  "positive_draft_shapes_pending": 10026,
   "empty_drafts_pending_not_approved_negatives": 28,
   "missing_draft_targets_added": 0,
-  "total_occlusion_flags_corrected_in_positive_review": 47,
-  "total_visible_extent_corrections_in_positive_review": 8,
-  "last_reviewed_frame": 35,
-  "last_full_native_frame_viewed": 35,
-  "next_review_frame": 36,
-  "complete_pixel_groups_viewed": 334,
-  "complete_pixel_pages_all_viewed": 17,
+  "total_occlusion_flags_corrected_in_positive_review": 66,
+  "total_visible_extent_corrections_in_positive_review": 14,
+  "last_reviewed_frame": 45,
+  "last_full_native_frame_viewed": 45,
+  "next_review_frame": 46,
+  "complete_pixel_groups_viewed": 440,
+  "complete_pixel_pages_all_viewed": 22,
   "approved_frame_segments": [
     [
       1,
@@ -45,6 +45,14 @@
     [
       31,
       35
+    ],
+    [
+      36,
+      40
+    ],
+    [
+      41,
+      45
     ]
   ],
   "unresolved_frames": [],
@@ -86,7 +94,31 @@
     "data/blind_review_work/goal_20261019_batch009_v1/manifest.csv": "9e493ccba618c34b1185d955fe579e98983ca886b7e61a4a4b59327399d24d00",
     "data/blind_review_work/goal_20261019_batch008_v1/manifest.csv": "58cbb2fbfa558b67c4029680ad64c06c439ae9d3c39bba9839864d56fc2085d3"
   },
-  "at": "2026-11-05T12:55:39.862671+00:00",
+  "observed_closed_deal_ranges": [
+    [
+      2,
+      33
+    ]
+  ],
+  "frame34_deal_evidence": {
+    "at": "2026-11-05T12:55:40.307215+00:00",
+    "previous_deal_frame": 2,
+    "settlement_frames": [
+      31,
+      32,
+      33
+    ],
+    "next_deal_frame": 34,
+    "evidence": "Frame2 changed opponents with27 own cards and betting. Frame32 victory total1 with partner user91657 first, own fourth and +2000/+2000. Frame34 changed all opponents, new27 hand positions, betting controls.",
+    "new_deal_original_sha256": "fb76136a0affe177210d5d6af69b6ab35087ea14e2a5d1a68a000f7c6f5dcd08",
+    "settlement_original_sha256": "31227c9df06c90bd8237457554f0df8e898ca0df332eb1ef912db760f537d95a",
+    "group_id": "goal_20261019_batch004_006_linked_conservative",
+    "independent_deal_boundary_verified": true,
+    "closed_deal_observed": true,
+    "final_acceptance_game_credit": 0,
+    "note": "Proves one observed deal closure. Conservative whole-match grouping and later batch linkage still apply before seal."
+  },
+  "at": "2026-11-05T14:38:28.502111+00:00",
   "full_native_frames_viewed": [
     1,
     2,
@@ -122,27 +154,31 @@
     32,
     33,
     34,
-    35
+    35,
+    36,
+    37,
+    38,
+    39,
+    40,
+    41,
+    42,
+    43,
+    44,
+    45
   ],
-  "annotation_audit_sha256": "09bce2b0c32c8a53f75a5efd37177f84115f6525e23dd09d8df1d460a0d96d06",
-  "partial_conversion": "data/blind_review_partial_converted/goal_20261020_batch014_review35_v1",
-  "conversion_validated_images": 35,
-  "conversion_validated_targets": 713,
+  "annotation_audit_sha256": "0bf84ad9c6af54b054d32f3f197dfc8366088e0c8b64ecd0a5c92620752e158b",
+  "partial_conversion": "data/blind_review_partial_converted/goal_20261020_batch014_review45_v1",
+  "conversion_validated_images": 45,
+  "conversion_validated_targets": 1002,
   "formal_new_blind_evaluation_images": 0,
   "independent_human_second_review": false,
   "latest_full_native_frames_viewed": [
-    31,
-    32,
-    33,
-    34,
-    35
+    41,
+    42,
+    43,
+    44,
+    45
   ],
-  "latest_complete_pixel_groups_viewed": 27,
-  "latest_complete_pixel_pages_all_viewed": 2,
-  "observed_closed_deal_ranges": [
-    [
-      2,
-      33
-    ]
-  ]
+  "latest_complete_pixel_groups_viewed": 42,
+  "latest_complete_pixel_pages_all_viewed": 2
 }
