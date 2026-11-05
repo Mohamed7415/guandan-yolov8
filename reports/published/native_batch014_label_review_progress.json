@@ -1,22 +1,22 @@
 {
   "batch": "goal_20261020_batch014",
   "native_images": 582,
-  "approved_images": 197,
-  "approved_positive_images": 177,
-  "approved_negatives": 20,
-  "reviewed_positive_boxes": 3648,
-  "pending_images": 385,
-  "positive_images_pending": 373,
-  "positive_draft_shapes_pending": 7383,
-  "empty_drafts_pending_not_approved_negatives": 12,
-  "missing_draft_targets_added": 3,
-  "total_occlusion_flags_corrected_in_positive_review": 244,
-  "total_visible_extent_corrections_in_positive_review": 64,
-  "last_reviewed_frame": 200,
-  "last_full_native_frame_viewed": 200,
-  "next_review_frame": 201,
-  "complete_pixel_groups_viewed": 1708,
-  "complete_pixel_pages_all_viewed": 91,
+  "approved_images": 266,
+  "approved_positive_images": 242,
+  "approved_negatives": 24,
+  "reviewed_positive_boxes": 4980,
+  "pending_images": 316,
+  "positive_images_pending": 308,
+  "positive_draft_shapes_pending": 6070,
+  "empty_drafts_pending_not_approved_negatives": 8,
+  "missing_draft_targets_added": 22,
+  "total_occlusion_flags_corrected_in_positive_review": 344,
+  "total_visible_extent_corrections_in_positive_review": 79,
+  "last_reviewed_frame": 270,
+  "last_full_native_frame_viewed": 270,
+  "next_review_frame": 271,
+  "complete_pixel_groups_viewed": 2270,
+  "complete_pixel_pages_all_viewed": 122,
   "approved_frame_segments": [
     [
       1,
@@ -213,12 +213,81 @@
     [
       199,
       199
+    ],
+    [
+      201,
+      201
+    ],
+    [
+      202,
+      202
+    ],
+    [
+      203,
+      203
+    ],
+    [
+      204,
+      204
+    ],
+    [
+      206,
+      210
+    ],
+    [
+      211,
+      215
+    ],
+    [
+      216,
+      220
+    ],
+    [
+      221,
+      225
+    ],
+    [
+      226,
+      230
+    ],
+    [
+      231,
+      235
+    ],
+    [
+      236,
+      240
+    ],
+    [
+      241,
+      245
+    ],
+    [
+      246,
+      250
+    ],
+    [
+      251,
+      255
+    ],
+    [
+      256,
+      260
+    ],
+    [
+      261,
+      265
+    ],
+    [
+      266,
+      270
     ]
   ],
   "unresolved_frames": [
     80,
     81,
-    200
+    200,
+    205
   ],
   "unapproved_visual_issues": [
     {
@@ -241,6 +310,13 @@
       "evidence": "reports/continuous_goal/blind_batch014_review/frame00200_final_conclusion.json",
       "reason": "Chatbubble hides ranks/suits of two rightplayedcards; current pixels cannot independently identify fullclasses.",
       "status": "unidentifiable_current_frame_excluded_from_approved"
+    },
+    {
+      "frame": 205,
+      "image": "goal_20261020_batch014_00205.png",
+      "evidence": "reports/continuous_goal/blind_batch014_review/frame00205_final_conclusion.json",
+      "reason": "Chatbubble hides rank/suit information in five rightplayedcards; no independent fullclass identification.",
+      "status": "unidentifiable_current_frame_excluded_from_approved"
     }
   ],
   "linked_conservative_group": "goal_20261019_batch004_006_linked_conservative",
@@ -250,11 +326,11 @@
     74,
     116,
     143,
-    174
+    174,
+    222,
+    259
   ],
   "provisional_session_boundaries": [
-    222,
-    259,
     298,
     346,
     387,
@@ -300,6 +376,14 @@
     [
       143,
       173
+    ],
+    [
+      174,
+      221
+    ],
+    [
+      222,
+      258
     ]
   ],
   "frame34_deal_evidence": {
@@ -373,16 +457,17 @@
     "closed_deal_observed": true,
     "final_acceptance_game_credit": 0
   },
-  "review_completed_images": 200,
-  "review_unidentifiable_images": 3,
+  "review_completed_images": 270,
+  "review_unidentifiable_images": 4,
   "review_unidentifiable_frames": [
     80,
     81,
-    200
+    200,
+    205
   ],
-  "not_yet_reviewed_images": 382,
+  "not_yet_reviewed_images": 312,
   "frame143_deal_evidence": {
-    "at": "2026-11-05T15:20:27.571025+00:00",
+    "at": "2026-11-05T16:28:59.158361+00:00",
     "previous_deal_frame": 116,
     "settlement_frame": 142,
     "next_deal_frame": 143,
@@ -395,7 +480,7 @@
     "final_acceptance_game_credit": 0
   },
   "frame174_deal_evidence": {
-    "at": "2026-11-05T15:20:27.571025+00:00",
+    "at": "2026-11-05T16:28:59.158361+00:00",
     "previous_deal_frame": 143,
     "settlement_frame": 171,
     "next_deal_frame": 174,
@@ -407,7 +492,33 @@
     "closed_deal_observed": true,
     "final_acceptance_game_credit": 0
   },
-  "at": "2026-11-05T15:20:27.571025+00:00",
+  "frame222_deal_evidence": {
+    "at": "2026-11-05T16:28:59.158361+00:00",
+    "previous_deal_frame": 174,
+    "settlement_frame": 220,
+    "next_deal_frame": 222,
+    "evidence": "Victorysettlement220 total24 ownsecond+48000 partnerfirst. Frame221 postsettlement remainingcards,222 fresh27hand withchangedopponents anddoubling controls confirms newdeal.",
+    "new_deal_original_sha256": "a809ba299dce22759f2ad88bda43f3af5b3d62fe783416a24b4767387a58d536",
+    "settlement_original_sha256": "71e6e8b1a16591b71aec421a82b1c736dc874d39b8162a111f340862dd1a477c",
+    "group_id": "goal_20261019_batch004_006_linked_conservative",
+    "independent_deal_boundary_verified": true,
+    "closed_deal_observed": true,
+    "final_acceptance_game_credit": 0
+  },
+  "frame259_deal_evidence": {
+    "at": "2026-11-05T16:28:59.158361+00:00",
+    "previous_deal_frame": 222,
+    "settlement_frame": 258,
+    "next_deal_frame": 259,
+    "evidence": "Defeatsettlement258 total12 ownlast andpartnersecond -24000each.259 changedopponents fresh27hand anddoublingcontrols confirms newdeal.",
+    "new_deal_original_sha256": "34099ba0a5a2717c03cff67e0bdc78efa7f400d0fc9407435a3ab020c5416c6b",
+    "settlement_original_sha256": "d05ca181fffa2e8320a8c0dc6cd33ffd3331b8dda79d7525e36d168b78008183",
+    "group_id": "goal_20261019_batch004_006_linked_conservative",
+    "independent_deal_boundary_verified": true,
+    "closed_deal_observed": true,
+    "final_acceptance_game_credit": 0
+  },
+  "at": "2026-11-05T16:28:59.158361+00:00",
   "full_native_frames_viewed": [
     1,
     2,
@@ -608,21 +719,91 @@
     197,
     198,
     199,
-    200
+    200,
+    201,
+    202,
+    203,
+    204,
+    205,
+    206,
+    207,
+    208,
+    209,
+    210,
+    211,
+    212,
+    213,
+    214,
+    215,
+    216,
+    217,
+    218,
+    219,
+    220,
+    221,
+    222,
+    223,
+    224,
+    225,
+    226,
+    227,
+    228,
+    229,
+    230,
+    231,
+    232,
+    233,
+    234,
+    235,
+    236,
+    237,
+    238,
+    239,
+    240,
+    241,
+    242,
+    243,
+    244,
+    245,
+    246,
+    247,
+    248,
+    249,
+    250,
+    251,
+    252,
+    253,
+    254,
+    255,
+    256,
+    257,
+    258,
+    259,
+    260,
+    261,
+    262,
+    263,
+    264,
+    265,
+    266,
+    267,
+    268,
+    269,
+    270
   ],
-  "annotation_audit_sha256": "8a23204770ac7a7d8fae446b66c92c185526e93bf9eb2d454fe4fa2cc5e1ab3c",
-  "partial_conversion": "data/blind_review_partial_converted/goal_20261020_batch014_review197_v1",
-  "conversion_validated_images": 197,
-  "conversion_validated_targets": 3648,
+  "annotation_audit_sha256": "0644aa876207dfa4bb3c60eb72ee4fe87eab237a774c5961805b6c28004196c5",
+  "partial_conversion": "data/blind_review_partial_converted/goal_20261020_batch014_review266_v1",
+  "conversion_validated_images": 266,
+  "conversion_validated_targets": 4980,
   "formal_new_blind_evaluation_images": 0,
   "independent_human_second_review": false,
   "latest_full_native_frames_viewed": [
-    196,
-    197,
-    198,
-    199,
-    200
+    266,
+    267,
+    268,
+    269,
+    270
   ],
-  "latest_complete_pixel_groups_viewed": 36,
-  "latest_complete_pixel_pages_all_viewed": 2
+  "latest_complete_pixel_groups_viewed": 67,
+  "latest_complete_pixel_pages_all_viewed": 3
 }
