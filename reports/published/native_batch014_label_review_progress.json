@@ -1,22 +1,22 @@
 {
   "batch": "goal_20261020_batch014",
   "native_images": 582,
-  "approved_images": 45,
-  "approved_positive_images": 41,
+  "approved_images": 55,
+  "approved_positive_images": 51,
   "approved_negatives": 4,
-  "reviewed_positive_boxes": 1002,
-  "pending_images": 537,
-  "positive_images_pending": 509,
-  "positive_draft_shapes_pending": 10026,
+  "reviewed_positive_boxes": 1222,
+  "pending_images": 527,
+  "positive_images_pending": 499,
+  "positive_draft_shapes_pending": 9806,
   "empty_drafts_pending_not_approved_negatives": 28,
   "missing_draft_targets_added": 0,
-  "total_occlusion_flags_corrected_in_positive_review": 66,
-  "total_visible_extent_corrections_in_positive_review": 14,
-  "last_reviewed_frame": 45,
-  "last_full_native_frame_viewed": 45,
-  "next_review_frame": 46,
-  "complete_pixel_groups_viewed": 440,
-  "complete_pixel_pages_all_viewed": 22,
+  "total_occlusion_flags_corrected_in_positive_review": 72,
+  "total_visible_extent_corrections_in_positive_review": 17,
+  "last_reviewed_frame": 55,
+  "last_full_native_frame_viewed": 55,
+  "next_review_frame": 56,
+  "complete_pixel_groups_viewed": 535,
+  "complete_pixel_pages_all_viewed": 27,
   "approved_frame_segments": [
     [
       1,
@@ -53,6 +53,14 @@
     [
       41,
       45
+    ],
+    [
+      46,
+      50
+    ],
+    [
+      51,
+      55
     ]
   ],
   "unresolved_frames": [],
@@ -118,7 +126,7 @@
     "final_acceptance_game_credit": 0,
     "note": "Proves one observed deal closure. Conservative whole-match grouping and later batch linkage still apply before seal."
   },
-  "at": "2026-11-05T14:38:28.502111+00:00",
+  "at": "2026-11-05T14:43:41.703273+00:00",
   "full_native_frames_viewed": [
     1,
     2,
@@ -164,21 +172,31 @@
     42,
     43,
     44,
-    45
+    45,
+    46,
+    47,
+    48,
+    49,
+    50,
+    51,
+    52,
+    53,
+    54,
+    55
   ],
-  "annotation_audit_sha256": "0bf84ad9c6af54b054d32f3f197dfc8366088e0c8b64ecd0a5c92620752e158b",
-  "partial_conversion": "data/blind_review_partial_converted/goal_20261020_batch014_review45_v1",
-  "conversion_validated_images": 45,
-  "conversion_validated_targets": 1002,
+  "annotation_audit_sha256": "0e3cd39f01664a891f05991b0b67b955df9f35dce2a5d1d69fb241536d8b80bb",
+  "partial_conversion": "data/blind_review_partial_converted/goal_20261020_batch014_review55_v1",
+  "conversion_validated_images": 55,
+  "conversion_validated_targets": 1222,
   "formal_new_blind_evaluation_images": 0,
   "independent_human_second_review": false,
   "latest_full_native_frames_viewed": [
-    41,
-    42,
-    43,
-    44,
-    45
+    51,
+    52,
+    53,
+    54,
+    55
   ],
-  "latest_complete_pixel_groups_viewed": 42,
+  "latest_complete_pixel_groups_viewed": 41,
   "latest_complete_pixel_pages_all_viewed": 2
 }
