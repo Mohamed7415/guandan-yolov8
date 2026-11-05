@@ -1,22 +1,22 @@
 {
   "batch": "goal_20261020_batch014",
   "native_images": 582,
-  "approved_images": 440,
-  "approved_positive_images": 411,
+  "approved_images": 460,
+  "approved_positive_images": 431,
   "approved_negatives": 29,
-  "reviewed_positive_boxes": 7947,
-  "pending_images": 142,
-  "positive_images_pending": 139,
-  "positive_draft_shapes_pending": 3121,
+  "reviewed_positive_boxes": 8480,
+  "pending_images": 122,
+  "positive_images_pending": 119,
+  "positive_draft_shapes_pending": 2588,
   "empty_drafts_pending_not_approved_negatives": 3,
   "missing_draft_targets_added": 40,
-  "total_occlusion_flags_corrected_in_positive_review": 609,
-  "total_visible_extent_corrections_in_positive_review": 116,
-  "last_reviewed_frame": 460,
-  "last_full_native_frame_viewed": 460,
-  "next_review_frame": 461,
-  "complete_pixel_groups_viewed": 3716,
-  "complete_pixel_pages_all_viewed": 203,
+  "total_occlusion_flags_corrected_in_positive_review": 641,
+  "total_visible_extent_corrections_in_positive_review": 130,
+  "last_reviewed_frame": 480,
+  "last_full_native_frame_viewed": 480,
+  "next_review_frame": 481,
+  "complete_pixel_groups_viewed": 3939,
+  "complete_pixel_pages_all_viewed": 215,
   "approved_frame_segments": [
     [
       1,
@@ -465,6 +465,22 @@
     [
       456,
       460
+    ],
+    [
+      461,
+      465
+    ],
+    [
+      466,
+      470
+    ],
+    [
+      471,
+      475
+    ],
+    [
+      476,
+      480
     ]
   ],
   "unresolved_frames": [
@@ -789,7 +805,7 @@
     "closed_deal_observed": true,
     "final_acceptance_game_credit": 0
   },
-  "review_completed_images": 460,
+  "review_completed_images": 480,
   "review_unidentifiable_images": 20,
   "review_unidentifiable_frames": [
     80,
@@ -813,9 +829,9 @@
     321,
     324
   ],
-  "not_yet_reviewed_images": 122,
+  "not_yet_reviewed_images": 102,
   "frame143_deal_evidence": {
-    "at": "2026-11-05T17:15:54.493689+00:00",
+    "at": "2026-11-05T17:23:22.975857+00:00",
     "previous_deal_frame": 116,
     "settlement_frame": 142,
     "next_deal_frame": 143,
@@ -828,7 +844,7 @@
     "final_acceptance_game_credit": 0
   },
   "frame174_deal_evidence": {
-    "at": "2026-11-05T17:15:54.493689+00:00",
+    "at": "2026-11-05T17:23:22.975857+00:00",
     "previous_deal_frame": 143,
     "settlement_frame": 171,
     "next_deal_frame": 174,
@@ -841,7 +857,7 @@
     "final_acceptance_game_credit": 0
   },
   "frame222_deal_evidence": {
-    "at": "2026-11-05T17:15:54.493689+00:00",
+    "at": "2026-11-05T17:23:22.975857+00:00",
     "previous_deal_frame": 174,
     "settlement_frame": 220,
     "next_deal_frame": 222,
@@ -854,7 +870,7 @@
     "final_acceptance_game_credit": 0
   },
   "frame259_deal_evidence": {
-    "at": "2026-11-05T17:15:54.493689+00:00",
+    "at": "2026-11-05T17:23:22.975857+00:00",
     "previous_deal_frame": 222,
     "settlement_frame": 258,
     "next_deal_frame": 259,
@@ -867,7 +883,7 @@
     "final_acceptance_game_credit": 0
   },
   "frame298_deal_evidence": {
-    "at": "2026-11-05T17:15:54.493689+00:00",
+    "at": "2026-11-05T17:23:22.975857+00:00",
     "previous_deal_frame": 259,
     "settlement_frame": 296,
     "next_deal_frame": 298,
@@ -880,7 +896,7 @@
     "final_acceptance_game_credit": 0
   },
   "frame346_deal_evidence": {
-    "at": "2026-11-05T17:15:54.493689+00:00",
+    "at": "2026-11-05T17:23:22.975857+00:00",
     "previous_deal_frame": 298,
     "settlement_frame": 345,
     "next_deal_frame": 346,
@@ -893,7 +909,7 @@
     "final_acceptance_game_credit": 0
   },
   "frame387_deal_evidence": {
-    "at": "2026-11-05T17:15:54.493689+00:00",
+    "at": "2026-11-05T17:23:22.975857+00:00",
     "previous_deal_frame": 346,
     "settlement_frame": 386,
     "next_deal_frame": 387,
@@ -906,7 +922,7 @@
     "final_acceptance_game_credit": 0
   },
   "frame431_deal_evidence": {
-    "at": "2026-11-05T17:15:54.493689+00:00",
+    "at": "2026-11-05T17:23:22.975857+00:00",
     "previous_deal_frame": 387,
     "settlement_frame": 429,
     "next_deal_frame": 431,
@@ -918,7 +934,20 @@
     "closed_deal_observed": true,
     "final_acceptance_game_credit": 0
   },
-  "at": "2026-11-05T17:15:54.493689+00:00",
+  "frame460_deal_evidence": {
+    "at": "2026-11-05T17:23:22.975857+00:00",
+    "previous_deal_frame": 431,
+    "settlement_frame": 458,
+    "next_deal_frame": 460,
+    "evidence": "Victory settlement458 total8 ownfirst+16000 partnersecond+32000, opponents -24000each.460 changedplayers fresh27hand anddoublingcontrols confirms newdeal.",
+    "new_deal_original_sha256": "95f4de3750a1ac674b22de6ecc5c6f8a0611922b91b0aaa888f4554dec855d04",
+    "settlement_original_sha256": "3ef4ef5f0b4c24428f7958f9dbff819c5d59a4cfd4371ffc970d346b5d4b2dd0",
+    "group_id": "goal_20261019_batch004_006_linked_conservative",
+    "independent_deal_boundary_verified": true,
+    "closed_deal_observed": true,
+    "final_acceptance_game_credit": 0
+  },
+  "at": "2026-11-05T17:23:22.975857+00:00",
   "full_native_frames_viewed": [
     1,
     2,
@@ -1379,34 +1408,41 @@
     457,
     458,
     459,
-    460
+    460,
+    461,
+    462,
+    463,
+    464,
+    465,
+    466,
+    467,
+    468,
+    469,
+    470,
+    471,
+    472,
+    473,
+    474,
+    475,
+    476,
+    477,
+    478,
+    479,
+    480
   ],
-  "annotation_audit_sha256": "703a50b5e5cdd756e262d21b8fefeb862cb005661fb10092fd2f5f971161ca52",
-  "partial_conversion": "data/blind_review_partial_converted/goal_20261020_batch014_review440_through460_v1",
-  "conversion_validated_images": 440,
-  "conversion_validated_targets": 7947,
+  "annotation_audit_sha256": "b42e421eb3adbd09df51c3a089ebd079b0151d7caf6e6b0faacfd0a88d9aa6bd",
+  "partial_conversion": "data/blind_review_partial_converted/goal_20261020_batch014_review460_through480_v1",
+  "conversion_validated_images": 460,
+  "conversion_validated_targets": 8480,
   "formal_new_blind_evaluation_images": 0,
   "independent_human_second_review": false,
   "latest_full_native_frames_viewed": [
-    456,
-    457,
-    458,
-    459,
-    460
+    476,
+    477,
+    478,
+    479,
+    480
   ],
-  "latest_complete_pixel_groups_viewed": 32,
-  "latest_complete_pixel_pages_all_viewed": 2,
-  "frame460_deal_evidence": {
-    "at": "2026-11-05T17:15:54.493689+00:00",
-    "previous_deal_frame": 431,
-    "settlement_frame": 458,
-    "next_deal_frame": 460,
-    "evidence": "Victory settlement458 total8 ownfirst+16000 partnersecond+32000, opponents -24000each.460 changedplayers fresh27hand anddoublingcontrols confirms newdeal.",
-    "new_deal_original_sha256": "95f4de3750a1ac674b22de6ecc5c6f8a0611922b91b0aaa888f4554dec855d04",
-    "settlement_original_sha256": "3ef4ef5f0b4c24428f7958f9dbff819c5d59a4cfd4371ffc970d346b5d4b2dd0",
-    "group_id": "goal_20261019_batch004_006_linked_conservative",
-    "independent_deal_boundary_verified": true,
-    "closed_deal_observed": true,
-    "final_acceptance_game_credit": 0
-  }
+  "latest_complete_pixel_groups_viewed": 54,
+  "latest_complete_pixel_pages_all_viewed": 3
 }
