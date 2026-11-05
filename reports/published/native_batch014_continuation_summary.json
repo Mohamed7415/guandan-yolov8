@@ -1,0 +1,30 @@
+{
+  "at": "2026-11-05T12:55:40.307215+00:00",
+  "stage": "batch014_review_through35",
+  "boundary_013_014_verified": true,
+  "boundary_correction": "Initial settlement belongs to batch013 game016, correcting the old provisional game015.",
+  "native_batch014_images": 582,
+  "original_hashes_verified": 582,
+  "unreviewed_draft_shapes_generated": 11028,
+  "reviewed_images": 35,
+  "reviewed_targets": 713,
+  "remaining_images": 547,
+  "verified_new_deal_frames": [
+    2,
+    34
+  ],
+  "observed_closed_deal_ranges": [
+    [
+      2,
+      33
+    ]
+  ],
+  "formal_new_blind_test_images": 0,
+  "final_acceptance_games": 0,
+  "freeze": "reports/published/native_blind_evaluation_freeze_v1.json",
+  "prior_review_manifests_unchanged": true,
+  "target_detector_inference_run": false,
+  "training_started": false,
+  "seal_created": false,
+  "next_frame": 36
+}

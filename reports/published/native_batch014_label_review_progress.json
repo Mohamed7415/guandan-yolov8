@@ -1,0 +1,148 @@
+{
+  "batch": "goal_20261020_batch014",
+  "native_images": 582,
+  "approved_images": 35,
+  "approved_positive_images": 31,
+  "approved_negatives": 4,
+  "reviewed_positive_boxes": 713,
+  "pending_images": 547,
+  "positive_images_pending": 519,
+  "positive_draft_shapes_pending": 10315,
+  "empty_drafts_pending_not_approved_negatives": 28,
+  "missing_draft_targets_added": 0,
+  "total_occlusion_flags_corrected_in_positive_review": 47,
+  "total_visible_extent_corrections_in_positive_review": 8,
+  "last_reviewed_frame": 35,
+  "last_full_native_frame_viewed": 35,
+  "next_review_frame": 36,
+  "complete_pixel_groups_viewed": 334,
+  "complete_pixel_pages_all_viewed": 17,
+  "approved_frame_segments": [
+    [
+      1,
+      5
+    ],
+    [
+      6,
+      10
+    ],
+    [
+      11,
+      15
+    ],
+    [
+      16,
+      20
+    ],
+    [
+      21,
+      25
+    ],
+    [
+      26,
+      30
+    ],
+    [
+      31,
+      35
+    ]
+  ],
+  "unresolved_frames": [],
+  "unapproved_visual_issues": [],
+  "linked_conservative_group": "goal_20261019_batch004_006_linked_conservative",
+  "independently_verified_deal_frames": [
+    2,
+    34
+  ],
+  "provisional_session_boundaries": [
+    74,
+    116,
+    143,
+    174,
+    222,
+    259,
+    298,
+    346,
+    387,
+    431,
+    460,
+    489,
+    532
+  ],
+  "complete_games_verified_for_final_acceptance": 0,
+  "later_batch015_016_linkage_pending_before_any_seal": true,
+  "target_detector_used": false,
+  "seal_created": false,
+  "prior_manifest_hashes": {
+    "data/blind_review_work/goal_20261019_batch005_v1/manifest.csv": "8acbe7eca1c3ad57d7fe641e9cb82cbbcdbea53c561ec92cb05224dcbf78ae92",
+    "data/blind_review_work/goal_20261019_batch011_v1/manifest.csv": "c74322314e2da2af04943a2048a5f43993491dcc702f1db76e572039d78c5dae",
+    "data/blind_review_work/goal_20261020_batch013_v1/manifest.csv": "3c5ce280756b5686f12ea57043d7eadca2868d9b547ebe4e94a6a8ab654acc46",
+    "data/blind_review_work/goal_20261019_batch010_v1/manifest.csv": "964911ca6aeaac92c43edd6d7db02c4428e281813f4a7aab7fe27e70aabafc38",
+    "data/blind_review_work/goal_20261019_batch004_v1/manifest.csv": "9467580ee5159066332cab17150e655e34e6efdb882d61964cd4582246ee0c55",
+    "data/blind_review_work/goal_20261019_batch003_v1/manifest.csv": "b78b953d3a2438367f320c15214cddbe624d708a6c4057baa766aea988ff6894",
+    "data/blind_review_work/goal_20261019_batch007_v1/manifest.csv": "7ebb76efd0c797b3c90e6f9e9afeb7f177009350402701cd292cfaaccd0a1e57",
+    "data/blind_review_work/goal_20261019_batch006_v1/manifest.csv": "144fac327c854056db54c4802c3b97879e6bf72b93d36cf5ba7d20f191d6cec9",
+    "data/blind_review_work/goal_20261019_batch012_v1/manifest.csv": "a4b2f8950d49c774e51b9e85ea98c46b2214a8283e26950c07aab87fc18ccc52",
+    "data/blind_review_work/goal_20261019_batch009_v1/manifest.csv": "9e493ccba618c34b1185d955fe579e98983ca886b7e61a4a4b59327399d24d00",
+    "data/blind_review_work/goal_20261019_batch008_v1/manifest.csv": "58cbb2fbfa558b67c4029680ad64c06c439ae9d3c39bba9839864d56fc2085d3"
+  },
+  "at": "2026-11-05T12:55:39.862671+00:00",
+  "full_native_frames_viewed": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17,
+    18,
+    19,
+    20,
+    21,
+    22,
+    23,
+    24,
+    25,
+    26,
+    27,
+    28,
+    29,
+    30,
+    31,
+    32,
+    33,
+    34,
+    35
+  ],
+  "annotation_audit_sha256": "09bce2b0c32c8a53f75a5efd37177f84115f6525e23dd09d8df1d460a0d96d06",
+  "partial_conversion": "data/blind_review_partial_converted/goal_20261020_batch014_review35_v1",
+  "conversion_validated_images": 35,
+  "conversion_validated_targets": 713,
+  "formal_new_blind_evaluation_images": 0,
+  "independent_human_second_review": false,
+  "latest_full_native_frames_viewed": [
+    31,
+    32,
+    33,
+    34,
+    35
+  ],
+  "latest_complete_pixel_groups_viewed": 27,
+  "latest_complete_pixel_pages_all_viewed": 2,
+  "observed_closed_deal_ranges": [
+    [
+      2,
+      33
+    ]
+  ]
+}
