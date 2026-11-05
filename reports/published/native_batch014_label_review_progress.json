@@ -1,22 +1,22 @@
 {
   "batch": "goal_20261020_batch014",
   "native_images": 582,
-  "approved_images": 193,
-  "approved_positive_images": 173,
+  "approved_images": 197,
+  "approved_positive_images": 177,
   "approved_negatives": 20,
-  "reviewed_positive_boxes": 3557,
-  "pending_images": 389,
-  "positive_images_pending": 377,
-  "positive_draft_shapes_pending": 7474,
+  "reviewed_positive_boxes": 3648,
+  "pending_images": 385,
+  "positive_images_pending": 373,
+  "positive_draft_shapes_pending": 7383,
   "empty_drafts_pending_not_approved_negatives": 12,
   "missing_draft_targets_added": 3,
-  "total_occlusion_flags_corrected_in_positive_review": 240,
+  "total_occlusion_flags_corrected_in_positive_review": 244,
   "total_visible_extent_corrections_in_positive_review": 64,
-  "last_reviewed_frame": 195,
-  "last_full_native_frame_viewed": 195,
-  "next_review_frame": 196,
-  "complete_pixel_groups_viewed": 1672,
-  "complete_pixel_pages_all_viewed": 89,
+  "last_reviewed_frame": 200,
+  "last_full_native_frame_viewed": 200,
+  "next_review_frame": 201,
+  "complete_pixel_groups_viewed": 1708,
+  "complete_pixel_pages_all_viewed": 91,
   "approved_frame_segments": [
     [
       1,
@@ -197,11 +197,28 @@
     [
       191,
       195
+    ],
+    [
+      196,
+      196
+    ],
+    [
+      197,
+      197
+    ],
+    [
+      198,
+      198
+    ],
+    [
+      199,
+      199
     ]
   ],
   "unresolved_frames": [
     80,
-    81
+    81,
+    200
   ],
   "unapproved_visual_issues": [
     {
@@ -216,6 +233,13 @@
       "image": "goal_20261020_batch014_00081.png",
       "evidence": "reports/continuous_goal/blind_batch014_review/frame00081_final_conclusion.json",
       "reason": "Chat bubble fully hides suit of right played ace; cannot identify full class from current pixels.",
+      "status": "unidentifiable_current_frame_excluded_from_approved"
+    },
+    {
+      "frame": 200,
+      "image": "goal_20261020_batch014_00200.png",
+      "evidence": "reports/continuous_goal/blind_batch014_review/frame00200_final_conclusion.json",
+      "reason": "Chatbubble hides ranks/suits of two rightplayedcards; current pixels cannot independently identify fullclasses.",
       "status": "unidentifiable_current_frame_excluded_from_approved"
     }
   ],
@@ -349,14 +373,41 @@
     "closed_deal_observed": true,
     "final_acceptance_game_credit": 0
   },
-  "review_completed_images": 195,
-  "review_unidentifiable_images": 2,
+  "review_completed_images": 200,
+  "review_unidentifiable_images": 3,
   "review_unidentifiable_frames": [
     80,
-    81
+    81,
+    200
   ],
-  "not_yet_reviewed_images": 387,
-  "at": "2026-11-05T15:17:54.846045+00:00",
+  "not_yet_reviewed_images": 382,
+  "frame143_deal_evidence": {
+    "at": "2026-11-05T15:20:27.571025+00:00",
+    "previous_deal_frame": 116,
+    "settlement_frame": 142,
+    "next_deal_frame": 143,
+    "evidence": "Defeatsettlement142 total8, ownthird/partnerlast -16000each, opponents vivo and40541. Changedopponents143, fresh27hand anddoubling controls confirms newdeal.",
+    "new_deal_original_sha256": "a64aeb7c7212f7e30b46d892187887d8209ed7636dcd7be8316ff847b13c0f46",
+    "settlement_original_sha256": "9a461e404272c61315ef03821b6b8532a50a135050cc3047d0447cf13ae671c6",
+    "group_id": "goal_20261019_batch004_006_linked_conservative",
+    "independent_deal_boundary_verified": true,
+    "closed_deal_observed": true,
+    "final_acceptance_game_credit": 0
+  },
+  "frame174_deal_evidence": {
+    "at": "2026-11-05T15:20:27.571025+00:00",
+    "previous_deal_frame": 143,
+    "settlement_frame": 171,
+    "next_deal_frame": 174,
+    "evidence": "Victorysettlement171 total1, ownfirst/partnerlast +2000each. Matching173 haschangedopponents,174 fresh27hand anddoubling controls confirms newdeal.",
+    "new_deal_original_sha256": "6d54b9bc6dacd6b623fd43f8d09faa38af1f754d5a7c619a89bf624947a1c863",
+    "settlement_original_sha256": "af503edf1af3269736f970fd02bf70c5d50f15e68ddc03b36f0b57bb4eeda55f",
+    "group_id": "goal_20261019_batch004_006_linked_conservative",
+    "independent_deal_boundary_verified": true,
+    "closed_deal_observed": true,
+    "final_acceptance_game_credit": 0
+  },
+  "at": "2026-11-05T15:20:27.571025+00:00",
   "full_native_frames_viewed": [
     1,
     2,
@@ -552,47 +603,26 @@
     192,
     193,
     194,
-    195
+    195,
+    196,
+    197,
+    198,
+    199,
+    200
   ],
-  "annotation_audit_sha256": "9c3234b315dc798301d472c950cf58f5e2a7cd50ce96fa7f18624d23cbc180be",
-  "partial_conversion": "data/blind_review_partial_converted/goal_20261020_batch014_review193_v1",
-  "conversion_validated_images": 193,
-  "conversion_validated_targets": 3557,
+  "annotation_audit_sha256": "8a23204770ac7a7d8fae446b66c92c185526e93bf9eb2d454fe4fa2cc5e1ab3c",
+  "partial_conversion": "data/blind_review_partial_converted/goal_20261020_batch014_review197_v1",
+  "conversion_validated_images": 197,
+  "conversion_validated_targets": 3648,
   "formal_new_blind_evaluation_images": 0,
   "independent_human_second_review": false,
   "latest_full_native_frames_viewed": [
-    191,
-    192,
-    193,
-    194,
-    195
+    196,
+    197,
+    198,
+    199,
+    200
   ],
-  "latest_complete_pixel_groups_viewed": 42,
-  "latest_complete_pixel_pages_all_viewed": 2,
-  "frame143_deal_evidence": {
-    "at": "2026-11-05T15:17:54.846045+00:00",
-    "previous_deal_frame": 116,
-    "settlement_frame": 142,
-    "next_deal_frame": 143,
-    "evidence": "Defeatsettlement142 total8, ownthird/partnerlast -16000each, opponents vivo and40541. Changedopponents143, fresh27hand anddoubling controls confirms newdeal.",
-    "new_deal_original_sha256": "a64aeb7c7212f7e30b46d892187887d8209ed7636dcd7be8316ff847b13c0f46",
-    "settlement_original_sha256": "9a461e404272c61315ef03821b6b8532a50a135050cc3047d0447cf13ae671c6",
-    "group_id": "goal_20261019_batch004_006_linked_conservative",
-    "independent_deal_boundary_verified": true,
-    "closed_deal_observed": true,
-    "final_acceptance_game_credit": 0
-  },
-  "frame174_deal_evidence": {
-    "at": "2026-11-05T15:17:54.846045+00:00",
-    "previous_deal_frame": 143,
-    "settlement_frame": 171,
-    "next_deal_frame": 174,
-    "evidence": "Victorysettlement171 total1, ownfirst/partnerlast +2000each. Matching173 haschangedopponents,174 fresh27hand anddoubling controls confirms newdeal.",
-    "new_deal_original_sha256": "6d54b9bc6dacd6b623fd43f8d09faa38af1f754d5a7c619a89bf624947a1c863",
-    "settlement_original_sha256": "af503edf1af3269736f970fd02bf70c5d50f15e68ddc03b36f0b57bb4eeda55f",
-    "group_id": "goal_20261019_batch004_006_linked_conservative",
-    "independent_deal_boundary_verified": true,
-    "closed_deal_observed": true,
-    "final_acceptance_game_credit": 0
-  }
+  "latest_complete_pixel_groups_viewed": 36,
+  "latest_complete_pixel_pages_all_viewed": 2
 }
