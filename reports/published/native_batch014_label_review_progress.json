@@ -1,22 +1,22 @@
 {
   "batch": "goal_20261020_batch014",
   "native_images": 582,
-  "approved_images": 302,
-  "approved_positive_images": 277,
+  "approved_images": 320,
+  "approved_positive_images": 295,
   "approved_negatives": 25,
-  "reviewed_positive_boxes": 5690,
-  "pending_images": 280,
-  "positive_images_pending": 273,
-  "positive_draft_shapes_pending": 5369,
+  "reviewed_positive_boxes": 5959,
+  "pending_images": 262,
+  "positive_images_pending": 255,
+  "positive_draft_shapes_pending": 5103,
   "empty_drafts_pending_not_approved_negatives": 7,
-  "missing_draft_targets_added": 31,
-  "total_occlusion_flags_corrected_in_positive_review": 396,
+  "missing_draft_targets_added": 34,
+  "total_occlusion_flags_corrected_in_positive_review": 428,
   "total_visible_extent_corrections_in_positive_review": 83,
-  "last_reviewed_frame": 320,
-  "last_full_native_frame_viewed": 320,
-  "next_review_frame": 321,
-  "complete_pixel_groups_viewed": 2675,
-  "complete_pixel_pages_all_viewed": 145,
+  "last_reviewed_frame": 340,
+  "last_full_native_frame_viewed": 340,
+  "next_review_frame": 341,
+  "complete_pixel_groups_viewed": 2802,
+  "complete_pixel_pages_all_viewed": 152,
   "approved_frame_segments": [
     [
       1,
@@ -345,6 +345,30 @@
     [
       320,
       320
+    ],
+    [
+      322,
+      322
+    ],
+    [
+      323,
+      323
+    ],
+    [
+      325,
+      325
+    ],
+    [
+      326,
+      330
+    ],
+    [
+      331,
+      335
+    ],
+    [
+      336,
+      340
     ]
   ],
   "unresolved_frames": [
@@ -365,7 +389,9 @@
     315,
     316,
     318,
-    319
+    319,
+    321,
+    324
   ],
   "unapproved_visual_issues": [
     {
@@ -492,6 +518,20 @@
       "image": "goal_20261020_batch014_00319.png",
       "evidence": "reports/continuous_goal/blind_batch014_review/frame00319_final_conclusion.json",
       "reason": "hint button hides upper rank and suit of top hand card; remaining edges/lower loop cannot independently identify full class.",
+      "status": "unidentifiable_current_frame_excluded_from_approved"
+    },
+    {
+      "frame": 321,
+      "image": "goal_20261020_batch014_00321.png",
+      "evidence": "reports/continuous_goal/blind_batch014_review/frame00321_final_conclusion.json",
+      "reason": "Hint button hides upper rank and suit of top hand card; lower loop/suit remainder cannot independently identify full class.",
+      "status": "unidentifiable_current_frame_excluded_from_approved"
+    },
+    {
+      "frame": 324,
+      "image": "goal_20261020_batch014_00324.png",
+      "evidence": "reports/continuous_goal/blind_batch014_review/frame00324_final_conclusion.json",
+      "reason": "Hint button hides upper rank and suit of top hand card; lower loop/suit remainder cannot independently identify full class.",
       "status": "unidentifiable_current_frame_excluded_from_approved"
     }
   ],
@@ -637,8 +677,8 @@
     "closed_deal_observed": true,
     "final_acceptance_game_credit": 0
   },
-  "review_completed_images": 320,
-  "review_unidentifiable_images": 18,
+  "review_completed_images": 340,
+  "review_unidentifiable_images": 20,
   "review_unidentifiable_frames": [
     80,
     81,
@@ -657,11 +697,13 @@
     315,
     316,
     318,
-    319
+    319,
+    321,
+    324
   ],
-  "not_yet_reviewed_images": 262,
+  "not_yet_reviewed_images": 242,
   "frame143_deal_evidence": {
-    "at": "2026-11-05T16:44:48.162470+00:00",
+    "at": "2026-11-05T16:48:10.407945+00:00",
     "previous_deal_frame": 116,
     "settlement_frame": 142,
     "next_deal_frame": 143,
@@ -674,7 +716,7 @@
     "final_acceptance_game_credit": 0
   },
   "frame174_deal_evidence": {
-    "at": "2026-11-05T16:44:48.162470+00:00",
+    "at": "2026-11-05T16:48:10.407945+00:00",
     "previous_deal_frame": 143,
     "settlement_frame": 171,
     "next_deal_frame": 174,
@@ -687,7 +729,7 @@
     "final_acceptance_game_credit": 0
   },
   "frame222_deal_evidence": {
-    "at": "2026-11-05T16:44:48.162470+00:00",
+    "at": "2026-11-05T16:48:10.407945+00:00",
     "previous_deal_frame": 174,
     "settlement_frame": 220,
     "next_deal_frame": 222,
@@ -700,7 +742,7 @@
     "final_acceptance_game_credit": 0
   },
   "frame259_deal_evidence": {
-    "at": "2026-11-05T16:44:48.162470+00:00",
+    "at": "2026-11-05T16:48:10.407945+00:00",
     "previous_deal_frame": 222,
     "settlement_frame": 258,
     "next_deal_frame": 259,
@@ -713,7 +755,7 @@
     "final_acceptance_game_credit": 0
   },
   "frame298_deal_evidence": {
-    "at": "2026-11-05T16:44:48.162470+00:00",
+    "at": "2026-11-05T16:48:10.407945+00:00",
     "previous_deal_frame": 259,
     "settlement_frame": 296,
     "next_deal_frame": 298,
@@ -725,7 +767,7 @@
     "closed_deal_observed": true,
     "final_acceptance_game_credit": 0
   },
-  "at": "2026-11-05T16:44:48.162470+00:00",
+  "at": "2026-11-05T16:48:10.407945+00:00",
   "full_native_frames_viewed": [
     1,
     2,
@@ -1046,21 +1088,41 @@
     317,
     318,
     319,
-    320
+    320,
+    321,
+    322,
+    323,
+    324,
+    325,
+    326,
+    327,
+    328,
+    329,
+    330,
+    331,
+    332,
+    333,
+    334,
+    335,
+    336,
+    337,
+    338,
+    339,
+    340
   ],
-  "annotation_audit_sha256": "04624eea089ef4a063254b98a10f8699fa045e84f7870a2643596b65bc6bc12c",
-  "partial_conversion": "data/blind_review_partial_converted/goal_20261020_batch014_review302_v1",
-  "conversion_validated_images": 302,
-  "conversion_validated_targets": 5690,
+  "annotation_audit_sha256": "0e13d81ab6d64ab76e4fa78c6b78d9ae00eef3a12abfefb71e0ce22b15bea725",
+  "partial_conversion": "data/blind_review_partial_converted/goal_20261020_batch014_review320_through340_v1",
+  "conversion_validated_images": 320,
+  "conversion_validated_targets": 5959,
   "formal_new_blind_evaluation_images": 0,
   "independent_human_second_review": false,
   "latest_full_native_frames_viewed": [
-    316,
-    317,
-    318,
-    319,
-    320
+    336,
+    337,
+    338,
+    339,
+    340
   ],
-  "latest_complete_pixel_groups_viewed": 30,
-  "latest_complete_pixel_pages_all_viewed": 2
+  "latest_complete_pixel_groups_viewed": 22,
+  "latest_complete_pixel_pages_all_viewed": 1
 }
