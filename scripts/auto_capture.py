@@ -34,6 +34,14 @@ def now() -> str:
     return datetime.now(timezone.utc).isoformat(timespec="milliseconds")
 
 
+def record_observation(directory: Path, observation: dict) -> None:
+    """Keep sampling coverage distinct from saved/deduplicated frame counts."""
+    with (directory / "observations.jsonl").open("a", encoding="utf-8") as stream:
+        stream.write(json.dumps(observation, ensure_ascii=False) + "\n")
+        stream.flush()
+        os.fsync(stream.fileno())
+
+
 def write_capture_manifest(directory: Path, rows: list[dict]) -> None:
     fd, name = tempfile.mkstemp(prefix=".captures-", suffix=".tmp", dir=directory)
     temporary = Path(name)
@@ -285,6 +293,7 @@ def parser() -> argparse.ArgumentParser:
     p.add_argument("--change-threshold", type=positive_float, default=.004, help="牌面白色区域变化阈值，默认 0.004")
     p.add_argument("--include-other-screens", action="store_true", help="也收集无明显白色牌面的候选，仍需复核")
     p.add_argument("--gameplay-only", action="store_true", help="只收集含绿色牌桌的候选，跳过大厅/广告/结算")
+    p.add_argument("--retain-all-native-frames", action="store_true", help="完整会话采集：保留变化中、遮挡和结算原图，仅去除字节完全相同帧，并记录每次观察")
     p.add_argument("--check", action="store_true", help="仅检查权限和目标窗口，不截图、不发送输入")
     return p
 
@@ -294,6 +303,9 @@ def run(args: argparse.Namespace) -> int:
         raise ValueError("--target 必须在 1..20000 之间。")
     if args.interval < .5 or args.change_threshold >= .1:
         raise ValueError("--interval 至少 0.5；--change-threshold 必须小于 0.1。")
+    retain_all = getattr(args, "retain_all_native_frames", False)
+    if retain_all and args.gameplay_only:
+        raise ValueError("完整会话采集不能排除结算/大厅边界画面。")
     capture = MacWindowCapture(args.window_title, args.window_id, allow_background_window=args.allow_background_window)
     if args.check:
         w = capture.locate()
@@ -318,6 +330,9 @@ def run(args: argparse.Namespace) -> int:
             raise ValueError("恢复批次的 sequence-id 不一致。")
         if metadata["window_title"] != args.window_title:
             raise ValueError("恢复批次的窗口标题不一致。")
+        if bool(metadata.get("retain_all_native_frames", False)) != retain_all:
+            lock.close()
+            raise ValueError("恢复批次的原图保留策略不一致；请使用新的批次。")
     else:
         sequence_id = args.sequence_id or "capture_" + run_id
         if not re.fullmatch(r"[A-Za-z0-9_-]{1,100}", sequence_id):
@@ -333,7 +348,8 @@ def run(args: argparse.Namespace) -> int:
     metadata.pop("error", None)
     metadata.pop("finished_at", None)
     metadata.update(started_at=now(), target=args.target, interval=args.interval, status="running", counts=counts,
-                    allow_background_window=args.allow_background_window, pinned_window_id=args.window_id)
+                    allow_background_window=args.allow_background_window, pinned_window_id=args.window_id,
+                    retain_all_native_frames=retain_all)
     atomic_json(metadata_path, metadata)
     print(f"采集目录：{directory}\n只观察窗口，不操作游戏。Ctrl+C 安全停止。")
     print(f"已有 {len(rows)} 张候选，目标 {args.target}；候选图片须复核后才计入训练。", flush=True)
@@ -348,6 +364,8 @@ def run(args: argparse.Namespace) -> int:
             try:
                 data, window_id = capture.capture(directory)
             except LookupError as exc:
+                if retain_all:
+                    record_observation(directory, {"at": now(), "status": "window_unavailable", "error": str(exc)})
                 previous = None
                 counts["window_waits"] += 1
                 if counts["window_waits"] == 1 or time.monotonic() - last_heartbeat >= 20:
@@ -358,6 +376,30 @@ def run(args: argparse.Namespace) -> int:
             timestamp = now()
             colors, mask, size, white_fraction = frame_features(data)
             current = (colors, mask)
+            if retain_all:
+                digest = hashlib.sha256(data).hexdigest()
+                if digest in hashes:
+                    counts["duplicate"] += 1
+                    filename = next(r["filename"] for r in rows if r["sha256"] == digest)
+                    disposition = "exact_duplicate"
+                else:
+                    filename = f"{sequence_id}_{len(rows) + 1:05d}.png"
+                    row = dict(filename=filename, captured_at=timestamp, sha256=digest,
+                               width=size[0], height=size[1], window_id=window_id,
+                               sequence_id=sequence_id, source="current_wechat_miniprogram_window",
+                               scene="", reviewed="false")
+                    commit_frame(directory, data, row, rows)
+                    rows.append(row)
+                    hashes.add(digest)
+                    counts["saved"] = len(rows)
+                    write_review_queue(directory, rows)
+                    disposition = "saved_unfiltered_native"
+                record_observation(directory, dict(at=timestamp, status=disposition,
+                                   filename=filename, sha256=digest, window_id=window_id,
+                                   width=size[0], height=size[1]))
+                atomic_json(directory / "progress.json", {"updated_at": now(), **counts})
+                time.sleep(max(0, args.interval - (time.monotonic() - sampled)))
+                continue
             if args.gameplay_only and not looks_like_green_table(data):
                 counts["not_gameplay"] += 1
                 previous = None
