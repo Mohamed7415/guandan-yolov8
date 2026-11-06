@@ -1,0 +1,17 @@
+{
+  "at": "2026-11-06T09:51:04.324058+00:00",
+  "stage": "session002_capturing_session001_label_review",
+  "captured_images_at_last_actual_check": 559,
+  "capture_check_utc": "2026-11-06T09:42:33.014+00:00",
+  "complete_capture_sessions_observed": 1,
+  "reviewed_new_images": 20,
+  "reviewed_new_targets": 585,
+  "formal_independent_sessions_credited": 0,
+  "formal_blind_images": 0,
+  "source_run": "data/candidates/goal_20261106_independent001",
+  "session_ledger": "reports/continuous_goal/independent_native_sessions.json",
+  "live_capture_exec_session": 52748,
+  "target_detector_used": false,
+  "automation_restarted": false,
+  "next_review_frame": 64
+}
